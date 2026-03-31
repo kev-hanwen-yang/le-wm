@@ -123,12 +123,21 @@ def run(cfg):
         pred_proj=predictor_proj,
     )
 
+    max_steps = max(1, len(train) * int(cfg.trainer.max_epochs))
+    warmup_steps = max(1, int(0.01 * max_steps))
+
     optimizers = {
         'model_opt': {
             "modules": 'model',
             "optimizer": dict(cfg.optimizer),
-            "scheduler": {"type": "LinearWarmupCosineAnnealingLR"},
-            "interval": "epoch",
+            "scheduler": {
+                "type": "LinearWarmupCosineAnnealingLR",
+                "warmup_steps": warmup_steps,
+                "max_steps": max_steps,
+                "warmup_start_lr": 0.0,
+                "eta_min": 0.0,
+            },
+            "interval": "step",
         },
     }
 
