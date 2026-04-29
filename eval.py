@@ -14,6 +14,16 @@ from sklearn import preprocessing
 from torchvision.transforms import v2 as transforms
 import stable_worldmodel as swm
 
+
+def eval_device() -> str:
+    """Pick a device that matches this PyTorch build (CUDA / MPS / CPU)."""
+    if torch.cuda.is_available():
+        return "cuda"
+    if getattr(torch.backends, "mps", None) is not None and torch.backends.mps.is_available():
+        return "mps"
+    return "cpu"
+
+
 def img_transform(cfg):
     transform = transforms.Compose(
         [
@@ -84,14 +94,15 @@ def run(cfg: DictConfig):
     # -- run evaluation
     policy = cfg.get("policy", "random")
 
-    if policy != "random":
-        model = swm.policy.AutoCostModel(cfg.policy)
-        model = model.to("cuda")
+    if policy != "random": 
+        device = eval_device()
+        model = swm.policy.AutoCostModel(cfg.policy) # returns a JEPA instance whose encode() gives the embeddings
+        model = model.to(device)
         model = model.eval()
         model.requires_grad_(False)
         model.interpolate_pos_encoding = True
         config = swm.PlanConfig(**cfg.plan_config)
-        solver = hydra.utils.instantiate(cfg.solver, model=model)
+        solver = hydra.utils.instantiate(cfg.solver, model=model, device=device)
         policy = swm.policy.WorldModelPolicy(
             solver=solver, config=config, process=process, transform=transform
         )

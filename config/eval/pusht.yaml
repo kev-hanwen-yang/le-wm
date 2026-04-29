@@ -21,7 +21,7 @@ seed: 42
 policy: random # ckpt name or random
 
 plan_config:
-  horizon: 5
+  horizon: 5 # planning / time horizon / how many action steps a sampled action sequence contains
   receding_horizon: 5
   action_block: 5 # frameskip
 
@@ -43,6 +43,6 @@ eval:
       args:
         goal_state:
           value: goal_state
-          
+
 output:
   filename: pusht_results.txt

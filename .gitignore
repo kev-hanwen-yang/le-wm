@@ -1,0 +1,30 @@
+# Project-local stable-worldmodel cache
+.stable-wm/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Experiment and logging outputs
+wandb/
+outputs/
+multirun/
+.hydra/
+
+# Evaluation logs that may be written in the repo root
+pusht_results.txt
+tworoom_results.txt
+reacher_results.txt
+cube_results.txt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store

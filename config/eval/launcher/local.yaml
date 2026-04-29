@@ -4,4 +4,4 @@
 defaults:
   - override /hydra/launcher: basic
 
-cache_dir: null # use stable-worldmodel default cache
+cache_dir: /Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm # use stable-worldmodel default cache
