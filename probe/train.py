@@ -1,8 +1,11 @@
+import random
+
+import numpy as np
 import torch
 import torch.nn.functional as F
 
 from probe.metrics import evaluate_linear_probe
-from probe.models import LinearRegressionProbe
+from probe.models import LinearRegressionProbe, MLPRegressionProbe
 
 
 # Component: supervised probe training.
@@ -13,9 +16,28 @@ from probe.models import LinearRegressionProbe
 # model parameters receive gradients.
 #
 # Current trainer:
-# - train_linear_probe: trains a linear probe to predict any target returned by
-#   `probe.targets`, e.g. agent_location(N, 2), block_location(N, 2), or
-#   block_angle(N, 1), from emb(N, 192).
+# - train_probe: trains either a linear probe or a small MLP probe to predict
+#   any target returned by `probe.targets`, e.g. agent_location(N, 2),
+#   block_location(N, 2), or block_angle(N, 1), from emb(N, 192).
+#
+# Seed policy:
+# - `cfg.seed` in probe.py controls the episode split and encoded-cache name.
+# - `probe_seed` here controls only probe training randomness: initialization,
+#   shuffled batch order, and dropout masks. Keeping these separate lets the
+#   report measure training variability without changing the held-out episodes.
+
+
+SUPPORTED_PROBE_TYPES = {"linear", "mlp"}
+
+
+def seed_probe_training(probe_seed):
+    if probe_seed is None:
+        return
+    random.seed(probe_seed)
+    np.random.seed(probe_seed)
+    torch.manual_seed(probe_seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(probe_seed)
 
 
 def move_pairs_to_device(pairs, device):
@@ -35,19 +57,48 @@ def fit_target_normalizer(train_pairs, device):
     return mean, std
 
 
-def make_pair_loader(pairs, batch_size, shuffle):
+def make_pair_loader(pairs, batch_size, shuffle, probe_seed=None):
     tensor_dataset = torch.utils.data.TensorDataset(
         pairs["embeddings"],
         pairs["target"],
     )
+    generator = None
+    if shuffle and probe_seed is not None:
+        # DataLoader shuffling is the second source of probe-training randomness
+        # after model initialization, so seed it explicitly for reproducible runs.
+        generator = torch.Generator()
+        generator.manual_seed(probe_seed)
     return torch.utils.data.DataLoader(
         tensor_dataset,
         batch_size=batch_size,
         shuffle=shuffle,
+        generator=generator,
     )
 
 
-def train_linear_probe(
+def build_probe(
+    probe_type,
+    input_dim,
+    output_dim,
+    mlp_hidden_dim=256,
+    mlp_num_hidden_layers=1,
+    mlp_dropout=0.1,
+):
+    if probe_type == "linear":
+        return LinearRegressionProbe(input_dim=input_dim, output_dim=output_dim)
+    if probe_type == "mlp":
+        return MLPRegressionProbe(
+            input_dim=input_dim,
+            hidden_dim=mlp_hidden_dim,
+            output_dim=output_dim,
+            num_hidden_layers=mlp_num_hidden_layers,
+            dropout=mlp_dropout,
+        )
+    valid_probe_types = ", ".join(sorted(SUPPORTED_PROBE_TYPES))
+    raise ValueError(f"Unknown probe_type={probe_type!r}. Valid probe types: {valid_probe_types}")
+
+
+def train_probe(
     train_pairs,
     val_pairs,
     device,
@@ -57,16 +108,35 @@ def train_linear_probe(
     patience,
     lr,
     weight_decay,
+    probe_type="linear",
+    mlp_hidden_dim=256,
+    mlp_num_hidden_layers=1,
+    mlp_dropout=0.1,
+    probe_seed=None,
 ):
+    seed_probe_training(probe_seed) #  this makes repeated runs with the same probe_seed reproducible, and different probe_seeds measure probe-training variability.
+
     # Move train/val sets from CPU to the selected accelerator before training.
     train_pairs = move_pairs_to_device(train_pairs, device)
     val_pairs = move_pairs_to_device(val_pairs, device)
     target_name = train_pairs["target_name"]
     target_dim = train_pairs["target"].shape[1]
     target_mean, target_std = fit_target_normalizer(train_pairs, device)
-    train_loader = make_pair_loader(train_pairs, batch_size=batch_size, shuffle=True)
+    train_loader = make_pair_loader(
+        train_pairs,
+        batch_size=batch_size,
+        shuffle=True,
+        probe_seed=probe_seed,
+    )
 
-    probe = LinearRegressionProbe(input_dim=192, output_dim=target_dim).to(device)
+    probe = build_probe(
+        probe_type=probe_type,
+        input_dim=192,
+        output_dim=target_dim,
+        mlp_hidden_dim=mlp_hidden_dim,
+        mlp_num_hidden_layers=mlp_num_hidden_layers,
+        mlp_dropout=mlp_dropout,
+    ).to(device)
     optimizer = torch.optim.AdamW(probe.parameters(), lr=lr, weight_decay=weight_decay)
 
     # Early stopping tracks normalized validation MSE because that is the metric
@@ -78,10 +148,12 @@ def train_linear_probe(
     epochs_without_improvement = 0
 
     print(
-        f"Training linear probe for {target_name} "
+        f"Training {probe_type} probe for {target_name} "
         f"(input_dim=192, output_dim={target_dim}, batch_size={batch_size}, "
         f"lr={lr}, weight_decay={weight_decay}, max_epochs={max_epochs}, "
-        f"patience={patience})"
+        f"patience={patience}, mlp_hidden_dim={mlp_hidden_dim}, "
+        f"mlp_num_hidden_layers={mlp_num_hidden_layers}, mlp_dropout={mlp_dropout}, "
+        f"probe_seed={probe_seed})"
     )
     print(f"target_mean={target_mean.cpu().numpy().round(4).tolist()}")
     print(f"target_std={target_std.cpu().numpy().round(4).tolist()}")
@@ -154,7 +226,7 @@ def train_linear_probe(
     torch.save(
         {
             "target_name": target_name,
-            "probe_type": "linear",
+            "probe_type": probe_type,
             "probe_state_dict": probe.state_dict(),
             "target_mean": target_mean.cpu(),
             "target_std": target_std.cpu(),
@@ -166,8 +238,16 @@ def train_linear_probe(
             "weight_decay": weight_decay,
             "max_epochs": max_epochs,
             "patience": patience,
+            "mlp_hidden_dim": mlp_hidden_dim,
+            "mlp_num_hidden_layers": mlp_num_hidden_layers,
+            "mlp_dropout": mlp_dropout,
+            "probe_seed": probe_seed,
         },
         save_path,
     )
-    print(f"Saved best linear probe to {save_path}")
+    print(f"Saved best {probe_type} probe to {save_path}")
     return probe
+
+
+def train_linear_probe(*args, **kwargs):
+    return train_probe(*args, probe_type="linear", **kwargs)

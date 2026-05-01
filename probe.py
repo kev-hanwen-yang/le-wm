@@ -14,7 +14,7 @@ from probe.embedding_cache import (
     load_or_precompute_encoded_split,
 )
 from probe.targets import TARGET_BUILDERS
-from probe.train import train_linear_probe
+from probe.train import train_probe
 
 
 def visualize_pixels(sample):
@@ -101,6 +101,13 @@ def run(cfg: DictConfig):
     cache_dir = Path(cfg.get("cache_dir") or swm.data.utils.get_cache_dir())
     policy_name = "pusht/lewm"
     target_name = cfg.get("target_name", "agent_location")
+    probe_type = cfg.get("probe_type", "linear")
+    mlp_hidden_dim = int(cfg.get("mlp_hidden_dim", 256))
+    mlp_num_hidden_layers = int(cfg.get("mlp_num_hidden_layers", 1))
+    mlp_dropout = float(cfg.get("mlp_dropout", 0.1))
+    probe_seed = cfg.get("probe_seed", None)
+    if probe_seed is not None:
+        probe_seed = int(probe_seed)
     if target_name not in TARGET_BUILDERS:
         valid_targets = ", ".join(TARGET_BUILDERS)
         raise ValueError(f"Unknown target_name={target_name!r}. Valid targets: {valid_targets}")
@@ -177,8 +184,13 @@ def run(cfg: DictConfig):
         f"target shape={tuple(val_pairs['target'].shape)}"
     )
 
-    probe_save_path = cache_dir / "probes" / f"pusht_{target_name}_linear.pt"
-    train_linear_probe(
+    probe_dir = cache_dir / "probes"
+    if probe_seed is not None:
+        # Keep probe-training seeds in separate folders so repeated seeds do not
+        # overwrite the original single-run checkpoints or each other.
+        probe_dir = probe_dir / f"seed{probe_seed}"
+    probe_save_path = probe_dir / f"pusht_{target_name}_{probe_type}.pt"
+    train_probe(
         train_pairs,
         val_pairs,
         device,
@@ -188,6 +200,11 @@ def run(cfg: DictConfig):
         patience=3,
         lr=1e-3,
         weight_decay=1e-4,
+        probe_type=probe_type,
+        mlp_hidden_dim=mlp_hidden_dim,
+        mlp_num_hidden_layers=mlp_num_hidden_layers,
+        mlp_dropout=mlp_dropout,
+        probe_seed=probe_seed,
     )
 
     ## Inspect a sample

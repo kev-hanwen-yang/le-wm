@@ -11,6 +11,8 @@ import torch.nn.functional as F
 #
 # Current metrics:
 # - norm_mse: MSE on normalized targets, useful for Table 1-style comparison.
+# - sample_norm_mse_mean/std: mean/std of per-sample normalized MSE over the
+#   held-out split. This is the paper-like "MSE ± std" distribution.
 # - raw_mse/raw_rmse: error in the original target units, useful for intuition.
 # - Pearson r: per-dimension correlation between predicted and true quantities.
 
@@ -68,11 +70,24 @@ def evaluate_linear_probe(
     target = torch.cat(targets, dim=0)
     norm_mse = F.mse_loss(pred_norm, target_norm)
     raw_mse = F.mse_loss(pred, target)
+    sample_norm_mse = (pred_norm - target_norm).square().mean(dim=1)
+    sample_raw_mse = (pred - target).square().mean(dim=1)
     r_mean, r_per_dim = pearson_r(pred, target)
     return {
         "norm_mse": norm_mse.item(),
+        "sample_norm_mse_mean": sample_norm_mse.mean().item(),
+        "sample_norm_mse_std": sample_std(sample_norm_mse),
+        "sample_norm_mse_count": int(sample_norm_mse.numel()),
         "raw_mse": raw_mse.item(),
         "raw_rmse": torch.sqrt(raw_mse).item(),
+        "sample_raw_mse_mean": sample_raw_mse.mean().item(),
+        "sample_raw_mse_std": sample_std(sample_raw_mse),
         "r_mean": r_mean.item(),
         "r_per_dim": r_per_dim.tolist(),
     }
+
+
+def sample_std(values):
+    if values.numel() <= 1:
+        return 0.0
+    return values.std(unbiased=True).item()
