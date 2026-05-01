@@ -13,22 +13,23 @@ from probe.models import LinearRegressionProbe
 # model parameters receive gradients.
 #
 # Current trainer:
-# - train_agent_location_linear_probe: trains a linear probe to predict
-#   agent_location = (agent_x, agent_y) from emb(N, 192).
+# - train_linear_probe: trains a linear probe to predict any target returned by
+#   `probe.targets`, e.g. agent_location(N, 2), block_location(N, 2), or
+#   block_angle(N, 1), from emb(N, 192).
 
 
 def move_pairs_to_device(pairs, device):
     return {
         "embeddings": pairs["embeddings"].to(device),
-        "agent_location": pairs["agent_location"].to(device),
+        "target": pairs["target"].to(device),
         "target_name": pairs["target_name"],
         "episode_idx": pairs["episode_idx"],
         "step_idx": pairs["step_idx"],
     }
 
 
-def fit_agent_location_normalizer(train_pairs, device):
-    target = train_pairs["agent_location"]
+def fit_target_normalizer(train_pairs, device):
+    target = train_pairs["target"]
     mean = target.mean(dim=0, keepdim=True).to(device)
     std = target.std(dim=0, keepdim=True).clamp_min(1e-6).to(device)
     return mean, std
@@ -37,7 +38,7 @@ def fit_agent_location_normalizer(train_pairs, device):
 def make_pair_loader(pairs, batch_size, shuffle):
     tensor_dataset = torch.utils.data.TensorDataset(
         pairs["embeddings"],
-        pairs["agent_location"],
+        pairs["target"],
     )
     return torch.utils.data.DataLoader(
         tensor_dataset,
@@ -46,7 +47,7 @@ def make_pair_loader(pairs, batch_size, shuffle):
     )
 
 
-def train_agent_location_linear_probe(
+def train_linear_probe(
     train_pairs,
     val_pairs,
     device,
@@ -60,10 +61,12 @@ def train_agent_location_linear_probe(
     # Move train/val sets from CPU to the selected accelerator before training.
     train_pairs = move_pairs_to_device(train_pairs, device)
     val_pairs = move_pairs_to_device(val_pairs, device)
-    target_mean, target_std = fit_agent_location_normalizer(train_pairs, device)
+    target_name = train_pairs["target_name"]
+    target_dim = train_pairs["target"].shape[1]
+    target_mean, target_std = fit_target_normalizer(train_pairs, device)
     train_loader = make_pair_loader(train_pairs, batch_size=batch_size, shuffle=True)
 
-    probe = LinearRegressionProbe(input_dim=192, output_dim=2).to(device)
+    probe = LinearRegressionProbe(input_dim=192, output_dim=target_dim).to(device)
     optimizer = torch.optim.AdamW(probe.parameters(), lr=lr, weight_decay=weight_decay)
 
     # Early stopping tracks normalized validation MSE because that is the metric
@@ -75,8 +78,8 @@ def train_agent_location_linear_probe(
     epochs_without_improvement = 0
 
     print(
-        "Training linear probe for agent_location "
-        f"(input_dim=192, output_dim=2, batch_size={batch_size}, "
+        f"Training linear probe for {target_name} "
+        f"(input_dim=192, output_dim={target_dim}, batch_size={batch_size}, "
         f"lr={lr}, weight_decay={weight_decay}, max_epochs={max_epochs}, "
         f"patience={patience})"
     )
@@ -133,7 +136,7 @@ def train_agent_location_linear_probe(
             f"val_raw_mse={val_stats['raw_mse']:.6f} "
             f"val_raw_rmse={val_stats['raw_rmse']:.6f} "
             f"val_r={val_stats['r_mean']:.4f} "
-            f"(r_x={val_stats['r_x']:.4f}, r_y={val_stats['r_y']:.4f}) {marker}"
+            f"r_per_dim={[round(r, 4) for r in val_stats['r_per_dim']]} {marker}"
         )
 
         if epochs_without_improvement >= patience:
@@ -150,7 +153,7 @@ def train_agent_location_linear_probe(
     save_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(
         {
-            "target_name": "agent_location",
+            "target_name": target_name,
             "probe_type": "linear",
             "probe_state_dict": probe.state_dict(),
             "target_mean": target_mean.cpu(),

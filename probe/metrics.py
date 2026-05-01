@@ -18,7 +18,7 @@ import torch.nn.functional as F
 def _make_pair_loader(pairs, batch_size, shuffle):
     tensor_dataset = torch.utils.data.TensorDataset(
         pairs["embeddings"],
-        pairs["agent_location"],
+        pairs["target"],
     )
     return torch.utils.data.DataLoader(
         tensor_dataset,
@@ -74,6 +74,5 @@ def evaluate_linear_probe(
         "raw_mse": raw_mse.item(),
         "raw_rmse": torch.sqrt(raw_mse).item(),
         "r_mean": r_mean.item(),
-        "r_x": r_per_dim[0].item(),
-        "r_y": r_per_dim[1].item(),
+        "r_per_dim": r_per_dim.tolist(),
     }

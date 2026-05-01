@@ -13,8 +13,8 @@ from probe.embedding_cache import (
     load_frozen_encoder,
     load_or_precompute_encoded_split,
 )
-from probe.targets import build_agent_location_pairs
-from probe.train import train_agent_location_linear_probe
+from probe.targets import TARGET_BUILDERS
+from probe.train import train_linear_probe
 
 
 def visualize_pixels(sample):
@@ -100,6 +100,11 @@ def run(cfg: DictConfig):
     device = eval_device()
     cache_dir = Path(cfg.get("cache_dir") or swm.data.utils.get_cache_dir())
     policy_name = "pusht/lewm"
+    target_name = cfg.get("target_name", "agent_location")
+    if target_name not in TARGET_BUILDERS:
+        valid_targets = ", ".join(TARGET_BUILDERS)
+        raise ValueError(f"Unknown target_name={target_name!r}. Valid targets: {valid_targets}")
+    build_target_pairs = TARGET_BUILDERS[target_name]
 
     model = load_frozen_encoder(policy_name, device, cache_dir=cache_dir)
     image_transform = get_image_transform(cfg.eval.img_size)
@@ -156,22 +161,24 @@ def run(cfg: DictConfig):
 
     train_encoded = encoded_splits["train"]
     val_encoded = encoded_splits["val"]
-    train_pairs = build_agent_location_pairs(train_encoded)
-    val_pairs = build_agent_location_pairs(val_encoded)
+    train_pairs = build_target_pairs(train_encoded)
+    val_pairs = build_target_pairs(val_encoded)
 
     print(
         "precomputed train pairs: "
         f"embeddings shape={tuple(train_pairs['embeddings'].shape)}, "
-        f"agent_location shape={tuple(train_pairs['agent_location'].shape)}"
+        f"target_name={train_pairs['target_name']}, "
+        f"target shape={tuple(train_pairs['target'].shape)}"
     )
     print(
         "precomputed val pairs: "
         f"embeddings shape={tuple(val_pairs['embeddings'].shape)}, "
-        f"agent_location shape={tuple(val_pairs['agent_location'].shape)}"
+        f"target_name={val_pairs['target_name']}, "
+        f"target shape={tuple(val_pairs['target'].shape)}"
     )
 
-    probe_save_path = cache_dir / "probes" / "pusht_agent_location_linear.pt"
-    train_agent_location_linear_probe(
+    probe_save_path = cache_dir / "probes" / f"pusht_{target_name}_linear.pt"
+    train_linear_probe(
         train_pairs,
         val_pairs,
         device,
