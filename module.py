@@ -340,8 +340,8 @@ class ARPredictor(nn.Module):
 
     def forward(self, x, c):
         """
-        x: (B, T, d)
-        c: (B, T, act_dim)
+        x (Image latent sequence): (B, T, d) 
+        c (Action embedding sequence): (B, T, act_dim)
         """
         T = x.size(1)
         x = x + self.pos_embedding[:, :T]
