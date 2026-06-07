@@ -1,0 +1,108 @@
+[
+  {
+    "target_name": "agent_location",
+    "probe_type": "linear",
+    "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/pusht_agent_location_linear.pt",
+    "test_norm_mse_mean": 0.04300536960363388,
+    "test_norm_mse_std": 0.0,
+    "test_r_mean": 0.978373646736145,
+    "test_r_per_dim": [
+      0.9797043800354004,
+      0.9770429134368896
+    ],
+    "test_raw_mse": 438.5856018066406,
+    "test_raw_rmse": 20.94243621826172,
+    "best_epoch": 11,
+    "best_val_norm_mse": null,
+    "best_val_raw_mse": null,
+    "status": "ok"
+  },
+  {
+    "target_name": "agent_location",
+    "probe_type": "mlp",
+    "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/pusht_agent_location_mlp.pt",
+    "test_norm_mse_mean": 0.004631746094673872,
+    "test_norm_mse_std": 0.0,
+    "test_r_mean": 0.9977543354034424,
+    "test_r_per_dim": [
+      0.9982700347900391,
+      0.9972386956214905
+    ],
+    "test_raw_mse": 46.9310188293457,
+    "test_raw_rmse": 6.850621700286865,
+    "best_epoch": 11,
+    "best_val_norm_mse": 0.003243295941501856,
+    "best_val_raw_mse": 32.958229064941406,
+    "status": "ok"
+  },
+  {
+    "target_name": "block_location",
+    "probe_type": "linear",
+    "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/pusht_block_location_linear.pt",
+    "test_norm_mse_mean": 0.02067171037197113,
+    "test_norm_mse_std": 0.0,
+    "test_r_mean": 0.9892092943191528,
+    "test_r_per_dim": [
+      0.9900798797607422,
+      0.9883386492729187
+    ],
+    "test_raw_mse": 109.20858001708984,
+    "test_raw_rmse": 10.45029067993164,
+    "best_epoch": 7,
+    "best_val_norm_mse": 0.025329982861876488,
+    "best_val_raw_mse": 134.0771484375,
+    "status": "ok"
+  },
+  {
+    "target_name": "block_location",
+    "probe_type": "mlp",
+    "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/pusht_block_location_mlp.pt",
+    "test_norm_mse_mean": 0.001249411841854453,
+    "test_norm_mse_std": 0.0,
+    "test_r_mean": 0.9993842840194702,
+    "test_r_per_dim": [
+      0.9993051290512085,
+      0.9994634985923767
+    ],
+    "test_raw_mse": 6.577210903167725,
+    "test_raw_rmse": 2.5646073818206787,
+    "best_epoch": 7,
+    "best_val_norm_mse": 0.001828682841733098,
+    "best_val_raw_mse": 9.639179229736328,
+    "status": "ok"
+  },
+  {
+    "target_name": "block_angle",
+    "probe_type": "linear",
+    "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/pusht_block_angle_linear.pt",
+    "test_norm_mse_mean": 0.17543402314186096,
+    "test_norm_mse_std": 0.0,
+    "test_r_mean": 0.9064280986785889,
+    "test_r_per_dim": [
+      0.9064280986785889
+    ],
+    "test_raw_mse": 0.6451559662818909,
+    "test_raw_rmse": 0.8032160401344299,
+    "best_epoch": 15,
+    "best_val_norm_mse": 0.17622897028923035,
+    "best_val_raw_mse": 0.6480794548988342,
+    "status": "ok"
+  },
+  {
+    "target_name": "block_angle",
+    "probe_type": "mlp",
+    "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/pusht_block_angle_mlp.pt",
+    "test_norm_mse_mean": 0.026675237342715263,
+    "test_norm_mse_std": 0.0,
+    "test_r_mean": 0.9864040613174438,
+    "test_r_per_dim": [
+      0.9864040613174438
+    ],
+    "test_raw_mse": 0.0980977937579155,
+    "test_raw_rmse": 0.31320565938949585,
+    "best_epoch": 18,
+    "best_val_norm_mse": 0.029989372938871384,
+    "best_val_raw_mse": 0.11028547585010529,
+    "status": "ok"
+  }
+]

@@ -1,0 +1,1062 @@
+[
+  {
+    "target_name": "agent_location",
+    "probe_type": "linear",
+    "probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "missing_probe_seeds": [],
+    "num_completed_probe_seeds": 5,
+    "test_norm_mse_values": [
+      0.04314040765166283,
+      0.042974378913640976,
+      0.043079208582639694,
+      0.043016694486141205,
+      0.04292070120573044
+    ],
+    "test_norm_mse_mean": 0.04302627816796303,
+    "test_norm_mse_std": 8.625404680091116e-05,
+    "test_sample_norm_mse_mean": 0.04302627742290497,
+    "test_sample_norm_mse_std": 0.16511670372958,
+    "test_sample_norm_mse_count": 1158170,
+    "test_r_values": [
+      0.9783144593238831,
+      0.9783922433853149,
+      0.9783449172973633,
+      0.9783757925033569,
+      0.9784177541732788
+    ],
+    "test_r_mean": 0.9783690333366394,
+    "test_r_std": 4.036712411039826e-05,
+    "test_r_per_dim_mean": [
+      0.9797241449356079,
+      0.977013909816742
+    ],
+    "test_r_per_dim_std": [
+      3.965813751922614e-05,
+      4.57072729957444e-05
+    ],
+    "test_sample_raw_mse_mean": 438.77598266601564,
+    "test_sample_raw_mse_std": 1665.8805490866566,
+    "seed_results": [
+      {
+        "target_name": "agent_location",
+        "probe_type": "linear",
+        "probe_seed": 0,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed0/pusht_agent_location_linear.pt",
+        "test_norm_mse_mean": 0.04314040765166283,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.04314040765166283,
+        "test_sample_norm_mse_std": 0.16596075892448425,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9783144593238831,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9796862602233887,
+          0.9769426584243774
+        ],
+        "test_raw_mse": 439.9207458496094,
+        "test_raw_rmse": 20.974287033081055,
+        "test_sample_raw_mse_mean": 439.92071533203125,
+        "test_sample_raw_mse_std": 1673.9141845703125,
+        "best_epoch": 8,
+        "best_val_norm_mse": 0.04167263209819794,
+        "best_val_raw_mse": 424.6822509765625,
+        "status": "ok"
+      },
+      {
+        "target_name": "agent_location",
+        "probe_type": "linear",
+        "probe_seed": 1,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed1/pusht_agent_location_linear.pt",
+        "test_norm_mse_mean": 0.042974378913640976,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.04297437518835068,
+        "test_sample_norm_mse_std": 0.16428422927856445,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9783922433853149,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9797604084014893,
+          0.9770240783691406
+        ],
+        "test_raw_mse": 438.2344970703125,
+        "test_raw_rmse": 20.934051513671875,
+        "test_sample_raw_mse_mean": 438.2344970703125,
+        "test_sample_raw_mse_std": 1657.580810546875,
+        "best_epoch": 12,
+        "best_val_norm_mse": 0.04145845025777817,
+        "best_val_raw_mse": 422.55584716796875,
+        "status": "ok"
+      },
+      {
+        "target_name": "agent_location",
+        "probe_type": "linear",
+        "probe_seed": 2,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed2/pusht_agent_location_linear.pt",
+        "test_norm_mse_mean": 0.043079208582639694,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.043079208582639694,
+        "test_sample_norm_mse_std": 0.16616590321063995,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9783449172973633,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9796844720840454,
+          0.9770053029060364
+        ],
+        "test_raw_mse": 439.33477783203125,
+        "test_raw_rmse": 20.96031379699707,
+        "test_sample_raw_mse_mean": 439.3348083496094,
+        "test_sample_raw_mse_std": 1676.5311279296875,
+        "best_epoch": 7,
+        "best_val_norm_mse": 0.041739992797374725,
+        "best_val_raw_mse": 425.4014892578125,
+        "status": "ok"
+      },
+      {
+        "target_name": "agent_location",
+        "probe_type": "linear",
+        "probe_seed": 3,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed3/pusht_agent_location_linear.pt",
+        "test_norm_mse_mean": 0.043016694486141205,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.043016694486141205,
+        "test_sample_norm_mse_std": 0.16488459706306458,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9783757925033569,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.979721188545227,
+          0.9770303964614868
+        ],
+        "test_raw_mse": 438.6897277832031,
+        "test_raw_rmse": 20.944921493530273,
+        "test_sample_raw_mse_mean": 438.6897277832031,
+        "test_sample_raw_mse_std": 1663.734619140625,
+        "best_epoch": 9,
+        "best_val_norm_mse": 0.04159156605601311,
+        "best_val_raw_mse": 423.8979187011719,
+        "status": "ok"
+      },
+      {
+        "target_name": "agent_location",
+        "probe_type": "linear",
+        "probe_seed": 4,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed4/pusht_agent_location_linear.pt",
+        "test_norm_mse_mean": 0.04292070120573044,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.04292070120573044,
+        "test_sample_norm_mse_std": 0.1642794907093048,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9784177541732788,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9797683954238892,
+          0.9770671129226685
+        ],
+        "test_raw_mse": 437.7001647949219,
+        "test_raw_rmse": 20.92128562927246,
+        "test_sample_raw_mse_mean": 437.7001647949219,
+        "test_sample_raw_mse_std": 1657.5592041015625,
+        "best_epoch": 8,
+        "best_val_norm_mse": 0.04168771579861641,
+        "best_val_raw_mse": 424.967041015625,
+        "status": "ok"
+      }
+    ],
+    "status": "ok"
+  },
+  {
+    "target_name": "agent_location",
+    "probe_type": "mlp",
+    "probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "missing_probe_seeds": [],
+    "num_completed_probe_seeds": 5,
+    "test_norm_mse_values": [
+      0.005019906908273697,
+      0.0045628538355231285,
+      0.004812099505215883,
+      0.004945046734064817,
+      0.0048828888684511185
+    ],
+    "test_norm_mse_mean": 0.004844559170305729,
+    "test_norm_mse_std": 0.00017516083390940927,
+    "test_sample_norm_mse_mean": 0.004844559263437987,
+    "test_sample_norm_mse_std": 0.14405270070890486,
+    "test_sample_norm_mse_count": 1158170,
+    "test_r_values": [
+      0.9975247383117676,
+      0.9977462291717529,
+      0.9976257681846619,
+      0.9975468516349792,
+      0.9976193904876709
+    ],
+    "test_r_mean": 0.9976125955581665,
+    "test_r_std": 8.677383104481371e-05,
+    "test_r_per_dim_mean": [
+      0.998175859451294,
+      0.9970492959022522
+    ],
+    "test_r_per_dim_std": [
+      8.66486930235357e-05,
+      9.900299739097722e-05
+    ],
+    "test_sample_raw_mse_mean": 49.043766784667966,
+    "test_sample_raw_mse_std": 1432.8674462693432,
+    "seed_results": [
+      {
+        "target_name": "agent_location",
+        "probe_type": "mlp",
+        "probe_seed": 0,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed0/pusht_agent_location_mlp.pt",
+        "test_norm_mse_mean": 0.005019906908273697,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.005019906908273697,
+        "test_sample_norm_mse_std": 0.14765557646751404,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9975247383117676,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9981000423431396,
+          0.9969493746757507
+        ],
+        "test_raw_mse": 50.82304000854492,
+        "test_raw_rmse": 7.129027843475342,
+        "test_sample_raw_mse_mean": 50.82304000854492,
+        "test_sample_raw_mse_std": 1468.360107421875,
+        "best_epoch": 5,
+        "best_val_norm_mse": 0.0035847111139446497,
+        "best_val_raw_mse": 36.368743896484375,
+        "status": "ok"
+      },
+      {
+        "target_name": "agent_location",
+        "probe_type": "mlp",
+        "probe_seed": 1,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed1/pusht_agent_location_mlp.pt",
+        "test_norm_mse_mean": 0.0045628538355231285,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.0045628538355231285,
+        "test_sample_norm_mse_std": 0.13975965976715088,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9977462291717529,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9983131289482117,
+          0.9971792697906494
+        ],
+        "test_raw_mse": 46.15039825439453,
+        "test_raw_rmse": 6.793408393859863,
+        "test_sample_raw_mse_mean": 46.15039825439453,
+        "test_sample_raw_mse_std": 1390.107666015625,
+        "best_epoch": 11,
+        "best_val_norm_mse": 0.0032581270206719637,
+        "best_val_raw_mse": 33.05885696411133,
+        "status": "ok"
+      },
+      {
+        "target_name": "agent_location",
+        "probe_type": "mlp",
+        "probe_seed": 2,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed2/pusht_agent_location_mlp.pt",
+        "test_norm_mse_mean": 0.004812099505215883,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.004812099505215883,
+        "test_sample_norm_mse_std": 0.14580675959587097,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9976257681846619,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9982078671455383,
+          0.9970436692237854
+        ],
+        "test_raw_mse": 48.69291687011719,
+        "test_raw_rmse": 6.978031158447266,
+        "test_sample_raw_mse_mean": 48.69292068481445,
+        "test_sample_raw_mse_std": 1451.8212890625,
+        "best_epoch": 12,
+        "best_val_norm_mse": 0.0032271244563162327,
+        "best_val_raw_mse": 32.76950454711914,
+        "status": "ok"
+      },
+      {
+        "target_name": "agent_location",
+        "probe_type": "mlp",
+        "probe_seed": 3,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed3/pusht_agent_location_mlp.pt",
+        "test_norm_mse_mean": 0.004945046734064817,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.004945047199726105,
+        "test_sample_norm_mse_std": 0.14704115688800812,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9975468516349792,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9981340765953064,
+          0.9969596266746521
+        ],
+        "test_raw_mse": 50.03632354736328,
+        "test_raw_rmse": 7.073635578155518,
+        "test_sample_raw_mse_mean": 50.03632354736328,
+        "test_sample_raw_mse_std": 1460.8802490234375,
+        "best_epoch": 7,
+        "best_val_norm_mse": 0.0035910741426050663,
+        "best_val_raw_mse": 36.41238021850586,
+        "status": "ok"
+      },
+      {
+        "target_name": "agent_location",
+        "probe_type": "mlp",
+        "probe_seed": 4,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed4/pusht_agent_location_mlp.pt",
+        "test_norm_mse_mean": 0.0048828888684511185,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.0048828888684511185,
+        "test_sample_norm_mse_std": 0.13978731632232666,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9976193904876709,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9981241822242737,
+          0.9971145391464233
+        ],
+        "test_raw_mse": 49.516151428222656,
+        "test_raw_rmse": 7.036771297454834,
+        "test_sample_raw_mse_mean": 49.516151428222656,
+        "test_sample_raw_mse_std": 1391.0899658203125,
+        "best_epoch": 5,
+        "best_val_norm_mse": 0.003633969696238637,
+        "best_val_raw_mse": 36.87455749511719,
+        "status": "ok"
+      }
+    ],
+    "status": "ok"
+  },
+  {
+    "target_name": "block_location",
+    "probe_type": "linear",
+    "probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "missing_probe_seeds": [],
+    "num_completed_probe_seeds": 5,
+    "test_norm_mse_values": [
+      0.020631559193134308,
+      0.02078201062977314,
+      0.020773686468601227,
+      0.020800907164812088,
+      0.020663706585764885
+    ],
+    "test_norm_mse_mean": 0.02073037400841713,
+    "test_norm_mse_std": 7.701647386398876e-05,
+    "test_sample_norm_mse_mean": 0.020730374753475188,
+    "test_sample_norm_mse_std": 0.045173798408726984,
+    "test_sample_norm_mse_count": 1158170,
+    "test_r_values": [
+      0.9892361164093018,
+      0.9891717433929443,
+      0.9891558885574341,
+      0.9891397953033447,
+      0.9892049431800842
+    ],
+    "test_r_mean": 0.9891816973686218,
+    "test_r_std": 3.8803218875077304e-05,
+    "test_r_per_dim_mean": [
+      0.99008549451828,
+      0.9882779121398926
+    ],
+    "test_r_per_dim_std": [
+      3.692319880995306e-05,
+      7.213165621248361e-05
+    ],
+    "test_sample_raw_mse_mean": 109.5242431640625,
+    "test_sample_raw_mse_std": 237.36021174653007,
+    "seed_results": [
+      {
+        "target_name": "block_location",
+        "probe_type": "linear",
+        "probe_seed": 0,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed0/pusht_block_location_linear.pt",
+        "test_norm_mse_mean": 0.020631559193134308,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.020631559193134308,
+        "test_sample_norm_mse_std": 0.04647624492645264,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9892361164093018,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9901067614555359,
+          0.9883655309677124
+        ],
+        "test_raw_mse": 108.99358367919922,
+        "test_raw_rmse": 10.4399995803833,
+        "test_sample_raw_mse_mean": 108.99358367919922,
+        "test_sample_raw_mse_std": 244.16366577148438,
+        "best_epoch": 6,
+        "best_val_norm_mse": 0.025418119505047798,
+        "best_val_raw_mse": 134.53439331054688,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_location",
+        "probe_type": "linear",
+        "probe_seed": 1,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed1/pusht_block_location_linear.pt",
+        "test_norm_mse_mean": 0.02078201062977314,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.02078201062977314,
+        "test_sample_norm_mse_std": 0.04441559314727783,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9891717433929443,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9901329874992371,
+          0.9882104992866516
+        ],
+        "test_raw_mse": 109.81349182128906,
+        "test_raw_rmse": 10.479193687438965,
+        "test_sample_raw_mse_mean": 109.81348419189453,
+        "test_sample_raw_mse_std": 233.2060546875,
+        "best_epoch": 7,
+        "best_val_norm_mse": 0.02536052279174328,
+        "best_val_raw_mse": 134.23841857910156,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_location",
+        "probe_type": "linear",
+        "probe_seed": 2,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed2/pusht_block_location_linear.pt",
+        "test_norm_mse_mean": 0.020773686468601227,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.020773686468601227,
+        "test_sample_norm_mse_std": 0.04450315237045288,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9891558885574341,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9900858998298645,
+          0.9882259368896484
+        ],
+        "test_raw_mse": 109.75811004638672,
+        "test_raw_rmse": 10.476550102233887,
+        "test_sample_raw_mse_mean": 109.75811767578125,
+        "test_sample_raw_mse_std": 233.92799377441406,
+        "best_epoch": 6,
+        "best_val_norm_mse": 0.025385981425642967,
+        "best_val_raw_mse": 134.3752899169922,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_location",
+        "probe_type": "linear",
+        "probe_seed": 3,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed3/pusht_block_location_linear.pt",
+        "test_norm_mse_mean": 0.020800907164812088,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.020800909027457237,
+        "test_sample_norm_mse_std": 0.044800300151109695,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9891397953033447,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9900376200675964,
+          0.9882419109344482
+        ],
+        "test_raw_mse": 109.8936767578125,
+        "test_raw_rmse": 10.48301887512207,
+        "test_sample_raw_mse_mean": 109.8936767578125,
+        "test_sample_raw_mse_std": 235.50047302246094,
+        "best_epoch": 14,
+        "best_val_norm_mse": 0.02530221827328205,
+        "best_val_raw_mse": 133.9215545654297,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_location",
+        "probe_type": "linear",
+        "probe_seed": 4,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed4/pusht_block_location_linear.pt",
+        "test_norm_mse_mean": 0.020663706585764885,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.020663708448410034,
+        "test_sample_norm_mse_std": 0.0456397645175457,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9892049431800842,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9900642037391663,
+          0.9883456826210022
+        ],
+        "test_raw_mse": 109.162353515625,
+        "test_raw_rmse": 10.448079109191895,
+        "test_sample_raw_mse_mean": 109.162353515625,
+        "test_sample_raw_mse_std": 239.82472229003906,
+        "best_epoch": 12,
+        "best_val_norm_mse": 0.025401649996638298,
+        "best_val_raw_mse": 134.45945739746094,
+        "status": "ok"
+      }
+    ],
+    "status": "ok"
+  },
+  {
+    "target_name": "block_location",
+    "probe_type": "mlp",
+    "probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "missing_probe_seeds": [],
+    "num_completed_probe_seeds": 5,
+    "test_norm_mse_values": [
+      0.001035103341564536,
+      0.0011798021150752902,
+      0.0012259064242243767,
+      0.0010822964832186699,
+      0.001104569062590599
+    ],
+    "test_norm_mse_mean": 0.0011255354853346943,
+    "test_norm_mse_std": 7.665893178641926e-05,
+    "test_sample_norm_mse_mean": 0.001125535531900823,
+    "test_sample_norm_mse_std": 0.004914713051145774,
+    "test_sample_norm_mse_count": 1158170,
+    "test_r_values": [
+      0.9994726181030273,
+      0.999420166015625,
+      0.9993884563446045,
+      0.9994621872901917,
+      0.9994434118270874
+    ],
+    "test_r_mean": 0.9994373679161072,
+    "test_r_std": 3.3850232919618085e-05,
+    "test_r_per_dim_mean": [
+      0.9993740081787109,
+      0.9995007634162902
+    ],
+    "test_r_per_dim_std": [
+      6.451540779747774e-05,
+      1.8405070788938717e-05
+    ],
+    "test_sample_raw_mse_mean": 5.921029567718506,
+    "test_sample_raw_mse_std": 25.703162001506257,
+    "seed_results": [
+      {
+        "target_name": "block_location",
+        "probe_type": "mlp",
+        "probe_seed": 0,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed0/pusht_block_location_mlp.pt",
+        "test_norm_mse_mean": 0.001035103341564536,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.001035103457979858,
+        "test_sample_norm_mse_std": 0.004409375134855509,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9994726181030273,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9994308352470398,
+          0.9995144605636597
+        ],
+        "test_raw_mse": 5.451974391937256,
+        "test_raw_rmse": 2.334946393966675,
+        "test_sample_raw_mse_mean": 5.451974391937256,
+        "test_sample_raw_mse_std": 23.07921028137207,
+        "best_epoch": 15,
+        "best_val_norm_mse": 0.0015124659985303879,
+        "best_val_raw_mse": 7.958657264709473,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_location",
+        "probe_type": "mlp",
+        "probe_seed": 1,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed1/pusht_block_location_mlp.pt",
+        "test_norm_mse_mean": 0.0011798021150752902,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.001179802231490612,
+        "test_sample_norm_mse_std": 0.00510404072701931,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.999420166015625,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9993314743041992,
+          0.9995089173316956
+        ],
+        "test_raw_mse": 6.199301719665527,
+        "test_raw_rmse": 2.489839792251587,
+        "test_sample_raw_mse_mean": 6.199301719665527,
+        "test_sample_raw_mse_std": 26.711565017700195,
+        "best_epoch": 11,
+        "best_val_norm_mse": 0.0016039173351600766,
+        "best_val_raw_mse": 8.428878784179688,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_location",
+        "probe_type": "mlp",
+        "probe_seed": 2,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed2/pusht_block_location_mlp.pt",
+        "test_norm_mse_mean": 0.0012259064242243767,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.0012259065406396985,
+        "test_sample_norm_mse_std": 0.005777192302048206,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9993884563446045,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9992815852165222,
+          0.9994953870773315
+        ],
+        "test_raw_mse": 6.439088344573975,
+        "test_raw_rmse": 2.5375359058380127,
+        "test_sample_raw_mse_mean": 6.439088344573975,
+        "test_sample_raw_mse_std": 30.10047149658203,
+        "best_epoch": 11,
+        "best_val_norm_mse": 0.0016480255872011185,
+        "best_val_raw_mse": 8.657787322998047,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_location",
+        "probe_type": "mlp",
+        "probe_seed": 3,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed3/pusht_block_location_mlp.pt",
+        "test_norm_mse_mean": 0.0010822964832186699,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.001082296366803348,
+        "test_sample_norm_mse_std": 0.004028043244034052,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9994621872901917,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9994102120399475,
+          0.9995141625404358
+        ],
+        "test_raw_mse": 5.697688102722168,
+        "test_raw_rmse": 2.3869831562042236,
+        "test_sample_raw_mse_mean": 5.697688102722168,
+        "test_sample_raw_mse_std": 21.132047653198242,
+        "best_epoch": 13,
+        "best_val_norm_mse": 0.0015788546297699213,
+        "best_val_raw_mse": 8.311124801635742,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_location",
+        "probe_type": "mlp",
+        "probe_seed": 4,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed4/pusht_block_location_mlp.pt",
+        "test_norm_mse_mean": 0.001104569062590599,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.001104569062590599,
+        "test_sample_norm_mse_std": 0.0050649805925786495,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9994434118270874,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.999415934085846,
+          0.9994708895683289
+        ],
+        "test_raw_mse": 5.817095756530762,
+        "test_raw_rmse": 2.411865711212158,
+        "test_sample_raw_mse_mean": 5.8170952796936035,
+        "test_sample_raw_mse_std": 26.5308895111084,
+        "best_epoch": 11,
+        "best_val_norm_mse": 0.0015716359484940767,
+        "best_val_raw_mse": 8.26657485961914,
+        "status": "ok"
+      }
+    ],
+    "status": "ok"
+  },
+  {
+    "target_name": "block_angle",
+    "probe_type": "linear",
+    "probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "missing_probe_seeds": [],
+    "num_completed_probe_seeds": 5,
+    "test_norm_mse_values": [
+      0.17585943639278412,
+      0.17600558698177338,
+      0.17605042457580566,
+      0.17566116154193878,
+      0.17603464424610138
+    ],
+    "test_norm_mse_mean": 0.17592225074768067,
+    "test_norm_mse_std": 0.0001644072482832006,
+    "test_sample_norm_mse_mean": 0.17592225074768067,
+    "test_sample_norm_mse_std": 0.42498253389586793,
+    "test_sample_norm_mse_count": 1158170,
+    "test_r_values": [
+      0.9061880111694336,
+      0.9061098694801331,
+      0.9061102867126465,
+      0.9063147902488708,
+      0.906114935874939
+    ],
+    "test_r_mean": 0.9061675786972045,
+    "test_r_std": 8.870276042925975e-05,
+    "test_r_per_dim_mean": [
+      0.9061675786972045
+    ],
+    "test_r_per_dim_std": [
+      8.870276042925975e-05
+    ],
+    "test_sample_raw_mse_mean": 0.6469515085220336,
+    "test_sample_raw_mse_std": 1.562867029483807,
+    "seed_results": [
+      {
+        "target_name": "block_angle",
+        "probe_type": "linear",
+        "probe_seed": 0,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed0/pusht_block_angle_linear.pt",
+        "test_norm_mse_mean": 0.17585943639278412,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.17585943639278412,
+        "test_sample_norm_mse_std": 0.4257323443889618,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9061880111694336,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9061880111694336
+        ],
+        "test_raw_mse": 0.6467205286026001,
+        "test_raw_rmse": 0.8041893839836121,
+        "test_sample_raw_mse_mean": 0.6467205286026001,
+        "test_sample_raw_mse_std": 1.565624475479126,
+        "best_epoch": 15,
+        "best_val_norm_mse": 0.1767066866159439,
+        "best_val_raw_mse": 0.6498361825942993,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_angle",
+        "probe_type": "linear",
+        "probe_seed": 1,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed1/pusht_block_angle_linear.pt",
+        "test_norm_mse_mean": 0.17600558698177338,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.17600558698177338,
+        "test_sample_norm_mse_std": 0.424045205116272,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9061098694801331,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9061098694801331
+        ],
+        "test_raw_mse": 0.6472579836845398,
+        "test_raw_rmse": 0.8045234680175781,
+        "test_sample_raw_mse_mean": 0.6472579836845398,
+        "test_sample_raw_mse_std": 1.5594199895858765,
+        "best_epoch": 8,
+        "best_val_norm_mse": 0.17703817784786224,
+        "best_val_raw_mse": 0.6510552763938904,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_angle",
+        "probe_type": "linear",
+        "probe_seed": 2,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed2/pusht_block_angle_linear.pt",
+        "test_norm_mse_mean": 0.17605042457580566,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.17605042457580566,
+        "test_sample_norm_mse_std": 0.42474591732025146,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9061102867126465,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9061102867126465
+        ],
+        "test_raw_mse": 0.6474229097366333,
+        "test_raw_rmse": 0.804625928401947,
+        "test_sample_raw_mse_mean": 0.6474229097366333,
+        "test_sample_raw_mse_std": 1.5619969367980957,
+        "best_epoch": 14,
+        "best_val_norm_mse": 0.1768513172864914,
+        "best_val_raw_mse": 0.6503681540489197,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_angle",
+        "probe_type": "linear",
+        "probe_seed": 3,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed3/pusht_block_angle_linear.pt",
+        "test_norm_mse_mean": 0.17566116154193878,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.17566116154193878,
+        "test_sample_norm_mse_std": 0.4236130714416504,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9063147902488708,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9063147902488708
+        ],
+        "test_raw_mse": 0.6459913849830627,
+        "test_raw_rmse": 0.8037359118461609,
+        "test_sample_raw_mse_mean": 0.6459913849830627,
+        "test_sample_raw_mse_std": 1.557830810546875,
+        "best_epoch": 18,
+        "best_val_norm_mse": 0.17671534419059753,
+        "best_val_raw_mse": 0.6498681306838989,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_angle",
+        "probe_type": "linear",
+        "probe_seed": 4,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed4/pusht_block_angle_linear.pt",
+        "test_norm_mse_mean": 0.17603464424610138,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.17603464424610138,
+        "test_sample_norm_mse_std": 0.42677193880081177,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.906114935874939,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.906114935874939
+        ],
+        "test_raw_mse": 0.6473647356033325,
+        "test_raw_rmse": 0.8045898079872131,
+        "test_sample_raw_mse_mean": 0.6473647356033325,
+        "test_sample_raw_mse_std": 1.5694475173950195,
+        "best_epoch": 15,
+        "best_val_norm_mse": 0.17682678997516632,
+        "best_val_raw_mse": 0.6502779722213745,
+        "status": "ok"
+      }
+    ],
+    "status": "ok"
+  },
+  {
+    "target_name": "block_angle",
+    "probe_type": "mlp",
+    "probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "missing_probe_seeds": [],
+    "num_completed_probe_seeds": 5,
+    "test_norm_mse_values": [
+      0.026814527809619904,
+      0.025886064395308495,
+      0.026202375069260597,
+      0.025692952796816826,
+      0.028629930689930916
+    ],
+    "test_norm_mse_mean": 0.02664517015218735,
+    "test_norm_mse_std": 0.0011881691099938946,
+    "test_sample_norm_mse_mean": 0.02664517015218735,
+    "test_sample_norm_mse_std": 0.22530716859461997,
+    "test_sample_norm_mse_count": 1158170,
+    "test_r_values": [
+      0.9862846732139587,
+      0.9868583679199219,
+      0.9866253733634949,
+      0.9869810342788696,
+      0.985432505607605
+    ],
+    "test_r_mean": 0.98643639087677,
+    "test_r_std": 0.0006207292734240124,
+    "test_r_per_dim_mean": [
+      0.98643639087677
+    ],
+    "test_r_per_dim_std": [
+      0.0006207292734240124
+    ],
+    "test_sample_raw_mse_mean": 0.09798721969127655,
+    "test_sample_raw_mse_std": 0.8285637957834712,
+    "seed_results": [
+      {
+        "target_name": "block_angle",
+        "probe_type": "mlp",
+        "probe_seed": 0,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed0/pusht_block_angle_mlp.pt",
+        "test_norm_mse_mean": 0.026814527809619904,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.026814527809619904,
+        "test_sample_norm_mse_std": 0.22589240968227386,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9862846732139587,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9862846732139587
+        ],
+        "test_raw_mse": 0.09861002117395401,
+        "test_raw_rmse": 0.31402233242988586,
+        "test_sample_raw_mse_mean": 0.09861002117395401,
+        "test_sample_raw_mse_std": 0.8307160139083862,
+        "best_epoch": 14,
+        "best_val_norm_mse": 0.031275492161512375,
+        "best_val_raw_mse": 0.1150151714682579,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_angle",
+        "probe_type": "mlp",
+        "probe_seed": 1,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed1/pusht_block_angle_mlp.pt",
+        "test_norm_mse_mean": 0.025886064395308495,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.025886064395308495,
+        "test_sample_norm_mse_std": 0.2266809195280075,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9868583679199219,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9868583679199219
+        ],
+        "test_raw_mse": 0.09519562125205994,
+        "test_raw_rmse": 0.30853787064552307,
+        "test_sample_raw_mse_mean": 0.09519562125205994,
+        "test_sample_raw_mse_std": 0.8336157202720642,
+        "best_epoch": 19,
+        "best_val_norm_mse": 0.029984256252646446,
+        "best_val_raw_mse": 0.11026665568351746,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_angle",
+        "probe_type": "mlp",
+        "probe_seed": 2,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed2/pusht_block_angle_mlp.pt",
+        "test_norm_mse_mean": 0.026202375069260597,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.026202375069260597,
+        "test_sample_norm_mse_std": 0.22347116470336914,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9866253733634949,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9866253733634949
+        ],
+        "test_raw_mse": 0.09635885059833527,
+        "test_raw_rmse": 0.3104172348976135,
+        "test_sample_raw_mse_mean": 0.09635885059833527,
+        "test_sample_raw_mse_std": 0.8218119144439697,
+        "best_epoch": 12,
+        "best_val_norm_mse": 0.029923437163233757,
+        "best_val_raw_mse": 0.1100429892539978,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_angle",
+        "probe_type": "mlp",
+        "probe_seed": 3,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed3/pusht_block_angle_mlp.pt",
+        "test_norm_mse_mean": 0.025692952796816826,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.025692952796816826,
+        "test_sample_norm_mse_std": 0.2185327261686325,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.9869810342788696,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.9869810342788696
+        ],
+        "test_raw_mse": 0.09448545426130295,
+        "test_raw_rmse": 0.3073848485946655,
+        "test_sample_raw_mse_mean": 0.09448545426130295,
+        "test_sample_raw_mse_std": 0.8036509156227112,
+        "best_epoch": 17,
+        "best_val_norm_mse": 0.030194511637091637,
+        "best_val_raw_mse": 0.11103985458612442,
+        "status": "ok"
+      },
+      {
+        "target_name": "block_angle",
+        "probe_type": "mlp",
+        "probe_seed": 4,
+        "checkpoint_path": "/Users/kevinyang/Desktop/LeWM/le-wm/.stable-wm/probes/seed4/pusht_block_angle_mlp.pt",
+        "test_norm_mse_mean": 0.028629930689930916,
+        "test_norm_mse_std": 0.0,
+        "test_sample_norm_mse_mean": 0.028629930689930916,
+        "test_sample_norm_mse_std": 0.23174187541007996,
+        "test_sample_norm_mse_count": 231634,
+        "test_r_mean": 0.985432505607605,
+        "test_r_std": 0.0,
+        "test_r_per_dim": [
+          0.985432505607605
+        ],
+        "test_raw_mse": 0.10528615117073059,
+        "test_raw_rmse": 0.32447826862335205,
+        "test_sample_raw_mse_mean": 0.10528615117073059,
+        "test_sample_raw_mse_std": 0.8522273302078247,
+        "best_epoch": 9,
+        "best_val_norm_mse": 0.03248581290245056,
+        "best_val_raw_mse": 0.11946608871221542,
+        "status": "ok"
+      }
+    ],
+    "status": "ok"
+  }
+]
