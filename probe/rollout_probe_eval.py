@@ -19,8 +19,8 @@ from probe.metrics import pearson_r
 # so the ground truth used here is `target_states`, not true future latent
 # embeddings:
 # - predicted_latents: (B, H, 192), e.g. (100, 18, 192)
-# - target_states: (B, H, 7), e.g. (100, 18, 7)
-# - target_steps: (H,), e.g. [15, 20, ..., 100]
+# - target_states: (B, H, 7),       e.g. (100, 18, 7)
+# - target_steps: (H,),             e.g. [15, 20, ..., 100]
 #
 # For each horizon and each target, we report normalized MSE, raw MSE/RMSE, and
 # Pearson r. We intentionally do not compute std across probe seeds because this
