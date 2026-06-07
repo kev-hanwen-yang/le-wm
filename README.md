@@ -31,7 +31,7 @@ below.
 **Added in this fork (analysis):**
 
 - `probe.py` — Entry point for the diagnostic probes
-- `probe/ scripts/` — scripts for running the diagnostics
+- `probe/ scripts/` — scripts for running the diagnostics and reports
 - `diagnostic_results/` — committed JSON reports and generated charts (source of truth for all reported numbers)
 - `test_...py` — tests for the diagnostics results
 
@@ -40,7 +40,7 @@ below.
 ## Reproducing the characterization
 
 A full command-by-command walkthrough — exact arguments, run order, expected
-runtimes — will live in `REPRODUCE.md`.
+runtimes — will live in [reproduce.md](./reproduce.md).
 
 ## Note on attribution
 
