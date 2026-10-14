@@ -39,6 +39,10 @@ TARGET_DISPLAY_NAMES = {
     "block_location": "Block Location",
     "block_angle": "Block Angle",
 }
+PROBE_DISPLAY_NAMES = {
+    "linear": "Linear",
+    "mlp": "MLP",
+}
 
 
 def load_rollout_prediction_artifact(predicted_path):
@@ -264,7 +268,10 @@ def plot_metric_by_horizon(rows, metric_key, ylabel, title, save_path):
     save_path = Path(save_path)
     save_path.parent.mkdir(parents=True, exist_ok=True)
 
-    plt.figure(figsize=(9, 5))
+    fig, ax = plt.subplots(figsize=(9, 5))
+    if metric_key == "norm_mse":
+        ax.axhline(y=1, ls="--", color="gray", linewidth=1)
+
     for probe_type in DEFAULT_PROBE_TYPES:
         for target_name in DEFAULT_TARGET_NAMES:
             series = [
@@ -276,8 +283,10 @@ def plot_metric_by_horizon(rows, metric_key, ylabel, title, save_path):
                 continue
             series = sorted(series, key=lambda row: row["raw_step"])
             line_style = "-" if probe_type == "linear" else "--"
-            label = f"{probe_type} {TARGET_DISPLAY_NAMES[target_name]}"
-            plt.plot(
+            probe_label = PROBE_DISPLAY_NAMES.get(probe_type, probe_type.title())
+            target_label = target_name.replace("_", " ")
+            label = f"{probe_label}, {target_label}"
+            ax.plot(
                 [row["raw_step"] for row in series],
                 [row[metric_key] for row in series],
                 linestyle=line_style,
@@ -285,14 +294,13 @@ def plot_metric_by_horizon(rows, metric_key, ylabel, title, save_path):
                 label=label,
             )
 
-    plt.xlabel("Raw rollout horizon")
-    plt.ylabel(ylabel)
-    plt.title(title)
-    plt.grid(True, alpha=0.3)
-    plt.legend(fontsize=8)
-    plt.tight_layout()
-    plt.savefig(save_path, dpi=200)
-    plt.close()
+    ax.set_xlabel("Raw rollout horizon")
+    ax.set_ylabel(ylabel)
+    ax.grid(True, alpha=0.3)
+    ax.legend(fontsize=8)
+    fig.tight_layout()
+    fig.savefig(save_path, dpi=200)
+    plt.close(fig)
     return save_path
 
 

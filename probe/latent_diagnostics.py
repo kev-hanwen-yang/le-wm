@@ -860,19 +860,36 @@ def save_latent_mse_report(metrics, predicted, metadata, json_path):
     return json_path
 
 
-def plot_metric_by_horizon(target_steps, values, ylabel, title, save_path):
+def plot_metric_by_horizon(
+    target_steps,
+    values,
+    ylabel,
+    title,
+    save_path,
+    reference_y=None,
+    reference_label=None,
+    y_limit_top=None,
+):
     """Plot one latent diagnostic metric as a function of raw rollout horizon."""
     save_path = Path(save_path)
     save_path.parent.mkdir(parents=True, exist_ok=True)
-    plt.figure(figsize=(8, 5))
-    plt.plot(target_steps.tolist(), values.tolist(), marker="o")
-    plt.xlabel("Raw rollout horizon")
-    plt.ylabel(ylabel)
-    plt.title(title)
-    plt.grid(True, alpha=0.3)
-    plt.tight_layout()
-    plt.savefig(save_path, dpi=200)
-    plt.close()
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.plot(target_steps.tolist(), values.tolist(), marker="o")
+    if reference_y is not None:
+        ax.axhline(reference_y, color="gray", linestyle=":", linewidth=1, label=reference_label)
+    if y_limit_top is not None:
+        y_max = max(float(values.max().item()), float(reference_y or 0.0))
+        ax.set_ylim(0, max(y_limit_top, y_max * 1.05))
+    ax.set_xlabel("Raw rollout horizon")
+    ax.set_ylabel(ylabel)
+    if title:
+        ax.set_title(title)
+    ax.grid(True, alpha=0.3)
+    if reference_label:
+        ax.legend()
+    fig.tight_layout()
+    fig.savefig(save_path, dpi=200)
+    plt.close(fig)
     return save_path
 
 
@@ -889,8 +906,11 @@ def save_latent_mse_charts(metrics, target_steps, sq_l2_path, per_dim_mse_path):
         target_steps,
         metrics["per_dim_mse_by_horizon"],
         ylabel="Per-dim latent MSE",
-        title="Per-Dimension Latent MSE vs Rollout Horizon",
+        title=None,
         save_path=per_dim_mse_path,
+        reference_y=2.0,
+        reference_label="Unrelated unit-variance latents",
+        y_limit_top=2.15,
     )
     return {
         "sq_l2_chart": saved_sq_l2,
@@ -944,21 +964,30 @@ def plot_two_metrics_by_horizon(
     ylabel,
     title,
     save_path,
+    reference_lines=None,
 ):
     """Plot two horizon curves together for direct scale comparison."""
     save_path = Path(save_path)
     save_path.parent.mkdir(parents=True, exist_ok=True)
-    plt.figure(figsize=(8, 5))
-    plt.plot(target_steps.tolist(), first_values.tolist(), marker="o", label=first_label)
-    plt.plot(target_steps.tolist(), second_values.tolist(), marker="o", label=second_label)
-    plt.xlabel("Raw rollout horizon")
-    plt.ylabel(ylabel)
-    plt.title(title)
-    plt.grid(True, alpha=0.3)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(save_path, dpi=200)
-    plt.close()
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.plot(target_steps.tolist(), first_values.tolist(), marker="o", label=first_label)
+    ax.plot(target_steps.tolist(), second_values.tolist(), marker="o", label=second_label)
+    for reference_line in reference_lines or []:
+        if len(reference_line) == 2:
+            y_value, label = reference_line
+            color = "gray"
+        else:
+            y_value, label, color = reference_line
+        ax.axhline(y_value, color=color, linestyle=":", linewidth=1, label=label)
+    ax.set_xlabel("Raw rollout horizon")
+    ax.set_ylabel(ylabel)
+    if title:
+        ax.set_title(title)
+    ax.grid(True, alpha=0.3)
+    ax.legend()
+    fig.tight_layout()
+    fig.savefig(save_path, dpi=200)
+    plt.close(fig)
     return save_path
 
 
@@ -1052,7 +1081,6 @@ def plot_norm_with_reference_band(target_steps, pred_norm, true_norm, reference_
     plt.plot(target_steps_list, true_norm.tolist(), marker="o", label="True future latents")
     plt.xlabel("Raw rollout horizon")
     plt.ylabel("Latent L2 norm")
-    plt.title("Predicted Norm vs Train/Val Reference Norm Band")
     plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
@@ -1193,8 +1221,9 @@ def save_temporal_straightness_charts(metrics, target_steps, paths):
         first_label="Predicted latents",
         second_label="True future latents",
         ylabel="Mean cosine similarity",
-        title="Temporal Straightness vs Rollout Horizon",
+        title=None,
         save_path=paths["straightness_chart"],
+        reference_lines=((0.70, "Predicted mean", "tab:blue"), (0.53, "True mean", "tab:orange")),
     )
     cosine_histogram = plot_temporal_straightness_histogram(
         metrics,
@@ -1207,7 +1236,7 @@ def save_temporal_straightness_charts(metrics, target_steps, paths):
         first_label="Predicted latents",
         second_label="True future latents",
         ylabel="Mean velocity L2 norm",
-        title="Latent Velocity Norm vs Rollout Horizon",
+        title=None,
         save_path=paths["velocity_norm_chart"],
     )
     return {
@@ -1313,7 +1342,7 @@ def plot_teacher_forced_velocity_chart(metrics, target_steps, save_path):
 
 
 def plot_teacher_forced_ratio_chart(metrics, target_steps, save_path):
-    """Plot teacher-forced and open-loop velocity ratios with reference lines."""
+    """Plot teacher-forced and open-loop velocity ratios."""
     save_path = Path(save_path)
     save_path.parent.mkdir(parents=True, exist_ok=True)
     steps = target_steps.tolist()
@@ -1321,10 +1350,8 @@ def plot_teacher_forced_ratio_chart(metrics, target_steps, save_path):
     plt.plot(steps, metrics["ratio_mean"].tolist(), marker="o", label="Teacher-forced ratio")
     plt.plot(steps, metrics["openloop_ratio_mean"].tolist(), marker="o", label="Open-loop ratio")
     plt.axhline(1.0, color="gray", linestyle="--", linewidth=1, label="Faithful ratio = 1.0")
-    plt.axhline(1.3, color="gray", linestyle=":", linewidth=1, label="Isotropic-error context = 1.3")
     plt.xlabel("Raw rollout horizon")
     plt.ylabel("Predicted velocity / true velocity")
-    plt.title("Teacher-Forced vs Open-Loop Velocity Ratio")
     plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
@@ -1343,7 +1370,6 @@ def plot_teacher_forced_error_chart(metrics, target_steps, save_path):
     plt.plot(steps, metrics["openloop_per_dim_mse"].tolist(), marker="o", label="Open-loop per-dim MSE")
     plt.xlabel("Raw rollout horizon")
     plt.ylabel("Per-dim latent MSE")
-    plt.title("Teacher-Forced One-Step Error vs Open-Loop Error")
     plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
@@ -1765,7 +1791,6 @@ def plot_ratio_metric(target_steps, ratio_values, save_path):
     plt.axhline(1.0, color="gray", linestyle="--", linewidth=1)
     plt.xlabel("Raw rollout horizon")
     plt.ylabel("Predicted min-distance / true min-distance")
-    plt.title("Manifold Drift Ratio vs Rollout Horizon")
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
     plt.savefig(save_path, dpi=200)
