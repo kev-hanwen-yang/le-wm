@@ -280,6 +280,9 @@ def build_cem_smoke_command(
         # path.  A relative override is Hydra-safe even when this checkout path
         # has spaces, and resolves to the same project-local cache as STABLEWM_HOME.
         "cache_dir=.stable-wm",
+        # The released evaluation config defaults to CUDA.  This checkout has
+        # no CUDA backend, so this changes execution placement only.
+        "solver.device=cpu",
         f"seed={seed}",
         f"eval.num_eval={num_eval}",
         f"output.filename={output_filename.as_posix()}",
@@ -314,6 +317,7 @@ def run_cem_smoke(**kwargs) -> dict:
         "stderr": completed.stderr,
         "status": "completed" if completed.returncode == 0 else "failed",
         "seed_protocol": "random, NumPy, and PyTorch seeded in a wrapper; eval.py source unchanged",
+        "execution_device_override": "cpu (required because CUDA is unavailable; cost and CEM settings unchanged)",
     }
 
 

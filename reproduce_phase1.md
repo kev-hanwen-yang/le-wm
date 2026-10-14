@@ -46,4 +46,6 @@ handling, seed 42, and ten evaluation episodes. It is a baseline functionality
 check only: its dataset restoration path is not used as physical ground truth for
 the later quiescent counterfactual protocol. The harness overrides only the
 stale machine-specific cache directory in the evaluation launcher with the
-project-relative `.stable-wm` path.
+project-relative `.stable-wm` path. On a machine without CUDA, it also switches
+only the CEM tensor execution device to CPU; it does not change any CEM
+hyperparameter, cost, physics, goal encoding, or metric.
