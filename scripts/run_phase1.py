@@ -51,7 +51,7 @@ def parse_args():
     parser.add_argument(
         "--allow-existing-output",
         action="store_true",
-        help="Append a new baseline record only when the run directory already exists.",
+        help="Replace an existing baseline record only after it has been reviewed.",
     )
     return parser.parse_args()
 

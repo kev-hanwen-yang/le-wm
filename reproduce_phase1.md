@@ -44,4 +44,6 @@ cache or mix an unverified cache with counterfactual results.
 The CEM smoke uses the repository's existing `eval.py`, policy cost, goal
 handling, seed 42, and ten evaluation episodes. It is a baseline functionality
 check only: its dataset restoration path is not used as physical ground truth for
-the later quiescent counterfactual protocol.
+the later quiescent counterfactual protocol. The harness overrides only the
+stale machine-specific cache directory in the evaluation launcher with the
+project-relative `.stable-wm` path.

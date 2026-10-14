@@ -276,6 +276,10 @@ def build_cem_smoke_command(
         _seeded_eval_wrapper(seed),
         "--config-name=pusht.yaml",
         f"policy={policy_name}",
+        # The repository's launcher config contains a machine-specific absolute
+        # path.  A relative override is Hydra-safe even when this checkout path
+        # has spaces, and resolves to the same project-local cache as STABLEWM_HOME.
+        "cache_dir=.stable-wm",
         f"seed={seed}",
         f"eval.num_eval={num_eval}",
         f"output.filename={output_filename.as_posix()}",
