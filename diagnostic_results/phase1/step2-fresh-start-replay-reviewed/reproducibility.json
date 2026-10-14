@@ -1,0 +1,30 @@
+{
+  "cases": 24,
+  "checks": {
+    "both_gates_passed": true,
+    "cases_identical": true,
+    "config_identical": true,
+    "hdf5_structure_identical": true,
+    "hdf5_values_and_attributes_identical": true,
+    "parent_identical": true,
+    "render_audit_identical": true,
+    "sources_identical": true,
+    "unsafe_restore_identical": true
+  },
+  "first_manifest": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-fresh-start-replay-reviewed/simulator_manifest.json",
+  "first_manifest_sha256": "280e0f39b4d9b5b480be646e6d3704b851b8ee77a4936c728a87a4f0e2aff01f",
+  "hdf5_datasets_compared": 1918,
+  "ignored_fields": [
+    "run_id",
+    "output paths",
+    "timestamps",
+    "elapsed times",
+    "HDF5 container byte layout"
+  ],
+  "passed": true,
+  "physics_states_per_audited_trajectory": 352,
+  "raw_states_per_trajectory": 36,
+  "second_manifest": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-fresh-start-replay-repeat/simulator_manifest.json",
+  "second_manifest_sha256": "ff6f79d2d19a19351b0b110548ed9643a3389f5c341e276f0260dc22410d6280",
+  "stage": "step2_independent_process_reproducibility"
+}
