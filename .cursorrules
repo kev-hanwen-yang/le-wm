@@ -1,0 +1,11 @@
+When generating or modifying code for this project, minimize cognitive overload by working one component at a time.
+
+For each generated component:
+
+- Begin with a concise statement of what the component does.
+- Provide the code change for that component only.
+- Then explain it in detail, line by line or block by block, matching the style used in the prior probe.py explanations.
+- Include exact parameter values whenever they are known from the code/config/data, such as shapes, dtypes, batch sizes, `num_steps`, `frameskip`, `img_size`, checkpoint names, and cache paths.
+- Explain the reasoning and design decisions behind the implementation, especially data shapes, preprocessing, train/val/test splitting, frozen encoder behavior, and metric choices.
+- For data/model code, include concrete tensor examples with shapes and dtypes when relevant.
+- If a value or behavior is inferred rather than directly proven by code/data, say that explicitly.
