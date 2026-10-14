@@ -1,0 +1,20 @@
+{
+  "mechanics_replay": {
+    "left": ".stable-wm/phase1/step2-fresh-start-replay-reviewed/simulator_replay.h5",
+    "right": ".stable-wm/phase1/step2-render-regression-replay/simulator_replay.h5",
+    "passed": true,
+    "datasets_exact": 1918,
+    "attributes_exact": 151
+  },
+  "independent_image_audits": {
+    "left": ".stable-wm/phase1/step2-render-provenance-audit/render_comparisons.h5",
+    "right": ".stable-wm/phase1/step2-render-provenance-release-verified/render_comparisons.h5",
+    "passed": true,
+    "datasets_exact": 580,
+    "attributes_exact": 183,
+    "sample_records_byte_equal": true,
+    "image_audit_summaries_equal": true
+  },
+  "method": "h5py traversal: identical object names, dataset shape/dtype/content with numpy.array_equal, and all attribute keys/values; not HDF5 container byte identity",
+  "scope": "same unchanged installed backend; no comparison of timestamps, output paths, run IDs or elapsed time"
+}

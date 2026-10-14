@@ -1,0 +1,30 @@
+{
+  "agent_drift_world_px": {
+    "lower_one_sided_95": 0.29237432056614343,
+    "n_families": 16,
+    "rms": 0.5257647892671813,
+    "status": "descriptive",
+    "upper_one_sided_95": 0.7316273287821878
+  },
+  "angle_drift_rad": {
+    "lower_one_sided_95": 0.005736527457506203,
+    "n_families": 16,
+    "rms": 0.032922957528616015,
+    "status": "descriptive",
+    "upper_one_sided_95": 0.054718546050932765
+  },
+  "block_drift_world_px": {
+    "lower_one_sided_95": 0.13009626022686321,
+    "n_families": 16,
+    "rms": 0.19131360691209706,
+    "status": "descriptive",
+    "upper_one_sided_95": 0.24261694498590622
+  },
+  "latent_l2": {
+    "lower_one_sided_95": 0.04663487945380528,
+    "n_families": 16,
+    "rms": 0.06880225125162784,
+    "status": "descriptive",
+    "upper_one_sided_95": 0.08797141246707106
+  }
+}

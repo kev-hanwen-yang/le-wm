@@ -1,0 +1,4085 @@
+{
+  "action_normalizer": {
+    "estimator": "torch.mean / torch.std(unbiased=True) over non-NaN raw actions",
+    "mean": [
+      -0.007812565192580223,
+      0.006860686466097832
+    ],
+    "order": "standardize each raw (x, y) action before grouping five rows",
+    "std": [
+      0.2084674835205078,
+      0.20674866437911987
+    ]
+  },
+  "artifacts": {
+    "codec_commands.json": {
+      "modified_utc": "2026-10-14T10:10:52.646283+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/codec_commands.json",
+      "sha256": "c232e7e2e63ca40711a05a1dc20ff03edff6059661ecf27d00f1a4bd21994e4d",
+      "size_bytes": 57667
+    },
+    "domain_v2_validation_00_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:33.268100+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_00_ffv1.mkv",
+      "sha256": "815c0b4cc3202def7ce66225fffef4a3d0963c51b48458a54844daa84cdcbd6a",
+      "size_bytes": 3868
+    },
+    "domain_v2_validation_00_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:33.310087+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_00_x264_420_crf23.mkv",
+      "sha256": "2da24f32c4e76a9038c6a5b2ca3ff57b0b494521f27986be56b29443e5ab98b3",
+      "size_bytes": 2388
+    },
+    "domain_v2_validation_00_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:33.353997+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_00_x264_444_crf23.mkv",
+      "sha256": "c1059a8fb7e24e1436f1d53697e2d2741f8bfa3527e636d2f698d08934da26ed",
+      "size_bytes": 2247
+    },
+    "domain_v2_validation_01_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:33.863037+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_01_ffv1.mkv",
+      "sha256": "39032ac2fc418b6acfbb57087bd321af86f5ee822116816cf7375198e7177474",
+      "size_bytes": 2657
+    },
+    "domain_v2_validation_01_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:33.900171+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_01_x264_420_crf23.mkv",
+      "sha256": "ca2bcd6d3fcd5909742e6d27f72ca2deaa9d7912cdb87a16741c90361841938d",
+      "size_bytes": 2004
+    },
+    "domain_v2_validation_01_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:33.939741+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_01_x264_444_crf23.mkv",
+      "sha256": "f01986715cfa1672532a2753d57bd3113e16c78c9a79e9255dafe2efcc695b22",
+      "size_bytes": 1841
+    },
+    "domain_v2_validation_02_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:34.567370+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_02_ffv1.mkv",
+      "sha256": "b49d78bbc7a5abb29e27fa9c82a417859aaadc78abf36f970fc4452e061b25ac",
+      "size_bytes": 3835
+    },
+    "domain_v2_validation_02_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:34.609180+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_02_x264_420_crf23.mkv",
+      "sha256": "ec6d5d6465088b3147ae39e170dfa33f5530699e2ffb3e2b4f1b898f872ff968",
+      "size_bytes": 2330
+    },
+    "domain_v2_validation_02_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:34.651992+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_02_x264_444_crf23.mkv",
+      "sha256": "3702dc3dea0fd944ad35be0bf5aa3d0e26001aa6185d5b32ec06fb3d2ad1347f",
+      "size_bytes": 2184
+    },
+    "domain_v2_validation_03_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:35.165955+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_03_ffv1.mkv",
+      "sha256": "18990664e702369fef1d24e1ebe2150a9a58c5f52a12c2bc4d44e5196a7a8eb0",
+      "size_bytes": 2851
+    },
+    "domain_v2_validation_03_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:35.205756+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_03_x264_420_crf23.mkv",
+      "sha256": "191ad7de6c555a32f296c7eaf92050ad6b0b6fe26df20583df82e571f5001fd3",
+      "size_bytes": 2125
+    },
+    "domain_v2_validation_03_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:35.249368+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_03_x264_444_crf23.mkv",
+      "sha256": "63a39d62810890ed3dc29085d7b3ad02ae67fb5481d500017323f92f5f28d964",
+      "size_bytes": 1964
+    },
+    "domain_v2_validation_04_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:35.723760+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_04_ffv1.mkv",
+      "sha256": "0a157b021317fa1a2eef6d7871eb07a44dafa40fe97092182536b479aa2bf0d4",
+      "size_bytes": 2566
+    },
+    "domain_v2_validation_04_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:35.764331+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_04_x264_420_crf23.mkv",
+      "sha256": "d0808d81f9614b102580930d8b904f1823e2677c5543f09a29788130b787b428",
+      "size_bytes": 2064
+    },
+    "domain_v2_validation_04_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:35.806957+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_04_x264_444_crf23.mkv",
+      "sha256": "7a7074b4aef0b10e80734aafa86180311a0cfffd54ed255d087287f333ae49f7",
+      "size_bytes": 1908
+    },
+    "domain_v2_validation_05_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:36.302910+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_05_ffv1.mkv",
+      "sha256": "e7ac2b1a60f92909f275995f133f4913279ea14071e3a2ea742117b31d531a6d",
+      "size_bytes": 2562
+    },
+    "domain_v2_validation_05_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:36.343560+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_05_x264_420_crf23.mkv",
+      "sha256": "b1fd5326660a748f36b4288cce60818b33dca7d3c8defe3b53b8033123cca38a",
+      "size_bytes": 2031
+    },
+    "domain_v2_validation_05_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:36.396223+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_05_x264_444_crf23.mkv",
+      "sha256": "b45953cb681dd7a64eb3f3bc5f128282471767506a38ca42c0e0796a76f067b0",
+      "size_bytes": 1910
+    },
+    "domain_v2_validation_06_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:36.902743+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_06_ffv1.mkv",
+      "sha256": "b819bdb030bbe088c7176b931a36d11bc2c43cc15db356646b0101cf09a44cda",
+      "size_bytes": 3930
+    },
+    "domain_v2_validation_06_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:36.950620+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_06_x264_420_crf23.mkv",
+      "sha256": "dee07656288aacb9cb7979a61b8432cdfa76899b28994ee10bd90c4322cb2a9b",
+      "size_bytes": 2356
+    },
+    "domain_v2_validation_06_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:36.999092+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_06_x264_444_crf23.mkv",
+      "sha256": "d4a6ce1634e276ec0a0a4dc3767d57dbff03ff46c24ed856dd4985ae9493066b",
+      "size_bytes": 2185
+    },
+    "domain_v2_validation_07_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:37.523715+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_07_ffv1.mkv",
+      "sha256": "1da8b986bb9082a4a0a0796ac2c782f645d9dc66de63f4ab12fe8c1d51a7b26b",
+      "size_bytes": 4216
+    },
+    "domain_v2_validation_07_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:37.573223+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_07_x264_420_crf23.mkv",
+      "sha256": "d2b22341ec224e6fb0783cf78ab8a86433a319df4a3b3ae99024acb018bfb836",
+      "size_bytes": 2343
+    },
+    "domain_v2_validation_07_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:37.622866+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_07_x264_444_crf23.mkv",
+      "sha256": "331adb60205f093640284645c76986010d3d8a470e2d5625aaa4e795379dbdee",
+      "size_bytes": 2201
+    },
+    "domain_v2_validation_08_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:38.122937+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_08_ffv1.mkv",
+      "sha256": "d3350cdf2054c9e6b00d44f8fa548cb665ff6fcb959f694597cc687619d6e1bd",
+      "size_bytes": 3481
+    },
+    "domain_v2_validation_08_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:38.175585+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_08_x264_420_crf23.mkv",
+      "sha256": "a312713d8fd1b0e5d7301590cbb5473208363d798b5cf855e77d201c0473a37c",
+      "size_bytes": 2377
+    },
+    "domain_v2_validation_08_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:38.228562+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_08_x264_444_crf23.mkv",
+      "sha256": "c3d1ebf35e857677813d26dae5ca97274f7e059c8b92e760018a805f8361b408",
+      "size_bytes": 2228
+    },
+    "domain_v2_validation_09_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:38.747181+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_09_ffv1.mkv",
+      "sha256": "5545bf3534691081bdf5b492430a2ae23ef5db031cf2198470af8208b3392196",
+      "size_bytes": 3833
+    },
+    "domain_v2_validation_09_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:38.801738+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_09_x264_420_crf23.mkv",
+      "sha256": "a3a5c2957e036c5457d679b591e85b00f6a011c0419514456205c07584bfff2e",
+      "size_bytes": 2364
+    },
+    "domain_v2_validation_09_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:38.854673+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_09_x264_444_crf23.mkv",
+      "sha256": "82d6e18e3c99fe2dd0e94b971181ae136a1ae9245be1d4ae18272f70a54291a0",
+      "size_bytes": 2201
+    },
+    "domain_v2_validation_10_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:39.441593+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_10_ffv1.mkv",
+      "sha256": "0bb04e5429359a43cdd83e2191c8759a6036427487f0e10a7f58f9910155d3e7",
+      "size_bytes": 3052
+    },
+    "domain_v2_validation_10_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:39.502965+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_10_x264_420_crf23.mkv",
+      "sha256": "0bb458daf549b6001f898a1eb9ed13d55d70207c7811e0f7eb7f07f6d2fb0344",
+      "size_bytes": 2172
+    },
+    "domain_v2_validation_10_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:39.565055+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_10_x264_444_crf23.mkv",
+      "sha256": "cc88500aa4012717b3a8d3e92493398e92fbd08665090a7a58db6cba11b77d53",
+      "size_bytes": 2058
+    },
+    "domain_v2_validation_11_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:40.113128+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_11_ffv1.mkv",
+      "sha256": "4790b637d6f9f62ee28b56520f79bd8611f1d34efd8ea10d5a664f2f4283f075",
+      "size_bytes": 4168
+    },
+    "domain_v2_validation_11_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:40.171863+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_11_x264_420_crf23.mkv",
+      "sha256": "6d7b49290f76c4462f9989e5c43df7a68498beeb1ae486523e4b85051bfa5594",
+      "size_bytes": 2349
+    },
+    "domain_v2_validation_11_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:40.231195+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_11_x264_444_crf23.mkv",
+      "sha256": "f3c84d80f93ff379d4ca5d1f2a3454c6a3848271d7b5e1b535f86a1fd3b87ba8",
+      "size_bytes": 2232
+    },
+    "domain_v2_validation_12_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:40.732321+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_12_ffv1.mkv",
+      "sha256": "4178d0453ca461216d2d3f3f9b201cb197c963e57add6b847adc233fbb4593bc",
+      "size_bytes": 4038
+    },
+    "domain_v2_validation_12_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:40.781499+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_12_x264_420_crf23.mkv",
+      "sha256": "b4707ea6cbf528b2bb4feb07c7f622b31eb773cc4cfbc2789e8aa50e56fb223b",
+      "size_bytes": 2404
+    },
+    "domain_v2_validation_12_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:40.838128+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_12_x264_444_crf23.mkv",
+      "sha256": "027f5b99be83072a1fe5d1c17d6120d9193ea0bdc904443c02d8c02fb95f2a19",
+      "size_bytes": 2241
+    },
+    "domain_v2_validation_13_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:41.343856+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_13_ffv1.mkv",
+      "sha256": "5d77f9c1042533b72de3661aa5089e63d6cd53e2b2320b4fb71211b7a9eeaa5a",
+      "size_bytes": 3829
+    },
+    "domain_v2_validation_13_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:41.398914+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_13_x264_420_crf23.mkv",
+      "sha256": "9858064adfcf7347c773d16935d603cc9f101cda603f1dc0b53bfa71e644773a",
+      "size_bytes": 2383
+    },
+    "domain_v2_validation_13_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:41.451087+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_13_x264_444_crf23.mkv",
+      "sha256": "ae1b480908e7f9458032fb315e1b29cc906723df097210939316c3ccc9a61504",
+      "size_bytes": 2196
+    },
+    "domain_v2_validation_14_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:41.965777+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_14_ffv1.mkv",
+      "sha256": "5a0bc811baeb4ecd00f30f107c79b812a236566a61028177232ec40a78190304",
+      "size_bytes": 3678
+    },
+    "domain_v2_validation_14_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:42.028013+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_14_x264_420_crf23.mkv",
+      "sha256": "3de5eb5c2764fd95e673da21f6ea9ce5a24a0b00bb7f15cd699905fcaeb75e1d",
+      "size_bytes": 2409
+    },
+    "domain_v2_validation_14_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:42.092107+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_14_x264_444_crf23.mkv",
+      "sha256": "bfad37b291d3e4f46a219916c7ebb960b0c20440068307bb12f6a38898bc3a2e",
+      "size_bytes": 2269
+    },
+    "domain_v2_validation_15_ffv1.mkv": {
+      "modified_utc": "2026-10-14T10:10:42.662856+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_15_ffv1.mkv",
+      "sha256": "43265eac9dd78d751a802f3eab83dc3ecc9041ba43997120fbf7297b8b21e273",
+      "size_bytes": 3780
+    },
+    "domain_v2_validation_15_x264_420_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:42.726408+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_15_x264_420_crf23.mkv",
+      "sha256": "d5737489b1ee702a5333ef7c790631031f67912db645a5d9d2a99c9480a747c5",
+      "size_bytes": 2346
+    },
+    "domain_v2_validation_15_x264_444_crf23.mkv": {
+      "modified_utc": "2026-10-14T10:10:42.789457+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/domain_v2_validation_15_x264_444_crf23.mkv",
+      "sha256": "f31bcec310b50b1751ed03656b2132134510284941b9cada8537bf6ffb96bc6c",
+      "size_bytes": 2199
+    },
+    "natural_diagnostics.h5": {
+      "modified_utc": "2026-10-14T10:10:52.645389+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/natural_diagnostics.h5",
+      "sha256": "1126bb0b2a64a708c5cec5a40a8307404193b9e6072a201b21c97f29b4418298",
+      "size_bytes": 20606440
+    },
+    "regression_logs/regressions.json": {
+      "modified_utc": "2026-10-14T10:11:39.806727+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/regressions.json",
+      "sha256": "9085096b5d51f77dc554b5da145ea03696b7781ac60bbc9178b2de6470c9f896",
+      "size_bytes": 11375
+    },
+    "regression_logs/test_counterfactual_baseline.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:10:58.581711+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_baseline.py.stderr.txt",
+      "sha256": "400cc93cd904e7d7a010940a90b7508aee5f8bb28739d27f95b95038141a384b",
+      "size_bytes": 177
+    },
+    "regression_logs/test_counterfactual_baseline.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:10:58.581560+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_baseline.py.stdout.txt",
+      "sha256": "cdfc8953f3a8403781a3517981745be7b09c805c0310d26be7e755383aff793c",
+      "size_bytes": 254
+    },
+    "regression_logs/test_counterfactual_contracts.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:10:53.471046+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_contracts.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_counterfactual_contracts.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:10:53.470945+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_contracts.py.stdout.txt",
+      "sha256": "003baff6983e929adf69d084d3d045056c8af671008a7a80e6625fc8c9e4c8dc",
+      "size_bytes": 37
+    },
+    "regression_logs/test_counterfactual_domain_diagnostics.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:49.922823+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_domain_diagnostics.py.stderr.txt",
+      "sha256": "270e8288d2fcc7a06823f5affc2adc47f89f1dccb8a28ef05907b2969e480eab",
+      "size_bytes": 8824
+    },
+    "regression_logs/test_counterfactual_domain_diagnostics.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:49.922602+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_domain_diagnostics.py.stdout.txt",
+      "sha256": "17b4141c370b3b5ba75666d51815a7fcadb29a3b21c07d078f9f9b8e38646e49",
+      "size_bytes": 847
+    },
+    "regression_logs/test_counterfactual_observation_compatibility.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:45.119783+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_observation_compatibility.py.stderr.txt",
+      "sha256": "e40abd2ff3ae7643ce656897fbf2cfcc0cbf3290015c7672b3970b4c5ec6917c",
+      "size_bytes": 8579
+    },
+    "regression_logs/test_counterfactual_observation_compatibility.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:45.119566+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_observation_compatibility.py.stdout.txt",
+      "sha256": "bcd4b09e7dafc0eca74dccc3196af4940bb3ecee5ca08c73e19189e102add384",
+      "size_bytes": 749
+    },
+    "regression_logs/test_counterfactual_render_provenance.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:23.955518+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_render_provenance.py.stderr.txt",
+      "sha256": "83b1d77d499e974f8fd67832addc9b2a31cdba7d60f7a218f22ddd710d978e29",
+      "size_bytes": 8824
+    },
+    "regression_logs/test_counterfactual_render_provenance.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:23.955314+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_render_provenance.py.stdout.txt",
+      "sha256": "ab7ca7f86cb3be3387ec2fc2c1f604936a09d1edf9e4a5dd00c6e90e2f1bb30d",
+      "size_bytes": 1174
+    },
+    "regression_logs/test_counterfactual_simulator.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:05.652388+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_simulator.py.stderr.txt",
+      "sha256": "e50ca514911fe835c8ac7bc2943566d921e242f60a104d3ec3033547ba9197eb",
+      "size_bytes": 8824
+    },
+    "regression_logs/test_counterfactual_simulator.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:05.652165+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_simulator.py.stdout.txt",
+      "sha256": "89bfb80f168d2a38881fa0f4e6e9f2f78d58ca2f1a29e780f8234917d32dfea8",
+      "size_bytes": 800
+    },
+    "regression_logs/test_counterfactual_simulator_stage.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:11.302862+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_simulator_stage.py.stderr.txt",
+      "sha256": "e97eb43a31cc524a69061fb9d4ba7f04ae7e55a6636a9c7099100da7ba0f2266",
+      "size_bytes": 8982
+    },
+    "regression_logs/test_counterfactual_simulator_stage.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:11.302625+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_simulator_stage.py.stdout.txt",
+      "sha256": "aebd1af4ae2c9102388a75c3ed42a7907e0846b287fd396f7f33044a10cefc02",
+      "size_bytes": 895
+    },
+    "regression_logs/test_latent_diagnostics.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:39.805916+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_latent_diagnostics.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_latent_diagnostics.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:39.805793+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_latent_diagnostics.py.stdout.txt",
+      "sha256": "c055dd7ef74add17f81ee621d687f4c53047df425fbe1b3e2541383b79d5e745",
+      "size_bytes": 242
+    },
+    "regression_logs/test_rollout_ablation.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:28.446055+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_ablation.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_ablation.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:28.445962+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_ablation.py.stdout.txt",
+      "sha256": "bab830c466ec26e03236339f01cfd6e7d8f246ff6ceb5aba01cf623642bcddcd",
+      "size_bytes": 30
+    },
+    "regression_logs/test_rollout_probe_eval.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:31.854490+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_probe_eval.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_probe_eval.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:31.854390+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_probe_eval.py.stdout.txt",
+      "sha256": "88ef2ee1e21a1cc9f8cbc04c55d3091a0b8f0e6cea6269d103525ba741d6973a",
+      "size_bytes": 32
+    },
+    "regression_logs/test_rollout_reconstruction.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:35.218530+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_reconstruction.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_reconstruction.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:35.218438+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_reconstruction.py.stdout.txt",
+      "sha256": "965435a83c82765b78fd13f46b5da646a5a931595386a84db4c9f10fbb305e19",
+      "size_bytes": 36
+    },
+    "regression_logs/test_rollout_visualization.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:33.559403+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_visualization.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_visualization.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:33.559322+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_visualization.py.stdout.txt",
+      "sha256": "186ae729d55e318bf2b8df4f0f95c5e0f522c346626c00a0760d88e6f4237a69",
+      "size_bytes": 35
+    },
+    "regression_logs/test_rollout_windows.py.stderr.txt": {
+      "modified_utc": "2026-10-14T10:11:30.927094+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_windows.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_windows.py.stdout.txt": {
+      "modified_utc": "2026-10-14T10:11:30.927000+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_windows.py.stdout.txt",
+      "sha256": "4dc74c828d4f64c9277099f3b3c915f4c0c1be75cf39d8375690818aa4ee7d19",
+      "size_bytes": 28
+    },
+    "source_snapshot.h5": {
+      "modified_utc": "2026-10-14T10:10:32.764342+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/source_snapshot.h5",
+      "sha256": "a80f415d4166336132abfd33192b65c1b945e61351c7fab4664e1e02635a342a",
+      "size_bytes": 375001
+    }
+  },
+  "baseline_parent": {
+    "allowed_extensions": [
+      "CLI dispatch",
+      "simulator configuration section"
+    ],
+    "checkpoint_sha256": "100d6459b9198697c1c26ef47e3eef4d7548946401b7501213caf761495a2553",
+    "dataset_identity_check": "baseline file size/mtime plus Step 1 sampled identity, not full dataset hash",
+    "dataset_metadata": {
+      "modified_utc": "2026-03-29T05:13:07+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/pusht_expert_train.h5",
+      "size_bytes": 46300921856
+    },
+    "frozen_sources_checked": 16,
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step1-reviewed-baseline-seed42/baseline_manifest.json",
+    "run_id": "step1-reviewed-baseline-seed42",
+    "sha256": "f7d6a650743c330a5e19810beab337a7288c3bf6ff2a98cab76651476f6f3cb7"
+  },
+  "calibration": {
+    "absolute_agent_location_dose0": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          32.17536085196628,
+          55.828992661377136
+        ],
+        "lower95": 33.74368449866166,
+        "n_families": 16,
+        "rms": 43.79966700060386,
+        "upper95": 53.867102058186454
+      },
+      "margin": 53.867102058186454
+    },
+    "absolute_agent_location_dose10": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          29.75034466466024,
+          53.86529414997505
+        ],
+        "lower95": 30.635215142713733,
+        "n_families": 16,
+        "rms": 40.733911112771125,
+        "upper95": 52.31379725402857
+      },
+      "margin": 52.31379725402857
+    },
+    "absolute_agent_location_dose20": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          27.87043821062787,
+          55.218219025186436
+        ],
+        "lower95": 28.89005454655888,
+        "n_families": 16,
+        "rms": 40.44059635444118,
+        "upper95": 53.7839998049333
+      },
+      "margin": 53.7839998049333
+    },
+    "absolute_agent_location_dose30": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          25.154947548990176,
+          47.76576825761016
+        ],
+        "lower95": 26.325322627199153,
+        "n_families": 16,
+        "rms": 36.18906950824441,
+        "upper95": 46.15638326507312
+      },
+      "margin": 46.15638326507312
+    },
+    "absolute_block_angle_dose0": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.21594593609800178,
+          0.6527710706151251
+        ],
+        "lower95": 0.23807874789746344,
+        "n_families": 16,
+        "rms": 0.4378461631816662,
+        "upper95": 0.6215993840321895
+      },
+      "margin": 0.6215993840321895
+    },
+    "absolute_block_angle_dose10": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.21788891318656275,
+          0.6573299405805295
+        ],
+        "lower95": 0.2395910276135408,
+        "n_families": 16,
+        "rms": 0.44141063755953003,
+        "upper95": 0.6250495511633704
+      },
+      "margin": 0.6250495511633704
+    },
+    "absolute_block_angle_dose20": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.21545915440527114,
+          0.6509865929111629
+        ],
+        "lower95": 0.2351375492994409,
+        "n_families": 16,
+        "rms": 0.4345543774229297,
+        "upper95": 0.6241358040541343
+      },
+      "margin": 0.6241358040541343
+    },
+    "absolute_block_angle_dose30": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.20380382710759087,
+          0.589430791765188
+        ],
+        "lower95": 0.21983968107940727,
+        "n_families": 16,
+        "rms": 0.40167379579833445,
+        "upper95": 0.5580921456428692
+      },
+      "margin": 0.5580921456428692
+    },
+    "absolute_block_location_dose0": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          12.351078947684174,
+          22.432771694091386
+        ],
+        "lower95": 13.048322491155512,
+        "n_families": 16,
+        "rms": 17.44121138066039,
+        "upper95": 21.59320091107353
+      },
+      "margin": 21.59320091107353
+    },
+    "absolute_block_location_dose10": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          12.512550862293025,
+          22.497029195432123
+        ],
+        "lower95": 13.1940972447549,
+        "n_families": 16,
+        "rms": 17.563738458253866,
+        "upper95": 21.647479761077534
+      },
+      "margin": 21.647479761077534
+    },
+    "absolute_block_location_dose20": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          12.595170083705792,
+          22.921284475873765
+        ],
+        "lower95": 13.298586403006572,
+        "n_families": 16,
+        "rms": 17.75809626370082,
+        "upper95": 22.0321611825691
+      },
+      "margin": 22.0321611825691
+    },
+    "absolute_block_location_dose30": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          12.547409894317713,
+          22.56154921781692
+        ],
+        "lower95": 13.242886280802011,
+        "n_families": 16,
+        "rms": 17.58505081441063,
+        "upper95": 21.70395535146482
+      },
+      "margin": 21.70395535146482
+    },
+    "differential_agent_location_dose10": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          6.412738124789053,
+          14.284261732167028
+        ],
+        "lower95": 7.124049926181101,
+        "n_families": 16,
+        "rms": 10.700111793561616,
+        "upper95": 13.74727248383382
+      },
+      "margin": 13.74727248383382
+    },
+    "differential_agent_location_dose20": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          9.904716308415054,
+          15.103301505259722
+        ],
+        "lower95": 10.361192795462758,
+        "n_families": 16,
+        "rms": 12.668047696246326,
+        "upper95": 14.734325791575154
+      },
+      "margin": 14.734325791575154
+    },
+    "differential_agent_location_dose30": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          10.153807677737957,
+          15.67094954112722
+        ],
+        "lower95": 10.638514861220736,
+        "n_families": 16,
+        "rms": 13.092897898910135,
+        "upper95": 15.239588038755224
+      },
+      "margin": 15.239588038755224
+    },
+    "differential_block_angle_dose10": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.011342848893182062,
+          0.02557464637522353
+        ],
+        "lower95": 0.012453826439119908,
+        "n_families": 16,
+        "rms": 0.01881687879554112,
+        "upper95": 0.02452401533757706
+      },
+      "margin": 0.02452401533757706
+    },
+    "differential_block_angle_dose20": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.02673236967739873,
+          0.054903905057171215
+        ],
+        "lower95": 0.028645840965308624,
+        "n_families": 16,
+        "rms": 0.04099357226494162,
+        "upper95": 0.052469367169498654
+      },
+      "margin": 0.052469367169498654
+    },
+    "differential_block_angle_dose30": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.05898205565985065,
+          0.16865749975548752
+        ],
+        "lower95": 0.06687434136081445,
+        "n_families": 16,
+        "rms": 0.11732718263006034,
+        "upper95": 0.1599643795671296
+      },
+      "margin": 0.1599643795671296
+    },
+    "differential_block_location_dose10": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          0.5478921988705162,
+          0.9886060490509866
+        ],
+        "lower95": 0.5831153275774847,
+        "n_families": 16,
+        "rms": 0.7788515208224174,
+        "upper95": 0.9561339663207665
+      },
+      "margin": 0.9561339663207665
+    },
+    "differential_block_location_dose20": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          1.069980612654365,
+          1.999773726500963
+        ],
+        "lower95": 1.1446933528754362,
+        "n_families": 16,
+        "rms": 1.5597518460193611,
+        "upper95": 1.9267152004448058
+      },
+      "margin": 1.9267152004448058
+    },
+    "differential_block_location_dose30": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          1.557697607719865,
+          2.5991248939621627
+        ],
+        "lower95": 1.644707003637721,
+        "n_families": 16,
+        "rms": 2.117522347068945,
+        "upper95": 2.5179488635946594
+      },
+      "margin": 2.5179488635946594
+    }
+  },
+  "calibration_parent": {
+    "modified_utc": "2026-10-14T10:07:18.534182+00:00",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json",
+    "sha256": "371ee01aadeab5868e39e2ef5e67ed3ff5685fa22e2d16e485e0d12817e6234e",
+    "size_bytes": 161003
+  },
+  "command": [
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+    "scripts/run_phase1.py",
+    "--stage",
+    "domain-diagnostics",
+    "--partition",
+    "validation",
+    "--calibration-manifest",
+    "diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json",
+    "--run-id",
+    "step2-domain-validation-replay-v2",
+    "--device",
+    "cpu"
+  ],
+  "compatibility_parent": {
+    "modified_utc": "2026-10-14T09:21:20.443216+00:00",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-observation-compatibility-verified/compatibility_manifest.json",
+    "sha256": "21d274ff785362e4c762ba0cdbc8ab1fb25d96cdc90e16f2a7bae579a9a5adf2",
+    "size_bytes": 118997
+  },
+  "config": {
+    "baseline": {
+      "cache_atol": 1e-05,
+      "cache_rtol": 0.0001,
+      "cache_sample_count": 16,
+      "cache_split_seed": 42,
+      "cache_splits": [
+        "train",
+        "val",
+        "test"
+      ],
+      "cem_enabled": true,
+      "cem_num_eval": 10,
+      "cem_timeout_seconds": 1800,
+      "checkpoint_sha256": "100d6459b9198697c1c26ef47e3eef4d7548946401b7501213caf761495a2553",
+      "rollout_steps": 5,
+      "smoke_episode_id": null
+    },
+    "contract": {
+      "action_dim": 2,
+      "frameskip": 5,
+      "history_size": 3,
+      "latent_dim": 192
+    },
+    "experiment": {
+      "cache_dir": ".stable-wm",
+      "dataset_name": "pusht_expert_train",
+      "image_size": 224,
+      "policy_name": "pusht/lewm",
+      "results_dir": "diagnostic_results",
+      "seed": 42
+    },
+    "simulator": {
+      "atol": 1e-10,
+      "baseline_manifest": "diagnostic_results/phase1/step1-reviewed-baseline-seed42/baseline_manifest.json",
+      "compatibility": {
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 20261014,
+        "codec_crfs": [
+          18,
+          23,
+          28
+        ],
+        "codec_pixel_formats": [
+          "yuv420p",
+          "yuv444p"
+        ],
+        "confirmatory_block_effect_drift_cap_world_px": 0.25,
+        "dose_match_tolerance_world_px": 1.0,
+        "dose_world_px": [
+          10.0,
+          20.0,
+          30.0
+        ],
+        "drift_caps": {
+          "agent_world_px": 1.25,
+          "angle_rad": 0.025,
+          "block_world_px": 1.25
+        },
+        "natural_reference_frames_per_family": 4,
+        "provenance_manifest": "diagnostic_results/phase1/step2-render-provenance-release-verified/render_provenance_manifest.json",
+        "reference_episodes_per_family": 9,
+        "split_seed": 42
+      },
+      "domain_diagnostics": {
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 2026101403,
+        "compatibility_manifest": "diagnostic_results/phase1/step2-observation-compatibility-verified/compatibility_manifest.json",
+        "development_seed": 2026101401,
+        "families_per_partition": 16,
+        "timeout_seconds": 900,
+        "validation_seed": 2026101402
+      },
+      "provenance": {
+        "candidate": {
+          "candidate_only": true,
+          "goal_pose_world_px_rad": [
+            256.0,
+            256.0,
+            0.7853981633974483
+          ],
+          "render_action": false,
+          "render_goal": true,
+          "resolution": 224,
+          "with_target": true,
+          "world_size": 512
+        },
+        "family_sample_count": 32,
+        "simulator_manifest": "diagnostic_results/phase1/step2-fresh-start-replay-reviewed/simulator_manifest.json"
+      },
+      "raw_steps": 35,
+      "rtol": 0.0,
+      "seeds": [
+        20261014,
+        20261015,
+        20261016
+      ],
+      "timeout_seconds": 300,
+      "with_target": true
+    }
+  },
+  "confirmatory_contract_frozen": false,
+  "contract": {
+    "action_dim": 2,
+    "context_steps": [
+      0,
+      5,
+      10
+    ],
+    "first_prediction_step": 15,
+    "frameskip": 5,
+    "history_size": 3,
+    "latent_dim": 192,
+    "phase1_action_ends": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "phase1_action_starts": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "phase1_rollout_coordinates": [
+      {
+        "k": 1,
+        "preceding_action_raw_steps": [
+          10,
+          15
+        ],
+        "preceding_action_token": 2,
+        "target_h": 15
+      },
+      {
+        "k": 2,
+        "preceding_action_raw_steps": [
+          15,
+          20
+        ],
+        "preceding_action_token": 3,
+        "target_h": 20
+      },
+      {
+        "k": 3,
+        "preceding_action_raw_steps": [
+          20,
+          25
+        ],
+        "preceding_action_token": 4,
+        "target_h": 25
+      },
+      {
+        "k": 4,
+        "preceding_action_raw_steps": [
+          25,
+          30
+        ],
+        "preceding_action_token": 5,
+        "target_h": 30
+      },
+      {
+        "k": 5,
+        "preceding_action_raw_steps": [
+          30,
+          35
+        ],
+        "preceding_action_token": 6,
+        "target_h": 35
+      }
+    ],
+    "phase1_target_steps": [
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "token_dim": 10
+  },
+  "coverage": {
+    "attempts": [
+      {
+        "family_id": "domain_v2_validation_00",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_01",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_02",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_03",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_04",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_05",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_06",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_07",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_08",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_09",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_10",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_11",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_12",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_13",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_14",
+        "status": "valid"
+      },
+      {
+        "family_id": "domain_v2_validation_15",
+        "status": "valid"
+      }
+    ],
+    "requested": 16,
+    "valid": 16
+  },
+  "created_utc": "2026-10-14T10:10:32.495646+00:00",
+  "deterministic_settings": {
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_benchmark": false,
+    "deterministic_algorithms": true,
+    "seed": 42,
+    "torch_num_interop_threads": 12,
+    "torch_num_threads": 8
+  },
+  "device": "cpu",
+  "encoder_dataset_ready": false,
+  "exact_historical_provenance": "UNRESOLVED",
+  "ffmpeg": {
+    "modified_utc": "2026-03-29T03:55:33.978317+00:00",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "sha256": "6d175a4743ca50256e89a8cdd731100f9cee33bd79aeea46894d209410dc6617",
+    "size_bytes": 49368728
+  },
+  "finished_utc": "2026-10-14T10:11:50.518347+00:00",
+  "formal_step3_collected": false,
+  "gates": {
+    "A": {
+      "basis": "unchanged validated mechanics and all new zero full replays exact",
+      "status": "PASS"
+    },
+    "B": {
+      "basis": "Operational generation is explicit and controlled, but scientific observation compatibility cannot be frozen without C/D evidence; historical provenance separate",
+      "explicit_generation": "PASS",
+      "reproducible_generation": "PASS",
+      "status": "INCONCLUSIVE"
+    },
+    "C": {
+      "checks": {
+        "absolute_agent_location_dose0": {
+          "bounds": {
+            "ci95": [
+              40.06721246304432,
+              73.61613378281191
+            ],
+            "lower95": 42.561742525009535,
+            "n_families": 16,
+            "rms": 57.250771606046754,
+            "upper95": 70.9903569036076
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 53.867102058186454,
+          "development_within_cap": false
+        },
+        "absolute_agent_location_dose10": {
+          "bounds": {
+            "ci95": [
+              37.88059459921118,
+              68.18294891057654
+            ],
+            "lower95": 40.333345823684944,
+            "n_families": 16,
+            "rms": 53.692304207745664,
+            "upper95": 65.97962776468059
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 52.31379725402857,
+          "development_within_cap": false
+        },
+        "absolute_agent_location_dose20": {
+          "bounds": {
+            "ci95": [
+              33.88336641056589,
+              67.97293113541801
+            ],
+            "lower95": 36.444638823649676,
+            "n_families": 16,
+            "rms": 51.38876069361964,
+            "upper95": 65.3532192391415
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 53.7839998049333,
+          "development_within_cap": false
+        },
+        "absolute_agent_location_dose30": {
+          "bounds": {
+            "ci95": [
+              30.66225390799743,
+              57.282486726859204
+            ],
+            "lower95": 33.04901006499511,
+            "n_families": 16,
+            "rms": 44.80895018779764,
+            "upper95": 55.32483227922289
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 46.15638326507312,
+          "development_within_cap": false
+        },
+        "absolute_block_angle_dose0": {
+          "bounds": {
+            "ci95": [
+              0.27277714516381796,
+              0.7066643619618231
+            ],
+            "lower95": 0.30416929669825876,
+            "n_families": 16,
+            "rms": 0.5006449897088655,
+            "upper95": 0.6727555879094483
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 0.1,
+          "cap_status": "FAIL",
+          "development_margin": 0.6215993840321895,
+          "development_within_cap": false
+        },
+        "absolute_block_angle_dose10": {
+          "bounds": {
+            "ci95": [
+              0.26147795123396406,
+              0.69777361164894
+            ],
+            "lower95": 0.2883077506384537,
+            "n_families": 16,
+            "rms": 0.4863620491522585,
+            "upper95": 0.6644295758828962
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 0.1,
+          "cap_status": "FAIL",
+          "development_margin": 0.6250495511633704,
+          "development_within_cap": false
+        },
+        "absolute_block_angle_dose20": {
+          "bounds": {
+            "ci95": [
+              0.26236780606763405,
+              0.6593295338904018
+            ],
+            "lower95": 0.2895651684794022,
+            "n_families": 16,
+            "rms": 0.46825824583089865,
+            "upper95": 0.6271070263141715
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 0.1,
+          "cap_status": "FAIL",
+          "development_margin": 0.6241358040541343,
+          "development_within_cap": false
+        },
+        "absolute_block_angle_dose30": {
+          "bounds": {
+            "ci95": [
+              0.2708099968602814,
+              0.5856536014021887
+            ],
+            "lower95": 0.29556645270599385,
+            "n_families": 16,
+            "rms": 0.4367283718899497,
+            "upper95": 0.5614559664309493
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 0.1,
+          "cap_status": "FAIL",
+          "development_margin": 0.5580921456428692,
+          "development_within_cap": false
+        },
+        "absolute_block_location_dose0": {
+          "bounds": {
+            "ci95": [
+              11.03639891418039,
+              18.64118630796946
+            ],
+            "lower95": 11.58828079499455,
+            "n_families": 16,
+            "rms": 14.909487538326868,
+            "upper95": 17.982255910324046
+          },
+          "calibrated_status": "PASS",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 21.59320091107353,
+          "development_within_cap": false
+        },
+        "absolute_block_location_dose10": {
+          "bounds": {
+            "ci95": [
+              11.219001642232941,
+              19.36060584720269
+            ],
+            "lower95": 11.769315416942838,
+            "n_families": 16,
+            "rms": 15.32374289707181,
+            "upper95": 18.657245101455143
+          },
+          "calibrated_status": "PASS",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 21.647479761077534,
+          "development_within_cap": false
+        },
+        "absolute_block_location_dose20": {
+          "bounds": {
+            "ci95": [
+              11.29070043876169,
+              18.9105272737337
+            ],
+            "lower95": 11.882719331523473,
+            "n_families": 16,
+            "rms": 15.219753878216377,
+            "upper95": 18.297765229984464
+          },
+          "calibrated_status": "PASS",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 22.0321611825691,
+          "development_within_cap": false
+        },
+        "absolute_block_location_dose30": {
+          "bounds": {
+            "ci95": [
+              11.465822953741295,
+              19.45945252060152
+            ],
+            "lower95": 12.050030636731732,
+            "n_families": 16,
+            "rms": 15.54922936382395,
+            "upper95": 18.805671304525106
+          },
+          "calibrated_status": "PASS",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 21.70395535146482,
+          "development_within_cap": false
+        },
+        "differential_agent_location_dose10": {
+          "bounds": {
+            "ci95": [
+              4.957153001196677,
+              12.522100549817317
+            ],
+            "lower95": 5.305189917095196,
+            "n_families": 16,
+            "rms": 8.981080106578064,
+            "upper95": 11.944649541655615
+          },
+          "calibrated_status": "PASS",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 13.74727248383382,
+          "development_within_cap": false
+        },
+        "differential_agent_location_dose20": {
+          "bounds": {
+            "ci95": [
+              6.71503666259788,
+              13.774154223479766
+            ],
+            "lower95": 7.165158491646969,
+            "n_families": 16,
+            "rms": 10.252563890167595,
+            "upper95": 13.170263972792585
+          },
+          "calibrated_status": "PASS",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 14.734325791575154,
+          "development_within_cap": false
+        },
+        "differential_agent_location_dose30": {
+          "bounds": {
+            "ci95": [
+              11.12858368222804,
+              20.651684084800145
+            ],
+            "lower95": 11.809363071744224,
+            "n_families": 16,
+            "rms": 15.95666170380766,
+            "upper95": 19.86022357141305
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 5.0,
+          "cap_status": "FAIL",
+          "development_margin": 15.239588038755224,
+          "development_within_cap": false
+        },
+        "differential_block_angle_dose10": {
+          "bounds": {
+            "ci95": [
+              0.013734065289112697,
+              0.06747506205766643
+            ],
+            "lower95": 0.015526439913706119,
+            "n_families": 16,
+            "rms": 0.041956807087817634,
+            "upper95": 0.06583542021393035
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 0.1,
+          "cap_status": "PASS",
+          "development_margin": 0.02452401533757706,
+          "development_within_cap": true
+        },
+        "differential_block_angle_dose20": {
+          "bounds": {
+            "ci95": [
+              0.034989974166754485,
+              0.08309432682714184
+            ],
+            "lower95": 0.039998866431579475,
+            "n_families": 16,
+            "rms": 0.06172202147999482,
+            "upper95": 0.07971537934747004
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 0.1,
+          "cap_status": "PASS",
+          "development_margin": 0.052469367169498654,
+          "development_within_cap": true
+        },
+        "differential_block_angle_dose30": {
+          "bounds": {
+            "ci95": [
+              0.057245185547149975,
+              0.16081696703012513
+            ],
+            "lower95": 0.06430714052785319,
+            "n_families": 16,
+            "rms": 0.1117678450218506,
+            "upper95": 0.15244607881202837
+          },
+          "calibrated_status": "PASS",
+          "cap": 0.1,
+          "cap_status": "INCONCLUSIVE",
+          "development_margin": 0.1599643795671296,
+          "development_within_cap": false
+        },
+        "differential_block_location_dose10": {
+          "bounds": {
+            "ci95": [
+              0.7069268563310149,
+              2.103562743450068
+            ],
+            "lower95": 0.783647338012918,
+            "n_families": 16,
+            "rms": 1.431129912313802,
+            "upper95": 2.0026901232477794
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 5.0,
+          "cap_status": "PASS",
+          "development_margin": 0.9561339663207665,
+          "development_within_cap": true
+        },
+        "differential_block_location_dose20": {
+          "bounds": {
+            "ci95": [
+              1.2580279928695106,
+              3.210437061203548
+            ],
+            "lower95": 1.3237761604864438,
+            "n_families": 16,
+            "rms": 2.193918898264614,
+            "upper95": 3.1318510560750568
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 5.0,
+          "cap_status": "PASS",
+          "development_margin": 1.9267152004448058,
+          "development_within_cap": true
+        },
+        "differential_block_location_dose30": {
+          "bounds": {
+            "ci95": [
+              1.6561240951854574,
+              3.213110352867172
+            ],
+            "lower95": 1.795339535265974,
+            "n_families": 16,
+            "rms": 2.4898537270112255,
+            "upper95": 3.100963759261867
+          },
+          "calibrated_status": "INCONCLUSIVE",
+          "cap": 5.0,
+          "cap_status": "PASS",
+          "development_margin": 2.5179488635946594,
+          "development_within_cap": true
+        }
+      },
+      "status": "FAIL"
+    },
+    "D": {
+      "basis": "natural predictor ceiling measured; legacy readout OOD limits and domain-only attribution unresolved",
+      "status": "INCONCLUSIVE"
+    },
+    "E": {
+      "basis": "predeclared independent validation performed, but relevant compatibility checks must also pass",
+      "independent_families": true,
+      "status": "FAIL"
+    }
+  },
+  "git": {
+    "branch": "phase1-counterfactual",
+    "revision": "00395f8a366ae24417df58797e25db4982e5cfa0",
+    "status_porcelain": "M config/phase1/pusht.yaml\n M reproduce_phase1.md\n M scripts/run_phase1.py\n M step2_review.md\n?? counterfactual/compatibility_report.py\n?? counterfactual/domain_diagnostics.py\n?? counterfactual/domain_report.py\n?? counterfactual/observation_compatibility.py\n?? counterfactual/render_provenance.py\n?? diagnostic_results/phase1/step1-render-provenance-recheck/\n?? diagnostic_results/phase1/step2-domain-calibration-dev-v2/\n?? diagnostic_results/phase1/step2-domain-validation-v2/\n?? diagnostic_results/phase1/step2-observation-compatibility-v1/\n?? diagnostic_results/phase1/step2-observation-compatibility-verified/\n?? diagnostic_results/phase1/step2-render-provenance-audit/\n?? diagnostic_results/phase1/step2-render-provenance-release-verified/\n?? diagnostic_results/phase1/step2-render-regression-replay/\n?? observation_compatibility_gate_revision.md\n?? observation_compatibility_protocol.md\n?? observation_domain_protocol_v2.md\n?? test_counterfactual_domain_diagnostics.py\n?? test_counterfactual_observation_compatibility.py\n?? test_counterfactual_render_provenance.py"
+  },
+  "latent_patching_performed": false,
+  "model_contract": {
+    "all_modules_eval": true,
+    "frozen": true,
+    "history_size": 3,
+    "latent_dim": 192,
+    "parameter_count": 18034478,
+    "token_dim": 10
+  },
+  "partition": "validation",
+  "precision": "float32 model inference; float64 physical/statistical comparisons",
+  "prevalidation_freeze": {
+    "calibration": {
+      "absolute_agent_location_dose0": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            32.17536085196628,
+            55.828992661377136
+          ],
+          "lower95": 33.74368449866166,
+          "n_families": 16,
+          "rms": 43.79966700060386,
+          "upper95": 53.867102058186454
+        },
+        "margin": 53.867102058186454
+      },
+      "absolute_agent_location_dose10": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            29.75034466466024,
+            53.86529414997505
+          ],
+          "lower95": 30.635215142713733,
+          "n_families": 16,
+          "rms": 40.733911112771125,
+          "upper95": 52.31379725402857
+        },
+        "margin": 52.31379725402857
+      },
+      "absolute_agent_location_dose20": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            27.87043821062787,
+            55.218219025186436
+          ],
+          "lower95": 28.89005454655888,
+          "n_families": 16,
+          "rms": 40.44059635444118,
+          "upper95": 53.7839998049333
+        },
+        "margin": 53.7839998049333
+      },
+      "absolute_agent_location_dose30": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            25.154947548990176,
+            47.76576825761016
+          ],
+          "lower95": 26.325322627199153,
+          "n_families": 16,
+          "rms": 36.18906950824441,
+          "upper95": 46.15638326507312
+        },
+        "margin": 46.15638326507312
+      },
+      "absolute_block_angle_dose0": {
+        "cap": 0.1,
+        "development": {
+          "ci95": [
+            0.21594593609800178,
+            0.6527710706151251
+          ],
+          "lower95": 0.23807874789746344,
+          "n_families": 16,
+          "rms": 0.4378461631816662,
+          "upper95": 0.6215993840321895
+        },
+        "margin": 0.6215993840321895
+      },
+      "absolute_block_angle_dose10": {
+        "cap": 0.1,
+        "development": {
+          "ci95": [
+            0.21788891318656275,
+            0.6573299405805295
+          ],
+          "lower95": 0.2395910276135408,
+          "n_families": 16,
+          "rms": 0.44141063755953003,
+          "upper95": 0.6250495511633704
+        },
+        "margin": 0.6250495511633704
+      },
+      "absolute_block_angle_dose20": {
+        "cap": 0.1,
+        "development": {
+          "ci95": [
+            0.21545915440527114,
+            0.6509865929111629
+          ],
+          "lower95": 0.2351375492994409,
+          "n_families": 16,
+          "rms": 0.4345543774229297,
+          "upper95": 0.6241358040541343
+        },
+        "margin": 0.6241358040541343
+      },
+      "absolute_block_angle_dose30": {
+        "cap": 0.1,
+        "development": {
+          "ci95": [
+            0.20380382710759087,
+            0.589430791765188
+          ],
+          "lower95": 0.21983968107940727,
+          "n_families": 16,
+          "rms": 0.40167379579833445,
+          "upper95": 0.5580921456428692
+        },
+        "margin": 0.5580921456428692
+      },
+      "absolute_block_location_dose0": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            12.351078947684174,
+            22.432771694091386
+          ],
+          "lower95": 13.048322491155512,
+          "n_families": 16,
+          "rms": 17.44121138066039,
+          "upper95": 21.59320091107353
+        },
+        "margin": 21.59320091107353
+      },
+      "absolute_block_location_dose10": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            12.512550862293025,
+            22.497029195432123
+          ],
+          "lower95": 13.1940972447549,
+          "n_families": 16,
+          "rms": 17.563738458253866,
+          "upper95": 21.647479761077534
+        },
+        "margin": 21.647479761077534
+      },
+      "absolute_block_location_dose20": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            12.595170083705792,
+            22.921284475873765
+          ],
+          "lower95": 13.298586403006572,
+          "n_families": 16,
+          "rms": 17.75809626370082,
+          "upper95": 22.0321611825691
+        },
+        "margin": 22.0321611825691
+      },
+      "absolute_block_location_dose30": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            12.547409894317713,
+            22.56154921781692
+          ],
+          "lower95": 13.242886280802011,
+          "n_families": 16,
+          "rms": 17.58505081441063,
+          "upper95": 21.70395535146482
+        },
+        "margin": 21.70395535146482
+      },
+      "differential_agent_location_dose10": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            6.412738124789053,
+            14.284261732167028
+          ],
+          "lower95": 7.124049926181101,
+          "n_families": 16,
+          "rms": 10.700111793561616,
+          "upper95": 13.74727248383382
+        },
+        "margin": 13.74727248383382
+      },
+      "differential_agent_location_dose20": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            9.904716308415054,
+            15.103301505259722
+          ],
+          "lower95": 10.361192795462758,
+          "n_families": 16,
+          "rms": 12.668047696246326,
+          "upper95": 14.734325791575154
+        },
+        "margin": 14.734325791575154
+      },
+      "differential_agent_location_dose30": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            10.153807677737957,
+            15.67094954112722
+          ],
+          "lower95": 10.638514861220736,
+          "n_families": 16,
+          "rms": 13.092897898910135,
+          "upper95": 15.239588038755224
+        },
+        "margin": 15.239588038755224
+      },
+      "differential_block_angle_dose10": {
+        "cap": 0.1,
+        "development": {
+          "ci95": [
+            0.011342848893182062,
+            0.02557464637522353
+          ],
+          "lower95": 0.012453826439119908,
+          "n_families": 16,
+          "rms": 0.01881687879554112,
+          "upper95": 0.02452401533757706
+        },
+        "margin": 0.02452401533757706
+      },
+      "differential_block_angle_dose20": {
+        "cap": 0.1,
+        "development": {
+          "ci95": [
+            0.02673236967739873,
+            0.054903905057171215
+          ],
+          "lower95": 0.028645840965308624,
+          "n_families": 16,
+          "rms": 0.04099357226494162,
+          "upper95": 0.052469367169498654
+        },
+        "margin": 0.052469367169498654
+      },
+      "differential_block_angle_dose30": {
+        "cap": 0.1,
+        "development": {
+          "ci95": [
+            0.05898205565985065,
+            0.16865749975548752
+          ],
+          "lower95": 0.06687434136081445,
+          "n_families": 16,
+          "rms": 0.11732718263006034,
+          "upper95": 0.1599643795671296
+        },
+        "margin": 0.1599643795671296
+      },
+      "differential_block_location_dose10": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            0.5478921988705162,
+            0.9886060490509866
+          ],
+          "lower95": 0.5831153275774847,
+          "n_families": 16,
+          "rms": 0.7788515208224174,
+          "upper95": 0.9561339663207665
+        },
+        "margin": 0.9561339663207665
+      },
+      "differential_block_location_dose20": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            1.069980612654365,
+            1.999773726500963
+          ],
+          "lower95": 1.1446933528754362,
+          "n_families": 16,
+          "rms": 1.5597518460193611,
+          "upper95": 1.9267152004448058
+        },
+        "margin": 1.9267152004448058
+      },
+      "differential_block_location_dose30": {
+        "cap": 5.0,
+        "development": {
+          "ci95": [
+            1.557697607719865,
+            2.5991248939621627
+          ],
+          "lower95": 1.644707003637721,
+          "n_families": 16,
+          "rms": 2.117522347068945,
+          "upper95": 2.5179488635946594
+        },
+        "margin": 2.5179488635946594
+      }
+    },
+    "calibration_parent": {
+      "modified_utc": "2026-10-14T10:07:18.534182+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json",
+      "sha256": "371ee01aadeab5868e39e2ef5e67ed3ff5685fa22e2d16e485e0d12817e6234e",
+      "size_bytes": 161003
+    },
+    "sources": {
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/envs/pusht/env.py": "d8d0de35aaab5b846db4e79b0fbfd6b17375178cce40a25df5301c8030ca6d68",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/solver/cem.py": "d88c86dcd1bd1e6d89221ac22079a3efe296cc7566532de0d36605e2f1536050",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/pusht.yaml": "7eb72270554b70904be4d1b4442af8e378db325d69a4da1ac373e8dcb9145222",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/solver/cem.yaml": "797629f829c0d3ad3b9c4e42d46a87f08da0b3845bc433e353fd6274cb0574df",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/phase1/pusht.yaml": "d9a10ac40f00019ea499e9d2b472de644cb5efa0f5e59be28cdaa77f5a51f7c0",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/train/lewm.yaml": "9c42647156737114fe76c2c5a0707e32f4f027a8c5c844f90a0c33a8e6f26c47",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/__init__.py": "245da18c0fbf35a3d82e672efde63f83801c5f4d16c4a41ec918d287bf090fa5",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/baseline.py": "4b4fe9dda539ab1c56a91088d7dd421005c7f387d4a9b887bd18b91fc3798b88",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/compatibility_report.py": "f2bca8488076d84cce405e75211e08002508830591738e42644f43c2248fd9ea",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/contracts.py": "53bf620ab6cd0946774bc6522c4a66788554b4adebf56e948c79e9b60350e053",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/domain_diagnostics.py": "99ac789215f6dec8c4d9c1b5fb159c451c0e9e43ecdf99357d574492a0783b3b",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/domain_report.py": "017bc778882db67ba93ea1b1bcf375beb629626929b9d8ed606263bfca2477e9",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/model.py": "0f5865ee146a6608ae0d10dbc28b47fa20ad73e0e067f4dd6c7e66f946098002",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/observation_compatibility.py": "eb34cc1d8565629588519dc361ae49e966619cd815b4568ca2adce2ffe84e4f9",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/render_provenance.py": "5a7b77b340ca33f1de7092ea3644c5bcb4ff0f419735f4f71248dcbc3045cee4",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator.py": "798080f3b881f1f1c6a1f5cf55d59417132c766593bba8ee5cba5e68eea00fe6",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator_validation.py": "c78bfcd3ae8e89f8512ef12da1dcddfa76070204c2ddec3157590cbdd35bfb02",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/eval.py": "852cf176d4d0404e19bf08b21c4dfe690376754a154d7fa713b148781541ffc8",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/jepa.py": "39d4f7f817e1720f3a32205fd5340348e86a5f6ddfb25d5015135a1d9b67c6a7",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/module.py": "6265d5f87d92262a4a55708bfea9fe6a91af45318de64bd8d163f953cdf9922c",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/observation_domain_protocol_v2.md": "38e7fadce430224ff8af0b6c205df8f2c99e2ffe5f27663c50cb9fba599e9161",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/data.py": "9df138d36fcea9b944726d21779e691304cd48113d4d6702cf48ffc8f681b1c3",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/embedding_cache.py": "5cbb97d1eb2cfc4bf27305a448d355c710749d24b76d353104b6bbd7423c8233",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/evaluate.py": "f9cc92fdb719351a58883f455b3923c7a87d4c86f7eb700f1e59efa5ed5941b3",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/models.py": "6b51fcc5876bd394fc3fdf1c51ac6d92bc050b4c824ea90ebdbc91dcdac2678f",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/rollout_ablation.py": "fed6eeea6d64d5c95820ff38f300886c3359ddaf243b8d05b4ed4e54279082f7",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/scripts/run_phase1.py": "afc0fffb82864a4136ac5ac8ae345c22d7d211542685de82a5e666ee5c0ea697",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_domain_diagnostics.py": "8b9d72037ff150555153fa7f28df1b6c42bec6dcb2a0888114a1dcf52995911c",
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/utils.py": "0793dc4f0c2f27a3ece84e11fd10aa33dce762ca2c5032849c17dea5d95dd09f"
+    }
+  },
+  "production_contract": {
+    "angles": "unwrapped body radians; circular comparison",
+    "bodies": {
+      "agent": {
+        "body_type": 1,
+        "cog": [
+          0.0,
+          0.0
+        ],
+        "mass": "inf",
+        "moment": "inf",
+        "shapes": [
+          {
+            "collision_type": 0,
+            "elasticity": 0.0,
+            "filter": [
+              0,
+              4294967295,
+              4294967295
+            ],
+            "friction": 0.0,
+            "kind": "Circle",
+            "offset": [
+              0.0,
+              0.0
+            ],
+            "radius": 15.0,
+            "sensor": false,
+            "surface_velocity": [
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      "block": {
+        "body_type": 0,
+        "cog": [
+          0.0,
+          45.0
+        ],
+        "mass": 1.0,
+        "moment": 3000.0,
+        "shapes": [
+          {
+            "collision_type": 0,
+            "elasticity": 0.0,
+            "filter": [
+              0,
+              4294967295,
+              4294967295
+            ],
+            "friction": 0.0,
+            "kind": "Poly",
+            "radius": 0.0,
+            "sensor": false,
+            "surface_velocity": [
+              0.0,
+              0.0
+            ],
+            "vertices": [
+              [
+                -15.0,
+                30.0
+              ],
+              [
+                15.0,
+                30.0
+              ],
+              [
+                15.0,
+                120.0
+              ],
+              [
+                -15.0,
+                120.0
+              ]
+            ]
+          },
+          {
+            "collision_type": 0,
+            "elasticity": 0.0,
+            "filter": [
+              0,
+              4294967295,
+              4294967295
+            ],
+            "friction": 0.0,
+            "kind": "Poly",
+            "radius": 0.0,
+            "sensor": false,
+            "surface_velocity": [
+              0.0,
+              0.0
+            ],
+            "vertices": [
+              [
+                -60.0,
+                0.0
+              ],
+              [
+                60.0,
+                0.0
+              ],
+              [
+                60.0,
+                30.0
+              ],
+              [
+                -60.0,
+                30.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "chipmunk_version": "2.0.1-ade7ed72849e60289eefb7a41e79ae6322fefaf3",
+    "controller": {
+      "action_scale": 100,
+      "control_hz": 10,
+      "dt": 0.01,
+      "k_p": 100,
+      "k_v": 20,
+      "relative": true
+    },
+    "goal_pose": [
+      350.0,
+      120.0,
+      0.0
+    ],
+    "goal_state": [
+      70.0,
+      420.0,
+      350.0,
+      120.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "hidden_collision_cache": "not captured or restorable",
+    "physics": {
+      "collision_bias": 0.0017970074436457143,
+      "collision_persistence": 3,
+      "collision_slop": 0.10000000149011612,
+      "constraints": 0,
+      "damping": 0.0,
+      "gravity": [
+        0.0,
+        0.0
+      ],
+      "idle_speed_threshold": 0.0,
+      "iterations": 10,
+      "sleep_time_threshold": "inf",
+      "threaded": false
+    },
+    "physics_substeps_per_raw_action": 10,
+    "pymunk_version": "7.2.0",
+    "raw_action_bounds": [
+      [
+        -1.0,
+        -1.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "raw_action_dtype": "float32",
+    "readback_fields": [
+      "agent_x",
+      "agent_y",
+      "agent_angle",
+      "agent_vx",
+      "agent_vy",
+      "agent_omega",
+      "agent_fx",
+      "agent_fy",
+      "agent_torque",
+      "block_x",
+      "block_y",
+      "block_angle",
+      "block_vx",
+      "block_vy",
+      "block_omega",
+      "block_fx",
+      "block_fy",
+      "block_torque"
+    ],
+    "rendering": {
+      "mode": "rgb_array",
+      "render_action": false,
+      "render_goal": true,
+      "resolution": 224,
+      "with_target": true,
+      "world_size": 512
+    },
+    "static_body": {
+      "angle": 0.0,
+      "omega": 0.0,
+      "position": [
+        0.0,
+        0.0
+      ],
+      "velocity": [
+        0.0,
+        0.0
+      ]
+    },
+    "variation": {
+      "agent": {
+        "angle": 0.0,
+        "color": [
+          65,
+          105,
+          225
+        ],
+        "scale": 40,
+        "shape": 0,
+        "start_position": [
+          250.7837204352327,
+          387.4312895099853
+        ],
+        "velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      "background": {
+        "color": [
+          255,
+          255,
+          255
+        ]
+      },
+      "block": {
+        "angle": 4.418017620164649,
+        "color": [
+          119,
+          136,
+          153
+        ],
+        "scale": 40,
+        "shape": 2,
+        "start_position": [
+          264.6820575444048,
+          226.47528239748323
+        ]
+      },
+      "goal": {
+        "angle": 0.0,
+        "color": [
+          144,
+          238,
+          144
+        ],
+        "position": [
+          350.0,
+          120.0
+        ],
+        "scale": 40
+      },
+      "rendering": {
+        "render_goal": 1
+      }
+    },
+    "walls": [
+      {
+        "a": [
+          5.0,
+          5.0
+        ],
+        "b": [
+          506.0,
+          5.0
+        ],
+        "collision_type": 0,
+        "elasticity": 0.0,
+        "filter": [
+          0,
+          4294967295,
+          4294967295
+        ],
+        "friction": 0.0,
+        "kind": "Segment",
+        "radius": 2.0,
+        "sensor": false,
+        "surface_velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "a": [
+          5.0,
+          506.0
+        ],
+        "b": [
+          5.0,
+          5.0
+        ],
+        "collision_type": 0,
+        "elasticity": 0.0,
+        "filter": [
+          0,
+          4294967295,
+          4294967295
+        ],
+        "friction": 0.0,
+        "kind": "Segment",
+        "radius": 2.0,
+        "sensor": false,
+        "surface_velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "a": [
+          5.0,
+          506.0
+        ],
+        "b": [
+          506.0,
+          506.0
+        ],
+        "collision_type": 0,
+        "elasticity": 0.0,
+        "filter": [
+          0,
+          4294967295,
+          4294967295
+        ],
+        "friction": 0.0,
+        "kind": "Segment",
+        "radius": 2.0,
+        "sensor": false,
+        "surface_velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "a": [
+          506.0,
+          5.0
+        ],
+        "b": [
+          506.0,
+          506.0
+        ],
+        "collision_type": 0,
+        "elasticity": 0.0,
+        "filter": [
+          0,
+          4294967295,
+          4294967295
+        ],
+        "friction": 0.0,
+        "kind": "Segment",
+        "radius": 2.0,
+        "sensor": false,
+        "surface_velocity": [
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "readiness": {
+    "permissible_scope": "Only explicitly incompatible measurement/geometry diagnostics; no compatibility-qualified Step 3 or physical causal claims. Human approval required for refit.",
+    "step3_confirmatory_observation_contract": false,
+    "step3_development_only": false
+  },
+  "readouts": {
+    "agent_location": {
+      "modified_utc": "2026-05-01T04:35:46.852457+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/pusht_agent_location_mlp.pt",
+      "sha256": "a2944f84241cbf9d13e9a24de546b4a61ea069ae04fc7906dd95c3d4488c0708",
+      "size_bytes": 203361
+    },
+    "block_angle": {
+      "modified_utc": "2026-05-01T04:43:39.610658+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/pusht_block_angle_mlp.pt",
+      "sha256": "f21c2344f6d6fad629efe06bf4e5461a83dded8d4626c5d870a97cb3b12ce22e",
+      "size_bytes": 202237
+    },
+    "block_location": {
+      "modified_utc": "2026-05-01T04:45:36.651926+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/pusht_block_location_mlp.pt",
+      "sha256": "c2bc93574036edfd6e53ae2329bfc2b6e46fe7a5e5e181fc3c7889899678e7f6",
+      "size_bytes": 203361
+    }
+  },
+  "readouts_refitted": false,
+  "reference": {
+    "n_rows": 592,
+    "owners": [
+      "6398f94781189cdefdeaee65016bf83a1f3a2f04e8eac37be4333bccbf2d99a2",
+      "6398f94781189cdefdeaee65016bf83a1f3a2f04e8eac37be4333bccbf2d99a2",
+      "6398f94781189cdefdeaee65016bf83a1f3a2f04e8eac37be4333bccbf2d99a2",
+      "6398f94781189cdefdeaee65016bf83a1f3a2f04e8eac37be4333bccbf2d99a2",
+      "3a5957112dbfb160d1753cbeb41ee536de1472b24df8463228dd2e77197b2596",
+      "3a5957112dbfb160d1753cbeb41ee536de1472b24df8463228dd2e77197b2596",
+      "3a5957112dbfb160d1753cbeb41ee536de1472b24df8463228dd2e77197b2596",
+      "3a5957112dbfb160d1753cbeb41ee536de1472b24df8463228dd2e77197b2596",
+      "6fa947712afd2a27f99da6b5680935aef034b22755365c0db6e22f315b65d996",
+      "6fa947712afd2a27f99da6b5680935aef034b22755365c0db6e22f315b65d996",
+      "6fa947712afd2a27f99da6b5680935aef034b22755365c0db6e22f315b65d996",
+      "6fa947712afd2a27f99da6b5680935aef034b22755365c0db6e22f315b65d996",
+      "b20d8608a2f762af901f741444560cf396d912123de684a9be36b99fd6dd9ae5",
+      "b20d8608a2f762af901f741444560cf396d912123de684a9be36b99fd6dd9ae5",
+      "b20d8608a2f762af901f741444560cf396d912123de684a9be36b99fd6dd9ae5",
+      "b20d8608a2f762af901f741444560cf396d912123de684a9be36b99fd6dd9ae5",
+      "6ee04302f7d09934ce795f97bf351e139f3d98f8ae169d2808fe2d0f72ae7593",
+      "6ee04302f7d09934ce795f97bf351e139f3d98f8ae169d2808fe2d0f72ae7593",
+      "6ee04302f7d09934ce795f97bf351e139f3d98f8ae169d2808fe2d0f72ae7593",
+      "6ee04302f7d09934ce795f97bf351e139f3d98f8ae169d2808fe2d0f72ae7593",
+      "879689d03418cacbeb101af300882a3ab3e93d46ba5db9dcafc4b04a09e9d29d",
+      "879689d03418cacbeb101af300882a3ab3e93d46ba5db9dcafc4b04a09e9d29d",
+      "879689d03418cacbeb101af300882a3ab3e93d46ba5db9dcafc4b04a09e9d29d",
+      "879689d03418cacbeb101af300882a3ab3e93d46ba5db9dcafc4b04a09e9d29d",
+      "3d0c2edcfe5c4873844bb809bda106fede71e3480f8195da00fc6e09e892be82",
+      "3d0c2edcfe5c4873844bb809bda106fede71e3480f8195da00fc6e09e892be82",
+      "3d0c2edcfe5c4873844bb809bda106fede71e3480f8195da00fc6e09e892be82",
+      "3d0c2edcfe5c4873844bb809bda106fede71e3480f8195da00fc6e09e892be82",
+      "6994aee94cace57daea86a3927899d08d98e87f52f8bfd44a7d0b4c1f011dea6",
+      "6994aee94cace57daea86a3927899d08d98e87f52f8bfd44a7d0b4c1f011dea6",
+      "6994aee94cace57daea86a3927899d08d98e87f52f8bfd44a7d0b4c1f011dea6",
+      "6994aee94cace57daea86a3927899d08d98e87f52f8bfd44a7d0b4c1f011dea6",
+      "eaf82a71c2a618b4b0f788f1284bafce6ed1bfa30f437b8ad58fe3ac469657e8",
+      "eaf82a71c2a618b4b0f788f1284bafce6ed1bfa30f437b8ad58fe3ac469657e8",
+      "eaf82a71c2a618b4b0f788f1284bafce6ed1bfa30f437b8ad58fe3ac469657e8",
+      "eaf82a71c2a618b4b0f788f1284bafce6ed1bfa30f437b8ad58fe3ac469657e8",
+      "7c1e97db3f57a4e8c3f043f5dcc5dc4f3d5e4370e320a1ef312a170729cae42b",
+      "7c1e97db3f57a4e8c3f043f5dcc5dc4f3d5e4370e320a1ef312a170729cae42b",
+      "7c1e97db3f57a4e8c3f043f5dcc5dc4f3d5e4370e320a1ef312a170729cae42b",
+      "7c1e97db3f57a4e8c3f043f5dcc5dc4f3d5e4370e320a1ef312a170729cae42b",
+      "c8b42817d83b667a09edfed1a0571d12ad61eb5e61996b9ac1b61bc7b403d712",
+      "c8b42817d83b667a09edfed1a0571d12ad61eb5e61996b9ac1b61bc7b403d712",
+      "c8b42817d83b667a09edfed1a0571d12ad61eb5e61996b9ac1b61bc7b403d712",
+      "c8b42817d83b667a09edfed1a0571d12ad61eb5e61996b9ac1b61bc7b403d712",
+      "85a0fd1d58a5def665ddb3ba8f9cba25caa19a4dfe68eb488d14552cf28f28ce",
+      "85a0fd1d58a5def665ddb3ba8f9cba25caa19a4dfe68eb488d14552cf28f28ce",
+      "85a0fd1d58a5def665ddb3ba8f9cba25caa19a4dfe68eb488d14552cf28f28ce",
+      "85a0fd1d58a5def665ddb3ba8f9cba25caa19a4dfe68eb488d14552cf28f28ce",
+      "408cb107bad135bc43a05ad07cc0486e8ccf0a919a3892c3a968e9be3e7eb22e",
+      "408cb107bad135bc43a05ad07cc0486e8ccf0a919a3892c3a968e9be3e7eb22e",
+      "408cb107bad135bc43a05ad07cc0486e8ccf0a919a3892c3a968e9be3e7eb22e",
+      "408cb107bad135bc43a05ad07cc0486e8ccf0a919a3892c3a968e9be3e7eb22e",
+      "144fa3d2f10a4a4573343a8a24694738ab7829a8b2e534a94ed88e04390bfbdc",
+      "144fa3d2f10a4a4573343a8a24694738ab7829a8b2e534a94ed88e04390bfbdc",
+      "144fa3d2f10a4a4573343a8a24694738ab7829a8b2e534a94ed88e04390bfbdc",
+      "144fa3d2f10a4a4573343a8a24694738ab7829a8b2e534a94ed88e04390bfbdc",
+      "39408b9481aa4953d7acbb41958d193b38ef31602728a6c5334b5424e87c9353",
+      "39408b9481aa4953d7acbb41958d193b38ef31602728a6c5334b5424e87c9353",
+      "39408b9481aa4953d7acbb41958d193b38ef31602728a6c5334b5424e87c9353",
+      "39408b9481aa4953d7acbb41958d193b38ef31602728a6c5334b5424e87c9353",
+      "315cb2b2693c90e0f0b62f69a50bf8ef2ab828983f744ec4eafc2e8c34e3e62a",
+      "315cb2b2693c90e0f0b62f69a50bf8ef2ab828983f744ec4eafc2e8c34e3e62a",
+      "315cb2b2693c90e0f0b62f69a50bf8ef2ab828983f744ec4eafc2e8c34e3e62a",
+      "315cb2b2693c90e0f0b62f69a50bf8ef2ab828983f744ec4eafc2e8c34e3e62a",
+      "a0c2fe0cc823222a449b826e90a2a8d23684571b72464fb44fc3f9acf921365e",
+      "a0c2fe0cc823222a449b826e90a2a8d23684571b72464fb44fc3f9acf921365e",
+      "a0c2fe0cc823222a449b826e90a2a8d23684571b72464fb44fc3f9acf921365e",
+      "a0c2fe0cc823222a449b826e90a2a8d23684571b72464fb44fc3f9acf921365e",
+      "668de0bfbe769fdbad20d0ffcdb8271367f4692a686a4ba00de1383c3d6f20e6",
+      "668de0bfbe769fdbad20d0ffcdb8271367f4692a686a4ba00de1383c3d6f20e6",
+      "668de0bfbe769fdbad20d0ffcdb8271367f4692a686a4ba00de1383c3d6f20e6",
+      "668de0bfbe769fdbad20d0ffcdb8271367f4692a686a4ba00de1383c3d6f20e6",
+      "66e9f38cfa1f24389e5f55a011e26a4908a3b853736bbb24d5082d6e0e8cc8c2",
+      "66e9f38cfa1f24389e5f55a011e26a4908a3b853736bbb24d5082d6e0e8cc8c2",
+      "66e9f38cfa1f24389e5f55a011e26a4908a3b853736bbb24d5082d6e0e8cc8c2",
+      "66e9f38cfa1f24389e5f55a011e26a4908a3b853736bbb24d5082d6e0e8cc8c2",
+      "d31c21493c1db043f19c74a0184b01b5c68076743fc3065ed3588085fe8fe938",
+      "d31c21493c1db043f19c74a0184b01b5c68076743fc3065ed3588085fe8fe938",
+      "d31c21493c1db043f19c74a0184b01b5c68076743fc3065ed3588085fe8fe938",
+      "d31c21493c1db043f19c74a0184b01b5c68076743fc3065ed3588085fe8fe938",
+      "bddec97645f7a1c75d1abfa44f4ccc6c6cb41a7878b9f815ea084f0d8d595754",
+      "bddec97645f7a1c75d1abfa44f4ccc6c6cb41a7878b9f815ea084f0d8d595754",
+      "bddec97645f7a1c75d1abfa44f4ccc6c6cb41a7878b9f815ea084f0d8d595754",
+      "bddec97645f7a1c75d1abfa44f4ccc6c6cb41a7878b9f815ea084f0d8d595754",
+      "b11c248cd06076945037f1c84d5490088f2da93606a48d44e4f91436ad3f1024",
+      "b11c248cd06076945037f1c84d5490088f2da93606a48d44e4f91436ad3f1024",
+      "b11c248cd06076945037f1c84d5490088f2da93606a48d44e4f91436ad3f1024",
+      "b11c248cd06076945037f1c84d5490088f2da93606a48d44e4f91436ad3f1024",
+      "46ae06b7305e133b197c48db9ed7f8f1eb861c096401d89c269a7fb00e89a652",
+      "46ae06b7305e133b197c48db9ed7f8f1eb861c096401d89c269a7fb00e89a652",
+      "46ae06b7305e133b197c48db9ed7f8f1eb861c096401d89c269a7fb00e89a652",
+      "46ae06b7305e133b197c48db9ed7f8f1eb861c096401d89c269a7fb00e89a652",
+      "b070b9abb485e07f07c4b77a44a2016782f7941f7094eb50ff3e408e8b3ee7fd",
+      "b070b9abb485e07f07c4b77a44a2016782f7941f7094eb50ff3e408e8b3ee7fd",
+      "b070b9abb485e07f07c4b77a44a2016782f7941f7094eb50ff3e408e8b3ee7fd",
+      "b070b9abb485e07f07c4b77a44a2016782f7941f7094eb50ff3e408e8b3ee7fd",
+      "fbb68ba4c941e76e11a1947348430641c9e3b014664c1cca5eb83f5eef878db5",
+      "fbb68ba4c941e76e11a1947348430641c9e3b014664c1cca5eb83f5eef878db5",
+      "fbb68ba4c941e76e11a1947348430641c9e3b014664c1cca5eb83f5eef878db5",
+      "fbb68ba4c941e76e11a1947348430641c9e3b014664c1cca5eb83f5eef878db5",
+      "7e5b0ea3c7916cb4589e5cf64b58f92ba204862a76866c09d6bee6bfbe4ae51c",
+      "7e5b0ea3c7916cb4589e5cf64b58f92ba204862a76866c09d6bee6bfbe4ae51c",
+      "7e5b0ea3c7916cb4589e5cf64b58f92ba204862a76866c09d6bee6bfbe4ae51c",
+      "7e5b0ea3c7916cb4589e5cf64b58f92ba204862a76866c09d6bee6bfbe4ae51c",
+      "9324e46d79405fdbe1956e3852084d513d594bd68852b7c3d377534252de31ba",
+      "9324e46d79405fdbe1956e3852084d513d594bd68852b7c3d377534252de31ba",
+      "9324e46d79405fdbe1956e3852084d513d594bd68852b7c3d377534252de31ba",
+      "9324e46d79405fdbe1956e3852084d513d594bd68852b7c3d377534252de31ba",
+      "48075d69a0d66bd83c990adf1523ba03d15e5ed2168f4af352aae2218ebddf8e",
+      "48075d69a0d66bd83c990adf1523ba03d15e5ed2168f4af352aae2218ebddf8e",
+      "48075d69a0d66bd83c990adf1523ba03d15e5ed2168f4af352aae2218ebddf8e",
+      "48075d69a0d66bd83c990adf1523ba03d15e5ed2168f4af352aae2218ebddf8e",
+      "3990224cfc49fe9f80f8c396bc995e77357bf929251c6504c148e3df15381189",
+      "3990224cfc49fe9f80f8c396bc995e77357bf929251c6504c148e3df15381189",
+      "3990224cfc49fe9f80f8c396bc995e77357bf929251c6504c148e3df15381189",
+      "3990224cfc49fe9f80f8c396bc995e77357bf929251c6504c148e3df15381189",
+      "2c5661bb94cd8714143c62142fe7e535f2d18de80ec754b7232beaeea6a64aac",
+      "2c5661bb94cd8714143c62142fe7e535f2d18de80ec754b7232beaeea6a64aac",
+      "2c5661bb94cd8714143c62142fe7e535f2d18de80ec754b7232beaeea6a64aac",
+      "2c5661bb94cd8714143c62142fe7e535f2d18de80ec754b7232beaeea6a64aac",
+      "02762ab09a28bae392a46f83e03aac3636bf7667b8d9f0667c5edeb70013ae40",
+      "02762ab09a28bae392a46f83e03aac3636bf7667b8d9f0667c5edeb70013ae40",
+      "02762ab09a28bae392a46f83e03aac3636bf7667b8d9f0667c5edeb70013ae40",
+      "02762ab09a28bae392a46f83e03aac3636bf7667b8d9f0667c5edeb70013ae40",
+      "06ec5bfde4af21f796db25628f76fe62204f806374bb4647438f0993b1819572",
+      "06ec5bfde4af21f796db25628f76fe62204f806374bb4647438f0993b1819572",
+      "06ec5bfde4af21f796db25628f76fe62204f806374bb4647438f0993b1819572",
+      "06ec5bfde4af21f796db25628f76fe62204f806374bb4647438f0993b1819572",
+      "f5da76d82e062302f9780aa9c6604c977b875f151ab9c36c5ccba998fec99eb3",
+      "f5da76d82e062302f9780aa9c6604c977b875f151ab9c36c5ccba998fec99eb3",
+      "f5da76d82e062302f9780aa9c6604c977b875f151ab9c36c5ccba998fec99eb3",
+      "f5da76d82e062302f9780aa9c6604c977b875f151ab9c36c5ccba998fec99eb3",
+      "efb4af844499672df7f85e1991b643ddefbfb7fb1a2e7282f79654cd5d3035ad",
+      "efb4af844499672df7f85e1991b643ddefbfb7fb1a2e7282f79654cd5d3035ad",
+      "efb4af844499672df7f85e1991b643ddefbfb7fb1a2e7282f79654cd5d3035ad",
+      "efb4af844499672df7f85e1991b643ddefbfb7fb1a2e7282f79654cd5d3035ad",
+      "fb6b8d79eecff91ac0d6710bf161173899130f737ad749c59d34f5f770ff710d",
+      "fb6b8d79eecff91ac0d6710bf161173899130f737ad749c59d34f5f770ff710d",
+      "fb6b8d79eecff91ac0d6710bf161173899130f737ad749c59d34f5f770ff710d",
+      "fb6b8d79eecff91ac0d6710bf161173899130f737ad749c59d34f5f770ff710d",
+      "5efd75c2e6588ac3736efbf7a571b1f235cbab2a488b4e5e18c2868b7838afe0",
+      "5efd75c2e6588ac3736efbf7a571b1f235cbab2a488b4e5e18c2868b7838afe0",
+      "5efd75c2e6588ac3736efbf7a571b1f235cbab2a488b4e5e18c2868b7838afe0",
+      "5efd75c2e6588ac3736efbf7a571b1f235cbab2a488b4e5e18c2868b7838afe0",
+      "0cd26b395b60e44835554763336e9f75daab74f76687832e1355a64ad7f46a89",
+      "0cd26b395b60e44835554763336e9f75daab74f76687832e1355a64ad7f46a89",
+      "0cd26b395b60e44835554763336e9f75daab74f76687832e1355a64ad7f46a89",
+      "0cd26b395b60e44835554763336e9f75daab74f76687832e1355a64ad7f46a89",
+      "8025c3a262268981bda68054c1f5be32582862072e69a845180a5a06aef2c739",
+      "8025c3a262268981bda68054c1f5be32582862072e69a845180a5a06aef2c739",
+      "8025c3a262268981bda68054c1f5be32582862072e69a845180a5a06aef2c739",
+      "8025c3a262268981bda68054c1f5be32582862072e69a845180a5a06aef2c739",
+      "6034d621ccd89fbbdd03e8ccfac4b030529467fba5b21706f8236029dbb2999c",
+      "6034d621ccd89fbbdd03e8ccfac4b030529467fba5b21706f8236029dbb2999c",
+      "6034d621ccd89fbbdd03e8ccfac4b030529467fba5b21706f8236029dbb2999c",
+      "6034d621ccd89fbbdd03e8ccfac4b030529467fba5b21706f8236029dbb2999c",
+      "6a4ab1661870e1b692bb848e8d396eed009aefabf86d45c02e347f6d51bc9fc3",
+      "6a4ab1661870e1b692bb848e8d396eed009aefabf86d45c02e347f6d51bc9fc3",
+      "6a4ab1661870e1b692bb848e8d396eed009aefabf86d45c02e347f6d51bc9fc3",
+      "6a4ab1661870e1b692bb848e8d396eed009aefabf86d45c02e347f6d51bc9fc3",
+      "9788a8c94e8d2245ef70c7920b344a98e4c3179a111f0d4a7d0e1680865dd482",
+      "9788a8c94e8d2245ef70c7920b344a98e4c3179a111f0d4a7d0e1680865dd482",
+      "9788a8c94e8d2245ef70c7920b344a98e4c3179a111f0d4a7d0e1680865dd482",
+      "9788a8c94e8d2245ef70c7920b344a98e4c3179a111f0d4a7d0e1680865dd482",
+      "0c5cb4f50f769c69832052924dd3e6c78c4582dee0f31c27ae4464bc6ea6cd87",
+      "0c5cb4f50f769c69832052924dd3e6c78c4582dee0f31c27ae4464bc6ea6cd87",
+      "0c5cb4f50f769c69832052924dd3e6c78c4582dee0f31c27ae4464bc6ea6cd87",
+      "0c5cb4f50f769c69832052924dd3e6c78c4582dee0f31c27ae4464bc6ea6cd87",
+      "01eb6ea7065b1c05d4b80a74f51219bb71cb038ed59f2b9354c8612601653166",
+      "01eb6ea7065b1c05d4b80a74f51219bb71cb038ed59f2b9354c8612601653166",
+      "01eb6ea7065b1c05d4b80a74f51219bb71cb038ed59f2b9354c8612601653166",
+      "01eb6ea7065b1c05d4b80a74f51219bb71cb038ed59f2b9354c8612601653166",
+      "622ff361fa8189deb6e8728f257da9f809dd2490fd320dd73833a362f83b5cac",
+      "622ff361fa8189deb6e8728f257da9f809dd2490fd320dd73833a362f83b5cac",
+      "622ff361fa8189deb6e8728f257da9f809dd2490fd320dd73833a362f83b5cac",
+      "622ff361fa8189deb6e8728f257da9f809dd2490fd320dd73833a362f83b5cac",
+      "4a0325258cacfe79aac980a0ceafee56581e619efb966e6f52663bd6fddc37df",
+      "4a0325258cacfe79aac980a0ceafee56581e619efb966e6f52663bd6fddc37df",
+      "4a0325258cacfe79aac980a0ceafee56581e619efb966e6f52663bd6fddc37df",
+      "4a0325258cacfe79aac980a0ceafee56581e619efb966e6f52663bd6fddc37df",
+      "6afd52a9cef8102dd53c7f57679b3d67ee833966146e0aa4040608aa3e85753e",
+      "6afd52a9cef8102dd53c7f57679b3d67ee833966146e0aa4040608aa3e85753e",
+      "6afd52a9cef8102dd53c7f57679b3d67ee833966146e0aa4040608aa3e85753e",
+      "6afd52a9cef8102dd53c7f57679b3d67ee833966146e0aa4040608aa3e85753e",
+      "1af25e13eae251e45f22ac1a28b1ccae9e154d49b6f8150975305171bb93092f",
+      "1af25e13eae251e45f22ac1a28b1ccae9e154d49b6f8150975305171bb93092f",
+      "1af25e13eae251e45f22ac1a28b1ccae9e154d49b6f8150975305171bb93092f",
+      "1af25e13eae251e45f22ac1a28b1ccae9e154d49b6f8150975305171bb93092f",
+      "394001e3cabdf287c04ab07ba1c1bec422a2213fa22ac548ebd12b296aa63207",
+      "394001e3cabdf287c04ab07ba1c1bec422a2213fa22ac548ebd12b296aa63207",
+      "394001e3cabdf287c04ab07ba1c1bec422a2213fa22ac548ebd12b296aa63207",
+      "394001e3cabdf287c04ab07ba1c1bec422a2213fa22ac548ebd12b296aa63207",
+      "643a06ca86d13d96f8e8c5df1c7f91799b8686c4aae644a501614c8799913757",
+      "643a06ca86d13d96f8e8c5df1c7f91799b8686c4aae644a501614c8799913757",
+      "643a06ca86d13d96f8e8c5df1c7f91799b8686c4aae644a501614c8799913757",
+      "643a06ca86d13d96f8e8c5df1c7f91799b8686c4aae644a501614c8799913757",
+      "24d9765d464a9962a668bc24d790421f4c91288b14638f3450c3141787332383",
+      "24d9765d464a9962a668bc24d790421f4c91288b14638f3450c3141787332383",
+      "24d9765d464a9962a668bc24d790421f4c91288b14638f3450c3141787332383",
+      "24d9765d464a9962a668bc24d790421f4c91288b14638f3450c3141787332383",
+      "8c78cb1828a76ce3f3c32acc2e553df8c72e279b04b4448d07d04420e6d2691d",
+      "8c78cb1828a76ce3f3c32acc2e553df8c72e279b04b4448d07d04420e6d2691d",
+      "8c78cb1828a76ce3f3c32acc2e553df8c72e279b04b4448d07d04420e6d2691d",
+      "8c78cb1828a76ce3f3c32acc2e553df8c72e279b04b4448d07d04420e6d2691d",
+      "fa037b984eed39e95a745010da8c1e862cd932b792c19aa92f4210ce0e0d718d",
+      "fa037b984eed39e95a745010da8c1e862cd932b792c19aa92f4210ce0e0d718d",
+      "fa037b984eed39e95a745010da8c1e862cd932b792c19aa92f4210ce0e0d718d",
+      "fa037b984eed39e95a745010da8c1e862cd932b792c19aa92f4210ce0e0d718d",
+      "c313d4fcf0104c5f728836ced4fc8d0475a88837eac808381a34307f40b9d491",
+      "c313d4fcf0104c5f728836ced4fc8d0475a88837eac808381a34307f40b9d491",
+      "c313d4fcf0104c5f728836ced4fc8d0475a88837eac808381a34307f40b9d491",
+      "c313d4fcf0104c5f728836ced4fc8d0475a88837eac808381a34307f40b9d491",
+      "738565f8015f462732c5a659a88212c4fdece8f851fd1bf278c8c4b67e74afe4",
+      "738565f8015f462732c5a659a88212c4fdece8f851fd1bf278c8c4b67e74afe4",
+      "738565f8015f462732c5a659a88212c4fdece8f851fd1bf278c8c4b67e74afe4",
+      "738565f8015f462732c5a659a88212c4fdece8f851fd1bf278c8c4b67e74afe4",
+      "ead13ceb5b938f928283c54828156bfa096d919ba9be3726fecb1d2e04cf709f",
+      "ead13ceb5b938f928283c54828156bfa096d919ba9be3726fecb1d2e04cf709f",
+      "ead13ceb5b938f928283c54828156bfa096d919ba9be3726fecb1d2e04cf709f",
+      "ead13ceb5b938f928283c54828156bfa096d919ba9be3726fecb1d2e04cf709f",
+      "98f3df0f589bd663af86ca6ff3e2525f515b83a8a41657d83ade0d76b06e7907",
+      "98f3df0f589bd663af86ca6ff3e2525f515b83a8a41657d83ade0d76b06e7907",
+      "98f3df0f589bd663af86ca6ff3e2525f515b83a8a41657d83ade0d76b06e7907",
+      "98f3df0f589bd663af86ca6ff3e2525f515b83a8a41657d83ade0d76b06e7907",
+      "00f5dca6316efb9ef96c105b6ef64ee7c47bfa3cd63f0fa194b6cd1d27f7a461",
+      "00f5dca6316efb9ef96c105b6ef64ee7c47bfa3cd63f0fa194b6cd1d27f7a461",
+      "00f5dca6316efb9ef96c105b6ef64ee7c47bfa3cd63f0fa194b6cd1d27f7a461",
+      "00f5dca6316efb9ef96c105b6ef64ee7c47bfa3cd63f0fa194b6cd1d27f7a461",
+      "5683511540794d76d7ed9e0cf59d4ee07c2fa6aacffb4490f796ae224c762e4b",
+      "5683511540794d76d7ed9e0cf59d4ee07c2fa6aacffb4490f796ae224c762e4b",
+      "5683511540794d76d7ed9e0cf59d4ee07c2fa6aacffb4490f796ae224c762e4b",
+      "5683511540794d76d7ed9e0cf59d4ee07c2fa6aacffb4490f796ae224c762e4b",
+      "a7cbcd4bc484916bc30faa22d27b6d8c473f06cd43e6d844dbb54067bc701b8d",
+      "a7cbcd4bc484916bc30faa22d27b6d8c473f06cd43e6d844dbb54067bc701b8d",
+      "a7cbcd4bc484916bc30faa22d27b6d8c473f06cd43e6d844dbb54067bc701b8d",
+      "a7cbcd4bc484916bc30faa22d27b6d8c473f06cd43e6d844dbb54067bc701b8d",
+      "86a5aa593847feb8fd7722cd34c760cb9b23f852c1372ad9e2ad489a0b4ffd1b",
+      "86a5aa593847feb8fd7722cd34c760cb9b23f852c1372ad9e2ad489a0b4ffd1b",
+      "86a5aa593847feb8fd7722cd34c760cb9b23f852c1372ad9e2ad489a0b4ffd1b",
+      "86a5aa593847feb8fd7722cd34c760cb9b23f852c1372ad9e2ad489a0b4ffd1b",
+      "42ec3d4d2a4b492a0366da04f2e7b0a549789adf925c9310c23d0fceba42696a",
+      "42ec3d4d2a4b492a0366da04f2e7b0a549789adf925c9310c23d0fceba42696a",
+      "42ec3d4d2a4b492a0366da04f2e7b0a549789adf925c9310c23d0fceba42696a",
+      "42ec3d4d2a4b492a0366da04f2e7b0a549789adf925c9310c23d0fceba42696a",
+      "751a21ef9511375b3e3484c13057b61d17cb3f661a416187349763c62b1ee2c2",
+      "751a21ef9511375b3e3484c13057b61d17cb3f661a416187349763c62b1ee2c2",
+      "751a21ef9511375b3e3484c13057b61d17cb3f661a416187349763c62b1ee2c2",
+      "751a21ef9511375b3e3484c13057b61d17cb3f661a416187349763c62b1ee2c2",
+      "f1557b96a3840a1b8617813a6fad63fef083f7bdef6eaf6882a21b31fe56606c",
+      "f1557b96a3840a1b8617813a6fad63fef083f7bdef6eaf6882a21b31fe56606c",
+      "f1557b96a3840a1b8617813a6fad63fef083f7bdef6eaf6882a21b31fe56606c",
+      "f1557b96a3840a1b8617813a6fad63fef083f7bdef6eaf6882a21b31fe56606c",
+      "6ea78f41370345e56e0b1ddacc58bf8eb3fbae35202b85a118e9e72093a91fe0",
+      "6ea78f41370345e56e0b1ddacc58bf8eb3fbae35202b85a118e9e72093a91fe0",
+      "6ea78f41370345e56e0b1ddacc58bf8eb3fbae35202b85a118e9e72093a91fe0",
+      "6ea78f41370345e56e0b1ddacc58bf8eb3fbae35202b85a118e9e72093a91fe0",
+      "ba7b102baa11e078f44653b6a06ad2c5f3795827098e1d634f81a3b640bd801c",
+      "ba7b102baa11e078f44653b6a06ad2c5f3795827098e1d634f81a3b640bd801c",
+      "ba7b102baa11e078f44653b6a06ad2c5f3795827098e1d634f81a3b640bd801c",
+      "ba7b102baa11e078f44653b6a06ad2c5f3795827098e1d634f81a3b640bd801c",
+      "ab538858a2f55683a9c0c1481d8f52b9b6f9c0ba6a6c1c8959cea6c836fb649c",
+      "ab538858a2f55683a9c0c1481d8f52b9b6f9c0ba6a6c1c8959cea6c836fb649c",
+      "ab538858a2f55683a9c0c1481d8f52b9b6f9c0ba6a6c1c8959cea6c836fb649c",
+      "ab538858a2f55683a9c0c1481d8f52b9b6f9c0ba6a6c1c8959cea6c836fb649c",
+      "9ecb75cc5a9f0ac85524fa86004337d509681c2eca43a9134cf4090832f01666",
+      "9ecb75cc5a9f0ac85524fa86004337d509681c2eca43a9134cf4090832f01666",
+      "9ecb75cc5a9f0ac85524fa86004337d509681c2eca43a9134cf4090832f01666",
+      "9ecb75cc5a9f0ac85524fa86004337d509681c2eca43a9134cf4090832f01666",
+      "12970df2e136a4ab84a1e176ada73f2e0c6ad1becf5f0836d6aaedac8aa17431",
+      "12970df2e136a4ab84a1e176ada73f2e0c6ad1becf5f0836d6aaedac8aa17431",
+      "12970df2e136a4ab84a1e176ada73f2e0c6ad1becf5f0836d6aaedac8aa17431",
+      "12970df2e136a4ab84a1e176ada73f2e0c6ad1becf5f0836d6aaedac8aa17431",
+      "73803021dd859f050f42fcf65d245cef70a8df3a01055f7812d81a8a287a33b2",
+      "73803021dd859f050f42fcf65d245cef70a8df3a01055f7812d81a8a287a33b2",
+      "73803021dd859f050f42fcf65d245cef70a8df3a01055f7812d81a8a287a33b2",
+      "73803021dd859f050f42fcf65d245cef70a8df3a01055f7812d81a8a287a33b2",
+      "6599346dd79d39385deae1f8f326f91c604b397fe0cb0b1a506ee354ec0db9c4",
+      "6599346dd79d39385deae1f8f326f91c604b397fe0cb0b1a506ee354ec0db9c4",
+      "6599346dd79d39385deae1f8f326f91c604b397fe0cb0b1a506ee354ec0db9c4",
+      "6599346dd79d39385deae1f8f326f91c604b397fe0cb0b1a506ee354ec0db9c4",
+      "21e0394baa72b747755b8ea20bebb48a62f2d136323d3ae7d3c100d53b091338",
+      "21e0394baa72b747755b8ea20bebb48a62f2d136323d3ae7d3c100d53b091338",
+      "21e0394baa72b747755b8ea20bebb48a62f2d136323d3ae7d3c100d53b091338",
+      "21e0394baa72b747755b8ea20bebb48a62f2d136323d3ae7d3c100d53b091338",
+      "1245c8fff08603cfe3d93fdfb925f064fa37ad6ecd8fc6ae255f0045670faa06",
+      "1245c8fff08603cfe3d93fdfb925f064fa37ad6ecd8fc6ae255f0045670faa06",
+      "1245c8fff08603cfe3d93fdfb925f064fa37ad6ecd8fc6ae255f0045670faa06",
+      "1245c8fff08603cfe3d93fdfb925f064fa37ad6ecd8fc6ae255f0045670faa06",
+      "923267e4e52f89800db05dce35fdbbd8bf2054004af6fec251f63f040544dc77",
+      "923267e4e52f89800db05dce35fdbbd8bf2054004af6fec251f63f040544dc77",
+      "923267e4e52f89800db05dce35fdbbd8bf2054004af6fec251f63f040544dc77",
+      "923267e4e52f89800db05dce35fdbbd8bf2054004af6fec251f63f040544dc77",
+      "a995334d882ad7b8a21b07a48d0527eba876b351deccd7eb835274da9348a0e3",
+      "a995334d882ad7b8a21b07a48d0527eba876b351deccd7eb835274da9348a0e3",
+      "a995334d882ad7b8a21b07a48d0527eba876b351deccd7eb835274da9348a0e3",
+      "a995334d882ad7b8a21b07a48d0527eba876b351deccd7eb835274da9348a0e3",
+      "b7e75ce8811c374ae6ce640b98547a660d8857542723093b9b05754070b0f0ac",
+      "b7e75ce8811c374ae6ce640b98547a660d8857542723093b9b05754070b0f0ac",
+      "b7e75ce8811c374ae6ce640b98547a660d8857542723093b9b05754070b0f0ac",
+      "b7e75ce8811c374ae6ce640b98547a660d8857542723093b9b05754070b0f0ac",
+      "c51b454169a30bdaa8dd393804281d6b7d0fff1b43083f664ae0eb63d5746ba8",
+      "c51b454169a30bdaa8dd393804281d6b7d0fff1b43083f664ae0eb63d5746ba8",
+      "c51b454169a30bdaa8dd393804281d6b7d0fff1b43083f664ae0eb63d5746ba8",
+      "c51b454169a30bdaa8dd393804281d6b7d0fff1b43083f664ae0eb63d5746ba8",
+      "15aa05c4bc1a1aa33bbf740493b8891f121c794975763f807c1bb0ff29c51e3e",
+      "15aa05c4bc1a1aa33bbf740493b8891f121c794975763f807c1bb0ff29c51e3e",
+      "15aa05c4bc1a1aa33bbf740493b8891f121c794975763f807c1bb0ff29c51e3e",
+      "15aa05c4bc1a1aa33bbf740493b8891f121c794975763f807c1bb0ff29c51e3e",
+      "4b2cb0a8bc7da0e3b334e0936ae706a8d7f7cb0f37bab8c2acd963248dfe08a2",
+      "4b2cb0a8bc7da0e3b334e0936ae706a8d7f7cb0f37bab8c2acd963248dfe08a2",
+      "4b2cb0a8bc7da0e3b334e0936ae706a8d7f7cb0f37bab8c2acd963248dfe08a2",
+      "4b2cb0a8bc7da0e3b334e0936ae706a8d7f7cb0f37bab8c2acd963248dfe08a2",
+      "931b22c5fb74404fe5f87e557071c3fef86d68f0ea5b5c07c9aa671a6d528202",
+      "931b22c5fb74404fe5f87e557071c3fef86d68f0ea5b5c07c9aa671a6d528202",
+      "931b22c5fb74404fe5f87e557071c3fef86d68f0ea5b5c07c9aa671a6d528202",
+      "931b22c5fb74404fe5f87e557071c3fef86d68f0ea5b5c07c9aa671a6d528202",
+      "b5be7650fb8a7c6bf5b451d15e02334843bf1d8af40f82e140bdb74d00229c33",
+      "b5be7650fb8a7c6bf5b451d15e02334843bf1d8af40f82e140bdb74d00229c33",
+      "b5be7650fb8a7c6bf5b451d15e02334843bf1d8af40f82e140bdb74d00229c33",
+      "b5be7650fb8a7c6bf5b451d15e02334843bf1d8af40f82e140bdb74d00229c33",
+      "76285d58cb9d31cc689bb81dac0f0fa62825c80e48bc1d1118fcf6c988e6c549",
+      "76285d58cb9d31cc689bb81dac0f0fa62825c80e48bc1d1118fcf6c988e6c549",
+      "76285d58cb9d31cc689bb81dac0f0fa62825c80e48bc1d1118fcf6c988e6c549",
+      "76285d58cb9d31cc689bb81dac0f0fa62825c80e48bc1d1118fcf6c988e6c549",
+      "5786e75762f6c334bf58d73fd7713b09d2c712540cff215ed652e4dcbca1805b",
+      "5786e75762f6c334bf58d73fd7713b09d2c712540cff215ed652e4dcbca1805b",
+      "5786e75762f6c334bf58d73fd7713b09d2c712540cff215ed652e4dcbca1805b",
+      "5786e75762f6c334bf58d73fd7713b09d2c712540cff215ed652e4dcbca1805b",
+      "fed31297185dce3210459191112c981ca82ca9f127ba800fa5d3966e5a327806",
+      "fed31297185dce3210459191112c981ca82ca9f127ba800fa5d3966e5a327806",
+      "fed31297185dce3210459191112c981ca82ca9f127ba800fa5d3966e5a327806",
+      "fed31297185dce3210459191112c981ca82ca9f127ba800fa5d3966e5a327806",
+      "9c38ca425f28d5145a01830c29a0c42c77ef0f20e3cd72c2ea8d039cc49d7888",
+      "9c38ca425f28d5145a01830c29a0c42c77ef0f20e3cd72c2ea8d039cc49d7888",
+      "9c38ca425f28d5145a01830c29a0c42c77ef0f20e3cd72c2ea8d039cc49d7888",
+      "9c38ca425f28d5145a01830c29a0c42c77ef0f20e3cd72c2ea8d039cc49d7888",
+      "a1842b9c7d65649d5e55e3ac387ee3f7e65d7642080fbb0b3d64d144e0d26e96",
+      "a1842b9c7d65649d5e55e3ac387ee3f7e65d7642080fbb0b3d64d144e0d26e96",
+      "a1842b9c7d65649d5e55e3ac387ee3f7e65d7642080fbb0b3d64d144e0d26e96",
+      "a1842b9c7d65649d5e55e3ac387ee3f7e65d7642080fbb0b3d64d144e0d26e96",
+      "20029e751eaaa5a9b5db389aadc2ab036780f593c87f6495ba3a335d6ba53948",
+      "20029e751eaaa5a9b5db389aadc2ab036780f593c87f6495ba3a335d6ba53948",
+      "20029e751eaaa5a9b5db389aadc2ab036780f593c87f6495ba3a335d6ba53948",
+      "20029e751eaaa5a9b5db389aadc2ab036780f593c87f6495ba3a335d6ba53948",
+      "ce368ad2cc5e535ecb0e0d2d50d42233f3b67939f0939421c697292a7859f099",
+      "ce368ad2cc5e535ecb0e0d2d50d42233f3b67939f0939421c697292a7859f099",
+      "ce368ad2cc5e535ecb0e0d2d50d42233f3b67939f0939421c697292a7859f099",
+      "ce368ad2cc5e535ecb0e0d2d50d42233f3b67939f0939421c697292a7859f099",
+      "fa8179d75c313dcbcffb2c8ef0c750216379b5caef964491d77b06c98c2e3749",
+      "fa8179d75c313dcbcffb2c8ef0c750216379b5caef964491d77b06c98c2e3749",
+      "fa8179d75c313dcbcffb2c8ef0c750216379b5caef964491d77b06c98c2e3749",
+      "fa8179d75c313dcbcffb2c8ef0c750216379b5caef964491d77b06c98c2e3749",
+      "d84374d1006177cf94f56bfa9f0dceca9d8bd13c896163cdfa17a34572c2c2d0",
+      "d84374d1006177cf94f56bfa9f0dceca9d8bd13c896163cdfa17a34572c2c2d0",
+      "d84374d1006177cf94f56bfa9f0dceca9d8bd13c896163cdfa17a34572c2c2d0",
+      "d84374d1006177cf94f56bfa9f0dceca9d8bd13c896163cdfa17a34572c2c2d0",
+      "47f0859074a511ecadff1e96588eacc7c81b08f57efd9521bdc9e7203364f3e0",
+      "47f0859074a511ecadff1e96588eacc7c81b08f57efd9521bdc9e7203364f3e0",
+      "47f0859074a511ecadff1e96588eacc7c81b08f57efd9521bdc9e7203364f3e0",
+      "47f0859074a511ecadff1e96588eacc7c81b08f57efd9521bdc9e7203364f3e0",
+      "284663eb21c07674614d13a3b76435a1d8816a463a5edfe04fc67778b3ee04b5",
+      "284663eb21c07674614d13a3b76435a1d8816a463a5edfe04fc67778b3ee04b5",
+      "284663eb21c07674614d13a3b76435a1d8816a463a5edfe04fc67778b3ee04b5",
+      "284663eb21c07674614d13a3b76435a1d8816a463a5edfe04fc67778b3ee04b5",
+      "5aede78e5d7118e3255bc99944e24e25898bd17215b5cccb26778193ba69825f",
+      "5aede78e5d7118e3255bc99944e24e25898bd17215b5cccb26778193ba69825f",
+      "5aede78e5d7118e3255bc99944e24e25898bd17215b5cccb26778193ba69825f",
+      "5aede78e5d7118e3255bc99944e24e25898bd17215b5cccb26778193ba69825f",
+      "d0eed0c8db33626f6e3f60fb790dba996b804cb2815d1f8fe4d42e1c6dc09fa6",
+      "d0eed0c8db33626f6e3f60fb790dba996b804cb2815d1f8fe4d42e1c6dc09fa6",
+      "d0eed0c8db33626f6e3f60fb790dba996b804cb2815d1f8fe4d42e1c6dc09fa6",
+      "d0eed0c8db33626f6e3f60fb790dba996b804cb2815d1f8fe4d42e1c6dc09fa6",
+      "33d1ed680bcfb39a422955c3c82779d463407178d78161a2a6e417da9a6d4a9c",
+      "33d1ed680bcfb39a422955c3c82779d463407178d78161a2a6e417da9a6d4a9c",
+      "33d1ed680bcfb39a422955c3c82779d463407178d78161a2a6e417da9a6d4a9c",
+      "33d1ed680bcfb39a422955c3c82779d463407178d78161a2a6e417da9a6d4a9c",
+      "a3de47e03b809689a4c3a620d339d67ee7df65f4766a890d8120fde763da3baf",
+      "a3de47e03b809689a4c3a620d339d67ee7df65f4766a890d8120fde763da3baf",
+      "a3de47e03b809689a4c3a620d339d67ee7df65f4766a890d8120fde763da3baf",
+      "a3de47e03b809689a4c3a620d339d67ee7df65f4766a890d8120fde763da3baf",
+      "a270022c82e27907ab33345793dda92a993ca4df55dc1f7b4e3a64e9d897cd46",
+      "a270022c82e27907ab33345793dda92a993ca4df55dc1f7b4e3a64e9d897cd46",
+      "a270022c82e27907ab33345793dda92a993ca4df55dc1f7b4e3a64e9d897cd46",
+      "a270022c82e27907ab33345793dda92a993ca4df55dc1f7b4e3a64e9d897cd46",
+      "67c81ab28ee5a98565a9389261581e6d74f4ffbfbfd2ee0d72f7270b34d4c269",
+      "67c81ab28ee5a98565a9389261581e6d74f4ffbfbfd2ee0d72f7270b34d4c269",
+      "67c81ab28ee5a98565a9389261581e6d74f4ffbfbfd2ee0d72f7270b34d4c269",
+      "67c81ab28ee5a98565a9389261581e6d74f4ffbfbfd2ee0d72f7270b34d4c269",
+      "a26e7b3df8233702b7671c4e95c48c742e2502c9d762cd42ae3b4457c53b9504",
+      "a26e7b3df8233702b7671c4e95c48c742e2502c9d762cd42ae3b4457c53b9504",
+      "a26e7b3df8233702b7671c4e95c48c742e2502c9d762cd42ae3b4457c53b9504",
+      "a26e7b3df8233702b7671c4e95c48c742e2502c9d762cd42ae3b4457c53b9504",
+      "541c386e96c2377301cc8f27b61d5f9609b0557a2939e4c9c4f5ae9c16f80ee7",
+      "541c386e96c2377301cc8f27b61d5f9609b0557a2939e4c9c4f5ae9c16f80ee7",
+      "541c386e96c2377301cc8f27b61d5f9609b0557a2939e4c9c4f5ae9c16f80ee7",
+      "541c386e96c2377301cc8f27b61d5f9609b0557a2939e4c9c4f5ae9c16f80ee7",
+      "58f2f9568d4a8b10ff6c5280deecee35a3ae950cc971bec0da86ac0b185c7c92",
+      "58f2f9568d4a8b10ff6c5280deecee35a3ae950cc971bec0da86ac0b185c7c92",
+      "58f2f9568d4a8b10ff6c5280deecee35a3ae950cc971bec0da86ac0b185c7c92",
+      "58f2f9568d4a8b10ff6c5280deecee35a3ae950cc971bec0da86ac0b185c7c92",
+      "e6eb1e76b55857254b462ef7416d2915614eb8843bb662b3cb0a0eae7b6321f8",
+      "e6eb1e76b55857254b462ef7416d2915614eb8843bb662b3cb0a0eae7b6321f8",
+      "e6eb1e76b55857254b462ef7416d2915614eb8843bb662b3cb0a0eae7b6321f8",
+      "e6eb1e76b55857254b462ef7416d2915614eb8843bb662b3cb0a0eae7b6321f8",
+      "e36e14df09a89d760f4d3485d3248a1cb08a47bb00c31a1aea2bf57ffc369221",
+      "e36e14df09a89d760f4d3485d3248a1cb08a47bb00c31a1aea2bf57ffc369221",
+      "e36e14df09a89d760f4d3485d3248a1cb08a47bb00c31a1aea2bf57ffc369221",
+      "e36e14df09a89d760f4d3485d3248a1cb08a47bb00c31a1aea2bf57ffc369221",
+      "3d5707501e273efeff77d65edff4ce777fd7cde660eab6ae3e50841047993c71",
+      "3d5707501e273efeff77d65edff4ce777fd7cde660eab6ae3e50841047993c71",
+      "3d5707501e273efeff77d65edff4ce777fd7cde660eab6ae3e50841047993c71",
+      "3d5707501e273efeff77d65edff4ce777fd7cde660eab6ae3e50841047993c71",
+      "a88f4bfbea18a1fd43b05c5256abdf9ceee5d57f586a3ac4a998165b42513165",
+      "a88f4bfbea18a1fd43b05c5256abdf9ceee5d57f586a3ac4a998165b42513165",
+      "a88f4bfbea18a1fd43b05c5256abdf9ceee5d57f586a3ac4a998165b42513165",
+      "a88f4bfbea18a1fd43b05c5256abdf9ceee5d57f586a3ac4a998165b42513165",
+      "583e14ea605b5d7a2c46069df98eb856c7770151029e3c9ead91840c6bf8a562",
+      "583e14ea605b5d7a2c46069df98eb856c7770151029e3c9ead91840c6bf8a562",
+      "583e14ea605b5d7a2c46069df98eb856c7770151029e3c9ead91840c6bf8a562",
+      "583e14ea605b5d7a2c46069df98eb856c7770151029e3c9ead91840c6bf8a562",
+      "2b25820a8303e43e551ef14fd7684df5a0bc67703461369d78b3d9a296e7b542",
+      "2b25820a8303e43e551ef14fd7684df5a0bc67703461369d78b3d9a296e7b542",
+      "2b25820a8303e43e551ef14fd7684df5a0bc67703461369d78b3d9a296e7b542",
+      "2b25820a8303e43e551ef14fd7684df5a0bc67703461369d78b3d9a296e7b542",
+      "d4a809de43c3b26f224593244e954386da1dd6526cf0ea1f58e763fd5e187805",
+      "d4a809de43c3b26f224593244e954386da1dd6526cf0ea1f58e763fd5e187805",
+      "d4a809de43c3b26f224593244e954386da1dd6526cf0ea1f58e763fd5e187805",
+      "d4a809de43c3b26f224593244e954386da1dd6526cf0ea1f58e763fd5e187805",
+      "aa48d94ee6a73dd7767b063d374a7c2d1e2ddcce6c95daf2f28285995e6c180e",
+      "aa48d94ee6a73dd7767b063d374a7c2d1e2ddcce6c95daf2f28285995e6c180e",
+      "aa48d94ee6a73dd7767b063d374a7c2d1e2ddcce6c95daf2f28285995e6c180e",
+      "aa48d94ee6a73dd7767b063d374a7c2d1e2ddcce6c95daf2f28285995e6c180e",
+      "87eed011956e396a5ec138d40a222f828e44fe47afecbfb37b0e62de3353b4f0",
+      "87eed011956e396a5ec138d40a222f828e44fe47afecbfb37b0e62de3353b4f0",
+      "87eed011956e396a5ec138d40a222f828e44fe47afecbfb37b0e62de3353b4f0",
+      "87eed011956e396a5ec138d40a222f828e44fe47afecbfb37b0e62de3353b4f0",
+      "29de8289011c0bdda323b8fed6169dc245fa5088f7cc18e81a41937dc2dbe840",
+      "29de8289011c0bdda323b8fed6169dc245fa5088f7cc18e81a41937dc2dbe840",
+      "29de8289011c0bdda323b8fed6169dc245fa5088f7cc18e81a41937dc2dbe840",
+      "29de8289011c0bdda323b8fed6169dc245fa5088f7cc18e81a41937dc2dbe840",
+      "2dffe6100c94fa2fdaf014847e74504131c31bcd0b9d5ca955624b67a6026427",
+      "2dffe6100c94fa2fdaf014847e74504131c31bcd0b9d5ca955624b67a6026427",
+      "2dffe6100c94fa2fdaf014847e74504131c31bcd0b9d5ca955624b67a6026427",
+      "2dffe6100c94fa2fdaf014847e74504131c31bcd0b9d5ca955624b67a6026427",
+      "bc731843ac2e591f3d19748b534db0b1fb9ed15dadbe69c594127a7eebf05ed4",
+      "bc731843ac2e591f3d19748b534db0b1fb9ed15dadbe69c594127a7eebf05ed4",
+      "bc731843ac2e591f3d19748b534db0b1fb9ed15dadbe69c594127a7eebf05ed4",
+      "bc731843ac2e591f3d19748b534db0b1fb9ed15dadbe69c594127a7eebf05ed4",
+      "8587174ee5430417d47b12032624c157413ef457593c2f5dbb4bb6f882ccf75a",
+      "8587174ee5430417d47b12032624c157413ef457593c2f5dbb4bb6f882ccf75a",
+      "8587174ee5430417d47b12032624c157413ef457593c2f5dbb4bb6f882ccf75a",
+      "8587174ee5430417d47b12032624c157413ef457593c2f5dbb4bb6f882ccf75a",
+      "3f3c890842a0f6906691b68442aee70e0192fe3286d615e08da0a20e934cd185",
+      "3f3c890842a0f6906691b68442aee70e0192fe3286d615e08da0a20e934cd185",
+      "3f3c890842a0f6906691b68442aee70e0192fe3286d615e08da0a20e934cd185",
+      "3f3c890842a0f6906691b68442aee70e0192fe3286d615e08da0a20e934cd185",
+      "43d7b528a923e141490912cfe9d8c86e5c6bd61568c8c62a9647e5bffe82af10",
+      "43d7b528a923e141490912cfe9d8c86e5c6bd61568c8c62a9647e5bffe82af10",
+      "43d7b528a923e141490912cfe9d8c86e5c6bd61568c8c62a9647e5bffe82af10",
+      "43d7b528a923e141490912cfe9d8c86e5c6bd61568c8c62a9647e5bffe82af10",
+      "edc10ad153da71780ed1e9789080f9bede4b625480dfa462b7f02fe5da4be37c",
+      "edc10ad153da71780ed1e9789080f9bede4b625480dfa462b7f02fe5da4be37c",
+      "edc10ad153da71780ed1e9789080f9bede4b625480dfa462b7f02fe5da4be37c",
+      "edc10ad153da71780ed1e9789080f9bede4b625480dfa462b7f02fe5da4be37c",
+      "42d1095b83853acd87e15dc5bf8f355e439b49275f71d569ac720852edba9bd1",
+      "42d1095b83853acd87e15dc5bf8f355e439b49275f71d569ac720852edba9bd1",
+      "42d1095b83853acd87e15dc5bf8f355e439b49275f71d569ac720852edba9bd1",
+      "42d1095b83853acd87e15dc5bf8f355e439b49275f71d569ac720852edba9bd1",
+      "66661db9bb25e3419c5ed732b0f122934ce27d82eeff917b0853ff3dd0b24598",
+      "66661db9bb25e3419c5ed732b0f122934ce27d82eeff917b0853ff3dd0b24598",
+      "66661db9bb25e3419c5ed732b0f122934ce27d82eeff917b0853ff3dd0b24598",
+      "66661db9bb25e3419c5ed732b0f122934ce27d82eeff917b0853ff3dd0b24598",
+      "6e56ce358077ccca535d978f7ef9d15aa874d5fd1ea8550a1e1a8ba4bd251b92",
+      "6e56ce358077ccca535d978f7ef9d15aa874d5fd1ea8550a1e1a8ba4bd251b92",
+      "6e56ce358077ccca535d978f7ef9d15aa874d5fd1ea8550a1e1a8ba4bd251b92",
+      "6e56ce358077ccca535d978f7ef9d15aa874d5fd1ea8550a1e1a8ba4bd251b92",
+      "fed4503c7436749361db1de8eef9ea82d7d823af4d5d8b4df92f834ba88d7530",
+      "fed4503c7436749361db1de8eef9ea82d7d823af4d5d8b4df92f834ba88d7530",
+      "fed4503c7436749361db1de8eef9ea82d7d823af4d5d8b4df92f834ba88d7530",
+      "fed4503c7436749361db1de8eef9ea82d7d823af4d5d8b4df92f834ba88d7530",
+      "9741675084327c108d5fc741896c19416cabbbdfb9795b560564547752db1cac",
+      "9741675084327c108d5fc741896c19416cabbbdfb9795b560564547752db1cac",
+      "9741675084327c108d5fc741896c19416cabbbdfb9795b560564547752db1cac",
+      "9741675084327c108d5fc741896c19416cabbbdfb9795b560564547752db1cac",
+      "e8ca30e089ef3a5f83d3b0919da0ca0e116d21f3d40486310fb3d0543d8a0034",
+      "e8ca30e089ef3a5f83d3b0919da0ca0e116d21f3d40486310fb3d0543d8a0034",
+      "e8ca30e089ef3a5f83d3b0919da0ca0e116d21f3d40486310fb3d0543d8a0034",
+      "e8ca30e089ef3a5f83d3b0919da0ca0e116d21f3d40486310fb3d0543d8a0034",
+      "a26e9ab24096ef14225c862bafbd40dc4b0f7862f391c7c678f3fa229ae40bea",
+      "a26e9ab24096ef14225c862bafbd40dc4b0f7862f391c7c678f3fa229ae40bea",
+      "a26e9ab24096ef14225c862bafbd40dc4b0f7862f391c7c678f3fa229ae40bea",
+      "a26e9ab24096ef14225c862bafbd40dc4b0f7862f391c7c678f3fa229ae40bea",
+      "bbbc5fe79ed1d76d4798b7c8b623116e7803b6b023abc7bbcdd72a4c32531fee",
+      "bbbc5fe79ed1d76d4798b7c8b623116e7803b6b023abc7bbcdd72a4c32531fee",
+      "bbbc5fe79ed1d76d4798b7c8b623116e7803b6b023abc7bbcdd72a4c32531fee",
+      "bbbc5fe79ed1d76d4798b7c8b623116e7803b6b023abc7bbcdd72a4c32531fee",
+      "4ca8a715c97cf2848f84bb4b208e2f38de99a88bdd9edd7506aea3fde4a6c546",
+      "4ca8a715c97cf2848f84bb4b208e2f38de99a88bdd9edd7506aea3fde4a6c546",
+      "4ca8a715c97cf2848f84bb4b208e2f38de99a88bdd9edd7506aea3fde4a6c546",
+      "4ca8a715c97cf2848f84bb4b208e2f38de99a88bdd9edd7506aea3fde4a6c546",
+      "5926f00a3b75dc504801aa51a8428834ef8f90d2f0506ec1904ec4d7e747bbee",
+      "5926f00a3b75dc504801aa51a8428834ef8f90d2f0506ec1904ec4d7e747bbee",
+      "5926f00a3b75dc504801aa51a8428834ef8f90d2f0506ec1904ec4d7e747bbee",
+      "5926f00a3b75dc504801aa51a8428834ef8f90d2f0506ec1904ec4d7e747bbee",
+      "8beae87e16f593c5ef13652dfd80a7a73870fd44598b06e560acad01943557b2",
+      "8beae87e16f593c5ef13652dfd80a7a73870fd44598b06e560acad01943557b2",
+      "8beae87e16f593c5ef13652dfd80a7a73870fd44598b06e560acad01943557b2",
+      "8beae87e16f593c5ef13652dfd80a7a73870fd44598b06e560acad01943557b2",
+      "492ed368ebc4f3878d93fc55cb1ff1765c315cdb6a064d9d8e8e34b55fb519ba",
+      "492ed368ebc4f3878d93fc55cb1ff1765c315cdb6a064d9d8e8e34b55fb519ba",
+      "492ed368ebc4f3878d93fc55cb1ff1765c315cdb6a064d9d8e8e34b55fb519ba",
+      "492ed368ebc4f3878d93fc55cb1ff1765c315cdb6a064d9d8e8e34b55fb519ba",
+      "fe85a9a71ed3067498c7a3209cf91e714421410c561de19d45da8482b15db45f",
+      "fe85a9a71ed3067498c7a3209cf91e714421410c561de19d45da8482b15db45f",
+      "fe85a9a71ed3067498c7a3209cf91e714421410c561de19d45da8482b15db45f",
+      "fe85a9a71ed3067498c7a3209cf91e714421410c561de19d45da8482b15db45f",
+      "4eae1661fa144ee5701a0a256b11c2cbf62a9afc1ca93318585f018fdd4bec32",
+      "4eae1661fa144ee5701a0a256b11c2cbf62a9afc1ca93318585f018fdd4bec32",
+      "4eae1661fa144ee5701a0a256b11c2cbf62a9afc1ca93318585f018fdd4bec32",
+      "4eae1661fa144ee5701a0a256b11c2cbf62a9afc1ca93318585f018fdd4bec32",
+      "ec159ce32f57e4852f55ac77d27c4727a0cf8144e3e07c8684047e89cd691342",
+      "ec159ce32f57e4852f55ac77d27c4727a0cf8144e3e07c8684047e89cd691342",
+      "ec159ce32f57e4852f55ac77d27c4727a0cf8144e3e07c8684047e89cd691342",
+      "ec159ce32f57e4852f55ac77d27c4727a0cf8144e3e07c8684047e89cd691342",
+      "8696303f4f1ff29879053cddd6e9efd2bd81e06b9c14ee80881b54b76716423a",
+      "8696303f4f1ff29879053cddd6e9efd2bd81e06b9c14ee80881b54b76716423a",
+      "8696303f4f1ff29879053cddd6e9efd2bd81e06b9c14ee80881b54b76716423a",
+      "8696303f4f1ff29879053cddd6e9efd2bd81e06b9c14ee80881b54b76716423a",
+      "92ff4b537b83e102f4e5c2100804c62ed43fe5d084517642fa6f2bf2bb3305df",
+      "92ff4b537b83e102f4e5c2100804c62ed43fe5d084517642fa6f2bf2bb3305df",
+      "92ff4b537b83e102f4e5c2100804c62ed43fe5d084517642fa6f2bf2bb3305df",
+      "92ff4b537b83e102f4e5c2100804c62ed43fe5d084517642fa6f2bf2bb3305df",
+      "e2fb37e9f4c6681c23ce08cae8082a09ec813d0049b06987be7d08225a9ad9ae",
+      "e2fb37e9f4c6681c23ce08cae8082a09ec813d0049b06987be7d08225a9ad9ae",
+      "e2fb37e9f4c6681c23ce08cae8082a09ec813d0049b06987be7d08225a9ad9ae",
+      "e2fb37e9f4c6681c23ce08cae8082a09ec813d0049b06987be7d08225a9ad9ae",
+      "9554a7c2e0a0639fcef89dbb54fe7b054c85c65bf7e23e3c234bc251448f91b7",
+      "9554a7c2e0a0639fcef89dbb54fe7b054c85c65bf7e23e3c234bc251448f91b7",
+      "9554a7c2e0a0639fcef89dbb54fe7b054c85c65bf7e23e3c234bc251448f91b7",
+      "9554a7c2e0a0639fcef89dbb54fe7b054c85c65bf7e23e3c234bc251448f91b7",
+      "a8d250967cfc40bda45246b2be53c0a9ac3291901cdb37dcee7b54443c8fe585",
+      "a8d250967cfc40bda45246b2be53c0a9ac3291901cdb37dcee7b54443c8fe585",
+      "a8d250967cfc40bda45246b2be53c0a9ac3291901cdb37dcee7b54443c8fe585",
+      "a8d250967cfc40bda45246b2be53c0a9ac3291901cdb37dcee7b54443c8fe585",
+      "fc0c770639ee2cc7a3ebdb8851462af3ac1bb0bdf455e1bc5da0b0202288e714",
+      "fc0c770639ee2cc7a3ebdb8851462af3ac1bb0bdf455e1bc5da0b0202288e714",
+      "fc0c770639ee2cc7a3ebdb8851462af3ac1bb0bdf455e1bc5da0b0202288e714",
+      "fc0c770639ee2cc7a3ebdb8851462af3ac1bb0bdf455e1bc5da0b0202288e714",
+      "71349323a51780096030f7a223b4f4c1e61488bae8a48485003e5a9a01b3c23e",
+      "71349323a51780096030f7a223b4f4c1e61488bae8a48485003e5a9a01b3c23e",
+      "71349323a51780096030f7a223b4f4c1e61488bae8a48485003e5a9a01b3c23e",
+      "71349323a51780096030f7a223b4f4c1e61488bae8a48485003e5a9a01b3c23e",
+      "1127452b0c8b9e558eadddf9eb282a02999a26216436f44d0ab51cfe1615a466",
+      "1127452b0c8b9e558eadddf9eb282a02999a26216436f44d0ab51cfe1615a466",
+      "1127452b0c8b9e558eadddf9eb282a02999a26216436f44d0ab51cfe1615a466",
+      "1127452b0c8b9e558eadddf9eb282a02999a26216436f44d0ab51cfe1615a466",
+      "1f6ff7ae36e487483b1355f6ce264e4af7e74bf56790e0e1c40ae3b60498e16b",
+      "1f6ff7ae36e487483b1355f6ce264e4af7e74bf56790e0e1c40ae3b60498e16b",
+      "1f6ff7ae36e487483b1355f6ce264e4af7e74bf56790e0e1c40ae3b60498e16b",
+      "1f6ff7ae36e487483b1355f6ce264e4af7e74bf56790e0e1c40ae3b60498e16b",
+      "95fe66d6555f97a98280f0d8c655dc56104141a185eb284f12041b7ab1507d69",
+      "95fe66d6555f97a98280f0d8c655dc56104141a185eb284f12041b7ab1507d69",
+      "95fe66d6555f97a98280f0d8c655dc56104141a185eb284f12041b7ab1507d69",
+      "95fe66d6555f97a98280f0d8c655dc56104141a185eb284f12041b7ab1507d69",
+      "c7d5ab62b0d11277d181c76786cd813782205563e4f6de75e58ffb3b9685a016",
+      "c7d5ab62b0d11277d181c76786cd813782205563e4f6de75e58ffb3b9685a016",
+      "c7d5ab62b0d11277d181c76786cd813782205563e4f6de75e58ffb3b9685a016",
+      "c7d5ab62b0d11277d181c76786cd813782205563e4f6de75e58ffb3b9685a016",
+      "7cd7e0a55b642067898a984680741cd9d3fabe6e5b33e7cae98f9099f1b9300d",
+      "7cd7e0a55b642067898a984680741cd9d3fabe6e5b33e7cae98f9099f1b9300d",
+      "7cd7e0a55b642067898a984680741cd9d3fabe6e5b33e7cae98f9099f1b9300d",
+      "7cd7e0a55b642067898a984680741cd9d3fabe6e5b33e7cae98f9099f1b9300d",
+      "0270563a3abb2d70e1c80cbf4a0a34a76aa4af56561a84f5d211609ea392c2ea",
+      "0270563a3abb2d70e1c80cbf4a0a34a76aa4af56561a84f5d211609ea392c2ea",
+      "0270563a3abb2d70e1c80cbf4a0a34a76aa4af56561a84f5d211609ea392c2ea",
+      "0270563a3abb2d70e1c80cbf4a0a34a76aa4af56561a84f5d211609ea392c2ea",
+      "0658953e6439cde77e469549d29605825f078b7e04d503192ba732e1dc497396",
+      "0658953e6439cde77e469549d29605825f078b7e04d503192ba732e1dc497396",
+      "0658953e6439cde77e469549d29605825f078b7e04d503192ba732e1dc497396",
+      "0658953e6439cde77e469549d29605825f078b7e04d503192ba732e1dc497396",
+      "6c200bb0569e10c1fdb4b0f4724813c38a3999fed9f99660e74460639db33e40",
+      "6c200bb0569e10c1fdb4b0f4724813c38a3999fed9f99660e74460639db33e40",
+      "6c200bb0569e10c1fdb4b0f4724813c38a3999fed9f99660e74460639db33e40",
+      "6c200bb0569e10c1fdb4b0f4724813c38a3999fed9f99660e74460639db33e40",
+      "41b8b671005138cb3ad7c700bd050de545d4bece7fd88dc4c6df639122d2295f",
+      "41b8b671005138cb3ad7c700bd050de545d4bece7fd88dc4c6df639122d2295f",
+      "41b8b671005138cb3ad7c700bd050de545d4bece7fd88dc4c6df639122d2295f",
+      "41b8b671005138cb3ad7c700bd050de545d4bece7fd88dc4c6df639122d2295f",
+      "d83917f249da504d120fc8ed4081b0a70f29eb5cccfe7bc0681f7ac7dd4681b3",
+      "d83917f249da504d120fc8ed4081b0a70f29eb5cccfe7bc0681f7ac7dd4681b3",
+      "d83917f249da504d120fc8ed4081b0a70f29eb5cccfe7bc0681f7ac7dd4681b3",
+      "d83917f249da504d120fc8ed4081b0a70f29eb5cccfe7bc0681f7ac7dd4681b3"
+    ],
+    "parent": {
+      "modified_utc": "2026-10-14T09:20:29.536476+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-observation-compatibility-verified/compatibility_arrays.h5",
+      "sha256": "826bffc59b3d23590a55f757b3e81a837c38206edded6cac3a4846fa5738fb1a",
+      "size_bytes": 3195174
+    }
+  },
+  "regressions": [
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_contracts.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:10:53.471046+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_contracts.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:10:53.470945+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_contracts.py.stdout.txt",
+        "sha256": "003baff6983e929adf69d084d3d045056c8af671008a7a80e6625fc8c9e4c8dc",
+        "size_bytes": 37
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_baseline.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:10:58.581711+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_baseline.py.stderr.txt",
+        "sha256": "400cc93cd904e7d7a010940a90b7508aee5f8bb28739d27f95b95038141a384b",
+        "size_bytes": 177
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:10:58.581560+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_baseline.py.stdout.txt",
+        "sha256": "cdfc8953f3a8403781a3517981745be7b09c805c0310d26be7e755383aff793c",
+        "size_bytes": 254
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_simulator.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:05.652388+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_simulator.py.stderr.txt",
+        "sha256": "e50ca514911fe835c8ac7bc2943566d921e242f60a104d3ec3033547ba9197eb",
+        "size_bytes": 8824
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:05.652165+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_simulator.py.stdout.txt",
+        "sha256": "89bfb80f168d2a38881fa0f4e6e9f2f78d58ca2f1a29e780f8234917d32dfea8",
+        "size_bytes": 800
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_simulator_stage.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:11.302862+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_simulator_stage.py.stderr.txt",
+        "sha256": "e97eb43a31cc524a69061fb9d4ba7f04ae7e55a6636a9c7099100da7ba0f2266",
+        "size_bytes": 8982
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:11.302625+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_simulator_stage.py.stdout.txt",
+        "sha256": "aebd1af4ae2c9102388a75c3ed42a7907e0846b287fd396f7f33044a10cefc02",
+        "size_bytes": 895
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_render_provenance.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:23.955518+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_render_provenance.py.stderr.txt",
+        "sha256": "83b1d77d499e974f8fd67832addc9b2a31cdba7d60f7a218f22ddd710d978e29",
+        "size_bytes": 8824
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:23.955314+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_counterfactual_render_provenance.py.stdout.txt",
+        "sha256": "ab7ca7f86cb3be3387ec2fc2c1f604936a09d1edf9e4a5dd00c6e90e2f1bb30d",
+        "size_bytes": 1174
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_ablation.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:28.446055+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_ablation.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:28.445962+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_ablation.py.stdout.txt",
+        "sha256": "bab830c466ec26e03236339f01cfd6e7d8f246ff6ceb5aba01cf623642bcddcd",
+        "size_bytes": 30
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_windows.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:30.927094+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_windows.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:30.927000+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_windows.py.stdout.txt",
+        "sha256": "4dc74c828d4f64c9277099f3b3c915f4c0c1be75cf39d8375690818aa4ee7d19",
+        "size_bytes": 28
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_probe_eval.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:31.854490+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_probe_eval.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:31.854390+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_probe_eval.py.stdout.txt",
+        "sha256": "88ef2ee1e21a1cc9f8cbc04c55d3091a0b8f0e6cea6269d103525ba741d6973a",
+        "size_bytes": 32
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_visualization.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:33.559403+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_visualization.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:33.559322+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_visualization.py.stdout.txt",
+        "sha256": "186ae729d55e318bf2b8df4f0f95c5e0f522c346626c00a0760d88e6f4237a69",
+        "size_bytes": 35
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_reconstruction.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:35.218530+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_reconstruction.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:35.218438+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_rollout_reconstruction.py.stdout.txt",
+        "sha256": "965435a83c82765b78fd13f46b5da646a5a931595386a84db4c9f10fbb305e19",
+        "size_bytes": 36
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_latent_diagnostics.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T10:11:39.805916+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_latent_diagnostics.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T10:11:39.805793+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/regression_logs/test_latent_diagnostics.py.stdout.txt",
+        "sha256": "c055dd7ef74add17f81ee621d687f4c53047df425fbe1b3e2541383b79d5e745",
+        "size_bytes": 242
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_observation_compatibility.py"
+      ],
+      "return_code": 0
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_domain_diagnostics.py"
+      ],
+      "return_code": 0
+    }
+  ],
+  "repeat_encoding_prediction_max_abs": 0.0,
+  "run_id": "step2-domain-validation-replay-v2",
+  "run_status": "completed",
+  "schema_version": 1,
+  "simulator_parent": {
+    "mechanics_scope": "same backend, unchanged Step 2 implementations; rerun tests separately",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-fresh-start-replay-reviewed/simulator_manifest.json",
+    "run_id": "step2-fresh-start-replay-reviewed",
+    "sha256": "280e0f39b4d9b5b480be646e6d3704b851b8ee77a4936c728a87a4f0e2aff01f",
+    "step2_gate_passed": true
+  },
+  "source_sha256": {
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/envs/pusht/env.py": "d8d0de35aaab5b846db4e79b0fbfd6b17375178cce40a25df5301c8030ca6d68",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/solver/cem.py": "d88c86dcd1bd1e6d89221ac22079a3efe296cc7566532de0d36605e2f1536050",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/pusht.yaml": "7eb72270554b70904be4d1b4442af8e378db325d69a4da1ac373e8dcb9145222",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/solver/cem.yaml": "797629f829c0d3ad3b9c4e42d46a87f08da0b3845bc433e353fd6274cb0574df",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/phase1/pusht.yaml": "d9a10ac40f00019ea499e9d2b472de644cb5efa0f5e59be28cdaa77f5a51f7c0",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/train/lewm.yaml": "9c42647156737114fe76c2c5a0707e32f4f027a8c5c844f90a0c33a8e6f26c47",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/__init__.py": "245da18c0fbf35a3d82e672efde63f83801c5f4d16c4a41ec918d287bf090fa5",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/baseline.py": "4b4fe9dda539ab1c56a91088d7dd421005c7f387d4a9b887bd18b91fc3798b88",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/compatibility_report.py": "f2bca8488076d84cce405e75211e08002508830591738e42644f43c2248fd9ea",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/contracts.py": "53bf620ab6cd0946774bc6522c4a66788554b4adebf56e948c79e9b60350e053",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/domain_diagnostics.py": "99ac789215f6dec8c4d9c1b5fb159c451c0e9e43ecdf99357d574492a0783b3b",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/domain_report.py": "017bc778882db67ba93ea1b1bcf375beb629626929b9d8ed606263bfca2477e9",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/model.py": "0f5865ee146a6608ae0d10dbc28b47fa20ad73e0e067f4dd6c7e66f946098002",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/observation_compatibility.py": "eb34cc1d8565629588519dc361ae49e966619cd815b4568ca2adce2ffe84e4f9",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/render_provenance.py": "5a7b77b340ca33f1de7092ea3644c5bcb4ff0f419735f4f71248dcbc3045cee4",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator.py": "798080f3b881f1f1c6a1f5cf55d59417132c766593bba8ee5cba5e68eea00fe6",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator_validation.py": "c78bfcd3ae8e89f8512ef12da1dcddfa76070204c2ddec3157590cbdd35bfb02",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/eval.py": "852cf176d4d0404e19bf08b21c4dfe690376754a154d7fa713b148781541ffc8",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/jepa.py": "39d4f7f817e1720f3a32205fd5340348e86a5f6ddfb25d5015135a1d9b67c6a7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/module.py": "6265d5f87d92262a4a55708bfea9fe6a91af45318de64bd8d163f953cdf9922c",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/observation_domain_protocol_v2.md": "38e7fadce430224ff8af0b6c205df8f2c99e2ffe5f27663c50cb9fba599e9161",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/data.py": "9df138d36fcea9b944726d21779e691304cd48113d4d6702cf48ffc8f681b1c3",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/embedding_cache.py": "5cbb97d1eb2cfc4bf27305a448d355c710749d24b76d353104b6bbd7423c8233",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/evaluate.py": "f9cc92fdb719351a58883f455b3923c7a87d4c86f7eb700f1e59efa5ed5941b3",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/models.py": "6b51fcc5876bd394fc3fdf1c51ac6d92bc050b4c824ea90ebdbc91dcdac2678f",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/rollout_ablation.py": "fed6eeea6d64d5c95820ff38f300886c3359ddaf243b8d05b4ed4e54279082f7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/scripts/run_phase1.py": "afc0fffb82864a4136ac5ac8ae345c22d7d211542685de82a5e666ee5c0ea697",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_domain_diagnostics.py": "8b9d72037ff150555153fa7f28df1b6c42bec6dcb2a0888114a1dcf52995911c",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/utils.py": "0793dc4f0c2f27a3ece84e11fd10aa33dce762ca2c5032849c17dea5d95dd09f"
+  },
+  "stage": "phase1_step2_natural_domain_diagnostic",
+  "summary": {
+    "absolute_agent_location_dose0": {
+      "ci95": [
+        40.06721246304432,
+        73.61613378281191
+      ],
+      "lower95": 42.561742525009535,
+      "n_families": 16,
+      "rms": 57.250771606046754,
+      "upper95": 70.9903569036076
+    },
+    "absolute_agent_location_dose10": {
+      "ci95": [
+        37.88059459921118,
+        68.18294891057654
+      ],
+      "lower95": 40.333345823684944,
+      "n_families": 16,
+      "rms": 53.692304207745664,
+      "upper95": 65.97962776468059
+    },
+    "absolute_agent_location_dose20": {
+      "ci95": [
+        33.88336641056589,
+        67.97293113541801
+      ],
+      "lower95": 36.444638823649676,
+      "n_families": 16,
+      "rms": 51.38876069361964,
+      "upper95": 65.3532192391415
+    },
+    "absolute_agent_location_dose30": {
+      "ci95": [
+        30.66225390799743,
+        57.282486726859204
+      ],
+      "lower95": 33.04901006499511,
+      "n_families": 16,
+      "rms": 44.80895018779764,
+      "upper95": 55.32483227922289
+    },
+    "absolute_block_angle_dose0": {
+      "ci95": [
+        0.27277714516381796,
+        0.7066643619618231
+      ],
+      "lower95": 0.30416929669825876,
+      "n_families": 16,
+      "rms": 0.5006449897088655,
+      "upper95": 0.6727555879094483
+    },
+    "absolute_block_angle_dose10": {
+      "ci95": [
+        0.26147795123396406,
+        0.69777361164894
+      ],
+      "lower95": 0.2883077506384537,
+      "n_families": 16,
+      "rms": 0.4863620491522585,
+      "upper95": 0.6644295758828962
+    },
+    "absolute_block_angle_dose20": {
+      "ci95": [
+        0.26236780606763405,
+        0.6593295338904018
+      ],
+      "lower95": 0.2895651684794022,
+      "n_families": 16,
+      "rms": 0.46825824583089865,
+      "upper95": 0.6271070263141715
+    },
+    "absolute_block_angle_dose30": {
+      "ci95": [
+        0.2708099968602814,
+        0.5856536014021887
+      ],
+      "lower95": 0.29556645270599385,
+      "n_families": 16,
+      "rms": 0.4367283718899497,
+      "upper95": 0.5614559664309493
+    },
+    "absolute_block_location_dose0": {
+      "ci95": [
+        11.03639891418039,
+        18.64118630796946
+      ],
+      "lower95": 11.58828079499455,
+      "n_families": 16,
+      "rms": 14.909487538326868,
+      "upper95": 17.982255910324046
+    },
+    "absolute_block_location_dose10": {
+      "ci95": [
+        11.219001642232941,
+        19.36060584720269
+      ],
+      "lower95": 11.769315416942838,
+      "n_families": 16,
+      "rms": 15.32374289707181,
+      "upper95": 18.657245101455143
+    },
+    "absolute_block_location_dose20": {
+      "ci95": [
+        11.29070043876169,
+        18.9105272737337
+      ],
+      "lower95": 11.882719331523473,
+      "n_families": 16,
+      "rms": 15.219753878216377,
+      "upper95": 18.297765229984464
+    },
+    "absolute_block_location_dose30": {
+      "ci95": [
+        11.465822953741295,
+        19.45945252060152
+      ],
+      "lower95": 12.050030636731732,
+      "n_families": 16,
+      "rms": 15.54922936382395,
+      "upper95": 18.805671304525106
+    },
+    "differential_agent_location_dose10": {
+      "ci95": [
+        4.957153001196677,
+        12.522100549817317
+      ],
+      "lower95": 5.305189917095196,
+      "n_families": 16,
+      "rms": 8.981080106578064,
+      "upper95": 11.944649541655615
+    },
+    "differential_agent_location_dose20": {
+      "ci95": [
+        6.71503666259788,
+        13.774154223479766
+      ],
+      "lower95": 7.165158491646969,
+      "n_families": 16,
+      "rms": 10.252563890167595,
+      "upper95": 13.170263972792585
+    },
+    "differential_agent_location_dose30": {
+      "ci95": [
+        11.12858368222804,
+        20.651684084800145
+      ],
+      "lower95": 11.809363071744224,
+      "n_families": 16,
+      "rms": 15.95666170380766,
+      "upper95": 19.86022357141305
+    },
+    "differential_block_angle_dose10": {
+      "ci95": [
+        0.013734065289112697,
+        0.06747506205766643
+      ],
+      "lower95": 0.015526439913706119,
+      "n_families": 16,
+      "rms": 0.041956807087817634,
+      "upper95": 0.06583542021393035
+    },
+    "differential_block_angle_dose20": {
+      "ci95": [
+        0.034989974166754485,
+        0.08309432682714184
+      ],
+      "lower95": 0.039998866431579475,
+      "n_families": 16,
+      "rms": 0.06172202147999482,
+      "upper95": 0.07971537934747004
+    },
+    "differential_block_angle_dose30": {
+      "ci95": [
+        0.057245185547149975,
+        0.16081696703012513
+      ],
+      "lower95": 0.06430714052785319,
+      "n_families": 16,
+      "rms": 0.1117678450218506,
+      "upper95": 0.15244607881202837
+    },
+    "differential_block_location_dose10": {
+      "ci95": [
+        0.7069268563310149,
+        2.103562743450068
+      ],
+      "lower95": 0.783647338012918,
+      "n_families": 16,
+      "rms": 1.431129912313802,
+      "upper95": 2.0026901232477794
+    },
+    "differential_block_location_dose20": {
+      "ci95": [
+        1.2580279928695106,
+        3.210437061203548
+      ],
+      "lower95": 1.3237761604864438,
+      "n_families": 16,
+      "rms": 2.193918898264614,
+      "upper95": 3.1318510560750568
+    },
+    "differential_block_location_dose30": {
+      "ci95": [
+        1.6561240951854574,
+        3.213110352867172
+      ],
+      "lower95": 1.795339535265974,
+      "n_families": 16,
+      "rms": 2.4898537270112255,
+      "upper95": 3.100963759261867
+    },
+    "encoded_absolute_agent_location_h15": {
+      "ci95": [
+        30.95628319854739,
+        59.86082589356113
+      ],
+      "lower95": 33.350879738808764,
+      "n_families": 16,
+      "rms": 46.12272633197154,
+      "upper95": 57.546817405280535
+    },
+    "encoded_absolute_agent_location_h20": {
+      "ci95": [
+        27.069668053850087,
+        53.29679016055118
+      ],
+      "lower95": 29.345888507387496,
+      "n_families": 16,
+      "rms": 41.04934433904363,
+      "upper95": 51.36359605624141
+    },
+    "encoded_absolute_agent_location_h25": {
+      "ci95": [
+        22.87236671721613,
+        46.64293672191041
+      ],
+      "lower95": 24.880345862085104,
+      "n_families": 16,
+      "rms": 35.41165633563648,
+      "upper95": 44.80401203950749
+    },
+    "encoded_absolute_agent_location_h30": {
+      "ci95": [
+        22.105689040714623,
+        47.072890661515835
+      ],
+      "lower95": 24.280031297508447,
+      "n_families": 16,
+      "rms": 35.357041375385734,
+      "upper95": 45.115429169750456
+    },
+    "encoded_absolute_agent_location_h35": {
+      "ci95": [
+        22.10568904252158,
+        47.07289066367028
+      ],
+      "lower95": 24.280031298805504,
+      "n_families": 16,
+      "rms": 35.35704137853228,
+      "upper95": 45.11542917282355
+    },
+    "encoded_absolute_block_angle_h15": {
+      "ci95": [
+        0.26943597134401387,
+        0.5393413518282126
+      ],
+      "lower95": 0.2920497282404859,
+      "n_families": 16,
+      "rms": 0.4128060840435336,
+      "upper95": 0.519239343902292
+    },
+    "encoded_absolute_block_angle_h20": {
+      "ci95": [
+        0.2444234707205497,
+        0.4267394086411238
+      ],
+      "lower95": 0.2616809695516358,
+      "n_families": 16,
+      "rms": 0.3441135340651048,
+      "upper95": 0.4139565634324908
+    },
+    "encoded_absolute_block_angle_h25": {
+      "ci95": [
+        0.23646311371249346,
+        0.45967872381691227
+      ],
+      "lower95": 0.25679164045070385,
+      "n_families": 16,
+      "rms": 0.3569810332728793,
+      "upper95": 0.4427983034135287
+    },
+    "encoded_absolute_block_angle_h30": {
+      "ci95": [
+        0.23086297197012526,
+        0.4501999024981395
+      ],
+      "lower95": 0.2487346292087236,
+      "n_families": 16,
+      "rms": 0.34899396078810463,
+      "upper95": 0.43321622010363375
+    },
+    "encoded_absolute_block_angle_h35": {
+      "ci95": [
+        0.23086297197012526,
+        0.4501999024981395
+      ],
+      "lower95": 0.2487346292087236,
+      "n_families": 16,
+      "rms": 0.34899396078810463,
+      "upper95": 0.43321622010363375
+    },
+    "encoded_absolute_block_location_h15": {
+      "ci95": [
+        11.683881814933807,
+        19.217367377235444
+      ],
+      "lower95": 12.224568177238924,
+      "n_families": 16,
+      "rms": 15.572595359238054,
+      "upper95": 18.606477275026194
+    },
+    "encoded_absolute_block_location_h20": {
+      "ci95": [
+        11.924797586946603,
+        18.76676218435909
+      ],
+      "lower95": 12.465102207512926,
+      "n_families": 16,
+      "rms": 15.509862635227421,
+      "upper95": 18.21529231873009
+    },
+    "encoded_absolute_block_location_h25": {
+      "ci95": [
+        11.419637443971371,
+        17.97011581466533
+      ],
+      "lower95": 11.90400567348632,
+      "n_families": 16,
+      "rms": 14.848438701461465,
+      "upper95": 17.470913774113132
+    },
+    "encoded_absolute_block_location_h30": {
+      "ci95": [
+        11.326700070660209,
+        17.853858599396414
+      ],
+      "lower95": 11.833018305376827,
+      "n_families": 16,
+      "rms": 14.726258915252002,
+      "upper95": 17.33983591857003
+    },
+    "encoded_absolute_block_location_h35": {
+      "ci95": [
+        11.326700070660209,
+        17.853858599396414
+      ],
+      "lower95": 11.833018305376827,
+      "n_families": 16,
+      "rms": 14.726258915252002,
+      "upper95": 17.33983591857003
+    },
+    "open_loop_absolute_agent_location_h15": {
+      "ci95": [
+        32.57909056714312,
+        61.535314301463835
+      ],
+      "lower95": 34.735376951549625,
+      "n_families": 16,
+      "rms": 47.392402361527274,
+      "upper95": 59.34166684743098
+    },
+    "open_loop_absolute_agent_location_h20": {
+      "ci95": [
+        29.484897948288726,
+        56.74454126763129
+      ],
+      "lower95": 31.53357608565768,
+      "n_families": 16,
+      "rms": 43.44212560543348,
+      "upper95": 54.68816913536194
+    },
+    "open_loop_absolute_agent_location_h25": {
+      "ci95": [
+        26.793000217697315,
+        52.63668935084399
+      ],
+      "lower95": 28.82086904458488,
+      "n_families": 16,
+      "rms": 40.066730086560376,
+      "upper95": 50.70346949775741
+    },
+    "open_loop_absolute_agent_location_h30": {
+      "ci95": [
+        26.561920046283998,
+        53.861807221689865
+      ],
+      "lower95": 28.52027781762702,
+      "n_families": 16,
+      "rms": 40.43885705670259,
+      "upper95": 51.77775618288065
+    },
+    "open_loop_absolute_agent_location_h35": {
+      "ci95": [
+        27.003769683693886,
+        55.53173754640471
+      ],
+      "lower95": 28.88389780633353,
+      "n_families": 16,
+      "rms": 41.35277095862011,
+      "upper95": 53.33654456013597
+    },
+    "open_loop_absolute_block_angle_h15": {
+      "ci95": [
+        0.33373628159604535,
+        0.73348129257343
+      ],
+      "lower95": 0.36890727594932,
+      "n_families": 16,
+      "rms": 0.5544322934368993,
+      "upper95": 0.705704961068054
+    },
+    "open_loop_absolute_block_angle_h20": {
+      "ci95": [
+        0.3783228840365107,
+        0.8201499545546708
+      ],
+      "lower95": 0.41846355811415753,
+      "n_families": 16,
+      "rms": 0.6204597052883924,
+      "upper95": 0.7886066781853293
+    },
+    "open_loop_absolute_block_angle_h25": {
+      "ci95": [
+        0.4322275177885634,
+        0.8824726419193324
+      ],
+      "lower95": 0.4693569733856864,
+      "n_families": 16,
+      "rms": 0.6752426599276757,
+      "upper95": 0.8476232286943693
+    },
+    "open_loop_absolute_block_angle_h30": {
+      "ci95": [
+        0.46554617723771824,
+        0.9013037573940893
+      ],
+      "lower95": 0.5021924564654487,
+      "n_families": 16,
+      "rms": 0.7013241025067315,
+      "upper95": 0.8691596336632383
+    },
+    "open_loop_absolute_block_angle_h35": {
+      "ci95": [
+        0.49159112639604075,
+        0.9078395522292703
+      ],
+      "lower95": 0.525442143370875,
+      "n_families": 16,
+      "rms": 0.7166828435180572,
+      "upper95": 0.8783928956192572
+    },
+    "open_loop_absolute_block_location_h15": {
+      "ci95": [
+        12.187749908294327,
+        24.631916933116173
+      ],
+      "lower95": 13.081697158750487,
+      "n_families": 16,
+      "rms": 18.66819053987598,
+      "upper95": 23.62550294550989
+    },
+    "open_loop_absolute_block_location_h20": {
+      "ci95": [
+        13.496874285792487,
+        32.08199257824352
+      ],
+      "lower95": 14.487707535327486,
+      "n_families": 16,
+      "rms": 22.8622880843921,
+      "upper95": 30.724996272886226
+    },
+    "open_loop_absolute_block_location_h25": {
+      "ci95": [
+        17.877167053109428,
+        42.47640683617148
+      ],
+      "lower95": 18.92256264863579,
+      "n_families": 16,
+      "rms": 29.784592152702903,
+      "upper95": 41.15681849073859
+    },
+    "open_loop_absolute_block_location_h30": {
+      "ci95": [
+        18.76539111964153,
+        44.152826084760626
+      ],
+      "lower95": 19.95556881658166,
+      "n_families": 16,
+      "rms": 31.140840490730938,
+      "upper95": 42.56630767622816
+    },
+    "open_loop_absolute_block_location_h35": {
+      "ci95": [
+        19.793732742445158,
+        46.17719134647748
+      ],
+      "lower95": 21.044520383042716,
+      "n_families": 16,
+      "rms": 32.6992404662043,
+      "upper95": 44.48190607336828
+    },
+    "open_loop_effect_agent_location_h15": {
+      "ci95": [
+        8.212109442379145,
+        14.044504363791422
+      ],
+      "lower95": 8.639372250971169,
+      "n_families": 16,
+      "rms": 11.260780041700665,
+      "upper95": 13.588890748060216
+    },
+    "open_loop_effect_agent_location_h20": {
+      "ci95": [
+        8.547285122866654,
+        13.768993354677113
+      ],
+      "lower95": 8.9640779601632,
+      "n_families": 16,
+      "rms": 11.31286968504897,
+      "upper95": 13.392823136791366
+    },
+    "open_loop_effect_agent_location_h25": {
+      "ci95": [
+        8.475840672166266,
+        13.248244147925318
+      ],
+      "lower95": 8.880507655755356,
+      "n_families": 16,
+      "rms": 11.005870820192408,
+      "upper95": 12.879646514541646
+    },
+    "open_loop_effect_agent_location_h30": {
+      "ci95": [
+        8.228991241955153,
+        13.24044394813949
+      ],
+      "lower95": 8.642675174658871,
+      "n_families": 16,
+      "rms": 10.862167656542844,
+      "upper95": 12.855222378942605
+    },
+    "open_loop_effect_agent_location_h35": {
+      "ci95": [
+        8.083034471810025,
+        13.313327436687265
+      ],
+      "lower95": 8.51755327413123,
+      "n_families": 16,
+      "rms": 10.820920011086233,
+      "upper95": 12.932027571483935
+    },
+    "open_loop_effect_block_angle_h15": {
+      "ci95": [
+        0.06748297750934855,
+        0.16795313820000302
+      ],
+      "lower95": 0.07651403701027346,
+      "n_families": 16,
+      "rms": 0.12240053291051228,
+      "upper95": 0.16095925466929023
+    },
+    "open_loop_effect_block_angle_h20": {
+      "ci95": [
+        0.08075258901097424,
+        0.20355639750783333
+      ],
+      "lower95": 0.09149262665339232,
+      "n_families": 16,
+      "rms": 0.1469826979915285,
+      "upper95": 0.19435832967860134
+    },
+    "open_loop_effect_block_angle_h25": {
+      "ci95": [
+        0.07705523003273251,
+        0.22056750510323622
+      ],
+      "lower95": 0.08431952644839921,
+      "n_families": 16,
+      "rms": 0.14976935045622727,
+      "upper95": 0.211676918521589
+    },
+    "open_loop_effect_block_angle_h30": {
+      "ci95": [
+        0.08088741388506517,
+        0.265386652056185
+      ],
+      "lower95": 0.08712058719023683,
+      "n_families": 16,
+      "rms": 0.17292059559286907,
+      "upper95": 0.2585629898636303
+    },
+    "open_loop_effect_block_angle_h35": {
+      "ci95": [
+        0.08062748116012355,
+        0.2934543645827962
+      ],
+      "lower95": 0.08709329646997907,
+      "n_families": 16,
+      "rms": 0.1871508910321695,
+      "upper95": 0.2876702224722079
+    },
+    "open_loop_effect_block_location_h15": {
+      "ci95": [
+        4.137316497411325,
+        8.7224155857032
+      ],
+      "lower95": 4.592714635395906,
+      "n_families": 16,
+      "rms": 6.6893555220983405,
+      "upper95": 8.410100518132067
+    },
+    "open_loop_effect_block_location_h20": {
+      "ci95": [
+        7.655777165375556,
+        15.716808532148733
+      ],
+      "lower95": 8.340216306975728,
+      "n_families": 16,
+      "rms": 12.136743308327056,
+      "upper95": 15.173599224065645
+    },
+    "open_loop_effect_block_location_h25": {
+      "ci95": [
+        6.95647172570836,
+        13.612614764525022
+      ],
+      "lower95": 7.5963551748285845,
+      "n_families": 16,
+      "rms": 10.655102001069473,
+      "upper95": 13.177932176954306
+    },
+    "open_loop_effect_block_location_h30": {
+      "ci95": [
+        6.7479636403324745,
+        13.192158254067103
+      ],
+      "lower95": 7.373477065433494,
+      "n_families": 16,
+      "rms": 10.321712715625283,
+      "upper95": 12.75669582274016
+    },
+    "open_loop_effect_block_location_h35": {
+      "ci95": [
+        6.733511291595635,
+        13.04035175274224
+      ],
+      "lower95": 7.356817120074419,
+      "n_families": 16,
+      "rms": 10.222541320593708,
+      "upper95": 12.604994564212616
+    },
+    "teacher_forced_absolute_agent_location_h15": {
+      "ci95": [
+        32.57909056714312,
+        61.535314301463835
+      ],
+      "lower95": 34.735376951549625,
+      "n_families": 16,
+      "rms": 47.392402361527274,
+      "upper95": 59.34166684743098
+    },
+    "teacher_forced_absolute_agent_location_h20": {
+      "ci95": [
+        27.941739835482018,
+        55.15307459113126
+      ],
+      "lower95": 30.025524196058033,
+      "n_families": 16,
+      "rms": 42.145052782380986,
+      "upper95": 53.08098992053188
+    },
+    "teacher_forced_absolute_agent_location_h25": {
+      "ci95": [
+        24.615010347752964,
+        49.22128657439482
+      ],
+      "lower95": 26.82044270942131,
+      "n_families": 16,
+      "rms": 37.65635970417929,
+      "upper95": 47.36349185583704
+    },
+    "teacher_forced_absolute_agent_location_h30": {
+      "ci95": [
+        22.39647995421236,
+        46.17036275990156
+      ],
+      "lower95": 24.54329370545713,
+      "n_families": 16,
+      "rms": 35.09057415729146,
+      "upper95": 44.49172876380045
+    },
+    "teacher_forced_absolute_agent_location_h35": {
+      "ci95": [
+        21.675223158625734,
+        46.94203921347419
+      ],
+      "lower95": 23.80619407134177,
+      "n_families": 16,
+      "rms": 35.18755838734705,
+      "upper95": 45.178462731629494
+    },
+    "teacher_forced_absolute_block_angle_h15": {
+      "ci95": [
+        0.33373628159604535,
+        0.73348129257343
+      ],
+      "lower95": 0.36890727594932,
+      "n_families": 16,
+      "rms": 0.5544322934368993,
+      "upper95": 0.705704961068054
+    },
+    "teacher_forced_absolute_block_angle_h20": {
+      "ci95": [
+        0.3228599388639322,
+        0.6632530946171398
+      ],
+      "lower95": 0.35460242701060685,
+      "n_families": 16,
+      "rms": 0.5096993693664121,
+      "upper95": 0.6380457598383412
+    },
+    "teacher_forced_absolute_block_angle_h25": {
+      "ci95": [
+        0.2989195347067648,
+        0.6352530218180905
+      ],
+      "lower95": 0.3302087613666843,
+      "n_families": 16,
+      "rms": 0.4868573480060507,
+      "upper95": 0.6129786369666202
+    },
+    "teacher_forced_absolute_block_angle_h30": {
+      "ci95": [
+        0.30669617286088763,
+        0.6205269520007003
+      ],
+      "lower95": 0.33401604227112613,
+      "n_families": 16,
+      "rms": 0.4800577915406826,
+      "upper95": 0.6003202735928099
+    },
+    "teacher_forced_absolute_block_angle_h35": {
+      "ci95": [
+        0.2965472642895935,
+        0.6102003347186351
+      ],
+      "lower95": 0.32523709548831925,
+      "n_families": 16,
+      "rms": 0.4698419185503439,
+      "upper95": 0.5904943415804619
+    },
+    "teacher_forced_absolute_block_location_h15": {
+      "ci95": [
+        12.187749908294327,
+        24.631916933116173
+      ],
+      "lower95": 13.081697158750487,
+      "n_families": 16,
+      "rms": 18.66819053987598,
+      "upper95": 23.62550294550989
+    },
+    "teacher_forced_absolute_block_location_h20": {
+      "ci95": [
+        12.083196300610712,
+        26.597907664829904
+      ],
+      "lower95": 13.093464717345014,
+      "n_families": 16,
+      "rms": 19.71928014263555,
+      "upper95": 25.431941494363535
+    },
+    "teacher_forced_absolute_block_location_h25": {
+      "ci95": [
+        13.221598012308597,
+        25.74684499730252
+      ],
+      "lower95": 14.086643861852789,
+      "n_families": 16,
+      "rms": 19.664189997800104,
+      "upper95": 24.678046493422446
+    },
+    "teacher_forced_absolute_block_location_h30": {
+      "ci95": [
+        11.816053723750201,
+        19.156078482304117
+      ],
+      "lower95": 12.419470111942305,
+      "n_families": 16,
+      "rms": 15.730374367437042,
+      "upper95": 18.610110017768122
+    },
+    "teacher_forced_absolute_block_location_h35": {
+      "ci95": [
+        11.983662559535208,
+        19.32183892099864
+      ],
+      "lower95": 12.571122930514536,
+      "n_families": 16,
+      "rms": 15.874266303302687,
+      "upper95": 18.790229309317912
+    },
+    "teacher_forced_effect_agent_location_h15": {
+      "ci95": [
+        8.212109442379145,
+        14.044504363791422
+      ],
+      "lower95": 8.639372250971169,
+      "n_families": 16,
+      "rms": 11.260780041700665,
+      "upper95": 13.588890748060216
+    },
+    "teacher_forced_effect_agent_location_h20": {
+      "ci95": [
+        7.5546688239009825,
+        14.923876659780605
+      ],
+      "lower95": 7.895982949061106,
+      "n_families": 16,
+      "rms": 11.147170524641535,
+      "upper95": 14.30979853581075
+    },
+    "teacher_forced_effect_agent_location_h25": {
+      "ci95": [
+        8.322288756289671,
+        14.535574109355387
+      ],
+      "lower95": 8.730978325255618,
+      "n_families": 16,
+      "rms": 11.408319199401834,
+      "upper95": 14.025739247797159
+    },
+    "teacher_forced_effect_agent_location_h30": {
+      "ci95": [
+        8.719693165393922,
+        15.862014861041326
+      ],
+      "lower95": 9.273727118997808,
+      "n_families": 16,
+      "rms": 12.448892206815168,
+      "upper95": 15.257153092609823
+    },
+    "teacher_forced_effect_agent_location_h35": {
+      "ci95": [
+        8.153191348386317,
+        16.523467887227227
+      ],
+      "lower95": 8.647043792788716,
+      "n_families": 16,
+      "rms": 12.403921732219633,
+      "upper95": 15.906004430973738
+    },
+    "teacher_forced_effect_block_angle_h15": {
+      "ci95": [
+        0.06748297750934855,
+        0.16795313820000302
+      ],
+      "lower95": 0.07651403701027346,
+      "n_families": 16,
+      "rms": 0.12240053291051228,
+      "upper95": 0.16095925466929023
+    },
+    "teacher_forced_effect_block_angle_h20": {
+      "ci95": [
+        0.09358648988212309,
+        0.3274221927244029
+      ],
+      "lower95": 0.1035534318056348,
+      "n_families": 16,
+      "rms": 0.21526072169743227,
+      "upper95": 0.31241737072432985
+    },
+    "teacher_forced_effect_block_angle_h25": {
+      "ci95": [
+        0.10048883356570405,
+        0.24594349321073206
+      ],
+      "lower95": 0.11249722430231826,
+      "n_families": 16,
+      "rms": 0.17856031521598809,
+      "upper95": 0.23435403659824855
+    },
+    "teacher_forced_effect_block_angle_h30": {
+      "ci95": [
+        0.07730836871960677,
+        0.2939013415371095
+      ],
+      "lower95": 0.08753581967911649,
+      "n_families": 16,
+      "rms": 0.19017574553127678,
+      "upper95": 0.28340679045956135
+    },
+    "teacher_forced_effect_block_angle_h35": {
+      "ci95": [
+        0.07927122415995591,
+        0.26127564432471084
+      ],
+      "lower95": 0.08935703065885335,
+      "n_families": 16,
+      "rms": 0.17403224418051963,
+      "upper95": 0.249718486702843
+    },
+    "teacher_forced_effect_block_location_h15": {
+      "ci95": [
+        4.137316497411325,
+        8.7224155857032
+      ],
+      "lower95": 4.592714635395906,
+      "n_families": 16,
+      "rms": 6.6893555220983405,
+      "upper95": 8.410100518132067
+    },
+    "teacher_forced_effect_block_location_h20": {
+      "ci95": [
+        4.986406638326192,
+        10.188635592791357
+      ],
+      "lower95": 5.530475762491481,
+      "n_families": 16,
+      "rms": 7.8548106438753695,
+      "upper95": 9.795119083123733
+    },
+    "teacher_forced_effect_block_location_h25": {
+      "ci95": [
+        3.6660197933501695,
+        7.676161157768944
+      ],
+      "lower95": 3.923187119633266,
+      "n_families": 16,
+      "rms": 5.700707118046742,
+      "upper95": 7.358578079422984
+    },
+    "teacher_forced_effect_block_location_h30": {
+      "ci95": [
+        3.450622531926842,
+        8.475055145642962
+      ],
+      "lower95": 3.973902837347944,
+      "n_families": 16,
+      "rms": 6.243823532341545,
+      "upper95": 8.14231733812942
+    },
+    "teacher_forced_effect_block_location_h35": {
+      "ci95": [
+        3.7574444318634517,
+        8.126204238231864
+      ],
+      "lower95": 4.102430197009682,
+      "n_families": 16,
+      "rms": 6.146429077717608,
+      "upper95": 7.817673792517142
+    }
+  },
+  "versions": {
+    "einops": "0.8.2",
+    "gymnasium": "1.2.3",
+    "h5py": "3.16.0",
+    "hdf5plugin": "6.0.0",
+    "hydra-core": "1.3.2",
+    "lightning": "2.6.1",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "opencv-python": "4.13.0.92",
+    "platform": "macOS-15.7.8-arm64-arm-64bit",
+    "pygame": "2.6.1",
+    "pymunk": "7.2.0",
+    "python": "3.10.20 (main, Mar 25 2026, 03:21:46) [Clang 22.1.1 ]",
+    "scikit-learn": "1.7.2",
+    "stable-pretraining": "0.1.6",
+    "stable-worldmodel": "0.0.6",
+    "torch": "2.11.0",
+    "torch_cuda_available": false,
+    "torch_mps_available": false,
+    "torchvision": "0.26.0",
+    "transformers": "5.4.0"
+  }
+}

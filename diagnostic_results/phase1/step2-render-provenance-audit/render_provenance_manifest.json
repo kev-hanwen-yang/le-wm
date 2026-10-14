@@ -1,0 +1,1257 @@
+{
+  "artifacts": {
+    "regression_logs/regressions.json": {
+      "modified_utc": "2026-10-14T08:13:11.315044+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/regressions.json",
+      "sha256": "16e70d68425ea1f16850326e41d0877020b621117c1063530e2cb51be9816630",
+      "size_bytes": 11286
+    },
+    "regression_logs/test_counterfactual_baseline.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:12:31.772973+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_baseline.py.stderr.txt",
+      "sha256": "aba3b448d544e6096f9fc3e42b95a0b638a5b8ad43f8f947f100ded7d307d94b",
+      "size_bytes": 177
+    },
+    "regression_logs/test_counterfactual_baseline.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:12:31.772848+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_baseline.py.stdout.txt",
+      "sha256": "da58c394026033a64fe74dad78d3ec497af1da08ef80a1e58bfcbe569582e830",
+      "size_bytes": 254
+    },
+    "regression_logs/test_counterfactual_contracts.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:12:26.437281+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_contracts.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_counterfactual_contracts.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:12:26.437173+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_contracts.py.stdout.txt",
+      "sha256": "003baff6983e929adf69d084d3d045056c8af671008a7a80e6625fc8c9e4c8dc",
+      "size_bytes": 37
+    },
+    "regression_logs/test_counterfactual_render_provenance.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:12:56.250665+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_render_provenance.py.stderr.txt",
+      "sha256": "4bb19737f9392291d521ec832dab044881be36af03840c3daf7ba20f13b5537c",
+      "size_bytes": 8824
+    },
+    "regression_logs/test_counterfactual_render_provenance.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:12:56.250500+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_render_provenance.py.stdout.txt",
+      "sha256": "d13a26d43f3adb63af3cfa8b29989e57f6c2c32ec7a0d55eb935a54ddf94fffe",
+      "size_bytes": 735
+    },
+    "regression_logs/test_counterfactual_simulator.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:12:38.773160+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_simulator.py.stderr.txt",
+      "sha256": "96fa4316caf7ed81140c509db5e3c126fa57f188a3986ed70fa1056bd8d42aa2",
+      "size_bytes": 8824
+    },
+    "regression_logs/test_counterfactual_simulator.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:12:38.772982+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_simulator.py.stdout.txt",
+      "sha256": "89bfb80f168d2a38881fa0f4e6e9f2f78d58ca2f1a29e780f8234917d32dfea8",
+      "size_bytes": 800
+    },
+    "regression_logs/test_counterfactual_simulator_stage.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:12:44.110555+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_simulator_stage.py.stderr.txt",
+      "sha256": "1d2ee7e88c09f86e97c5b2f50064de17adbd65cda9cfa2cc0b88921b0ce5cbc6",
+      "size_bytes": 8982
+    },
+    "regression_logs/test_counterfactual_simulator_stage.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:12:44.110358+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_simulator_stage.py.stdout.txt",
+      "sha256": "c0f4a80aa47fa6eddaae34513ff22c2f17b58ad025dad79e3805fb21e9f1d0c7",
+      "size_bytes": 895
+    },
+    "regression_logs/test_latent_diagnostics.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:13:11.314282+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_latent_diagnostics.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_latent_diagnostics.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:13:11.314200+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_latent_diagnostics.py.stdout.txt",
+      "sha256": "c055dd7ef74add17f81ee621d687f4c53047df425fbe1b3e2541383b79d5e745",
+      "size_bytes": 242
+    },
+    "regression_logs/test_rollout_ablation.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:13:00.482839+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_ablation.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_ablation.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:13:00.482756+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_ablation.py.stdout.txt",
+      "sha256": "bab830c466ec26e03236339f01cfd6e7d8f246ff6ceb5aba01cf623642bcddcd",
+      "size_bytes": 30
+    },
+    "regression_logs/test_rollout_probe_eval.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:13:03.930695+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_probe_eval.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_probe_eval.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:13:03.930620+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_probe_eval.py.stdout.txt",
+      "sha256": "88ef2ee1e21a1cc9f8cbc04c55d3091a0b8f0e6cea6269d103525ba741d6973a",
+      "size_bytes": 32
+    },
+    "regression_logs/test_rollout_reconstruction.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:13:07.031649+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_reconstruction.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_reconstruction.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:13:07.031561+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_reconstruction.py.stdout.txt",
+      "sha256": "965435a83c82765b78fd13f46b5da646a5a931595386a84db4c9f10fbb305e19",
+      "size_bytes": 36
+    },
+    "regression_logs/test_rollout_visualization.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:13:05.516668+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_visualization.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_visualization.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:13:05.516585+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_visualization.py.stdout.txt",
+      "sha256": "186ae729d55e318bf2b8df4f0f95c5e0f522c346626c00a0760d88e6f4237a69",
+      "size_bytes": 35
+    },
+    "regression_logs/test_rollout_windows.py.stderr.txt": {
+      "modified_utc": "2026-10-14T08:13:03.047979+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_windows.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "regression_logs/test_rollout_windows.py.stdout.txt": {
+      "modified_utc": "2026-10-14T08:13:03.047887+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_windows.py.stdout.txt",
+      "sha256": "4dc74c828d4f64c9277099f3b3c915f4c0c1be75cf39d8375690818aa4ee7d19",
+      "size_bytes": 28
+    },
+    "render_comparisons.h5": {
+      "modified_utc": "2026-10-14T08:12:25.408018+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/render_comparisons.h5",
+      "sha256": "ef005ccd8de50ac8a150ee4739f7768fd17adbf31414dd696d63670ea5d8e6b8",
+      "size_bytes": 5797633
+    },
+    "source_snapshot.h5": {
+      "modified_utc": "2026-10-14T08:12:18.649812+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/source_snapshot.h5",
+      "sha256": "a07373d9acf26c1a34d720dc2d273c81dafd42eabd3806dfab15972fdfec0e06",
+      "size_bytes": 388843
+    },
+    "sources/dataset_card.txt": {
+      "modified_utc": "2026-10-14T08:12:21.055516+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/dataset_card.txt",
+      "sha256": "ebf5f6c780c07bd365ff8b947acb33e11e06e0ded471de73893d0ec545ed7ccd",
+      "size_bytes": 136
+    },
+    "sources/dataset_tree.txt": {
+      "modified_utc": "2026-10-14T08:12:21.389854+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/dataset_tree.txt",
+      "sha256": "a937385559f06c58259847eca48456eb5c36445c67dc365aee66352dd341221f",
+      "size_bytes": 511
+    },
+    "sources/dino_renderer.txt": {
+      "modified_utc": "2026-10-14T08:12:19.429782+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/dino_renderer.txt",
+      "sha256": "1aaac87d49b619eed2370297d5393cd3e22e22f08bbfb2870ee1422e86ef4c3a",
+      "size_bytes": 43907
+    },
+    "sources/dino_video_loader.txt": {
+      "modified_utc": "2026-10-14T08:12:19.734820+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/dino_video_loader.txt",
+      "sha256": "7e630c07f34f83ed06d6ccd558d189679ab7869a4cd817ad0199d151ffe939e7",
+      "size_bytes": 6375
+    },
+    "sources/early_converter.txt": {
+      "modified_utc": "2026-10-14T08:12:18.904058+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/early_converter.txt",
+      "sha256": "1e369d5460541a27b10391c2abf11d39913eb5bb1c41e8b249152d3a96773c92",
+      "size_bytes": 3934
+    },
+    "sources/early_video_loader.txt": {
+      "modified_utc": "2026-10-14T08:12:19.170446+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/early_video_loader.txt",
+      "sha256": "3b07c0ba7d24174f216c72f7d835524159a8ff579e79983e2f9a3688b7836d02",
+      "size_bytes": 11947
+    },
+    "sources/index.json": {
+      "modified_utc": "2026-10-14T08:12:21.390805+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/index.json",
+      "sha256": "d59a826f05e9baae0506c3358cb1144fd979f1a6180bc3aa1342024c1799dc94",
+      "size_bytes": 10356
+    },
+    "sources/march_collection_config.txt": {
+      "modified_utc": "2026-10-14T08:12:20.789034+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/march_collection_config.txt",
+      "sha256": "d7efaaef3fbb2b90110cb3e81940b5d63143921e6e8721b9f615bac4c70c7f79",
+      "size_bytes": 450
+    },
+    "sources/march_renderer.txt": {
+      "modified_utc": "2026-10-14T08:12:20.235408+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/march_renderer.txt",
+      "sha256": "c6d2104adc368ff1c352edc0e35ac74da9f07fda3a748ddbef0ba6b7a2d1daa2",
+      "size_bytes": 31006
+    },
+    "sources/march_weak_collector.txt": {
+      "modified_utc": "2026-10-14T08:12:20.496808+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/march_weak_collector.txt",
+      "sha256": "6a3442b61e4ae6a3532a2a6103cd9dd3e75f61a1ead6fa59713636e4807324a0",
+      "size_bytes": 997
+    }
+  },
+  "baseline_parent": {
+    "allowed_extensions": [
+      "CLI dispatch",
+      "simulator configuration section"
+    ],
+    "checkpoint_sha256": "100d6459b9198697c1c26ef47e3eef4d7548946401b7501213caf761495a2553",
+    "dataset_identity_check": "baseline file size/mtime plus Step 1 sampled identity, not full dataset hash",
+    "dataset_metadata": {
+      "modified_utc": "2026-03-29T05:13:07+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/pusht_expert_train.h5",
+      "size_bytes": 46300921856
+    },
+    "frozen_sources_checked": 16,
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step1-reviewed-baseline-seed42/baseline_manifest.json",
+    "run_id": "step1-reviewed-baseline-seed42",
+    "sha256": "f7d6a650743c330a5e19810beab337a7288c3bf6ff2a98cab76651476f6f3cb7"
+  },
+  "blockers": [
+    "No generation/conversion run manifest connects this HDF5 to an exact renderer/config/library revision.",
+    "HDF5 omits source goal/style/seed/variation metadata and original MP4 encoding settings.",
+    "Available historical converter copies decoded MP4 pixels but targets Minari, not this HDF5; complete conversion chain unknown.",
+    "Raw fresh renders are not byte-identical to source images; codec/backend/pose residuals cannot be uniquely attributed.",
+    "Rendered marker is not the installed physical task goal; do not infer goal_state from green pixels."
+  ],
+  "cache_frame_mapping": {
+    "audited_rows": 128,
+    "splits": {
+      "test": {
+        "file": {
+          "modified_utc": "2026-04-29T07:28:50.928695+00:00",
+          "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_test_seed42_img224_encoded.pt",
+          "size_bytes": 191796852
+        },
+        "metadata": {
+          "dataset_name": "pusht_expert_train",
+          "episode_count": 1869,
+          "img_size": 224,
+          "keys": [
+            "emb",
+            "state",
+            "proprio",
+            "episode_idx",
+            "step_idx"
+          ],
+          "num_frames": 231634,
+          "policy_name": "pusht/lewm",
+          "seed": 42,
+          "split_name": "test",
+          "state_layout": [
+            "agent_x",
+            "agent_y",
+            "block_x",
+            "block_y",
+            "block_angle",
+            "agent_vx",
+            "agent_vy"
+          ]
+        },
+        "sampled_rows_matched": 8
+      },
+      "train": {
+        "file": {
+          "modified_utc": "2026-04-29T07:01:43.979421+00:00",
+          "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_train_seed42_img224_encoded.pt",
+          "size_bytes": 1550527423
+        },
+        "metadata": {
+          "dataset_name": "pusht_expert_train",
+          "episode_count": 14948,
+          "img_size": 224,
+          "keys": [
+            "emb",
+            "state",
+            "proprio",
+            "episode_idx",
+            "step_idx"
+          ],
+          "num_frames": 1872613,
+          "policy_name": "pusht/lewm",
+          "seed": 42,
+          "split_name": "train",
+          "state_layout": [
+            "agent_x",
+            "agent_y",
+            "block_x",
+            "block_y",
+            "block_angle",
+            "agent_vx",
+            "agent_vy"
+          ]
+        },
+        "sampled_rows_matched": 114
+      },
+      "val": {
+        "file": {
+          "modified_utc": "2026-04-29T07:14:58.855648+00:00",
+          "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_val_seed42_img224_encoded.pt",
+          "size_bytes": 192504617
+        },
+        "metadata": {
+          "dataset_name": "pusht_expert_train",
+          "episode_count": 1868,
+          "img_size": 224,
+          "keys": [
+            "emb",
+            "state",
+            "proprio",
+            "episode_idx",
+            "step_idx"
+          ],
+          "num_frames": 232489,
+          "policy_name": "pusht/lewm",
+          "seed": 42,
+          "split_name": "val",
+          "state_layout": [
+            "agent_x",
+            "agent_y",
+            "block_x",
+            "block_y",
+            "block_angle",
+            "agent_vx",
+            "agent_vy"
+          ]
+        },
+        "sampled_rows_matched": 6
+      }
+    },
+    "status": "PASS"
+  },
+  "command": [
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+    "scripts/run_phase1.py",
+    "--stage",
+    "render-provenance",
+    "--run-id",
+    "step2-render-provenance-audit"
+  ],
+  "comparison_candidate": {
+    "candidate_only": true,
+    "goal_pose_world_px_rad": [
+      256.0,
+      256.0,
+      0.7853981633974483
+    ],
+    "render_action": false,
+    "render_goal": true,
+    "resolution": 224,
+    "with_target": true,
+    "world_size": 512
+  },
+  "config": {
+    "baseline": {
+      "cache_atol": 1e-05,
+      "cache_rtol": 0.0001,
+      "cache_sample_count": 16,
+      "cache_split_seed": 42,
+      "cache_splits": [
+        "train",
+        "val",
+        "test"
+      ],
+      "cem_enabled": true,
+      "cem_num_eval": 10,
+      "cem_timeout_seconds": 1800,
+      "checkpoint_sha256": "100d6459b9198697c1c26ef47e3eef4d7548946401b7501213caf761495a2553",
+      "rollout_steps": 5,
+      "smoke_episode_id": null
+    },
+    "contract": {
+      "action_dim": 2,
+      "frameskip": 5,
+      "history_size": 3,
+      "latent_dim": 192
+    },
+    "experiment": {
+      "cache_dir": ".stable-wm",
+      "dataset_name": "pusht_expert_train",
+      "image_size": 224,
+      "policy_name": "pusht/lewm",
+      "results_dir": "diagnostic_results",
+      "seed": 42
+    },
+    "simulator": {
+      "atol": 1e-10,
+      "baseline_manifest": "diagnostic_results/phase1/step1-reviewed-baseline-seed42/baseline_manifest.json",
+      "provenance": {
+        "candidate": {
+          "candidate_only": true,
+          "goal_pose_world_px_rad": [
+            256.0,
+            256.0,
+            0.7853981633974483
+          ],
+          "render_action": false,
+          "render_goal": true,
+          "resolution": 224,
+          "with_target": true,
+          "world_size": 512
+        },
+        "family_sample_count": 32,
+        "simulator_manifest": "diagnostic_results/phase1/step2-fresh-start-replay-reviewed/simulator_manifest.json"
+      },
+      "raw_steps": 35,
+      "rtol": 0.0,
+      "seeds": [
+        20261014,
+        20261015,
+        20261016
+      ],
+      "timeout_seconds": 300,
+      "with_target": true
+    }
+  },
+  "created_utc": "2026-10-14T08:12:18.482272+00:00",
+  "dataset": {
+    "modified_utc": "2026-03-29T05:13:07+00:00",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/pusht_expert_train.h5",
+    "size_bytes": 46300921856
+  },
+  "encoder_dataset_ready": false,
+  "finished_utc": "2026-10-14T08:13:11.328690+00:00",
+  "gate_status": {
+    "encoder_facing_step3_dataset_readiness": false,
+    "fresh_start_mechanics": "PASS (unchanged passing parent; fresh mechanics regression suite passed)",
+    "frozen_encoder_preprocessing_compatibility": "PASS",
+    "goal_pose_and_variation": "source-default fixed (256,256,pi/4); actual dataset generation config unresolved",
+    "goal_render_visibility": "source-default confirmed; local dataset empirically assessed, not run-provenance confirmed",
+    "raw_image_generation_compatibility": "INCONCLUSIVE"
+  },
+  "git": {
+    "branch": "phase1-counterfactual",
+    "revision": "00395f8a366ae24417df58797e25db4982e5cfa0",
+    "status_porcelain": "M config/phase1/pusht.yaml\n M scripts/run_phase1.py\n?? counterfactual/render_provenance.py\n?? test_counterfactual_render_provenance.py"
+  },
+  "image_audit": {
+    "compared_count": 54,
+    "exact_image_matches": 0,
+    "initial_family_aggregates": {
+      "hidden": {
+        "max_rmse": 14.317095369275332,
+        "mean_rmse": 13.617666934083777,
+        "median_rmse": 14.1377615655143,
+        "min_rmse": 8.557389839502527,
+        "n_initial_families": 21
+      },
+      "rotated": {
+        "max_rmse": 16.314119964131734,
+        "mean_rmse": 15.655947379363909,
+        "median_rmse": 16.148607672548888,
+        "min_rmse": 11.73353092779784,
+        "n_initial_families": 21
+      },
+      "shifted": {
+        "max_rmse": 17.41866233419648,
+        "mean_rmse": 16.716039492641965,
+        "median_rmse": 17.25421305952756,
+        "min_rmse": 13.603442865364691,
+        "n_initial_families": 21
+      },
+      "visible": {
+        "max_rmse": 3.3460191216705613,
+        "mean_rmse": 2.7942668126463452,
+        "median_rmse": 2.798025869610001,
+        "min_rmse": 1.9645461136922007,
+        "n_initial_families": 21
+      }
+    },
+    "preprocessing": {
+      "contract": {
+        "input_layout": "raw Push-T RGB uint8 frames (T, H, W, C)",
+        "model_layout": "(1, T, C, H, W)",
+        "transform": [
+          "torchvision.transforms.v2.ToImage",
+          "torchvision.transforms.v2.ToDtype(torch.float32, scale=True)",
+          "torchvision.transforms.v2.Normalize(ImageNet mean/std from stable_pretraining)",
+          "torchvision.transforms.v2.Resize(image_size, bilinear, antialias=True)"
+        ]
+      },
+      "dtype": "torch.float32",
+      "imagenet_mean": [
+        0.48500001430511475,
+        0.4560000002384186,
+        0.4059999883174896
+      ],
+      "imagenet_std": [
+        0.2290000021457672,
+        0.2240000069141388,
+        0.22499999403953552
+      ],
+      "max_abs_deltas": {
+        "independent_formula": 0.0,
+        "official_evaluation": 0.0,
+        "training": 0.0
+      },
+      "raw_scale": "0..255 RGB uint8",
+      "shape": [
+        1,
+        8,
+        3,
+        224,
+        224
+      ],
+      "status": "PASS",
+      "tensor_scale": "ImageNet-normalized float32"
+    },
+    "rejected_count": 74,
+    "sample_count": 128,
+    "structure": {
+      "column_attrs": {
+        "action": {},
+        "ep_len": {},
+        "ep_offset": {},
+        "episode_idx": {},
+        "pixels": {},
+        "proprio": {},
+        "state": {},
+        "step_idx": {}
+      },
+      "columns": {
+        "action": {
+          "dtype": "float32",
+          "shape": [
+            2336736,
+            2
+          ]
+        },
+        "ep_len": {
+          "dtype": "int32",
+          "shape": [
+            18685
+          ]
+        },
+        "ep_offset": {
+          "dtype": "int64",
+          "shape": [
+            18685
+          ]
+        },
+        "episode_idx": {
+          "dtype": "int64",
+          "shape": [
+            2336736
+          ]
+        },
+        "pixels": {
+          "dtype": "uint8",
+          "shape": [
+            2336736,
+            224,
+            224,
+            3
+          ]
+        },
+        "proprio": {
+          "dtype": "float32",
+          "shape": [
+            2336736,
+            4
+          ]
+        },
+        "state": {
+          "dtype": "float32",
+          "shape": [
+            2336736,
+            7
+          ]
+        },
+        "step_idx": {
+          "dtype": "int64",
+          "shape": [
+            2336736
+          ]
+        }
+      },
+      "episode_count": 18685,
+      "episodes_per_family": [
+        101
+      ],
+      "family_count": 185,
+      "family_definition": "exact stored initial 7D observation; not full physics/demo/appearance identity",
+      "initial_state_max": [
+        449.0,
+        449.0,
+        439.9153137207031,
+        485.6640930175781,
+        6.163545608520508,
+        0.0,
+        0.0
+      ],
+      "initial_state_min": [
+        50.0,
+        55.0,
+        65.74536895751953,
+        116.07593536376953,
+        0.019508186727762222,
+        0.0,
+        0.0
+      ],
+      "pixel_filters": [
+        [
+          32001,
+          1,
+          [
+            2,
+            2,
+            1,
+            15052800,
+            5,
+            1,
+            1
+          ],
+          "blosc"
+        ]
+      ],
+      "root_attrs": {},
+      "selected_family_ids": [
+        "6ea78f41370345e56e0b1ddacc58bf8eb3fbae35202b85a118e9e72093a91fe0",
+        "c036496c98a335a59335f36ea103f3caa17a60073064176f86d2405f02ebcd1d",
+        "b7e75ce8811c374ae6ce640b98547a660d8857542723093b9b05754070b0f0ac",
+        "41b8b671005138cb3ad7c700bd050de545d4bece7fd88dc4c6df639122d2295f",
+        "acb2b43e6230ce3527545c39839975f6c644e2aa7e6cfd9b3a11f28067ebcb3f",
+        "ab538858a2f55683a9c0c1481d8f52b9b6f9c0ba6a6c1c8959cea6c836fb649c",
+        "d0eed0c8db33626f6e3f60fb790dba996b804cb2815d1f8fe4d42e1c6dc09fa6",
+        "4a35a71ab394c09e724e68b09a2676fa7694eddbd907b6a8af5e71006c2ea24d",
+        "9ecb75cc5a9f0ac85524fa86004337d509681c2eca43a9134cf4090832f01666",
+        "7e5b0ea3c7916cb4589e5cf64b58f92ba204862a76866c09d6bee6bfbe4ae51c",
+        "c313d4fcf0104c5f728836ced4fc8d0475a88837eac808381a34307f40b9d491",
+        "42ec3d4d2a4b492a0366da04f2e7b0a549789adf925c9310c23d0fceba42696a",
+        "e2fb37e9f4c6681c23ce08cae8082a09ec813d0049b06987be7d08225a9ad9ae",
+        "15aa05c4bc1a1aa33bbf740493b8891f121c794975763f807c1bb0ff29c51e3e",
+        "b070b9abb485e07f07c4b77a44a2016782f7941f7094eb50ff3e408e8b3ee7fd",
+        "492ed368ebc4f3878d93fc55cb1ff1765c315cdb6a064d9d8e8e34b55fb519ba",
+        "06ec5bfde4af21f796db25628f76fe62204f806374bb4647438f0993b1819572",
+        "6afd52a9cef8102dd53c7f57679b3d67ee833966146e0aa4040608aa3e85753e",
+        "2dffe6100c94fa2fdaf014847e74504131c31bcd0b9d5ca955624b67a6026427",
+        "49a418e636c05cd106c38d79c388fbb6861e18cf34ab1f1db88acab1fcbdceba",
+        "4b2cb0a8bc7da0e3b334e0936ae706a8d7f7cb0f37bab8c2acd963248dfe08a2",
+        "394001e3cabdf287c04ab07ba1c1bec422a2213fa22ac548ebd12b296aa63207",
+        "643a06ca86d13d96f8e8c5df1c7f91799b8686c4aae644a501614c8799913757",
+        "668de0bfbe769fdbad20d0ffcdb8271367f4692a686a4ba00de1383c3d6f20e6",
+        "48075d69a0d66bd83c990adf1523ba03d15e5ed2168f4af352aae2218ebddf8e",
+        "8025c3a262268981bda68054c1f5be32582862072e69a845180a5a06aef2c739",
+        "aa7592f8145c89d3cfe2e9a223bdbc6c8666cc6689cfc564580eace13dc5bfd6",
+        "63d631b6c2cf050b92ae1ee28ee2ddc64bf9849b28f58934a0b12a6416fa3c7f",
+        "a7cbcd4bc484916bc30faa22d27b6d8c473f06cd43e6d844dbb54067bc701b8d",
+        "1a60f57d9d7a939ac2a255f81db5a73e7e488580a3c1005f81c0b8afec5c11d2",
+        "5683511540794d76d7ed9e0cf59d4ee07c2fa6aacffb4490f796ae224c762e4b",
+        "8c78cb1828a76ce3f3c32acc2e553df8c72e279b04b4448d07d04420e6d2691d"
+      ]
+    }
+  },
+  "public_sources": {
+    "dataset_card": {
+      "line_count": 5,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/dataset_card.txt",
+      "relevant_lines": [],
+      "sha256": "ebf5f6c780c07bd365ff8b947acb33e11e06e0ded471de73893d0ec545ed7ccd",
+      "size_bytes": 136,
+      "url": "https://huggingface.co/datasets/quentinll/lewm-pusht/raw/655cd446b9929369d7d406001da85c15d1457850/README.md"
+    },
+    "dataset_tree": {
+      "line_count": 1,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/dataset_tree.txt",
+      "relevant_lines": [],
+      "sha256": "a937385559f06c58259847eca48456eb5c36445c67dc365aee66352dd341221f",
+      "size_bytes": 511,
+      "url": "https://huggingface.co/api/datasets/quentinll/lewm-pusht/tree/655cd446b9929369d7d406001da85c15d1457850"
+    },
+    "dino_renderer": {
+      "line_count": 1272,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/dino_renderer.txt",
+      "relevant_lines": [
+        {
+          "line": 84,
+          "text": "                color_map[key] = (np.array(cmap.colors[i]) * 255).astype(np.uint8)"
+        },
+        {
+          "line": 374,
+          "text": "        render_size=224,"
+        },
+        {
+          "line": 379,
+          "text": "        with_target=True,"
+        },
+        {
+          "line": 388,
+          "text": "        self.render_size = render_size"
+        },
+        {
+          "line": 435,
+          "text": "        self.with_target = with_target"
+        },
+        {
+          "line": 507,
+          "text": "        goal_body = self._get_goal_pose_body(self.goal_pose)"
+        },
+        {
+          "line": 573,
+          "text": "    def _get_goal_pose_body(self, pose):"
+        },
+        {
+          "line": 590,
+          "text": "            \"goal_pose\": self.goal_pose,"
+        },
+        {
+          "line": 610,
+          "text": "        goal_body = self._get_goal_pose_body(self.goal_pose)"
+        },
+        {
+          "line": 633,
+          "text": "        img = cv2.resize(img, (self.render_size, self.render_size))"
+        },
+        {
+          "line": 638,
+          "text": "                marker_size = int(8 / 96 * self.render_size)"
+        },
+        {
+          "line": 639,
+          "text": "                thickness = int(1 / 96 * self.render_size)"
+        },
+        {
+          "line": 693,
+          "text": "            translation=self.goal_pose[:2], rotation=self.goal_pose[2]"
+        },
+        {
+          "line": 709,
+          "text": "        self.goal_pose = goal"
+        },
+        {
+          "line": 731,
+          "text": "        if self.with_target:"
+        },
+        {
+          "line": 735,
+          "text": "        self.goal_pose = np.array([256, 256, np.pi / 4])  # x, y, theta (in radians)"
+        },
+        {
+          "line": 1068,
+          "text": "                color_map[key] = (np.array(cmap.colors[i]) * 255).astype(np.uint8)"
+        },
+        {
+          "line": 1165,
+          "text": "        render_size=96,"
+        },
+        {
+          "line": 1178,
+          "text": "            render_size=render_size,"
+        }
+      ],
+      "sha256": "1aaac87d49b619eed2370297d5393cd3e22e22f08bbfb2870ee1422e86ef4c3a",
+      "size_bytes": 43907,
+      "url": "https://raw.githubusercontent.com/gaoyuezhou/dino_wm/0a9492fa12044b852ae9e001cc74604b79c8bb0c/env/pusht/pusht_env.py"
+    },
+    "dino_video_loader": {
+      "line_count": 173,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/dino_video_loader.txt",
+      "relevant_lines": [
+        {
+          "line": 7,
+          "text": "from decord import VideoReader"
+        },
+        {
+          "line": 27,
+          "text": "        normalize_action: bool = True,"
+        },
+        {
+          "line": 35,
+          "text": "        self.normalize_action = normalize_action"
+        },
+        {
+          "line": 80,
+          "text": "        if normalize_action:"
+        },
+        {
+          "line": 110,
+          "text": "        reader = VideoReader(str(vid_dir / f\"episode_{idx:03d}.mp4\"), num_threads=1)"
+        },
+        {
+          "line": 116,
+          "text": "        image = reader.get_batch(frames)  # THWC"
+        },
+        {
+          "line": 141,
+          "text": "    normalize_action=True,"
+        },
+        {
+          "line": 152,
+          "text": "        normalize_action=normalize_action,"
+        },
+        {
+          "line": 159,
+          "text": "        normalize_action=normalize_action,"
+        }
+      ],
+      "sha256": "7e630c07f34f83ed06d6ccd558d189679ab7869a4cd817ad0199d151ffe939e7",
+      "size_bytes": 6375,
+      "url": "https://raw.githubusercontent.com/gaoyuezhou/dino_wm/0a9492fa12044b852ae9e001cc74604b79c8bb0c/datasets/pusht_dset.py"
+    },
+    "early_converter": {
+      "line_count": 124,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/early_converter.txt",
+      "relevant_lines": [
+        {
+          "line": 9,
+          "text": "        self.train_dataset = PushTDataset(data_path=\"pusht_noise/train/\")"
+        },
+        {
+          "line": 10,
+          "text": "        self.val_dataset = PushTDataset(data_path=\"pusht_noise/val/\")"
+        },
+        {
+          "line": 39,
+          "text": "                .astype(np.uint8),"
+        },
+        {
+          "line": 62,
+          "text": "    train_dataset = PushTDataset(data_path=\"pusht_noise/train/\")"
+        },
+        {
+          "line": 63,
+          "text": "    val_dataset = PushTDataset(data_path=\"pusht_noise/val/\")"
+        },
+        {
+          "line": 119,
+          "text": "        dataset_id=\"dinowm/pusht_noise-v0\","
+        }
+      ],
+      "sha256": "1e369d5460541a27b10391c2abf11d39913eb5bb1c41e8b249152d3a96773c92",
+      "size_bytes": 3934,
+      "url": "https://raw.githubusercontent.com/galilai-group/stable-worldmodel/7124d26abef3b38afdd738e7f9f676900b46d8b8/scripts/data/pusht_converter.py"
+    },
+    "early_video_loader": {
+      "line_count": 376,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/early_video_loader.txt",
+      "relevant_lines": [
+        {
+          "line": 16,
+          "text": "from decord import VideoReader"
+        },
+        {
+          "line": 200,
+          "text": "        data_path: str = \"pusht_noise/\","
+        },
+        {
+          "line": 201,
+          "text": "        normalize_action: bool = True,"
+        },
+        {
+          "line": 209,
+          "text": "        self.normalize_action = normalize_action"
+        },
+        {
+          "line": 256,
+          "text": "        if normalize_action:"
+        },
+        {
+          "line": 286,
+          "text": "        reader = VideoReader(str(vid_dir / f\"episode_{idx:03d}.mp4\"), num_threads=1)"
+        },
+        {
+          "line": 292,
+          "text": "        image = reader.get_batch(frames)  # THWC"
+        },
+        {
+          "line": 317,
+          "text": "    normalize_action=True,"
+        },
+        {
+          "line": 328,
+          "text": "        normalize_action=normalize_action,"
+        },
+        {
+          "line": 335,
+          "text": "        normalize_action=normalize_action,"
+        },
+        {
+          "line": 355,
+          "text": "    pusht_dataset = PushTDataset(data_path=\"pusht_noise/train/\")"
+        }
+      ],
+      "sha256": "3b07c0ba7d24174f216c72f7d835524159a8ff579e79983e2f9a3688b7836d02",
+      "size_bytes": 11947,
+      "url": "https://raw.githubusercontent.com/galilai-group/stable-worldmodel/7124d26abef3b38afdd738e7f9f676900b46d8b8/scripts/data/pusht_dataset.py"
+    },
+    "march_collection_config": {
+      "line_count": 30,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/march_collection_config.txt",
+      "relevant_lines": [],
+      "sha256": "d7efaaef3fbb2b90110cb3e81940b5d63143921e6e8721b9f615bac4c70c7f79",
+      "size_bytes": 450,
+      "url": "https://raw.githubusercontent.com/galilai-group/stable-worldmodel/a00659833e13b2148663b5bfaf5e549146c6d22b/scripts/data/config/default.yaml"
+    },
+    "march_renderer": {
+      "line_count": 911,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/march_renderer.txt",
+      "relevant_lines": [
+        {
+          "line": 35,
+          "text": "        with_target=True,"
+        },
+        {
+          "line": 42,
+          "text": "        self.render_size = resolution"
+        },
+        {
+          "line": 233,
+          "text": "        self.with_target = with_target"
+        },
+        {
+          "line": 370,
+          "text": "    def _get_goal_pose_body(self, pose):"
+        },
+        {
+          "line": 396,
+          "text": "            'goal_pose': self.goal_pose,"
+        },
+        {
+          "line": 425,
+          "text": "            and self.with_target"
+        },
+        {
+          "line": 428,
+          "text": "            goal_body = self._get_goal_pose_body(self.goal_pose)"
+        },
+        {
+          "line": 480,
+          "text": "        img = cv2.resize(img, (self.render_size, self.render_size))"
+        },
+        {
+          "line": 485,
+          "text": "                marker_size = int(8 / 96 * self.render_size)"
+        },
+        {
+          "line": 486,
+          "text": "                thickness = int(1 / 96 * self.render_size)"
+        },
+        {
+          "line": 577,
+          "text": "        self.goal_pose = np.concatenate("
+        }
+      ],
+      "sha256": "c6d2104adc368ff1c352edc0e35ac74da9f07fda3a748ddbef0ba6b7a2d1daa2",
+      "size_bytes": 31006,
+      "url": "https://raw.githubusercontent.com/galilai-group/stable-worldmodel/a00659833e13b2148663b5bfaf5e549146c6d22b/stable_worldmodel/envs/pusht/env.py"
+    },
+    "march_weak_collector": {
+      "line_count": 37,
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/sources/march_weak_collector.txt",
+      "relevant_lines": [
+        {
+          "line": 22,
+          "text": "        world.record_dataset("
+        }
+      ],
+      "sha256": "6a3442b61e4ae6a3532a2a6103cd9dd3e75f61a1ead6fa59713636e4807324a0",
+      "size_bytes": 997,
+      "url": "https://raw.githubusercontent.com/galilai-group/stable-worldmodel/a00659833e13b2148663b5bfaf5e549146c6d22b/scripts/data/collect_weak_pusht.py"
+    }
+  },
+  "regressions": [
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_contracts.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:12:26.437281+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_contracts.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:12:26.437173+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_contracts.py.stdout.txt",
+        "sha256": "003baff6983e929adf69d084d3d045056c8af671008a7a80e6625fc8c9e4c8dc",
+        "size_bytes": 37
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_baseline.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:12:31.772973+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_baseline.py.stderr.txt",
+        "sha256": "aba3b448d544e6096f9fc3e42b95a0b638a5b8ad43f8f947f100ded7d307d94b",
+        "size_bytes": 177
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:12:31.772848+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_baseline.py.stdout.txt",
+        "sha256": "da58c394026033a64fe74dad78d3ec497af1da08ef80a1e58bfcbe569582e830",
+        "size_bytes": 254
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_simulator.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:12:38.773160+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_simulator.py.stderr.txt",
+        "sha256": "96fa4316caf7ed81140c509db5e3c126fa57f188a3986ed70fa1056bd8d42aa2",
+        "size_bytes": 8824
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:12:38.772982+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_simulator.py.stdout.txt",
+        "sha256": "89bfb80f168d2a38881fa0f4e6e9f2f78d58ca2f1a29e780f8234917d32dfea8",
+        "size_bytes": 800
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_simulator_stage.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:12:44.110555+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_simulator_stage.py.stderr.txt",
+        "sha256": "1d2ee7e88c09f86e97c5b2f50064de17adbd65cda9cfa2cc0b88921b0ce5cbc6",
+        "size_bytes": 8982
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:12:44.110358+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_simulator_stage.py.stdout.txt",
+        "sha256": "c0f4a80aa47fa6eddaae34513ff22c2f17b58ad025dad79e3805fb21e9f1d0c7",
+        "size_bytes": 895
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_render_provenance.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:12:56.250665+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_render_provenance.py.stderr.txt",
+        "sha256": "4bb19737f9392291d521ec832dab044881be36af03840c3daf7ba20f13b5537c",
+        "size_bytes": 8824
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:12:56.250500+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_counterfactual_render_provenance.py.stdout.txt",
+        "sha256": "d13a26d43f3adb63af3cfa8b29989e57f6c2c32ec7a0d55eb935a54ddf94fffe",
+        "size_bytes": 735
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_ablation.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:13:00.482839+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_ablation.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:13:00.482756+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_ablation.py.stdout.txt",
+        "sha256": "bab830c466ec26e03236339f01cfd6e7d8f246ff6ceb5aba01cf623642bcddcd",
+        "size_bytes": 30
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_windows.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:13:03.047979+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_windows.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:13:03.047887+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_windows.py.stdout.txt",
+        "sha256": "4dc74c828d4f64c9277099f3b3c915f4c0c1be75cf39d8375690818aa4ee7d19",
+        "size_bytes": 28
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_probe_eval.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:13:03.930695+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_probe_eval.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:13:03.930620+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_probe_eval.py.stdout.txt",
+        "sha256": "88ef2ee1e21a1cc9f8cbc04c55d3091a0b8f0e6cea6269d103525ba741d6973a",
+        "size_bytes": 32
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_visualization.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:13:05.516668+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_visualization.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:13:05.516585+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_visualization.py.stdout.txt",
+        "sha256": "186ae729d55e318bf2b8df4f0f95c5e0f522c346626c00a0760d88e6f4237a69",
+        "size_bytes": 35
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_reconstruction.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:13:07.031649+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_reconstruction.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:13:07.031561+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_rollout_reconstruction.py.stdout.txt",
+        "sha256": "965435a83c82765b78fd13f46b5da646a5a931595386a84db4c9f10fbb305e19",
+        "size_bytes": 36
+      }
+    },
+    {
+      "command": [
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+        "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_latent_diagnostics.py"
+      ],
+      "return_code": 0,
+      "stderr": {
+        "modified_utc": "2026-10-14T08:13:11.314282+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_latent_diagnostics.py.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stdout": {
+        "modified_utc": "2026-10-14T08:13:11.314200+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-render-provenance-audit/regression_logs/test_latent_diagnostics.py.stdout.txt",
+        "sha256": "c055dd7ef74add17f81ee621d687f4c53047df425fbe1b3e2541383b79d5e745",
+        "size_bytes": 242
+      }
+    }
+  ],
+  "run_id": "step2-render-provenance-audit",
+  "run_status": "completed",
+  "schema_version": 1,
+  "scope": "Source/image audit only; no dataset generation, intervention, or planning",
+  "simulator_parent": {
+    "mechanics_scope": "same backend, unchanged Step 2 implementations; rerun tests separately",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-fresh-start-replay-reviewed/simulator_manifest.json",
+    "run_id": "step2-fresh-start-replay-reviewed",
+    "sha256": "280e0f39b4d9b5b480be646e6d3704b851b8ee77a4936c728a87a4f0e2aff01f",
+    "step2_gate_passed": true
+  },
+  "source_sha256": {
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_pretraining/data/transforms.py": "1b62498d2adf7a94c167a5996d4ea015810b7de8ca5660a507e6e4c4c6323275",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/envs/pusht/env.py": "d8d0de35aaab5b846db4e79b0fbfd6b17375178cce40a25df5301c8030ca6d68",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/envs/utils.py": "38314dcabc556c954d64b1c2a1b558e32b48a0db092657dd745dcb960c9cf6f0",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/solver/cem.py": "d88c86dcd1bd1e6d89221ac22079a3efe296cc7566532de0d36605e2f1536050",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/pusht.yaml": "7eb72270554b70904be4d1b4442af8e378db325d69a4da1ac373e8dcb9145222",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/solver/cem.yaml": "797629f829c0d3ad3b9c4e42d46a87f08da0b3845bc433e353fd6274cb0574df",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/phase1/pusht.yaml": "36fbb82619215849b8e50e24c5f623d14fdb45321839cbda5caebac46f601361",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/train/lewm.yaml": "9c42647156737114fe76c2c5a0707e32f4f027a8c5c844f90a0c33a8e6f26c47",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/__init__.py": "245da18c0fbf35a3d82e672efde63f83801c5f4d16c4a41ec918d287bf090fa5",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/baseline.py": "4b4fe9dda539ab1c56a91088d7dd421005c7f387d4a9b887bd18b91fc3798b88",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/contracts.py": "53bf620ab6cd0946774bc6522c4a66788554b4adebf56e948c79e9b60350e053",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/model.py": "0f5865ee146a6608ae0d10dbc28b47fa20ad73e0e067f4dd6c7e66f946098002",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/render_provenance.py": "8cfb5c7006595b68ac06f7c8b3f5011a825c435bf8c56e8f59fddb292d30b357",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator.py": "798080f3b881f1f1c6a1f5cf55d59417132c766593bba8ee5cba5e68eea00fe6",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator_validation.py": "c78bfcd3ae8e89f8512ef12da1dcddfa76070204c2ddec3157590cbdd35bfb02",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/eval.py": "852cf176d4d0404e19bf08b21c4dfe690376754a154d7fa713b148781541ffc8",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/jepa.py": "39d4f7f817e1720f3a32205fd5340348e86a5f6ddfb25d5015135a1d9b67c6a7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/module.py": "6265d5f87d92262a4a55708bfea9fe6a91af45318de64bd8d163f953cdf9922c",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/data.py": "9df138d36fcea9b944726d21779e691304cd48113d4d6702cf48ffc8f681b1c3",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/embedding_cache.py": "5cbb97d1eb2cfc4bf27305a448d355c710749d24b76d353104b6bbd7423c8233",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/rollout_ablation.py": "fed6eeea6d64d5c95820ff38f300886c3359ddaf243b8d05b4ed4e54279082f7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/scripts/run_phase1.py": "f25b41def1b3d3e1c5095b65473a0d49b28d2ceadbee540a8a93eefd9c5b6b48",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_baseline.py": "d4485872505977e6ac285c94fe8319f379e7b75957ab5e333e72142656875c09",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_contracts.py": "7f75882019692e3594c234800f4378393933441c383ddcad0a0aa5aebd3639fc",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_render_provenance.py": "6607868a2669ae5926fb7a68f064297605875b0f10af79f4b40a709cd2679f38",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_simulator.py": "ee5fd7698214bdfbf1828e5aa58ce24820465e3484d0fc58c6228f8d033665f7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_simulator_stage.py": "7b4610684f97e2e3822bd3922edf20f21315470df652b3b07480ee58b46fd74f",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_latent_diagnostics.py": "c9f30e9e9b651bfd775145208187f0eb9937c33033dd124fc16a79c19ec9e74d",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_ablation.py": "56fd0229d697fe54ec5bae38a1e63ccec2d1530032d4850259933d96bfe6a44a",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_probe_eval.py": "473d626eedd9525725b666d16bcae8cfd96dd9b6d4805dae9f106f600b47b1aa",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_reconstruction.py": "bf9694f15e177239f986ed45b99b5035cad854b91f25f33a580cedeec03d1088",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_visualization.py": "2a0ad7f99efe612ac007256f69277815f8688a6c42d13e9464120f977c3fde06",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_rollout_windows.py": "077260e5eb0e508c09c4437c12858d31655c048a668a336e7aa5f573c806dbc5",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/train.py": "17551892ead4d97c9bd4b9bb879888c4f67f25932480934536e724326b4480ee",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/utils.py": "0793dc4f0c2f27a3ece84e11fd10aa33dce762ca2c5032849c17dea5d95dd09f"
+  },
+  "stage": "phase1_step2_render_provenance",
+  "verified_generation_contract": false,
+  "versions": {
+    "einops": "0.8.2",
+    "gymnasium": "1.2.3",
+    "h5py": "3.16.0",
+    "hdf5plugin": "6.0.0",
+    "hydra-core": "1.3.2",
+    "lightning": "2.6.1",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "opencv-python": "4.13.0.92",
+    "platform": "macOS-15.7.8-arm64-arm-64bit",
+    "pygame": "2.6.1",
+    "pymunk": "7.2.0",
+    "python": "3.10.20 (main, Mar 25 2026, 03:21:46) [Clang 22.1.1 ]",
+    "scikit-learn": "1.7.2",
+    "stable-pretraining": "0.1.6",
+    "stable-worldmodel": "0.0.6",
+    "torch": "2.11.0",
+    "torch_cuda_available": false,
+    "torch_mps_available": true,
+    "torchvision": "0.26.0",
+    "transformers": "5.4.0"
+  }
+}

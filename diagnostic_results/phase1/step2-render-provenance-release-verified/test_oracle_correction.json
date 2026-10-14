@@ -1,0 +1,15 @@
+{
+  "type": "test_development_failure",
+  "test": "test_preprocessing_matches_training_eval_step1_and_independent_imagenet_formula",
+  "observed_max_abs_deltas": {
+    "training": 0.0,
+    "official_evaluation": 0.0,
+    "independent_formula_before_correction": 7.152557373046875e-7
+  },
+  "reason": "The independent oracle divided float32 values by 255, whereas torchvision multiplies by the reciprocal. The floating-point operations round differently.",
+  "correction": "Match the independently expressed frozen operation: raw.float() * (1. / 255.), then ImageNet normalization.",
+  "frozen_transform_changed": false,
+  "tolerance_relaxed": false,
+  "final_independent_formula_max_abs_delta": 0.0,
+  "scope": "Oracle correction only; no simulator, model, checkpoint, normalization or official evaluation change"
+}

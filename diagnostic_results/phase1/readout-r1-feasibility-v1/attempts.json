@@ -1,0 +1,258 @@
+[
+  {
+    "family_id": "domain_v2_validation_12",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_03",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_08",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_13",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_00",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_03",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_12",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_05",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_04",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_07",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_04",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_15",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_10",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_13",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_14",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_09",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_02",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_07",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_02",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_15",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_00",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_11",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_14",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_01",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_00",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_11",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_04",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_01",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_08",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_09",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_02",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_01",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_12",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_13",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_10",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_15",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_06",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_05",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_14",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_07",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_06",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_03",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_08",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_05",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_10",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_validation_11",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_train_06",
+    "status": "valid"
+  },
+  {
+    "family_id": "domain_v2_development_09",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_00",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_01",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_02",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_03",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_04",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_05",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_06",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_07",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_08",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_09",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_10",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_11",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_12",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_13",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_14",
+    "status": "valid"
+  },
+  {
+    "family_id": "r1_pilot_15",
+    "status": "valid"
+  }
+]

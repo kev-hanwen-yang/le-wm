@@ -1,0 +1,610 @@
+[
+  {
+    "agent_position": [
+      390.3201570816618,
+      219.15803223430888
+    ],
+    "block_angle": 2.4849478356173402,
+    "block_position": [
+      234.8856518317469,
+      263.20476398269386
+    ],
+    "direction": [
+      -0.7920448997158671,
+      0.6104628382089134
+    ],
+    "family_id": "domain_v2_development_00",
+    "partition": "development",
+    "seed": 2026101401,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      225.6852052305218,
+      349.69107113227363
+    ],
+    "block_angle": 4.908295593853425,
+    "block_position": [
+      231.8003111324427,
+      241.81797216961152
+    ],
+    "direction": [
+      0.19465588623826172,
+      -0.9808715950382073
+    ],
+    "family_id": "domain_v2_development_01",
+    "partition": "development",
+    "seed": 2026101402,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      408.51378968225936,
+      187.52686774079066
+    ],
+    "block_angle": 2.229275914205998,
+    "block_position": [
+      269.27112471802263,
+      269.4504922556845
+    ],
+    "direction": [
+      -0.6119150296452829,
+      0.790923508624072
+    ],
+    "family_id": "domain_v2_development_02",
+    "partition": "development",
+    "seed": 2026101403,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      194.39121523992145,
+      225.1031316316171
+    ],
+    "block_angle": 0.7494809930263492,
+    "block_position": [
+      282.9386513662266,
+      287.01719752506256
+    ],
+    "direction": [
+      0.7320425455810323,
+      0.6812589166089807
+    ],
+    "family_id": "domain_v2_development_03",
+    "partition": "development",
+    "seed": 2026101404,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      275.8802448782497,
+      80.6233421758358
+    ],
+    "block_angle": 1.1862037427214243,
+    "block_position": [
+      276.54038997881145,
+      242.1769376432416
+    ],
+    "direction": [
+      0.37518151314669007,
+      0.9269513645240294
+    ],
+    "family_id": "domain_v2_development_04",
+    "partition": "development",
+    "seed": 2026101405,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      230.73062277504607,
+      387.45174311886393
+    ],
+    "block_angle": 4.8794124618651145,
+    "block_position": [
+      233.72789836854213,
+      279.44703794813245
+    ],
+    "direction": [
+      0.1662479926387741,
+      -0.9860839745901857
+    ],
+    "family_id": "domain_v2_development_05",
+    "partition": "development",
+    "seed": 2026101406,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      445.3390733665134,
+      242.54125968335507
+    ],
+    "block_angle": 2.7148335993739665,
+    "block_position": [
+      283.9569064122718,
+      250.0109443589807
+    ],
+    "direction": [
+      -0.9103120292183413,
+      0.4139227095248407
+    ],
+    "family_id": "domain_v2_development_06",
+    "partition": "development",
+    "seed": 2026101407,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      173.64900938384258,
+      252.46971168869283
+    ],
+    "block_angle": 0.4825696606207089,
+    "block_position": [
+      275.39103889221366,
+      288.83672189736615
+    ],
+    "direction": [
+      0.8858053798411517,
+      0.4640569243578561
+    ],
+    "family_id": "domain_v2_development_07",
+    "partition": "development",
+    "seed": 2026101408,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      163.7651590844163,
+      148.65654756325793
+    ],
+    "block_angle": 0.6349206069682188,
+    "block_position": [
+      248.94616157480553,
+      285.9307141596438
+    ],
+    "direction": [
+      0.8051187880973769,
+      0.5931135954036217
+    ],
+    "family_id": "domain_v2_development_08",
+    "partition": "development",
+    "seed": 2026101409,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      233.03873208506513,
+      375.69406534428884
+    ],
+    "block_angle": 5.296286150298549,
+    "block_position": [
+      279.5108412940717,
+      278.1525712729647
+    ],
+    "direction": [
+      0.5512796039432557,
+      -0.8343205608614516
+    ],
+    "family_id": "domain_v2_development_09",
+    "partition": "development",
+    "seed": 2026101410,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      427.94184177498016,
+      151.28955913276653
+    ],
+    "block_angle": 2.3775054452604794,
+    "block_position": [
+      278.1270176501944,
+      211.75044295412252
+    ],
+    "direction": [
+      -0.722014198828985,
+      0.6918782383406339
+    ],
+    "family_id": "domain_v2_development_10",
+    "partition": "development",
+    "seed": 2026101411,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      119.51861185456113,
+      278.77029387714356
+    ],
+    "block_angle": 6.139817408783756,
+    "block_position": [
+      223.27767721617371,
+      248.63632043711064
+    ],
+    "direction": [
+      0.989740414193339,
+      -0.14287726380497948
+    ],
+    "family_id": "domain_v2_development_11",
+    "partition": "development",
+    "seed": 2026101412,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      147.06858477263148,
+      135.72802435386112
+    ],
+    "block_angle": 0.6364359451350255,
+    "block_position": [
+      232.04147276026083,
+      273.13111131715243
+    ],
+    "direction": [
+      0.8042190963962407,
+      0.5943329411967792
+    ],
+    "family_id": "domain_v2_development_12",
+    "partition": "development",
+    "seed": 2026101413,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      192.35957154655813,
+      330.8182926184469
+    ],
+    "block_angle": 5.230575674498088,
+    "block_position": [
+      232.32650024475578,
+      230.4358010652224
+    ],
+    "direction": [
+      0.49530570018892556,
+      -0.8687187481344916
+    ],
+    "family_id": "domain_v2_development_13",
+    "partition": "development",
+    "seed": 2026101414,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      246.49829755012757,
+      436.504140238918
+    ],
+    "block_angle": 4.230567207542079,
+    "block_position": [
+      230.15828248183743,
+      275.77765235478597
+    ],
+    "direction": [
+      -0.46339431162036193,
+      -0.8861521945794023
+    ],
+    "family_id": "domain_v2_development_14",
+    "partition": "development",
+    "seed": 2026101415,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      361.714169971366,
+      259.6458057274098
+    ],
+    "block_angle": 3.3098654458838013,
+    "block_position": [
+      253.71329361411705,
+      256.51360106196563
+    ],
+    "direction": [
+      -0.9858755097005287,
+      -0.1674797879528237
+    ],
+    "family_id": "domain_v2_development_15",
+    "partition": "development",
+    "seed": 2026101416,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      250.7837204352327,
+      387.4312895099853
+    ],
+    "block_angle": 4.418017620164649,
+    "block_position": [
+      264.6820575444048,
+      226.47528239748323
+    ],
+    "direction": [
+      -0.2901383088266018,
+      -0.9569847238860396
+    ],
+    "family_id": "domain_v2_validation_00",
+    "partition": "validation",
+    "seed": 2026101402,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      216.62576441904667,
+      133.1432139218792
+    ],
+    "block_angle": 1.5529679442487279,
+    "block_position": [
+      233.53091647459817,
+      239.85879776031717
+    ],
+    "direction": [
+      0.017827438098975565,
+      0.9998410785974075
+    ],
+    "family_id": "domain_v2_validation_01",
+    "partition": "validation",
+    "seed": 2026101403,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      341.1276281865569,
+      338.0762982151333
+    ],
+    "block_angle": 3.515286216547721,
+    "block_position": [
+      223.38322126694257,
+      227.45869274860604
+    ],
+    "direction": [
+      -0.9309853396909494,
+      -0.3650565672338021
+    ],
+    "family_id": "domain_v2_validation_02",
+    "partition": "validation",
+    "seed": 2026101404,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      222.90524546458477,
+      99.8028359066907
+    ],
+    "block_angle": 1.5076299007144613,
+    "block_position": [
+      244.62964431602632,
+      205.6425755820295
+    ],
+    "direction": [
+      0.0631244288139595,
+      0.9980056645565252
+    ],
+    "family_id": "domain_v2_validation_03",
+    "partition": "validation",
+    "seed": 2026101405,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      390.13071050245065,
+      337.30829283129367
+    ],
+    "block_angle": 3.172700072535311,
+    "block_position": [
+      242.0694241473857,
+      272.671960301644
+    ],
+    "direction": [
+      -0.9995162032581888,
+      -0.031102402227722172
+    ],
+    "family_id": "domain_v2_validation_04",
+    "partition": "validation",
+    "seed": 2026101406,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      351.0599714943872,
+      255.087875781029
+    ],
+    "block_angle": 3.1007945238175862,
+    "block_position": [
+      244.76081140947906,
+      274.4395828179566
+    ],
+    "direction": [
+      -0.9991678717354021,
+      0.040786812718659346
+    ],
+    "family_id": "domain_v2_validation_05",
+    "partition": "validation",
+    "seed": 2026101407,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      76.78511139249713,
+      350.3832988079674
+    ],
+    "block_angle": 5.468312134427343,
+    "block_position": [
+      223.33753025554708,
+      282.3951489185259
+    ],
+    "direction": [
+      0.6859606833751342,
+      -0.7276386059463303
+    ],
+    "family_id": "domain_v2_validation_06",
+    "partition": "validation",
+    "seed": 2026101408,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      196.73134972199364,
+      149.7741893252081
+    ],
+    "block_angle": 0.6815941274488884,
+    "block_position": [
+      289.27474732054947,
+      205.53904887775798
+    ],
+    "direction": [
+      0.7765693549560754,
+      0.6300317745503833
+    ],
+    "family_id": "domain_v2_validation_07",
+    "partition": "validation",
+    "seed": 2026101409,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      73.1946182372202,
+      250.14043022870018
+    ],
+    "block_angle": 6.07071756114382,
+    "block_position": [
+      232.47401258626098,
+      277.1603217126192
+    ],
+    "direction": [
+      0.977513511164416,
+      -0.21087279457297306
+    ],
+    "family_id": "domain_v2_validation_08",
+    "partition": "validation",
+    "seed": 2026101410,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      139.35163323497756,
+      218.06614867825363
+    ],
+    "block_angle": 0.3686156721046804,
+    "block_position": [
+      244.56899379071217,
+      242.6284579688017
+    ],
+    "direction": [
+      0.9328270464369866,
+      0.3603244391318028
+    ],
+    "family_id": "domain_v2_validation_09",
+    "partition": "validation",
+    "seed": 2026101411,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      194.5398572220309,
+      393.70401118326595
+    ],
+    "block_angle": 4.6041917395940715,
+    "block_position": [
+      237.99106142784368,
+      238.10197760701496
+    ],
+    "direction": [
+      -0.10798625991199795,
+      -0.9941523865435411
+    ],
+    "family_id": "domain_v2_validation_10",
+    "partition": "validation",
+    "seed": 2026101412,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      375.46924698197665,
+      160.2374206675134
+    ],
+    "block_angle": 2.737645280378749,
+    "block_position": [
+      282.97673228075223,
+      216.0866348450091
+    ],
+    "direction": [
+      -0.9195166425983765,
+      0.3930510704534584
+    ],
+    "family_id": "domain_v2_validation_11",
+    "partition": "validation",
+    "seed": 2026101413,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      311.9482200046618,
+      407.25529775570084
+    ],
+    "block_angle": 3.7664188549299693,
+    "block_position": [
+      225.38587973593226,
+      270.8479620028144
+    ],
+    "direction": [
+      -0.8110647963786441,
+      -0.5849563198011185
+    ],
+    "family_id": "domain_v2_validation_12",
+    "partition": "validation",
+    "seed": 2026101414,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      216.5350271083709,
+      375.7928624572074
+    ],
+    "block_angle": 5.142870719295575,
+    "block_position": [
+      247.55557907703886,
+      272.2953970024477
+    ],
+    "direction": [
+      0.4173086382104562,
+      -0.9087648213233909
+    ],
+    "family_id": "domain_v2_validation_13",
+    "partition": "validation",
+    "seed": 2026101415,
+    "stratum": "near_contact"
+  },
+  {
+    "agent_position": [
+      80.13444242902494,
+      260.80380318662895
+    ],
+    "block_angle": 6.027509702799101,
+    "block_position": [
+      240.43228745739856,
+      280.91849630532977
+    ],
+    "direction": [
+      0.9674926567577814,
+      -0.25289910857844045
+    ],
+    "family_id": "domain_v2_validation_14",
+    "partition": "validation",
+    "seed": 2026101416,
+    "stratum": "free_space"
+  },
+  {
+    "agent_position": [
+      223.83462654793973,
+      330.7806091768504
+    ],
+    "block_angle": 5.046739498613543,
+    "block_position": [
+      244.77793434029206,
+      224.78354384617822
+    ],
+    "direction": [
+      0.3281557232946533,
+      -0.9446236400117048
+    ],
+    "family_id": "domain_v2_validation_15",
+    "partition": "validation",
+    "seed": 2026101417,
+    "stratum": "near_contact"
+  }
+]

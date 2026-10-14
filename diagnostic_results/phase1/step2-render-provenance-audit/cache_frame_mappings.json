@@ -1,0 +1,875 @@
+{
+  "rows": {
+    "1006667": {
+      "cache_row": 807407,
+      "episode_id": 8181,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1006748": {
+      "cache_row": 807488,
+      "episode_id": 8181,
+      "split": "train",
+      "step_idx": 81
+    },
+    "1006828": {
+      "cache_row": 807568,
+      "episode_id": 8181,
+      "split": "train",
+      "step_idx": 161
+    },
+    "1022867": {
+      "cache_row": 819719,
+      "episode_id": 8281,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1039896": {
+      "cache_row": 833575,
+      "episode_id": 8383,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1039965": {
+      "cache_row": 833644,
+      "episode_id": 8383,
+      "split": "train",
+      "step_idx": 69
+    },
+    "1040034": {
+      "cache_row": 833713,
+      "episode_id": 8383,
+      "split": "train",
+      "step_idx": 138
+    },
+    "1053796": {
+      "cache_row": 844834,
+      "episode_id": 8483,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1053935": {
+      "cache_row": 844973,
+      "episode_id": 8484,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1053987": {
+      "cache_row": 845025,
+      "episode_id": 8484,
+      "split": "train",
+      "step_idx": 52
+    },
+    "1054039": {
+      "cache_row": 845077,
+      "episode_id": 8484,
+      "split": "train",
+      "step_idx": 104
+    },
+    "1064435": {
+      "cache_row": 853688,
+      "episode_id": 8584,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1186750": {
+      "cache_row": 119309,
+      "episode_id": 9696,
+      "split": "val",
+      "step_idx": 0
+    },
+    "1186803": {
+      "cache_row": 119362,
+      "episode_id": 9696,
+      "split": "val",
+      "step_idx": 53
+    },
+    "1186856": {
+      "cache_row": 119415,
+      "episode_id": 9696,
+      "split": "val",
+      "step_idx": 106
+    },
+    "1197450": {
+      "cache_row": 960649,
+      "episode_id": 9796,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1224625": {
+      "cache_row": 118901,
+      "episode_id": 9999,
+      "split": "test",
+      "step_idx": 0
+    },
+    "1224671": {
+      "cache_row": 118947,
+      "episode_id": 9999,
+      "split": "test",
+      "step_idx": 46
+    },
+    "1224716": {
+      "cache_row": 118992,
+      "episode_id": 9999,
+      "split": "test",
+      "step_idx": 91
+    },
+    "1233825": {
+      "cache_row": 120373,
+      "episode_id": 10099,
+      "split": "test",
+      "step_idx": 0
+    },
+    "1233917": {
+      "cache_row": 989655,
+      "episode_id": 10100,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1234010": {
+      "cache_row": 989748,
+      "episode_id": 10100,
+      "split": "train",
+      "step_idx": 93
+    },
+    "1234102": {
+      "cache_row": 989840,
+      "episode_id": 10100,
+      "split": "train",
+      "step_idx": 185
+    },
+    "1252517": {
+      "cache_row": 1005465,
+      "episode_id": 10200,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1268358": {
+      "cache_row": 1018206,
+      "episode_id": 10302,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1268429": {
+      "cache_row": 1018277,
+      "episode_id": 10302,
+      "split": "train",
+      "step_idx": 71
+    },
+    "1268499": {
+      "cache_row": 1018347,
+      "episode_id": 10302,
+      "split": "train",
+      "step_idx": 141
+    },
+    "1282558": {
+      "cache_row": 1029850,
+      "episode_id": 10402,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1487326": {
+      "cache_row": 1196174,
+      "episode_id": 11918,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1487391": {
+      "cache_row": 1196239,
+      "episode_id": 11918,
+      "split": "train",
+      "step_idx": 65
+    },
+    "1487456": {
+      "cache_row": 1196304,
+      "episode_id": 11918,
+      "split": "train",
+      "step_idx": 130
+    },
+    "1500426": {
+      "cache_row": 1206654,
+      "episode_id": 12018,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1610041": {
+      "cache_row": 1294606,
+      "episode_id": 12827,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1610110": {
+      "cache_row": 1294675,
+      "episode_id": 12827,
+      "split": "train",
+      "step_idx": 69
+    },
+    "1610179": {
+      "cache_row": 1294744,
+      "episode_id": 12827,
+      "split": "train",
+      "step_idx": 138
+    },
+    "1623941": {
+      "cache_row": 1305448,
+      "episode_id": 12927,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1709021": {
+      "cache_row": 1374979,
+      "episode_id": 13534,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1709080": {
+      "cache_row": 1375038,
+      "episode_id": 13534,
+      "split": "train",
+      "step_idx": 59
+    },
+    "1709138": {
+      "cache_row": 1375096,
+      "episode_id": 13534,
+      "split": "train",
+      "step_idx": 117
+    },
+    "1720821": {
+      "cache_row": 1382649,
+      "episode_id": 13634,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1817192": {
+      "cache_row": 1459171,
+      "episode_id": 14443,
+      "split": "train",
+      "step_idx": 0
+    },
+    "1817285": {
+      "cache_row": 1459264,
+      "episode_id": 14443,
+      "split": "train",
+      "step_idx": 93
+    },
+    "1817377": {
+      "cache_row": 1459356,
+      "episode_id": 14443,
+      "split": "train",
+      "step_idx": 185
+    },
+    "1835792": {
+      "cache_row": 181824,
+      "episode_id": 14543,
+      "split": "val",
+      "step_idx": 0
+    },
+    "2066157": {
+      "cache_row": 1656837,
+      "episode_id": 16362,
+      "split": "train",
+      "step_idx": 0
+    },
+    "2066207": {
+      "cache_row": 1656887,
+      "episode_id": 16362,
+      "split": "train",
+      "step_idx": 50
+    },
+    "2066257": {
+      "cache_row": 1656937,
+      "episode_id": 16362,
+      "split": "train",
+      "step_idx": 100
+    },
+    "2076257": {
+      "cache_row": 1664917,
+      "episode_id": 16462,
+      "split": "train",
+      "step_idx": 0
+    },
+    "212302": {
+      "cache_row": 171284,
+      "episode_id": 1717,
+      "split": "train",
+      "step_idx": 0
+    },
+    "212347": {
+      "cache_row": 171329,
+      "episode_id": 1717,
+      "split": "train",
+      "step_idx": 45
+    },
+    "212391": {
+      "cache_row": 171373,
+      "episode_id": 1717,
+      "split": "train",
+      "step_idx": 89
+    },
+    "2129585": {
+      "cache_row": 1707094,
+      "episode_id": 16968,
+      "split": "train",
+      "step_idx": 0
+    },
+    "2129618": {
+      "cache_row": 1707127,
+      "episode_id": 16968,
+      "split": "train",
+      "step_idx": 33
+    },
+    "2129651": {
+      "cache_row": 1707160,
+      "episode_id": 16968,
+      "split": "train",
+      "step_idx": 66
+    },
+    "2136285": {
+      "cache_row": 1712119,
+      "episode_id": 17068,
+      "split": "train",
+      "step_idx": 0
+    },
+    "221302": {
+      "cache_row": 178484,
+      "episode_id": 1817,
+      "split": "train",
+      "step_idx": 0
+    },
+    "2314718": {
+      "cache_row": 1855746,
+      "episode_id": 18483,
+      "split": "train",
+      "step_idx": 0
+    },
+    "2314770": {
+      "cache_row": 1855798,
+      "episode_id": 18483,
+      "split": "train",
+      "step_idx": 52
+    },
+    "2314822": {
+      "cache_row": 1855850,
+      "episode_id": 18483,
+      "split": "train",
+      "step_idx": 104
+    },
+    "2325218": {
+      "cache_row": 1864146,
+      "episode_id": 18583,
+      "split": "train",
+      "step_idx": 0
+    },
+    "264418": {
+      "cache_row": 213164,
+      "episode_id": 2222,
+      "split": "train",
+      "step_idx": 0
+    },
+    "264488": {
+      "cache_row": 213234,
+      "episode_id": 2222,
+      "split": "train",
+      "step_idx": 70
+    },
+    "264557": {
+      "cache_row": 213303,
+      "episode_id": 2222,
+      "split": "train",
+      "step_idx": 139
+    },
+    "278418": {
+      "cache_row": 224084,
+      "episode_id": 2322,
+      "split": "train",
+      "step_idx": 0
+    },
+    "367438": {
+      "cache_row": 295474,
+      "episode_id": 3030,
+      "split": "train",
+      "step_idx": 0
+    },
+    "367504": {
+      "cache_row": 295540,
+      "episode_id": 3030,
+      "split": "train",
+      "step_idx": 66
+    },
+    "367570": {
+      "cache_row": 295606,
+      "episode_id": 3030,
+      "split": "train",
+      "step_idx": 132
+    },
+    "380738": {
+      "cache_row": 305715,
+      "episode_id": 3130,
+      "split": "train",
+      "step_idx": 0
+    },
+    "395213": {
+      "cache_row": 317776,
+      "episode_id": 3232,
+      "split": "train",
+      "step_idx": 0
+    },
+    "395270": {
+      "cache_row": 317833,
+      "episode_id": 3232,
+      "split": "train",
+      "step_idx": 57
+    },
+    "395327": {
+      "cache_row": 317890,
+      "episode_id": 3232,
+      "split": "train",
+      "step_idx": 114
+    },
+    "406713": {
+      "cache_row": 38209,
+      "episode_id": 3332,
+      "split": "val",
+      "step_idx": 0
+    },
+    "431068": {
+      "cache_row": 346758,
+      "episode_id": 3535,
+      "split": "train",
+      "step_idx": 0
+    },
+    "431131": {
+      "cache_row": 346821,
+      "episode_id": 3535,
+      "split": "train",
+      "step_idx": 63
+    },
+    "431194": {
+      "cache_row": 346884,
+      "episode_id": 3535,
+      "split": "train",
+      "step_idx": 126
+    },
+    "443768": {
+      "cache_row": 356791,
+      "episode_id": 3635,
+      "split": "train",
+      "step_idx": 0
+    },
+    "443895": {
+      "cache_row": 356918,
+      "episode_id": 3636,
+      "split": "train",
+      "step_idx": 0
+    },
+    "443968": {
+      "cache_row": 356991,
+      "episode_id": 3636,
+      "split": "train",
+      "step_idx": 73
+    },
+    "444040": {
+      "cache_row": 357063,
+      "episode_id": 3636,
+      "split": "train",
+      "step_idx": 145
+    },
+    "458495": {
+      "cache_row": 368160,
+      "episode_id": 3736,
+      "split": "train",
+      "step_idx": 0
+    },
+    "503687": {
+      "cache_row": 405625,
+      "episode_id": 4040,
+      "split": "train",
+      "step_idx": 0
+    },
+    "503760": {
+      "cache_row": 405698,
+      "episode_id": 4040,
+      "split": "train",
+      "step_idx": 73
+    },
+    "503833": {
+      "cache_row": 405771,
+      "episode_id": 4040,
+      "split": "train",
+      "step_idx": 146
+    },
+    "518387": {
+      "cache_row": 416944,
+      "episode_id": 4140,
+      "split": "train",
+      "step_idx": 0
+    },
+    "600243": {
+      "cache_row": 481815,
+      "episode_id": 4848,
+      "split": "train",
+      "step_idx": 0
+    },
+    "600315": {
+      "cache_row": 481887,
+      "episode_id": 4848,
+      "split": "train",
+      "step_idx": 72
+    },
+    "600387": {
+      "cache_row": 481959,
+      "episode_id": 4848,
+      "split": "train",
+      "step_idx": 144
+    },
+    "614743": {
+      "cache_row": 493995,
+      "episode_id": 4948,
+      "split": "train",
+      "step_idx": 0
+    },
+    "729523": {
+      "cache_row": 587364,
+      "episode_id": 5858,
+      "split": "train",
+      "step_idx": 0
+    },
+    "729597": {
+      "cache_row": 587438,
+      "episode_id": 5858,
+      "split": "train",
+      "step_idx": 74
+    },
+    "729670": {
+      "cache_row": 587511,
+      "episode_id": 5858,
+      "split": "train",
+      "step_idx": 147
+    },
+    "744323": {
+      "cache_row": 599204,
+      "episode_id": 5958,
+      "split": "train",
+      "step_idx": 0
+    },
+    "755278": {
+      "cache_row": 608447,
+      "episode_id": 6060,
+      "split": "train",
+      "step_idx": 0
+    },
+    "755363": {
+      "cache_row": 608532,
+      "episode_id": 6060,
+      "split": "train",
+      "step_idx": 85
+    },
+    "755447": {
+      "cache_row": 608616,
+      "episode_id": 6060,
+      "split": "train",
+      "step_idx": 169
+    },
+    "772278": {
+      "cache_row": 621197,
+      "episode_id": 6160,
+      "split": "train",
+      "step_idx": 0
+    },
+    "772448": {
+      "cache_row": 621367,
+      "episode_id": 6161,
+      "split": "train",
+      "step_idx": 0
+    },
+    "772518": {
+      "cache_row": 621437,
+      "episode_id": 6161,
+      "split": "train",
+      "step_idx": 70
+    },
+    "772588": {
+      "cache_row": 621507,
+      "episode_id": 6161,
+      "split": "train",
+      "step_idx": 140
+    },
+    "786548": {
+      "cache_row": 632506,
+      "episode_id": 6261,
+      "split": "train",
+      "step_idx": 0
+    },
+    "796183": {
+      "cache_row": 640637,
+      "episode_id": 6363,
+      "split": "train",
+      "step_idx": 0
+    },
+    "796220": {
+      "cache_row": 640674,
+      "episode_id": 6363,
+      "split": "train",
+      "step_idx": 37
+    },
+    "796257": {
+      "cache_row": 640711,
+      "episode_id": 6363,
+      "split": "train",
+      "step_idx": 74
+    },
+    "803683": {
+      "cache_row": 646487,
+      "episode_id": 6463,
+      "split": "train",
+      "step_idx": 0
+    },
+    "830624": {
+      "cache_row": 667149,
+      "episode_id": 6666,
+      "split": "train",
+      "step_idx": 0
+    },
+    "830665": {
+      "cache_row": 667190,
+      "episode_id": 6666,
+      "split": "train",
+      "step_idx": 41
+    },
+    "830706": {
+      "cache_row": 667231,
+      "episode_id": 6666,
+      "split": "train",
+      "step_idx": 82
+    },
+    "838924": {
+      "cache_row": 82972,
+      "episode_id": 6766,
+      "split": "val",
+      "step_idx": 0
+    },
+    "839007": {
+      "cache_row": 673872,
+      "episode_id": 6767,
+      "split": "train",
+      "step_idx": 0
+    },
+    "839067": {
+      "cache_row": 673932,
+      "episode_id": 6767,
+      "split": "train",
+      "step_idx": 60
+    },
+    "839127": {
+      "cache_row": 673992,
+      "episode_id": 6767,
+      "split": "train",
+      "step_idx": 120
+    },
+    "851107": {
+      "cache_row": 683068,
+      "episode_id": 6867,
+      "split": "train",
+      "step_idx": 0
+    },
+    "900314": {
+      "cache_row": 722336,
+      "episode_id": 7272,
+      "split": "train",
+      "step_idx": 0
+    },
+    "900380": {
+      "cache_row": 722402,
+      "episode_id": 7272,
+      "split": "train",
+      "step_idx": 66
+    },
+    "900446": {
+      "cache_row": 722468,
+      "episode_id": 7272,
+      "split": "train",
+      "step_idx": 132
+    },
+    "913614": {
+      "cache_row": 733375,
+      "episode_id": 7372,
+      "split": "train",
+      "step_idx": 0
+    },
+    "913747": {
+      "cache_row": 733508,
+      "episode_id": 7373,
+      "split": "train",
+      "step_idx": 0
+    },
+    "913804": {
+      "cache_row": 733565,
+      "episode_id": 7373,
+      "split": "train",
+      "step_idx": 57
+    },
+    "913861": {
+      "cache_row": 733622,
+      "episode_id": 7373,
+      "split": "train",
+      "step_idx": 114
+    },
+    "925247": {
+      "cache_row": 743743,
+      "episode_id": 7473,
+      "split": "train",
+      "step_idx": 0
+    },
+    "942027": {
+      "cache_row": 757388,
+      "episode_id": 7575,
+      "split": "train",
+      "step_idx": 0
+    },
+    "942081": {
+      "cache_row": 757442,
+      "episode_id": 7575,
+      "split": "train",
+      "step_idx": 54
+    },
+    "942135": {
+      "cache_row": 757496,
+      "episode_id": 7575,
+      "split": "train",
+      "step_idx": 108
+    },
+    "952927": {
+      "cache_row": 766108,
+      "episode_id": 7675,
+      "split": "train",
+      "step_idx": 0
+    },
+    "980710": {
+      "cache_row": 95888,
+      "episode_id": 7979,
+      "split": "test",
+      "step_idx": 0
+    },
+    "980779": {
+      "cache_row": 95957,
+      "episode_id": 7979,
+      "split": "test",
+      "step_idx": 69
+    },
+    "980847": {
+      "cache_row": 96025,
+      "episode_id": 7979,
+      "split": "test",
+      "step_idx": 137
+    },
+    "994510": {
+      "cache_row": 97268,
+      "episode_id": 8079,
+      "split": "test",
+      "step_idx": 0
+    }
+  },
+  "scope": "Audited frame mappings/labels only; embeddings reuse passing Step 1 sampled guarantee",
+  "splits": {
+    "test": {
+      "file": {
+        "modified_utc": "2026-04-29T07:28:50.928695+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_test_seed42_img224_encoded.pt",
+        "size_bytes": 191796852
+      },
+      "metadata": {
+        "dataset_name": "pusht_expert_train",
+        "episode_count": 1869,
+        "img_size": 224,
+        "keys": [
+          "emb",
+          "state",
+          "proprio",
+          "episode_idx",
+          "step_idx"
+        ],
+        "num_frames": 231634,
+        "policy_name": "pusht/lewm",
+        "seed": 42,
+        "split_name": "test",
+        "state_layout": [
+          "agent_x",
+          "agent_y",
+          "block_x",
+          "block_y",
+          "block_angle",
+          "agent_vx",
+          "agent_vy"
+        ]
+      },
+      "sampled_rows_matched": 8
+    },
+    "train": {
+      "file": {
+        "modified_utc": "2026-04-29T07:01:43.979421+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_train_seed42_img224_encoded.pt",
+        "size_bytes": 1550527423
+      },
+      "metadata": {
+        "dataset_name": "pusht_expert_train",
+        "episode_count": 14948,
+        "img_size": 224,
+        "keys": [
+          "emb",
+          "state",
+          "proprio",
+          "episode_idx",
+          "step_idx"
+        ],
+        "num_frames": 1872613,
+        "policy_name": "pusht/lewm",
+        "seed": 42,
+        "split_name": "train",
+        "state_layout": [
+          "agent_x",
+          "agent_y",
+          "block_x",
+          "block_y",
+          "block_angle",
+          "agent_vx",
+          "agent_vy"
+        ]
+      },
+      "sampled_rows_matched": 114
+    },
+    "val": {
+      "file": {
+        "modified_utc": "2026-04-29T07:14:58.855648+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_val_seed42_img224_encoded.pt",
+        "size_bytes": 192504617
+      },
+      "metadata": {
+        "dataset_name": "pusht_expert_train",
+        "episode_count": 1868,
+        "img_size": 224,
+        "keys": [
+          "emb",
+          "state",
+          "proprio",
+          "episode_idx",
+          "step_idx"
+        ],
+        "num_frames": 232489,
+        "policy_name": "pusht/lewm",
+        "seed": 42,
+        "split_name": "val",
+        "state_layout": [
+          "agent_x",
+          "agent_y",
+          "block_x",
+          "block_y",
+          "block_angle",
+          "agent_vx",
+          "agent_vy"
+        ]
+      },
+      "sampled_rows_matched": 6
+    }
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,335 @@
+{
+  "calibration": {
+    "absolute_agent_location_dose0": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          32.17536085196628,
+          55.828992661377136
+        ],
+        "lower95": 33.74368449866166,
+        "n_families": 16,
+        "rms": 43.79966700060386,
+        "upper95": 53.867102058186454
+      },
+      "margin": 53.867102058186454
+    },
+    "absolute_agent_location_dose10": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          29.75034466466024,
+          53.86529414997505
+        ],
+        "lower95": 30.635215142713733,
+        "n_families": 16,
+        "rms": 40.733911112771125,
+        "upper95": 52.31379725402857
+      },
+      "margin": 52.31379725402857
+    },
+    "absolute_agent_location_dose20": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          27.87043821062787,
+          55.218219025186436
+        ],
+        "lower95": 28.89005454655888,
+        "n_families": 16,
+        "rms": 40.44059635444118,
+        "upper95": 53.7839998049333
+      },
+      "margin": 53.7839998049333
+    },
+    "absolute_agent_location_dose30": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          25.154947548990176,
+          47.76576825761016
+        ],
+        "lower95": 26.325322627199153,
+        "n_families": 16,
+        "rms": 36.18906950824441,
+        "upper95": 46.15638326507312
+      },
+      "margin": 46.15638326507312
+    },
+    "absolute_block_angle_dose0": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.21594593609800178,
+          0.6527710706151251
+        ],
+        "lower95": 0.23807874789746344,
+        "n_families": 16,
+        "rms": 0.4378461631816662,
+        "upper95": 0.6215993840321895
+      },
+      "margin": 0.6215993840321895
+    },
+    "absolute_block_angle_dose10": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.21788891318656275,
+          0.6573299405805295
+        ],
+        "lower95": 0.2395910276135408,
+        "n_families": 16,
+        "rms": 0.44141063755953003,
+        "upper95": 0.6250495511633704
+      },
+      "margin": 0.6250495511633704
+    },
+    "absolute_block_angle_dose20": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.21545915440527114,
+          0.6509865929111629
+        ],
+        "lower95": 0.2351375492994409,
+        "n_families": 16,
+        "rms": 0.4345543774229297,
+        "upper95": 0.6241358040541343
+      },
+      "margin": 0.6241358040541343
+    },
+    "absolute_block_angle_dose30": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.20380382710759087,
+          0.589430791765188
+        ],
+        "lower95": 0.21983968107940727,
+        "n_families": 16,
+        "rms": 0.40167379579833445,
+        "upper95": 0.5580921456428692
+      },
+      "margin": 0.5580921456428692
+    },
+    "absolute_block_location_dose0": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          12.351078947684174,
+          22.432771694091386
+        ],
+        "lower95": 13.048322491155512,
+        "n_families": 16,
+        "rms": 17.44121138066039,
+        "upper95": 21.59320091107353
+      },
+      "margin": 21.59320091107353
+    },
+    "absolute_block_location_dose10": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          12.512550862293025,
+          22.497029195432123
+        ],
+        "lower95": 13.1940972447549,
+        "n_families": 16,
+        "rms": 17.563738458253866,
+        "upper95": 21.647479761077534
+      },
+      "margin": 21.647479761077534
+    },
+    "absolute_block_location_dose20": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          12.595170083705792,
+          22.921284475873765
+        ],
+        "lower95": 13.298586403006572,
+        "n_families": 16,
+        "rms": 17.75809626370082,
+        "upper95": 22.0321611825691
+      },
+      "margin": 22.0321611825691
+    },
+    "absolute_block_location_dose30": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          12.547409894317713,
+          22.56154921781692
+        ],
+        "lower95": 13.242886280802011,
+        "n_families": 16,
+        "rms": 17.58505081441063,
+        "upper95": 21.70395535146482
+      },
+      "margin": 21.70395535146482
+    },
+    "differential_agent_location_dose10": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          6.412738124789053,
+          14.284261732167028
+        ],
+        "lower95": 7.124049926181101,
+        "n_families": 16,
+        "rms": 10.700111793561616,
+        "upper95": 13.74727248383382
+      },
+      "margin": 13.74727248383382
+    },
+    "differential_agent_location_dose20": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          9.904716308415054,
+          15.103301505259722
+        ],
+        "lower95": 10.361192795462758,
+        "n_families": 16,
+        "rms": 12.668047696246326,
+        "upper95": 14.734325791575154
+      },
+      "margin": 14.734325791575154
+    },
+    "differential_agent_location_dose30": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          10.153807677737957,
+          15.67094954112722
+        ],
+        "lower95": 10.638514861220736,
+        "n_families": 16,
+        "rms": 13.092897898910135,
+        "upper95": 15.239588038755224
+      },
+      "margin": 15.239588038755224
+    },
+    "differential_block_angle_dose10": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.011342848893182062,
+          0.02557464637522353
+        ],
+        "lower95": 0.012453826439119908,
+        "n_families": 16,
+        "rms": 0.01881687879554112,
+        "upper95": 0.02452401533757706
+      },
+      "margin": 0.02452401533757706
+    },
+    "differential_block_angle_dose20": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.02673236967739873,
+          0.054903905057171215
+        ],
+        "lower95": 0.028645840965308624,
+        "n_families": 16,
+        "rms": 0.04099357226494162,
+        "upper95": 0.052469367169498654
+      },
+      "margin": 0.052469367169498654
+    },
+    "differential_block_angle_dose30": {
+      "cap": 0.1,
+      "development": {
+        "ci95": [
+          0.05898205565985065,
+          0.16865749975548752
+        ],
+        "lower95": 0.06687434136081445,
+        "n_families": 16,
+        "rms": 0.11732718263006034,
+        "upper95": 0.1599643795671296
+      },
+      "margin": 0.1599643795671296
+    },
+    "differential_block_location_dose10": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          0.5478921988705162,
+          0.9886060490509866
+        ],
+        "lower95": 0.5831153275774847,
+        "n_families": 16,
+        "rms": 0.7788515208224174,
+        "upper95": 0.9561339663207665
+      },
+      "margin": 0.9561339663207665
+    },
+    "differential_block_location_dose20": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          1.069980612654365,
+          1.999773726500963
+        ],
+        "lower95": 1.1446933528754362,
+        "n_families": 16,
+        "rms": 1.5597518460193611,
+        "upper95": 1.9267152004448058
+      },
+      "margin": 1.9267152004448058
+    },
+    "differential_block_location_dose30": {
+      "cap": 5.0,
+      "development": {
+        "ci95": [
+          1.557697607719865,
+          2.5991248939621627
+        ],
+        "lower95": 1.644707003637721,
+        "n_families": 16,
+        "rms": 2.117522347068945,
+        "upper95": 2.5179488635946594
+      },
+      "margin": 2.5179488635946594
+    }
+  },
+  "calibration_parent": {
+    "modified_utc": "2026-10-14T10:07:18.534182+00:00",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json",
+    "sha256": "371ee01aadeab5868e39e2ef5e67ed3ff5685fa22e2d16e485e0d12817e6234e",
+    "size_bytes": 161003
+  },
+  "sources": {
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/envs/pusht/env.py": "d8d0de35aaab5b846db4e79b0fbfd6b17375178cce40a25df5301c8030ca6d68",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/solver/cem.py": "d88c86dcd1bd1e6d89221ac22079a3efe296cc7566532de0d36605e2f1536050",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/pusht.yaml": "7eb72270554b70904be4d1b4442af8e378db325d69a4da1ac373e8dcb9145222",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/solver/cem.yaml": "797629f829c0d3ad3b9c4e42d46a87f08da0b3845bc433e353fd6274cb0574df",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/phase1/pusht.yaml": "d9a10ac40f00019ea499e9d2b472de644cb5efa0f5e59be28cdaa77f5a51f7c0",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/train/lewm.yaml": "9c42647156737114fe76c2c5a0707e32f4f027a8c5c844f90a0c33a8e6f26c47",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/__init__.py": "245da18c0fbf35a3d82e672efde63f83801c5f4d16c4a41ec918d287bf090fa5",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/baseline.py": "4b4fe9dda539ab1c56a91088d7dd421005c7f387d4a9b887bd18b91fc3798b88",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/compatibility_report.py": "f2bca8488076d84cce405e75211e08002508830591738e42644f43c2248fd9ea",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/contracts.py": "53bf620ab6cd0946774bc6522c4a66788554b4adebf56e948c79e9b60350e053",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/domain_diagnostics.py": "99ac789215f6dec8c4d9c1b5fb159c451c0e9e43ecdf99357d574492a0783b3b",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/domain_report.py": "017bc778882db67ba93ea1b1bcf375beb629626929b9d8ed606263bfca2477e9",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/model.py": "0f5865ee146a6608ae0d10dbc28b47fa20ad73e0e067f4dd6c7e66f946098002",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/observation_compatibility.py": "eb34cc1d8565629588519dc361ae49e966619cd815b4568ca2adce2ffe84e4f9",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/render_provenance.py": "5a7b77b340ca33f1de7092ea3644c5bcb4ff0f419735f4f71248dcbc3045cee4",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator.py": "798080f3b881f1f1c6a1f5cf55d59417132c766593bba8ee5cba5e68eea00fe6",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator_validation.py": "c78bfcd3ae8e89f8512ef12da1dcddfa76070204c2ddec3157590cbdd35bfb02",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/eval.py": "852cf176d4d0404e19bf08b21c4dfe690376754a154d7fa713b148781541ffc8",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/jepa.py": "39d4f7f817e1720f3a32205fd5340348e86a5f6ddfb25d5015135a1d9b67c6a7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/module.py": "6265d5f87d92262a4a55708bfea9fe6a91af45318de64bd8d163f953cdf9922c",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/observation_domain_protocol_v2.md": "38e7fadce430224ff8af0b6c205df8f2c99e2ffe5f27663c50cb9fba599e9161",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/data.py": "9df138d36fcea9b944726d21779e691304cd48113d4d6702cf48ffc8f681b1c3",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/embedding_cache.py": "5cbb97d1eb2cfc4bf27305a448d355c710749d24b76d353104b6bbd7423c8233",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/evaluate.py": "f9cc92fdb719351a58883f455b3923c7a87d4c86f7eb700f1e59efa5ed5941b3",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/models.py": "6b51fcc5876bd394fc3fdf1c51ac6d92bc050b4c824ea90ebdbc91dcdac2678f",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/rollout_ablation.py": "fed6eeea6d64d5c95820ff38f300886c3359ddaf243b8d05b4ed4e54279082f7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/scripts/run_phase1.py": "afc0fffb82864a4136ac5ac8ae345c22d7d211542685de82a5e666ee5c0ea697",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_domain_diagnostics.py": "8b9d72037ff150555153fa7f28df1b6c42bec6dcb2a0888114a1dcf52995911c",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/utils.py": "0793dc4f0c2f27a3ece84e11fd10aa33dce762ca2c5032849c17dea5d95dd09f"
+  }
+}

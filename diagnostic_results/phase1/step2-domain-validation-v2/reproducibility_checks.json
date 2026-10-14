@@ -1,0 +1,22 @@
+{
+  "attributes": 163,
+  "datasets": 2614,
+  "family_metrics_byte_equal": true,
+  "freeze_byte_equal": true,
+  "independent_validation_repeat_is_NOT_additional_statistical_evidence": true,
+  "inputs": {
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/natural_diagnostics.h5": {
+      "modified_utc": "2026-10-14T10:10:52.645389+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-replay-v2/natural_diagnostics.h5",
+      "sha256": "1126bb0b2a64a708c5cec5a40a8307404193b9e6072a201b21c97f29b4418298",
+      "size_bytes": 20606440
+    },
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-v2/natural_diagnostics.h5": {
+      "modified_utc": "2026-10-14T10:07:53.862799+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step2-domain-validation-v2/natural_diagnostics.h5",
+      "sha256": "1126bb0b2a64a708c5cec5a40a8307404193b9e6072a201b21c97f29b4418298",
+      "size_bytes": 20606440
+    }
+  },
+  "status": "EXACT"
+}

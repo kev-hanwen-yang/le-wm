@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/kevinyang/Desktop/Desktop - Kevin’s MacBook Pro/LeWM/le-wm/counterfactual/readout_audit.py", line 298, in run_readout_audit
+    manifest['regressions']=repair_regressions(repo_root,artifacts,('test_counterfactual_readout_audit.py',))
+  File "/Users/kevinyang/Desktop/Desktop - Kevin’s MacBook Pro/LeWM/le-wm/counterfactual/readout_audit.py", line 113, in repair_regressions
+    if completed.returncode: raise SimulatorValidationError(f'Regression failed: {name}')
+counterfactual.simulator.SimulatorValidationError: Regression failed: test_counterfactual_readout_audit.py

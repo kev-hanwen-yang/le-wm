@@ -11,7 +11,18 @@ The experimental specification remains authoritative. This document operationali
 - **H2b, primary:** selective A/B-donor editing toward real hybrid C, followed by physical-effect fidelity under matched actions.
 - AB-only: A=`(a1,b1)`, B=`(a2,b1)`. ABC: A=`(a1,b1)`, B=`(a2,b2)`, C=`(a2,b1)`. **B is the donor; C is the ABC physical target.** Full swap produces B, not C.
 
-The core design is sound. Improvements are needed for family isolation, measurement resolution, precommitment and honest gates. Step 1 is implemented with saved passing evidence. Steps 2–7 below are **planned, not completed**. Negative or measurement-limited findings are valid Phase I outcomes; improved planning success is not its objective.
+The core design is sound. Improvements are needed for family isolation, measurement resolution, precommitment and honest gates. Step 1 is implemented with saved passing evidence. Step 2 fresh-start mechanics are now implemented and PASS; observation-domain assessment is complete but measurement validity FAILS. Steps 3–7 below remain **planned, not completed**. See `observation_domain_gate_revision_v2.md` and the saved `step2-domain-validation-v2` memo: no Step 3 readiness or automatic unlock is claimed. The audit table below records the earlier pre-Step-2 audit, not current completion status. Negative or measurement-limited findings are valid Phase I outcomes; improved planning success is not its objective.
+
+2026-10-15 readout follow-up: authorized **R0/R1 only** are complete. R0 found
+no original pipeline/label bug. Bounded natural-state refits improve errors but
+agent/block instruments remain inadequate against candidate 5-px caps; no
+tested 1–10-px block scale passes combined resolution/preservation checks.
+Sin/cos MLP absolute-angle calibration is promising, not official promotion or
+fine-angle resolution. See `readout_refit_proposal_v2.md` and the saved
+`readout-r1-feasibility-v1/readout_repair_memo.md`. Historical provenance remains
+UNRESOLVED, H1/P suitability is not established, and formal Step 3/H2 remain
+stopped. R2 is proposed only. The optional 1-px/.5-px high-resolution objective
+does not replace or weaken the existing Step 3 >=1-px feasibility threshold.
 
 No LeWM retraining/fine-tuning, physics/reward/cost changes, goal-encoding changes, official-metric changes, H3 action ranking or new closed-loop experiment is included. The already authorized official CEM smoke remains a Step 1 functionality check, not Phase II research.
 

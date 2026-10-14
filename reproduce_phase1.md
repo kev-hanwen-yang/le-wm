@@ -203,3 +203,291 @@ logs; this implementation does not modify installed dependencies to hide them.
 `MPLCONFIGDIR` selects a writable, ignored Matplotlib cache, not simulator physics.
 Reproducibility compares numeric trajectories/pixel hashes and protocol identity,
 not run IDs, output paths, timestamps or elapsed time.
+
+## Step 2 — Goal/render provenance audit (no Step 3 progression)
+
+Run the focused tests, then the audit through the same staged CLI:
+
+```bash
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python test_counterfactual_render_provenance.py
+
+# First source investigation: fetch nine small, pinned public source snapshots.
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python scripts/run_phase1.py \
+  --stage render-provenance --run-id step2-render-provenance-audit
+
+# Offline reuse of the exact source snapshots, with hash/URL checks:
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python scripts/run_phase1.py \
+  --stage render-provenance --run-id step2-render-provenance-release-verified \
+  --source-evidence .stable-wm/phase1/step2-render-provenance-audit/sources/index.json
+
+# Additional full mechanics and frozen model/cache regression checks:
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python scripts/run_phase1.py \
+  --stage simulator --run-id step2-render-regression-replay
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python scripts/run_phase1.py \
+  --stage baseline --run-id step1-render-provenance-recheck --device cpu --skip-cem
+```
+
+Those IDs are existing immutable evidence; choose new IDs when reproducing.
+`--simulator-manifest <path>` selects a different passing Step 2 parent;
+`--baseline-manifest <path>` selects a different full passing Step 1 parent.
+The audit validates unchanged parent inference/physics sources and checkpoint,
+records the dirty Git tree plus exact source snapshots, and refuses reused roots.
+It runs all 11 direct-execution regression scripts and saves commands/exit codes
+and complete stdout/stderr under its ignored artifact directory.
+
+The optional retained `.h5.zst` archive is checked against the pinned official
+HF LFS SHA-256 and completely decompressed/byte-compared with the local HDF5.
+This uses installed zstandard 0.25.0, streams data, writes no second HDF5 and
+does not download the 13-GB archive. If the archive is absent, the identity check
+reports UNAVAILABLE; it does not infer identity from the filename. The full
+comparison reads roughly 59 GB and can take a few minutes on slower storage.
+
+Audit outputs under `diagnostic_results/phase1/<run_id>/`:
+
+- `render_provenance_manifest.json`: parent/source/release identities, actual
+  candidate config, runtime, audit metrics, regressions, blockers and separate
+  gate statuses. Completed audit means the investigation ran successfully,
+  **not** that the observation-generation gate passed.
+- `initial_families.json`: all 185 exact initial-public-observation families and
+  episode membership; no claim of complete physical state or original demo IDs.
+- `sample_records.json`: 128 predetermined frames from 32 families, raw-row
+  hashes, stored states, all reconstruction exclusions and per-condition metrics.
+- `cache_frame_mappings.json`: exact existing cache row/split mappings and
+  state/proprio label checks for all 128 sampled observations.
+- `image_metrics.csv`: raw-channel RMSE/MAE, goal/non-goal/background regions
+  and descriptive color-mask IoUs; repeated initial images are not independent
+  families in the main aggregate.
+- `comparison_<raw_row>.png`: source, visible, hidden, shifted and rotated
+  candidates plus an explicitly amplified absolute-error panel. These are
+  provenance diagnostics, **not** the four future H1/H2 research figures.
+
+Large/readback/source artifacts under `.stable-wm/phase1/<run_id>/`:
+`render_comparisons.h5`, `source_snapshot.h5`, `sources/*.txt`/`index.json`, and
+`regression_logs/`. Render comparisons include saved original images/states,
+candidate images, goal-region masks, RGB residuals and numeric metrics.
+No original HDF5 or `.pt` cache is edited, rebuilt or overwritten.
+
+The source-grounded display candidate is explicitly `candidate_only: true`
+under `simulator.provenance`. The mechanics fixtures still use their original
+safe physical goal. Comparison controls temporarily affect display only and
+restore it; they do not change task goals, cached goal images, reset/physics,
+reward, goal encoding, model, action normalization or time indexing.
+Middle/final source poses are only attempted as independent quiescent image
+illustrations; invalid/contact/bounds cases are rejected without resampling.
+There is no arbitrary dynamic-state restore or source-trajectory replay.
+
+The complete release identity check now passes, and training/evaluation/Step 1
+preprocessing agrees exactly. The original generation/MP4 encoding/conversion
+run and per-episode goal/style provenance remain unknown. Therefore all audits
+keep `verified_generation_contract=false` and `encoder_dataset_ready=false`.
+See the new provenance section of `step2_review.md` for the measured results,
+source lines and a conservative compatibility protocol requiring human review.
+**Stop here; do not start Step 3 or infer approval from an audit exit code of 0.**
+
+The independent-process numeric/attribute comparisons recorded in
+`step2-render-provenance-release-verified/reproducibility_checks.json` can be
+rerun read-only:
+
+```bash
+.venv/bin/python - <<'PY'
+import h5py, numpy as np
+pairs = [
+    ('step2-fresh-start-replay-reviewed', 'step2-render-regression-replay', 'simulator_replay.h5'),
+    ('step2-render-provenance-audit', 'step2-render-provenance-release-verified', 'render_comparisons.h5'),
+]
+for left, right, filename in pairs:
+    with h5py.File(f'.stable-wm/phase1/{left}/{filename}') as a, h5py.File(f'.stable-wm/phase1/{right}/{filename}') as b:
+        names, other = [], []
+        a.visit(names.append); b.visit(other.append)
+        assert names == other
+        datasets = attributes = 0
+        for name in ['', *names]:
+            x, y = (a[name], b[name]) if name else (a, b)
+            assert set(x.attrs) == set(y.attrs)
+            for key in x.attrs:
+                assert np.array_equal(x.attrs[key], y.attrs[key]), (name, key)
+            attributes += len(x.attrs)
+            if isinstance(x, h5py.Dataset):
+                assert x.shape == y.shape and x.dtype == y.dtype
+                assert np.array_equal(x[()], y[()]), name
+                datasets += 1
+        print(filename, 'PASS', datasets, 'datasets', attributes, 'attributes')
+PY
+```
+
+## Step 2 — Independent encoder-facing compatibility assessment
+
+This assessment is separate from historical provenance and never activates a
+collection gate. It reads saved initial-image comparisons only, applies the
+unchanged frozen encoder/preprocessing and existing frozen MLP readouts, and
+runs fixed **offline** codec controls. No environment or goal is modified.
+
+Required parents: the passing original Step 1, passing Step 2 and completed
+`step2-render-provenance-release-verified` audit, including its ignored comparison
+HDF5 plus compact family/sample/cache-mapping records. The released checkpoint,
+three root MLP checkpoints, original HDF5 and existing caches must be available.
+No model/probe/cache is retrained or overwritten. Bundled imageio-ffmpeg 7.1
+supplies libx264/FFV1; no system FFmpeg installation or new dependency was needed.
+
+```bash
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python test_counterfactual_observation_compatibility.py
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python scripts/run_phase1.py \
+  --stage observation-compatibility --run-id step2-observation-compatibility-v1 --device cpu
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python scripts/run_phase1.py \
+  --stage observation-compatibility --run-id step2-observation-compatibility-verified --device cpu
+```
+
+Those IDs are saved evidence; choose new IDs for reproduction. An alternative
+completed audit can be supplied with `--provenance-manifest <path>`. The original
+protocol and numerical criteria were written before the first measurement; the
+verified run adds cache-identity/end-of-run guards and reporting, with unchanged
+case measurements/criteria. Runs agree exactly on saved images, embeddings,
+readouts, reference bank and calibrated numerical reports.
+
+Compact outputs: `compatibility_manifest.json`, `family_partition.json`,
+`development_calibration.json`, `case_metrics.json`/`.csv`, `spatial_metrics.json`,
+`spatial_summary.csv`, `codec_summary.csv`, `spatial_residuals.png`,
+`encoder_readout_drift.png` and `compatibility_memo.md`. Large arrays, the 147
+codec diagnostic files, exact codec commands, source snapshots and regression
+logs live under `.stable-wm/phase1/<run_id>/`.
+
+Regenerate figures/tables from saved numeric records only, into a new temporary
+output directory so immutable evidence is not overwritten:
+
+```bash
+MPLCONFIGDIR=.matplotlib-cache .venv/bin/python - <<'PY'
+from pathlib import Path
+from tempfile import mkdtemp
+import shutil
+from counterfactual.compatibility_report import write_compatibility_plots
+source = Path('diagnostic_results/phase1/step2-observation-compatibility-verified')
+destination = Path(mkdtemp(prefix='lewm-compatibility-plots-'))
+for name in ['case_metrics.json', 'spatial_metrics.json',
+             'development_calibration.json', 'compatibility_manifest.json']:
+    shutil.copy2(source / name, destination / name)
+write_compatibility_plots(destination)
+print(destination)
+PY
+```
+
+The historical HDF5 comparison has render-relevant/public-state matching, not
+full historical-state proof. Middle/final pose illustrations and protected-test
+query families are excluded. Natural repeats are aggregated within physical
+family, and all missing dose references are reported. The existing test cache
+filename is not synonymous with the new protected family partition.
+
+Process completion/regression success does not mean scientific compatibility.
+The measured natural-nuisance and proposed practical checks **fail**. Neither a
+compatibility-qualified Step 3 pilot nor confirmatory freeze is supported for
+the present candidate/readout combination. Read the separate, review-required
+`observation_compatibility_gate_revision.md`; it proposes an independent empirical
+route without making unrecoverable historical records a permanent prerequisite.
+No full Step 3 collection or gate activation follows this assessment.
+# Natural observation-domain diagnostic v2 (not formal Step 3)
+
+The task authorized a bounded calibration diagnostic and natural predictor
+baseline. Original goals/physics/weights/contracts and all old artifacts remain
+unchanged. See `observation_domain_protocol_v2.md`,
+`observation_domain_gate_revision_v2.md`, and
+`diagnostic_results/phase1/step2-domain-validation-v2/domain_assessment_memo.md`.
+No readout refit, formal Step3, H1/H2/H3, commit or push was performed.
+
+Executed from repository root (macOS arm64 CPU). The two cache environment
+variables only place Matplotlib/font caches in writable temporary directories:
+
+```bash
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python test_counterfactual_domain_diagnostics.py
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python scripts/run_phase1.py --stage domain-diagnostics --partition development --run-id step2-domain-calibration-dev-v2 --device cpu
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python scripts/run_phase1.py --stage domain-diagnostics --partition validation --calibration-manifest diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json --run-id step2-domain-validation-v2 --device cpu
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python scripts/run_phase1.py --stage domain-diagnostics --partition validation --calibration-manifest diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json --run-id step2-domain-validation-replay-v2 --device cpu
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python diagnostic_results/phase1/step2-domain-validation-v2/summarize_saved.py
+```
+
+Outputs are immutable; do not rerun these exact IDs. To reproduce, choose new
+development/validation/replay IDs and pass the new development parent. Validation
+rejects code/config/protocol/readout/runtime changes after calibration. Saved
+source snapshots reproduce the exact historical run; later source additions
+require a new development parent, even when the scientific protocol is unchanged.
+The saved-summary script is post-assessment descriptive analysis, not criterion
+selection. Adjust its input paths for a newly named reproduction series.
+
+Each stage runs 97 direct tests in13 scripts. The frozen production path passes
+repeatability; GateC fails physical readout budgets. A successful process exit
+means evidence collection completed, **not a scientific PASS**. GateA PASS,
+B INCONCLUSIVE, C FAIL, D INCONCLUSIVE, E FAIL. Both Step3 readiness decisions
+are false. Independent-process replay matches2,614 datasets/163 attributes;
+it is not additional independent sample size.
+
+Saved numerical files: `domain_manifest.json`, `reserved_families.json`,
+`family_metrics.json`, `attempts.json`, calibration/freeze records, CSVs and four
+diagnostic PNGs. Development also saves signed historical-domain diagnosis and
+21 correctly standardized source predictor references. Large full raw/substep
+trajectories/RGB/latents/predictions, codec stress artifacts, source snapshots and
+regression logs are in `.stable-wm/phase1/<run_id>`. This is a32-family readout
+diagnostic, not a formal AB/ABC Step 3 dataset or the four completed H2 figures.
+
+## Readout repair R0/R1 — authorized natural-state feasibility only
+
+`readout_repair_protocol_r0_r1.md` predeclares the audit, family allocation,
+candidate set, seeds and proposed measurement-scale criteria. Exact historical
+provenance remains UNRESOLVED. No original LeWM/physics/goal/action/temporal/CEM
+contract was changed; only separately versioned readout heads were fitted.
+R0 must complete and pass before R1 accepts its `--audit-manifest` parent.
+Source/config/protocol/runtime identities are checked; original MLPs are frozen.
+
+Executed commands from the repository root:
+
+```bash
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python test_counterfactual_readout_audit.py
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python test_counterfactual_readout_feasibility.py
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python scripts/run_phase1.py --stage readout-audit --run-id readout-r0-sanity-v1 --device cpu
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python scripts/run_phase1.py --stage readout-audit --run-id readout-r0-sanity-verified-v1 --device cpu
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python -c "from counterfactual.readout_repair_report import write_r0_report; write_r0_report('diagnostic_results/phase1/readout-r0-sanity-verified-v1')"
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python scripts/run_phase1.py --stage readout-feasibility --audit-manifest diagnostic_results/phase1/readout-r0-sanity-verified-v1/repair_manifest.json --run-id readout-r1-feasibility-v1 --device cpu
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python scripts/run_phase1.py --stage readout-feasibility --audit-manifest diagnostic_results/phase1/readout-r0-sanity-verified-v1/repair_manifest.json --run-id readout-r1-feasibility-replay-v1 --device cpu
+MPLCONFIGDIR=/private/tmp/lewm-domain-mpl XDG_CACHE_HOME=/private/tmp/lewm-domain-cache .venv/bin/python diagnostic_results/phase1/readout-r1-feasibility-v1/summarize_saved.py
+```
+
+The first R0 run preserves a regression failure in the **new** floating-position
+test fixture. The fixture was corrected to the existing `1e-10` state tolerance;
+no original pipeline bug or physics change was found. The passing R0 uses the
+next immutable ID. Do not reuse any saved ID; choose new audit/fit/replay IDs.
+For a new series, update the summary script's input paths. To replay the exact
+historical execution after future code edits, use its saved source/config
+snapshots in a separate checkout; the current guards intentionally reject
+changed parents, rather than relabel changed code as the same experiment.
+
+R0 records170 images and149 independent-geometry checks, exact preprocessing/
+MLP-forward parity and source/prospective pose-matched comparisons. R1 collects
+64 families,21 scenes per family (zero-repeat excluded from fitting):48 training,
+16 pilot-validation;1344 images are not1344 independent samples. The pilot is
+used for bounded selection and becomes exposed development evidence. Search:
+nested16/32/48 counts,4 Ridge penalties,4 target heads,2 MLP seeds with fixed
+architecture/schedule. All75 comparison rows and72 new artifacts are retained.
+No later final families have been generated.
+
+Implementation files: `counterfactual/readout_audit.py` (contracts/geometry/legacy
+pipeline audit), `readout_feasibility.py` (natural-family collection, grouped fits,
+versioned loaders/metrics/criteria), `readout_repair_report.py` (saved-number
+tables/plots), two direct test scripts, CLI stages and nested config. No new
+third-party dependency. Target statistics are explicitly training-only weighted
+population statistics for new heads, not a rewrite of legacy transformations.
+
+Compact outputs are in `diagnostic_results/phase1/readout-r0-sanity-verified-v1/`
+and `readout-r1-feasibility-v1/`: manifests, lineage/attempts, complete JSON/CSV,
+geometry figure, four R1 diagnostic figures, audit/research memos and numerical
+reproducibility checks. Large HDF5/model files and regression/source snapshots
+remain ignored under `.stable-wm/phase1/<run_id>/`. The saved-summary script
+uses existing arrays/predictions only; it adds descriptive strata/bias summaries,
+the fourth plot and replay checks, without changing criteria or model selection.
+
+All118 tests in15 scripts pass, including existing Step1/2 regressions. Independent
+R1 executions agree exactly on142 HDF5 datasets,259 attributes,72 model files,
+assignments/curves and feasibility decisions. Original checkpoint/readout hashes
+and frozen model status are checked. Repetition is verification, not more N.
+
+**Scientific outcome:** R0 pipeline valid; R1 position accuracy/preservation
+inadequate and no tested block scale qualified. Some selected-pilot absolute
+angle checks pass, not an overall gate. Read `readout_refit_proposal_v2.md`:
+R2 is proposed, not authorized. No official readout/P promotion, formal Step3,
+patches, H2/H3, commits or pushes follow these diagnostic stages.

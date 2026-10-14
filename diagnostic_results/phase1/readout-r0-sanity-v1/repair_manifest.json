@@ -1,0 +1,700 @@
+{
+  "action_normalizer": {
+    "estimator": "torch.mean / torch.std(unbiased=True) over non-NaN raw actions",
+    "mean": [
+      -0.007812565192580223,
+      0.006860686466097832
+    ],
+    "order": "standardize each raw (x, y) action before grouping five rows",
+    "std": [
+      0.2084674835205078,
+      0.20674866437911987
+    ]
+  },
+  "baseline_parent": {
+    "allowed_extensions": [
+      "CLI dispatch",
+      "simulator configuration section"
+    ],
+    "checkpoint_sha256": "100d6459b9198697c1c26ef47e3eef4d7548946401b7501213caf761495a2553",
+    "dataset_identity_check": "baseline file size/mtime plus Step 1 sampled identity, not full dataset hash",
+    "dataset_metadata": {
+      "modified_utc": "2026-03-29T05:13:07+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/pusht_expert_train.h5",
+      "size_bytes": 46300921856
+    },
+    "frozen_sources_checked": 16,
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step1-reviewed-baseline-seed42/baseline_manifest.json",
+    "run_id": "step1-reviewed-baseline-seed42",
+    "sha256": "f7d6a650743c330a5e19810beab337a7288c3bf6ff2a98cab76651476f6f3cb7"
+  },
+  "command": [
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+    "scripts/run_phase1.py",
+    "--stage",
+    "readout-audit",
+    "--run-id",
+    "readout-r0-sanity-v1",
+    "--device",
+    "cpu"
+  ],
+  "config": {
+    "baseline": {
+      "cache_atol": 1e-05,
+      "cache_rtol": 0.0001,
+      "cache_sample_count": 16,
+      "cache_split_seed": 42,
+      "cache_splits": [
+        "train",
+        "val",
+        "test"
+      ],
+      "cem_enabled": true,
+      "cem_num_eval": 10,
+      "cem_timeout_seconds": 1800,
+      "checkpoint_sha256": "100d6459b9198697c1c26ef47e3eef4d7548946401b7501213caf761495a2553",
+      "rollout_steps": 5,
+      "smoke_episode_id": null
+    },
+    "contract": {
+      "action_dim": 2,
+      "frameskip": 5,
+      "history_size": 3,
+      "latent_dim": 192
+    },
+    "experiment": {
+      "cache_dir": ".stable-wm",
+      "dataset_name": "pusht_expert_train",
+      "image_size": 224,
+      "policy_name": "pusht/lewm",
+      "results_dir": "diagnostic_results",
+      "seed": 42
+    },
+    "simulator": {
+      "atol": 1e-10,
+      "baseline_manifest": "diagnostic_results/phase1/step1-reviewed-baseline-seed42/baseline_manifest.json",
+      "compatibility": {
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 20261014,
+        "codec_crfs": [
+          18,
+          23,
+          28
+        ],
+        "codec_pixel_formats": [
+          "yuv420p",
+          "yuv444p"
+        ],
+        "confirmatory_block_effect_drift_cap_world_px": 0.25,
+        "dose_match_tolerance_world_px": 1.0,
+        "dose_world_px": [
+          10.0,
+          20.0,
+          30.0
+        ],
+        "drift_caps": {
+          "agent_world_px": 1.25,
+          "angle_rad": 0.025,
+          "block_world_px": 1.25
+        },
+        "natural_reference_frames_per_family": 4,
+        "provenance_manifest": "diagnostic_results/phase1/step2-render-provenance-release-verified/render_provenance_manifest.json",
+        "reference_episodes_per_family": 9,
+        "split_seed": 42
+      },
+      "domain_diagnostics": {
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 2026101403,
+        "compatibility_manifest": "diagnostic_results/phase1/step2-observation-compatibility-verified/compatibility_manifest.json",
+        "development_seed": 2026101401,
+        "families_per_partition": 16,
+        "timeout_seconds": 900,
+        "validation_seed": 2026101402
+      },
+      "provenance": {
+        "candidate": {
+          "candidate_only": true,
+          "goal_pose_world_px_rad": [
+            256.0,
+            256.0,
+            0.7853981633974483
+          ],
+          "render_action": false,
+          "render_goal": true,
+          "resolution": 224,
+          "with_target": true,
+          "world_size": 512
+        },
+        "family_sample_count": 32,
+        "simulator_manifest": "diagnostic_results/phase1/step2-fresh-start-replay-reviewed/simulator_manifest.json"
+      },
+      "raw_steps": 35,
+      "readout_repair": {
+        "bootstrap_draws": 10000,
+        "bootstrap_seed": 2026101504,
+        "development_manifest": "diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json",
+        "fresh_pilot_seed": 2026101502,
+        "fresh_training_seed": 2026101501,
+        "mlp_epochs": 600,
+        "mlp_evaluate_every": 10,
+        "mlp_lr": 0.001,
+        "mlp_patience": 100,
+        "mlp_seeds": [
+          42,
+          43
+        ],
+        "mlp_weight_decay": 0.0001,
+        "new_training_families": 16,
+        "ordering_seed": 2026101503,
+        "pilot_validation_families": 16,
+        "ridge_lambdas": [
+          0.0001,
+          0.01,
+          1.0,
+          100.0
+        ],
+        "timeout_seconds": 1200,
+        "training_family_counts": [
+          16,
+          32,
+          48
+        ],
+        "validation_manifest": "diagnostic_results/phase1/step2-domain-validation-v2/domain_manifest.json"
+      },
+      "rtol": 0.0,
+      "seeds": [
+        20261014,
+        20261015,
+        20261016
+      ],
+      "timeout_seconds": 300,
+      "with_target": true
+    }
+  },
+  "contract": {
+    "action_dim": 2,
+    "context_steps": [
+      0,
+      5,
+      10
+    ],
+    "first_prediction_step": 15,
+    "frameskip": 5,
+    "history_size": 3,
+    "latent_dim": 192,
+    "phase1_action_ends": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "phase1_action_starts": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "phase1_rollout_coordinates": [
+      {
+        "k": 1,
+        "preceding_action_raw_steps": [
+          10,
+          15
+        ],
+        "preceding_action_token": 2,
+        "target_h": 15
+      },
+      {
+        "k": 2,
+        "preceding_action_raw_steps": [
+          15,
+          20
+        ],
+        "preceding_action_token": 3,
+        "target_h": 20
+      },
+      {
+        "k": 3,
+        "preceding_action_raw_steps": [
+          20,
+          25
+        ],
+        "preceding_action_token": 4,
+        "target_h": 25
+      },
+      {
+        "k": 4,
+        "preceding_action_raw_steps": [
+          25,
+          30
+        ],
+        "preceding_action_token": 5,
+        "target_h": 30
+      },
+      {
+        "k": 5,
+        "preceding_action_raw_steps": [
+          30,
+          35
+        ],
+        "preceding_action_token": 6,
+        "target_h": 35
+      }
+    ],
+    "phase1_target_steps": [
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "token_dim": 10
+  },
+  "corrections": [],
+  "created_utc": "2026-10-14T21:29:06.874754+00:00",
+  "deterministic_settings": {
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_benchmark": false,
+    "deterministic_algorithms": true,
+    "seed": 42,
+    "torch_num_interop_threads": 12,
+    "torch_num_threads": 8
+  },
+  "device": "cpu",
+  "diagnostic_parents": {
+    "development": {
+      "modified_utc": "2026-10-14T10:07:18.534182+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json",
+      "sha256": "371ee01aadeab5868e39e2ef5e67ed3ff5685fa22e2d16e485e0d12817e6234e",
+      "size_bytes": 161003
+    },
+    "validation": {
+      "modified_utc": "2026-10-14T10:08:49.622886+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-domain-validation-v2/domain_manifest.json",
+      "sha256": "aacd45729b9e7b12abf70f3aea3fa0c225b88c16983eb1b7bf2ea200f78e8ab1",
+      "size_bytes": 172136
+    }
+  },
+  "exact_historical_provenance": "UNRESOLVED",
+  "failure": {
+    "message": "Regression failed: test_counterfactual_readout_audit.py",
+    "type": "SimulatorValidationError"
+  },
+  "finished_utc": "2026-10-14T21:30:12.646727+00:00",
+  "formal_step3_collected": false,
+  "git": {
+    "branch": "phase1-counterfactual",
+    "revision": "00395f8a366ae24417df58797e25db4982e5cfa0",
+    "status_porcelain": "M CODEX_REAL_PLAN.md\n M config/phase1/pusht.yaml\n M reproduce_phase1.md\n M scripts/run_phase1.py\n M step2_review.md\n?? counterfactual/compatibility_report.py\n?? counterfactual/domain_diagnostics.py\n?? counterfactual/domain_report.py\n?? counterfactual/observation_compatibility.py\n?? counterfactual/readout_audit.py\n?? counterfactual/render_provenance.py\n?? diagnostic_results/phase1/step1-render-provenance-recheck/\n?? diagnostic_results/phase1/step2-domain-calibration-dev-v2/\n?? diagnostic_results/phase1/step2-domain-validation-replay-v2/\n?? diagnostic_results/phase1/step2-domain-validation-v2/\n?? diagnostic_results/phase1/step2-observation-compatibility-v1/\n?? diagnostic_results/phase1/step2-observation-compatibility-verified/\n?? diagnostic_results/phase1/step2-render-provenance-audit/\n?? diagnostic_results/phase1/step2-render-provenance-release-verified/\n?? diagnostic_results/phase1/step2-render-regression-replay/\n?? observation_compatibility_gate_revision.md\n?? observation_compatibility_protocol.md\n?? observation_domain_gate_revision_v2.md\n?? observation_domain_protocol_v2.md\n?? readout_refit_proposal_v1.md\n?? readout_repair_protocol_r0_r1.md\n?? test_counterfactual_domain_diagnostics.py\n?? test_counterfactual_observation_compatibility.py\n?? test_counterfactual_readout_audit.py\n?? test_counterfactual_render_provenance.py"
+  },
+  "h1_projector_replaced": false,
+  "implementation_bug_found": false,
+  "latent_interventions": false,
+  "measurements": {
+    "absolute_domains": [
+      {
+        "absolute": {
+          "agent_location": {
+            "ci95": [
+              35.76892232248557,
+              56.983547099291854
+            ],
+            "coordinate_pooled_rmse": 32.912681876126584,
+            "coordinate_rmse": [
+              29.656801479288976,
+              35.874271875206965
+            ],
+            "lower95": 37.43777954439338,
+            "n_families": 32,
+            "rms": 46.54556108328938,
+            "signed_bias": [
+              4.614291542357551,
+              -20.116159127417234
+            ],
+            "upper95": 55.285643788640066
+          },
+          "block_angle": {
+            "ci95": [
+              0.2971572841858973,
+              0.5915769510261621
+            ],
+            "coordinate_pooled_rmse": 0.45192954692721843,
+            "coordinate_rmse": [
+              0.45192954692721843
+            ],
+            "lower95": 0.3203187463675044,
+            "n_families": 32,
+            "rms": 0.45192954692721843,
+            "signed_bias": [
+              0.18595097116657627
+            ],
+            "upper95": 0.5681445348150859
+          },
+          "block_location": {
+            "ci95": [
+              13.25334528665151,
+              19.65211908835729
+            ],
+            "coordinate_pooled_rmse": 11.63989399399878,
+            "coordinate_rmse": [
+              12.251578599636249,
+              10.99422967742592
+            ],
+            "lower95": 13.734301956486979,
+            "n_families": 32,
+            "rms": 16.46129595089821,
+            "signed_bias": [
+              -8.687364676136236,
+              9.181389654727617
+            ],
+            "upper95": 19.12486943820681
+          }
+        },
+        "domain": "prospective"
+      },
+      {
+        "absolute": {
+          "agent_location": {
+            "ci95": [
+              4.002851367092133,
+              7.26052474792486
+            ],
+            "coordinate_pooled_rmse": 4.004611026049557,
+            "coordinate_rmse": [
+              4.56877902668866,
+              3.3466516318859947
+            ],
+            "lower95": 4.275484659254057,
+            "n_families": 21,
+            "rms": 5.663375225068119,
+            "signed_bias": [
+              -0.43228004092261907,
+              -1.1289440336681547
+            ],
+            "upper95": 6.9766540909029615
+          },
+          "block_angle": {
+            "ci95": [
+              0.04830669133281885,
+              0.09814874950804828
+            ],
+            "coordinate_pooled_rmse": 0.0747831926428481,
+            "coordinate_rmse": [
+              0.0747831926428481
+            ],
+            "lower95": 0.05224463970201331,
+            "n_families": 21,
+            "rms": 0.0747831926428481,
+            "signed_bias": [
+              -0.008960442351443427
+            ],
+            "upper95": 0.09432814700062578
+          },
+          "block_location": {
+            "ci95": [
+              2.206015940457346,
+              4.036082448867676
+            ],
+            "coordinate_pooled_rmse": 2.1904012310295315,
+            "coordinate_rmse": [
+              1.7822636193014312,
+              2.533624182294197
+            ],
+            "lower95": 2.3065152152950152,
+            "n_families": 21,
+            "rms": 3.097695127960687,
+            "signed_bias": [
+              -0.12769208635602677,
+              1.0666449410574776
+            ],
+            "upper95": 3.8766940667118654
+          }
+        },
+        "domain": "source"
+      },
+      {
+        "absolute": {
+          "agent_location": {
+            "ci95": [
+              29.768220903330757,
+              78.2573186254331
+            ],
+            "coordinate_pooled_rmse": 39.28925762612467,
+            "coordinate_rmse": [
+              38.21514274489941,
+              40.334778970647065
+            ],
+            "lower95": 33.28640013074575,
+            "n_families": 21,
+            "rms": 55.563400990436065,
+            "signed_bias": [
+              10.338446480887276,
+              -18.030160813104537
+            ],
+            "upper95": 74.40047747587558
+          },
+          "block_angle": {
+            "ci95": [
+              0.3244305288869858,
+              0.6921312101246244
+            ],
+            "coordinate_pooled_rmse": 0.518865268924206,
+            "coordinate_rmse": [
+              0.518865268924206
+            ],
+            "lower95": 0.35182270040113944,
+            "n_families": 21,
+            "rms": 0.518865268924206,
+            "signed_bias": [
+              -0.09812532383061591
+            ],
+            "upper95": 0.6619423725414101
+          },
+          "block_location": {
+            "ci95": [
+              10.754737022565356,
+              16.007291043735183
+            ],
+            "coordinate_pooled_rmse": 9.43009346236536,
+            "coordinate_rmse": [
+              9.29625361413204,
+              9.56206014202111
+            ],
+            "lower95": 11.11189417771343,
+            "n_families": 21,
+            "rms": 13.33616606892295,
+            "signed_bias": [
+              -3.0689068748837425,
+              7.6020097278413346
+            ],
+            "upper95": 15.537885914405997
+          }
+        },
+        "domain": "source_pose_prospective"
+      }
+    ],
+    "encoder_repeat_max_abs": 0.0,
+    "fresh_initial_rows": 128,
+    "geometry_mismatch_counts": {
+      "missing_deep_interior": 0,
+      "outside_boundary_band": 0
+    },
+    "geometry_rows": 149,
+    "geometry_transform_max_abs": 5.684341886080802e-14,
+    "saved_latent_identity_max_abs": 2.2649765014648438e-06,
+    "source_families": 21,
+    "total_rows": 170
+  },
+  "model_contract": {
+    "all_modules_eval": true,
+    "frozen": true,
+    "history_size": 3,
+    "latent_dim": 192,
+    "parameter_count": 18034478,
+    "token_dim": 10
+  },
+  "official_instrument_promoted": false,
+  "original_readout_contracts": {
+    "agent_location": {
+      "all_modules_eval": true,
+      "architecture": "MLPRegressionProbe(\n  (net): Sequential(\n    (0): Linear(in_features=192, out_features=256, bias=True)\n    (1): ReLU()\n    (2): Dropout(p=0.1, inplace=False)\n    (3): Linear(in_features=256, out_features=2, bias=True)\n  )\n)",
+      "input_dim": 192,
+      "manual_forward_max_abs": 0.0,
+      "normalization_roundtrip_max_abs": 4.76837158203125e-07,
+      "output_dim": 2,
+      "provenance_limitation": "Original family/seed lineage incomplete; stored transforms verified, not reconstructed training provenance",
+      "state_dict_exact": true,
+      "target_mean": [
+        [
+          228.87940979003906,
+          292.3546447753906
+        ]
+      ],
+      "target_std": [
+        [
+          103.34829711914062,
+          98.84915924072266
+        ]
+      ]
+    },
+    "block_angle": {
+      "all_modules_eval": true,
+      "architecture": "MLPRegressionProbe(\n  (net): Sequential(\n    (0): Linear(in_features=192, out_features=256, bias=True)\n    (1): ReLU()\n    (2): Dropout(p=0.1, inplace=False)\n    (3): Linear(in_features=256, out_features=1, bias=True)\n  )\n)",
+      "input_dim": 192,
+      "manual_forward_max_abs": 0.0,
+      "normalization_roundtrip_max_abs": 2.384185791015625e-07,
+      "output_dim": 1,
+      "provenance_limitation": "Original family/seed lineage incomplete; stored transforms verified, not reconstructed training provenance",
+      "state_dict_exact": true,
+      "target_mean": [
+        [
+          2.128495931625366
+        ]
+      ],
+      "target_std": [
+        [
+          1.9176770448684692
+        ]
+      ]
+    },
+    "block_location": {
+      "all_modules_eval": true,
+      "architecture": "MLPRegressionProbe(\n  (net): Sequential(\n    (0): Linear(in_features=192, out_features=256, bias=True)\n    (1): ReLU()\n    (2): Dropout(p=0.1, inplace=False)\n    (3): Linear(in_features=256, out_features=2, bias=True)\n  )\n)",
+      "input_dim": 192,
+      "manual_forward_max_abs": 0.0,
+      "normalization_roundtrip_max_abs": 2.384185791015625e-07,
+      "output_dim": 2,
+      "provenance_limitation": "Original family/seed lineage incomplete; stored transforms verified, not reconstructed training provenance",
+      "state_dict_exact": true,
+      "target_mean": [
+        [
+          243.5721893310547,
+          275.20965576171875
+        ]
+      ],
+      "target_std": [
+        [
+          71.84173583984375,
+          73.39352416992188
+        ]
+      ]
+    }
+  },
+  "original_readouts": {
+    "agent_location": {
+      "modified_utc": "2026-05-01T04:35:46.852457+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/pusht_agent_location_mlp.pt",
+      "sha256": "a2944f84241cbf9d13e9a24de546b4a61ea069ae04fc7906dd95c3d4488c0708",
+      "size_bytes": 203361
+    },
+    "block_angle": {
+      "modified_utc": "2026-05-01T04:43:39.610658+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/pusht_block_angle_mlp.pt",
+      "sha256": "f21c2344f6d6fad629efe06bf4e5461a83dded8d4626c5d870a97cb3b12ce22e",
+      "size_bytes": 202237
+    },
+    "block_location": {
+      "modified_utc": "2026-05-01T04:45:36.651926+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/pusht_block_location_mlp.pt",
+      "sha256": "c2bc93574036edfd6e53ae2329bfc2b6e46fe7a5e5e181fc3c7889899678e7f6",
+      "size_bytes": 203361
+    }
+  },
+  "precision": "float32 encoder/MLP; float64 geometry/Ridge/statistics",
+  "preprocessing": {
+    "contract": {
+      "input_layout": "raw Push-T RGB uint8 frames (T, H, W, C)",
+      "model_layout": "(1, T, C, H, W)",
+      "transform": [
+        "torchvision.transforms.v2.ToImage",
+        "torchvision.transforms.v2.ToDtype(torch.float32, scale=True)",
+        "torchvision.transforms.v2.Normalize(ImageNet mean/std from stable_pretraining)",
+        "torchvision.transforms.v2.Resize(image_size, bilinear, antialias=True)"
+      ]
+    },
+    "dtype": "torch.float32",
+    "imagenet_mean": [
+      0.48500001430511475,
+      0.4560000002384186,
+      0.4059999883174896
+    ],
+    "imagenet_std": [
+      0.2290000021457672,
+      0.2240000069141388,
+      0.22499999403953552
+    ],
+    "max_abs_deltas": {
+      "independent_formula": 0.0,
+      "official_evaluation": 0.0,
+      "training": 0.0
+    },
+    "raw_scale": "0..255 RGB uint8",
+    "shape": [
+      1,
+      4,
+      3,
+      224,
+      224
+    ],
+    "status": "PASS",
+    "tensor_scale": "ImageNet-normalized float32"
+  },
+  "r0_gate_passed": false,
+  "r2_authorized": false,
+  "run_id": "readout-r0-sanity-v1",
+  "run_status": "failed",
+  "schema_version": 1,
+  "simulator_parent": {
+    "mechanics_scope": "same backend, unchanged Step 2 implementations; rerun tests separately",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step2-fresh-start-replay-reviewed/simulator_manifest.json",
+    "run_id": "step2-fresh-start-replay-reviewed",
+    "sha256": "280e0f39b4d9b5b480be646e6d3704b851b8ee77a4936c728a87a4f0e2aff01f",
+    "step2_gate_passed": true
+  },
+  "source_sha256": {
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/envs/pusht/env.py": "d8d0de35aaab5b846db4e79b0fbfd6b17375178cce40a25df5301c8030ca6d68",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/envs/utils.py": "38314dcabc556c954d64b1c2a1b558e32b48a0db092657dd745dcb960c9cf6f0",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/lib/python3.10/site-packages/stable_worldmodel/solver/cem.py": "d88c86dcd1bd1e6d89221ac22079a3efe296cc7566532de0d36605e2f1536050",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/pusht.yaml": "7eb72270554b70904be4d1b4442af8e378db325d69a4da1ac373e8dcb9145222",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/eval/solver/cem.yaml": "797629f829c0d3ad3b9c4e42d46a87f08da0b3845bc433e353fd6274cb0574df",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/phase1/pusht.yaml": "d757323e36a2f5c6aded37971e41f998d46dbbe8b131bc102203fdd7721c7cd0",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/config/train/lewm.yaml": "9c42647156737114fe76c2c5a0707e32f4f027a8c5c844f90a0c33a8e6f26c47",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/__init__.py": "245da18c0fbf35a3d82e672efde63f83801c5f4d16c4a41ec918d287bf090fa5",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/baseline.py": "4b4fe9dda539ab1c56a91088d7dd421005c7f387d4a9b887bd18b91fc3798b88",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/compatibility_report.py": "f2bca8488076d84cce405e75211e08002508830591738e42644f43c2248fd9ea",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/contracts.py": "53bf620ab6cd0946774bc6522c4a66788554b4adebf56e948c79e9b60350e053",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/domain_diagnostics.py": "99ac789215f6dec8c4d9c1b5fb159c451c0e9e43ecdf99357d574492a0783b3b",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/domain_report.py": "017bc778882db67ba93ea1b1bcf375beb629626929b9d8ed606263bfca2477e9",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/model.py": "0f5865ee146a6608ae0d10dbc28b47fa20ad73e0e067f4dd6c7e66f946098002",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/observation_compatibility.py": "eb34cc1d8565629588519dc361ae49e966619cd815b4568ca2adce2ffe84e4f9",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/readout_audit.py": "c51c797f129ff328606724cc4f9f771ebedfc416a96a4794d0a3fe8431fea59b",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/render_provenance.py": "5a7b77b340ca33f1de7092ea3644c5bcb4ff0f419735f4f71248dcbc3045cee4",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator.py": "798080f3b881f1f1c6a1f5cf55d59417132c766593bba8ee5cba5e68eea00fe6",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/counterfactual/simulator_validation.py": "c78bfcd3ae8e89f8512ef12da1dcddfa76070204c2ddec3157590cbdd35bfb02",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/eval.py": "852cf176d4d0404e19bf08b21c4dfe690376754a154d7fa713b148781541ffc8",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/jepa.py": "39d4f7f817e1720f3a32205fd5340348e86a5f6ddfb25d5015135a1d9b67c6a7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/module.py": "6265d5f87d92262a4a55708bfea9fe6a91af45318de64bd8d163f953cdf9922c",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/data.py": "9df138d36fcea9b944726d21779e691304cd48113d4d6702cf48ffc8f681b1c3",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/embedding_cache.py": "5cbb97d1eb2cfc4bf27305a448d355c710749d24b76d353104b6bbd7423c8233",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/evaluate.py": "f9cc92fdb719351a58883f455b3923c7a87d4c86f7eb700f1e59efa5ed5941b3",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/metrics.py": "23e0fe444e1d64f011ae07e50dcaaf8641d210241fdcc0f95ce006b8c569b7f1",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/models.py": "6b51fcc5876bd394fc3fdf1c51ac6d92bc050b4c824ea90ebdbc91dcdac2678f",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/rollout_ablation.py": "fed6eeea6d64d5c95820ff38f300886c3359ddaf243b8d05b4ed4e54279082f7",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/targets.py": "604b959e05938c770a4f6470f76ecb8204037f0a1bdddd5caaeb0a4fba89ddca",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/probe/train.py": "e6619cee3cf476a7e64efd4f5741d097cf21bab5b41f716cf4b1e53a8de5625a",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/readout_repair_protocol_r0_r1.md": "f4e3d07f266d50f32ee7bc7c7af6430e6e9e4815ce7cb3578f5d6e1c0acb0c60",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/scripts/run_phase1.py": "f57767ccadf3c95bd1160b59a9da561ce2ffb575bf2a78d2c82828c7ac432f5a",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/test_counterfactual_readout_audit.py": "723f575ec2168a4ea38aaa0adb11a10c70037bf8aadaf6065925889ae14aea9a",
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/utils.py": "0793dc4f0c2f27a3ece84e11fd10aa33dce762ca2c5032849c17dea5d95dd09f"
+  },
+  "stage": "phase1_readout_r0_audit",
+  "versions": {
+    "einops": "0.8.2",
+    "gymnasium": "1.2.3",
+    "h5py": "3.16.0",
+    "hdf5plugin": "6.0.0",
+    "hydra-core": "1.3.2",
+    "lightning": "2.6.1",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "opencv-python": "4.13.0.92",
+    "platform": "macOS-15.7.8-arm64-arm-64bit",
+    "pygame": "2.6.1",
+    "pymunk": "7.2.0",
+    "python": "3.10.20 (main, Mar 25 2026, 03:21:46) [Clang 22.1.1 ]",
+    "scikit-learn": "1.7.2",
+    "stable-pretraining": "0.1.6",
+    "stable-worldmodel": "0.0.6",
+    "torch": "2.11.0",
+    "torch_cuda_available": false,
+    "torch_mps_available": false,
+    "torchvision": "0.26.0",
+    "transformers": "5.4.0"
+  }
+}

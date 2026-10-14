@@ -1,0 +1,33 @@
+{
+  "assignments_attempts_learning_curves_identical": true,
+  "attribute_count": 259,
+  "command": [
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+    "diagnostic_results/phase1/readout-r1-feasibility-v1/summarize_saved.py"
+  ],
+  "dataset_count": 142,
+  "feasibility_assessment_identical": true,
+  "inputs": {
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/readout-r1-feasibility-v1/candidate_predictions.h5": {
+      "modified_utc": "2026-10-14T21:47:38.767164+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/readout-r1-feasibility-v1/candidate_predictions.h5",
+      "sha256": "7244d870965c3a69144962c094bcd9d316739e61a9f2b73299d0303ffc07bfe2",
+      "size_bytes": 1223680
+    },
+    "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/readout-r1-feasibility-v1/natural_inputs.h5": {
+      "modified_utc": "2026-10-14T21:47:02.754125+00:00",
+      "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/readout-r1-feasibility-v1/natural_inputs.h5",
+      "sha256": "0b6a2a454321c0dc5be463e598f15042790adb59e6320204ec56ef1173797d56",
+      "size_bytes": 6083446
+    }
+  },
+  "model_artifacts_byte_identical": 72,
+  "repeated_pilot_validation_is_NOT_additional_independent_evidence": true,
+  "script": {
+    "modified_utc": "2026-10-14T21:57:10.447718+00:00",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/readout-r1-feasibility-v1/summarize_saved.py",
+    "sha256": "c55a30f2067ca91de46e7157f169dac9c8d2d1fa145f4fc89aa2d0483b517a21",
+    "size_bytes": 8021
+  },
+  "status": "EXACT"
+}

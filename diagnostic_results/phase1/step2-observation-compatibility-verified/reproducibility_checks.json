@@ -1,0 +1,9 @@
+{
+  "left": ".stable-wm/phase1/step2-observation-compatibility-v1/compatibility_arrays.h5",
+  "right": ".stable-wm/phase1/step2-observation-compatibility-verified/compatibility_arrays.h5",
+  "passed": true,
+  "datasets_exact": 7,
+  "root_attributes_exact": 2,
+  "byte_equal_numeric_reports": ["case_metrics.json", "spatial_metrics.json", "development_calibration.json", "family_partition.json"],
+  "scope": "Same frozen CPU/backend/codec binary and bootstrap seed; numerical arrays rather than container timestamps/run paths. The verified run adds source-cache checks and reporting without changing numerical criteria or measurements."
+}
