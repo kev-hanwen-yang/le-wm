@@ -16,6 +16,17 @@ wandb/
 outputs/
 multirun/
 .hydra/
+lightning_logs/
+.matplotlib-cache/
+
+# Reproducible diagnostic tensor caches and intermediate model outputs
+diagnostic_results/encoded/
+diagnostic_results/rollout_ablation/
+diagnostic_results/**/*true_future_latents.pt
+diagnostic_results/*.pt
+
+# Local planning scratch files (authoritative plans use named Markdown files)
+*.plan.md
 
 # Evaluation logs that may be written in the repo root
 pusht_results.txt
