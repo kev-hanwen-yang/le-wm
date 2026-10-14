@@ -1,0 +1,171 @@
+{
+  "determinism": {
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_benchmark": false,
+    "deterministic_algorithms": true,
+    "seed": 42,
+    "torch_num_interop_threads": 12,
+    "torch_num_threads": 8
+  },
+  "device": "cpu",
+  "evaluation_inputs": {
+    "callables": [
+      {
+        "args": {
+          "state": {
+            "value": "state"
+          }
+        },
+        "method": "_set_state"
+      },
+      {
+        "args": {
+          "goal_state": {
+            "value": "goal_state"
+          }
+        },
+        "method": "_set_goal_state"
+      }
+    ],
+    "episodes_idx": [
+      1639,
+      1694,
+      1820,
+      3838,
+      8235,
+      8314,
+      12221,
+      12961,
+      14327,
+      16019
+    ],
+    "eval_budget": 50,
+    "goal_offset_steps": 25,
+    "start_steps": [
+      43,
+      62,
+      16,
+      141,
+      27,
+      5,
+      72,
+      53,
+      58,
+      106
+    ]
+  },
+  "evaluation_seconds": 132.63650991703616,
+  "metrics": {
+    "episode_successes": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "seeds": null,
+    "success_rate": 90.0
+  },
+  "model_device": "cpu",
+  "normalizers": {
+    "action": {
+      "mean": [
+        -0.007812564379916172,
+        0.006860687229453032
+      ],
+      "scale": [
+        0.20846744284501714,
+        0.20674862637362224
+      ]
+    },
+    "goal_proprio": {
+      "mean": [
+        228.81245369927169,
+        292.23052136298617,
+        -2.9210027281011395,
+        2.548780001444025
+      ],
+      "scale": [
+        103.37358807129279,
+        98.92548714281784,
+        77.50031831485578,
+        76.86427067235248
+      ]
+    },
+    "goal_state": {
+      "mean": [
+        228.81245369927169,
+        292.23052136298617,
+        243.6124968389013,
+        275.25068937003124,
+        2.124715466746899,
+        -2.9210027281011395,
+        2.548780001444025
+      ],
+      "scale": [
+        103.37358807129279,
+        98.92548714281784,
+        71.61788439508972,
+        73.3817644038044,
+        1.9151641088726212,
+        77.50031831485578,
+        76.86427067235248
+      ]
+    },
+    "proprio": {
+      "mean": [
+        228.81245369927169,
+        292.23052136298617,
+        -2.9210027281011395,
+        2.548780001444025
+      ],
+      "scale": [
+        103.37358807129279,
+        98.92548714281784,
+        77.50031831485578,
+        76.86427067235248
+      ]
+    },
+    "state": {
+      "mean": [
+        228.81245369927169,
+        292.23052136298617,
+        243.6124968389013,
+        275.25068937003124,
+        2.124715466746899,
+        -2.9210027281011395,
+        2.548780001444025
+      ],
+      "scale": [
+        103.37358807129279,
+        98.92548714281784,
+        71.61788439508972,
+        73.3817644038044,
+        1.9151641088726212,
+        77.50031831485578,
+        76.86427067235248
+      ]
+    }
+  },
+  "plan_config": {
+    "action_block": 5,
+    "history_len": 1,
+    "horizon": 5,
+    "receding_horizon": 5,
+    "warm_start": true
+  },
+  "simulator_reset_note": "Official evaluator uses dataset seed column; this dataset has none.",
+  "simulator_reset_seeds": null,
+  "solver": {
+    "batch_size": 1,
+    "n_steps": 30,
+    "num_samples": 300,
+    "topk": 30,
+    "var_scale": 1.0
+  }
+}

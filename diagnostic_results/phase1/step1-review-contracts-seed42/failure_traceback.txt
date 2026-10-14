@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/kevinyang/Desktop/Desktop - Kevin’s MacBook Pro/LeWM/le-wm/scripts/run_phase1.py", line 149, in run_baseline
+    manifest["determinism"] = check_model_determinism(
+  File "/Users/kevinyang/Desktop/Desktop - Kevin’s MacBook Pro/LeWM/le-wm/counterfactual/baseline.py", line 426, in check_model_determinism
+    first = run_frozen_rollout(
+  File "/Users/kevinyang/Desktop/Desktop - Kevin’s MacBook Pro/LeWM/le-wm/counterfactual/model.py", line 198, in run_frozen_rollout
+    raise ValueError("First rollout output disagrees with one-step prediction")
+ValueError: First rollout output disagrees with one-step prediction

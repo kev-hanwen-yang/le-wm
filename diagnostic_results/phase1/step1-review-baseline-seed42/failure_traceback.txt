@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/kevinyang/Desktop/Desktop - Kevin’s MacBook Pro/LeWM/le-wm/scripts/run_phase1.py", line 202, in run_baseline
+    raise RuntimeError(f"CEM gate failed: {manifest['cem_smoke']['status']}")
+RuntimeError: CEM gate failed: failed
