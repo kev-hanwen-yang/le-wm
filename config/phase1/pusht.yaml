@@ -15,11 +15,14 @@ contract:
   latent_dim: 192
 
 baseline:
+  checkpoint_sha256: 100d6459b9198697c1c26ef47e3eef4d7548946401b7501213caf761495a2553
+  rollout_steps: 5
   cache_split_seed: 42
   cache_splits: [train, val, test]
-  cache_sample_count: 3
+  cache_sample_count: 16
   cache_atol: 1.0e-5
   cache_rtol: 1.0e-4
   smoke_episode_id: null
   cem_num_eval: 10
   cem_enabled: true
+  cem_timeout_seconds: 1800

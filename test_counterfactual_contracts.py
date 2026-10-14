@@ -48,9 +48,20 @@ def test_invalid_action_length_is_rejected():
         normalizer.tokenize(torch.zeros(6, 2), frameskip=5)
 
 
+def test_invalid_dimensions_and_nonfinite_actions_are_rejected():
+    for arguments in ({"latent_dim": 0}, {"history_size": 2.5}, {"frameskip": True}):
+        with unittest.TestCase().assertRaises(ValueError):
+            TimeActionContract(**arguments)
+    normalizer = ActionNormalizer(mean=torch.zeros(2), std=torch.ones(2))
+    for actions in (torch.full((5, 2), float("nan")), torch.full((5, 2), float("inf")), torch.zeros((0, 2))):
+        with unittest.TestCase().assertRaises(ValueError):
+            normalizer.tokenize(actions, 5)
+
+
 if __name__ == "__main__":
     test_phase1_time_contract_matches_specification()
     test_actions_are_standardized_before_flattening()
     test_batched_action_tokenization_preserves_each_example()
     test_invalid_action_length_is_rejected()
+    test_invalid_dimensions_and_nonfinite_actions_are_rejected()
     print("counterfactual contract tests passed")

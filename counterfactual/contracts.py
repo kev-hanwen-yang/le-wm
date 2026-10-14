@@ -21,12 +21,10 @@ class TimeActionContract:
     latent_dim: int = 192
 
     def __post_init__(self):
-        if self.history_size < 1:
-            raise ValueError("history_size must be positive")
-        if self.frameskip < 1:
-            raise ValueError("frameskip must be positive")
-        if self.action_dim < 1:
-            raise ValueError("action_dim must be positive")
+        for name in ("history_size", "frameskip", "action_dim", "latent_dim"):
+            value = getattr(self, name)
+            if type(value) is not int or value < 1:
+                raise ValueError(f"{name} must be a positive integer")
 
     @property
     def context_steps(self) -> torch.Tensor:
@@ -42,8 +40,8 @@ class TimeActionContract:
 
     def rollout_indices(self, lookahead_steps: int) -> dict[str, torch.Tensor]:
         """Return h=0,5,10 context and h=15,... targets for a requested k."""
-        if lookahead_steps < 1:
-            raise ValueError("lookahead_steps must be at least one")
+        if type(lookahead_steps) is not int or lookahead_steps < 1:
+            raise ValueError("lookahead_steps must be a positive integer")
 
         # h=15 is predicted after the third action token (10→15).  Therefore
         # k predictions require the three context tokens plus only k-1 future
@@ -121,11 +119,13 @@ class ActionNormalizer:
     def normalize_rows(self, raw_actions: torch.Tensor) -> torch.Tensor:
         """Standardize (..., 2) raw simulator actions in model-training order."""
         raw_actions = torch.as_tensor(raw_actions)
-        if raw_actions.shape[-1] != self.mean.numel():
+        if raw_actions.ndim < 1 or raw_actions.shape[-1] != self.mean.numel():
             raise ValueError(
                 f"Expected raw actions ending in {self.mean.numel()} coordinates, got "
                 f"{tuple(raw_actions.shape)}"
             )
+        if not torch.isfinite(raw_actions).all():
+            raise ValueError("Raw simulator actions must be finite")
         mean = self.mean.to(device=raw_actions.device, dtype=torch.float32)
         std = self.std.to(device=raw_actions.device, dtype=torch.float32)
         return (raw_actions.float() - mean) / std
@@ -136,8 +136,8 @@ class ActionNormalizer:
         Accepted shapes are ``(T, 2)`` and ``(B, T, 2)``.  The output is
         ``(T/frameskip, frameskip*2)`` or ``(B, T/frameskip, frameskip*2)``.
         """
-        if frameskip < 1:
-            raise ValueError("frameskip must be positive")
+        if type(frameskip) is not int or frameskip < 1:
+            raise ValueError("frameskip must be a positive integer")
         actions = torch.as_tensor(raw_actions)
         if actions.ndim not in (2, 3) or actions.shape[-1] != self.mean.numel():
             raise ValueError(
@@ -149,6 +149,8 @@ class ActionNormalizer:
                 f"Raw action length {actions.shape[-2]} is not divisible by "
                 f"frameskip={frameskip}"
             )
+        if actions.shape[-2] == 0:
+            raise ValueError("Raw action sequence must not be empty")
 
         standardized = self.normalize_rows(actions)
         token_shape = (*standardized.shape[:-2], -1, frameskip * self.mean.numel())
