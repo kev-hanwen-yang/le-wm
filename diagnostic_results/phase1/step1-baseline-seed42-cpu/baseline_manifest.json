@@ -1,0 +1,435 @@
+{
+  "action_normalizer": {
+    "estimator": "torch.mean / torch.std(unbiased=True) over non-NaN raw actions",
+    "mean": [
+      -0.007812565192580223,
+      0.006860686466097832
+    ],
+    "order": "standardize each raw (x, y) action before grouping five rows",
+    "std": [
+      0.2084674835205078,
+      0.20674866437911987
+    ]
+  },
+  "cache_validation": {
+    "test": {
+      "atol": 1e-05,
+      "cache": {
+        "modified_utc": "2026-04-29T07:28:50.928695+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_test_seed42_img224_encoded.pt",
+        "size_bytes": 191796852
+      },
+      "cache_metadata": {
+        "dataset_name": "pusht_expert_train",
+        "episode_count": 1869,
+        "img_size": 224,
+        "keys": [
+          "emb",
+          "state",
+          "proprio",
+          "episode_idx",
+          "step_idx"
+        ],
+        "num_frames": 231634,
+        "policy_name": "pusht/lewm",
+        "seed": 42,
+        "split_name": "test",
+        "state_layout": [
+          "agent_x",
+          "agent_y",
+          "block_x",
+          "block_y",
+          "block_angle",
+          "agent_vx",
+          "agent_vy"
+        ]
+      },
+      "embedding_shape": [
+        231634,
+        192
+      ],
+      "episode_ids": [
+        10,
+        9747,
+        18678
+      ],
+      "max_abs_difference": 2.9802322387695312e-06,
+      "raw_dataset_indices": [
+        1090,
+        1192243,
+        2336057
+      ],
+      "rmse": 7.20864250070008e-07,
+      "rtol": 0.0001,
+      "sample_indices": [
+        0,
+        115816,
+        231633
+      ],
+      "status": "match",
+      "step_ids": [
+        0,
+        36,
+        112
+      ]
+    },
+    "train": {
+      "atol": 1e-05,
+      "cache": {
+        "modified_utc": "2026-04-29T07:01:43.979421+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_train_seed42_img224_encoded.pt",
+        "size_bytes": 1550527423
+      },
+      "cache_metadata": {
+        "dataset_name": "pusht_expert_train",
+        "episode_count": 14948,
+        "img_size": 224,
+        "keys": [
+          "emb",
+          "state",
+          "proprio",
+          "episode_idx",
+          "step_idx"
+        ],
+        "num_frames": 1872613,
+        "policy_name": "pusht/lewm",
+        "seed": 42,
+        "split_name": "train",
+        "state_layout": [
+          "agent_x",
+          "agent_y",
+          "block_x",
+          "block_y",
+          "block_angle",
+          "agent_vx",
+          "agent_vy"
+        ]
+      },
+      "embedding_shape": [
+        1872613,
+        192
+      ],
+      "episode_ids": [
+        0,
+        9541,
+        18684
+      ],
+      "max_abs_difference": 3.4570693969726562e-06,
+      "raw_dataset_indices": [
+        0,
+        1168405,
+        2336735
+      ],
+      "rmse": 7.271822255461302e-07,
+      "rtol": 0.0001,
+      "sample_indices": [
+        0,
+        936306,
+        1872612
+      ],
+      "status": "match",
+      "step_ids": [
+        0,
+        8,
+        112
+      ]
+    },
+    "val": {
+      "atol": 1e-05,
+      "cache": {
+        "modified_utc": "2026-04-29T07:14:58.855648+00:00",
+        "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/probes/encoded/pusht_expert_train_pusht_lewm_val_seed42_img224_encoded.pt",
+        "size_bytes": 192504617
+      },
+      "cache_metadata": {
+        "dataset_name": "pusht_expert_train",
+        "episode_count": 1868,
+        "img_size": 224,
+        "keys": [
+          "emb",
+          "state",
+          "proprio",
+          "episode_idx",
+          "step_idx"
+        ],
+        "num_frames": 232489,
+        "policy_name": "pusht/lewm",
+        "seed": 42,
+        "split_name": "val",
+        "state_layout": [
+          "agent_x",
+          "agent_y",
+          "block_x",
+          "block_y",
+          "block_angle",
+          "agent_vx",
+          "agent_vy"
+        ]
+      },
+      "embedding_shape": [
+        232489,
+        192
+      ],
+      "episode_ids": [
+        3,
+        9443,
+        18683
+      ],
+      "max_abs_difference": 3.337860107421875e-06,
+      "raw_dataset_indices": [
+        327,
+        1157541,
+        2336622
+      ],
+      "rmse": 7.570064326500869e-07,
+      "rtol": 0.0001,
+      "sample_indices": [
+        0,
+        116244,
+        232488
+      ],
+      "status": "match",
+      "step_ids": [
+        0,
+        75,
+        112
+      ]
+    }
+  },
+  "cem_num_eval": 10,
+  "cem_seed_protocol": "random, NumPy, and PyTorch seeded before the official evaluator",
+  "cem_smoke": {
+    "command": [
+      "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.venv/bin/python",
+      "-c",
+      "import random, runpy, sys; import numpy as np; import torch; random.seed(42); np.random.seed(42); torch.manual_seed(42); torch.cuda.manual_seed_all(42); sys.argv[0] = 'eval.py'; runpy.run_path('eval.py', run_name='__main__')",
+      "--config-name=pusht.yaml",
+      "policy=pusht/lewm",
+      "cache_dir=.stable-wm",
+      "solver.device=cpu",
+      "seed=42",
+      "eval.num_eval=10",
+      "output.filename=../phase1/step1-baseline-seed42-cpu/cem_smoke.txt",
+      "hydra.run.dir=.stable-wm/phase1/step1-baseline-seed42-cpu/hydra"
+    ],
+    "execution_device_override": "cpu (required because CUDA is unavailable; cost and CEM settings unchanged)",
+    "result_path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step1-baseline-seed42-cpu/cem_smoke.txt",
+    "return_code": 0,
+    "seed_protocol": "random, NumPy, and PyTorch seeded in a wrapper; eval.py source unchanged",
+    "status": "completed",
+    "success_rate": 90.0
+  },
+  "checkpoint": {
+    "modified_utc": "2026-03-14T20:42:35+00:00",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/pusht/lewm_object.ckpt",
+    "sha256": "100d6459b9198697c1c26ef47e3eef4d7548946401b7501213caf761495a2553",
+    "size_bytes": 72350202
+  },
+  "command": [
+    "scripts/run_phase1.py",
+    "--stage",
+    "baseline",
+    "--run-id",
+    "step1-baseline-seed42-cpu"
+  ],
+  "config": {
+    "baseline": {
+      "cache_atol": 1e-05,
+      "cache_rtol": 0.0001,
+      "cache_sample_count": 3,
+      "cache_split_seed": 42,
+      "cache_splits": [
+        "train",
+        "val",
+        "test"
+      ],
+      "cem_enabled": true,
+      "cem_num_eval": 10,
+      "smoke_episode_id": null
+    },
+    "contract": {
+      "action_dim": 2,
+      "frameskip": 5,
+      "history_size": 3,
+      "latent_dim": 192
+    },
+    "experiment": {
+      "cache_dir": ".stable-wm",
+      "dataset_name": "pusht_expert_train",
+      "image_size": 224,
+      "policy_name": "pusht/lewm",
+      "results_dir": "diagnostic_results",
+      "seed": 42
+    }
+  },
+  "contract": {
+    "action_dim": 2,
+    "context_steps": [
+      0,
+      5,
+      10
+    ],
+    "first_prediction_step": 15,
+    "frameskip": 5,
+    "history_size": 3,
+    "latent_dim": 192,
+    "phase1_action_ends": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "phase1_action_starts": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "phase1_rollout_coordinates": [
+      {
+        "k": 1,
+        "preceding_action_raw_steps": [
+          10,
+          15
+        ],
+        "preceding_action_token": 2,
+        "target_h": 15
+      },
+      {
+        "k": 2,
+        "preceding_action_raw_steps": [
+          15,
+          20
+        ],
+        "preceding_action_token": 3,
+        "target_h": 20
+      },
+      {
+        "k": 3,
+        "preceding_action_raw_steps": [
+          20,
+          25
+        ],
+        "preceding_action_token": 4,
+        "target_h": 25
+      },
+      {
+        "k": 4,
+        "preceding_action_raw_steps": [
+          25,
+          30
+        ],
+        "preceding_action_token": 5,
+        "target_h": 30
+      },
+      {
+        "k": 5,
+        "preceding_action_raw_steps": [
+          30,
+          35
+        ],
+        "preceding_action_token": 6,
+        "target_h": 35
+      }
+    ],
+    "phase1_target_steps": [
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "token_dim": 10
+  },
+  "created_utc": "2026-10-14T03:16:44.685232+00:00",
+  "dataset": {
+    "modified_utc": "2026-03-29T05:13:07+00:00",
+    "path": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/pusht_expert_train.h5",
+    "size_bytes": 46300921856
+  },
+  "determinism": {
+    "action_embedding_shape": [
+      1,
+      3,
+      192
+    ],
+    "action_token_shape": [
+      1,
+      3,
+      10
+    ],
+    "all_finite": true,
+    "context_embedding_shape": [
+      1,
+      3,
+      192
+    ],
+    "context_repeat_max_abs": 0.0,
+    "deterministic": true,
+    "episode_id": 0,
+    "first_prediction_absolute_raw_step": 15,
+    "prediction_repeat_max_abs": 0.0,
+    "prediction_shape": [
+      1,
+      3,
+      192
+    ]
+  },
+  "device": "cpu",
+  "git": {
+    "branch": "phase1-counterfactual",
+    "revision": "a008317afbf4bfa94b1c32f0da121c3da18f4a86",
+    "status_porcelain": "?? diagnostic_results/phase1/"
+  },
+  "image_preprocessing": {
+    "input_layout": "raw Push-T RGB uint8 frames (T, H, W, C)",
+    "model_layout": "(1, T, C, H, W)",
+    "resize_size": 224,
+    "transform": [
+      "torchvision.transforms.v2.ToImage",
+      "torchvision.transforms.v2.ToDtype(torch.float32, scale=True)",
+      "torchvision.transforms.v2.Normalize(ImageNet mean/std from stable_pretraining)",
+      "torchvision.transforms.v2.Resize(224)"
+    ]
+  },
+  "output_locations": {
+    "large_artifact_root": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/.stable-wm/phase1/step1-baseline-seed42-cpu",
+    "manifest": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step1-baseline-seed42-cpu/baseline_manifest.json",
+    "summary": "/Users/kevinyang/Desktop/Desktop - Kevin\u2019s MacBook Pro/LeWM/le-wm/diagnostic_results/phase1/step1-baseline-seed42-cpu/baseline_summary.md"
+  },
+  "precision": {
+    "autocast": false,
+    "default_dtype": "torch.float32",
+    "inference_mode": true,
+    "parameter_dtype": "torch.float32"
+  },
+  "run_id": "step1-baseline-seed42-cpu",
+  "run_status": "completed",
+  "stage": "phase1_step1_frozen_baseline",
+  "versions": {
+    "einops": "0.8.2",
+    "gymnasium": "1.2.3",
+    "h5py": "3.16.0",
+    "hydra-core": "1.3.2",
+    "lightning": "2.6.1",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "opencv-python": "4.13.0.92",
+    "platform": "macOS-15.7.8-arm64-arm-64bit",
+    "pygame": "2.6.1",
+    "pymunk": "7.2.0",
+    "python": "3.10.20 (main, Mar 25 2026, 03:21:46) [Clang 22.1.1 ]",
+    "scikit-learn": "1.7.2",
+    "stable-pretraining": "0.1.6",
+    "stable-worldmodel": "0.0.6",
+    "torch": "2.11.0",
+    "torch_cuda_available": false,
+    "torch_mps_available": false
+  }
+}

@@ -1,0 +1,59 @@
+14:14:17.436 | INFO    (50003, stable_worldmodel.world) | 🌍🌍🌍 World swm/PushT-v1 initialized 🌍🌍🌍
+14:14:17.437 | INFO    (50003, stable_worldmodel.world) | 🕹️ 🕹️ 🕹️ Action space 🕹️ 🕹️ 🕹️
+14:14:17.437 | INFO    (50003, stable_worldmodel.world) | Box(-1.0, 1.0, (10, 2), float32)
+14:14:17.438 | INFO    (50003, stable_worldmodel.world) | 👁️ 👁️ 👁️ Observation space 👁️ 👁️ 👁️
+14:14:17.438 | INFO    (50003, stable_worldmodel.world) | Dict('proprio': Box(0.0, 512.0, (10, 4), float64), 'state': Box(0.0, [[512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]
+ [512.         512.         512.         512.           6.28318531
+  512.         512.        ]], (10, 7), float64))
+14:14:17.439 | INFO    (50003, stable_worldmodel.world) | ⚗️ ⚗️ ⚗️ Variation space ⚗️ ⚗️ ⚗️
+agent:
+    angle: Box(-6.283185307179586, 6.283185307179586, (), float64)
+    color: Box(0, 255, (3,), uint8)
+    scale: Box(20.0, 60.0, (), float32)
+    shape: Discrete(8)
+    start_position: Box(50.0, 450.0, (2,), float64)
+    velocity: Box(0.0, 512.0, (2,), float64)
+background:
+    color: Box(0, 255, (3,), uint8)
+block:
+    angle: Box(-6.283185307179586, 6.283185307179586, (), float64)
+    color: Box(0, 255, (3,), uint8)
+    scale: Box(20.0, 60.0, (), float32)
+    shape: Discrete(7, start=1)
+    start_position: Box(100.0, 400.0, (2,), float64)
+goal:
+    angle: Box(-6.283185307179586, 6.283185307179586, (), float64)
+    color: Box(0, 255, (3,), uint8)
+    position: Box(50.0, 450.0, (2,), float64)
+    scale: Box(20.0, 60.0, (), float32)
+rendering:
+    render_goal: Discrete(2)
+[2026-10-14 14:14:17,455][root][INFO] - Cached 'action' from '.stable-wm/pusht_expert_train.h5'
+[2026-10-14 14:14:17,651][root][INFO] - Cached 'proprio' from '.stable-wm/pusht_expert_train.h5'
+[2026-10-14 14:14:17,900][root][INFO] - Cached 'state' from '.stable-wm/pusht_expert_train.h5'
+1869611 valid starting points found for evaluation.
+[ 201659  209213  221574  472619 1015442 1028378 1529313 1627829 1805164
+ 2005714]
+CEM solve time: 63.3845 seconds
+CEM solve time: 63.6239 seconds
+Video saved to /Users/kevinyang/Desktop/Desktop - Kevin’s MacBook 
+Pro/LeWM/le-wm/.stable-wm/pusht
+{'success_rate': 90.0, 'episode_successes': array([ True,  True,  True,  True, False,  True,  True,  True,  True,
+        True]), 'seeds': None}
