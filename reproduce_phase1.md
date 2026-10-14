@@ -33,7 +33,7 @@ The baseline creates:
 - `diagnostic_results/phase1/<run_id>/baseline_summary.md`: concise human-readable
   gate result.
 - `.stable-wm/phase1/<run_id>/cem_smoke.txt`: output from the existing official
-  evaluator, plus its Hydra run directory under `outputs/phase1/<run_id>/`.
+  evaluator, plus its Hydra run directory under the same artifact root.
 
 The command intentionally refuses to overwrite an existing run ID. It samples
 three deterministic rows from each train/validation/test latent cache and compares

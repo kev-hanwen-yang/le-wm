@@ -267,7 +267,6 @@ def build_cem_smoke_command(
     run_id: str,
 ) -> tuple[list[str], Path]:
     """Build the unmodified official evaluator invocation for a small smoke test."""
-    repo_root = Path(repo_root)
     cache_dir = Path(cache_dir).resolve()
     result_path = cache_dir / "phase1" / run_id / "cem_smoke.txt"
     output_filename = Path("..") / "phase1" / run_id / "cem_smoke.txt"
@@ -277,11 +276,10 @@ def build_cem_smoke_command(
         _seeded_eval_wrapper(seed),
         "--config-name=pusht.yaml",
         f"policy={policy_name}",
-        f"cache_dir={cache_dir}",
         f"seed={seed}",
         f"eval.num_eval={num_eval}",
         f"output.filename={output_filename.as_posix()}",
-        f"hydra.run.dir={repo_root / 'outputs' / 'phase1' / run_id}",
+        f"hydra.run.dir=.stable-wm/phase1/{run_id}/hydra",
     ]
     return command, result_path
 
