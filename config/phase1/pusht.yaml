@@ -1,0 +1,25 @@
+# Phase I Step 1 only.  Later stages will extend this file without changing the
+# frozen checkpoint, action convention, or time-coordinate contract below.
+experiment:
+  seed: 42
+  cache_dir: .stable-wm
+  results_dir: diagnostic_results
+  policy_name: pusht/lewm
+  dataset_name: pusht_expert_train
+  image_size: 224
+
+contract:
+  history_size: 3
+  frameskip: 5
+  action_dim: 2
+  latent_dim: 192
+
+baseline:
+  cache_split_seed: 42
+  cache_splits: [train, val, test]
+  cache_sample_count: 3
+  cache_atol: 1.0e-5
+  cache_rtol: 1.0e-4
+  smoke_episode_id: null
+  cem_num_eval: 10
+  cem_enabled: true
