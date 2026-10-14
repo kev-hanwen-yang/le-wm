@@ -20,6 +20,7 @@ trainer:
   precision: bf16
   gradient_clip_val: 1.0
 
+# So each training step uses 128 training examples (frames and actions) as input.
 loader:
   batch_size: 128
   num_workers: ${num_workers}
@@ -35,8 +36,8 @@ optimizer:
 wandb:
   enabled: True
   config:
-    entity: lewm
-    project: lewm
+    entity: kevin-yang-ai-no-affiliation
+    project: lewm-pusht
     name: ${output_model_name}
     id: ${subdir}
     resume: allow
