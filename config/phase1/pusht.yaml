@@ -1,4 +1,4 @@
-# Phase I Step 1 only.  Later stages will extend this file without changing the
+# Phase I Steps 1–2. Later stages extend this file without changing the
 # frozen checkpoint, action convention, or time-coordinate contract below.
 experiment:
   seed: 42
@@ -26,3 +26,13 @@ baseline:
   cem_num_eval: 10
   cem_enabled: true
   cem_timeout_seconds: 1800
+
+simulator:
+  baseline_manifest: diagnostic_results/phase1/step1-reviewed-baseline-seed42/baseline_manifest.json
+  seeds: [20261014, 20261015, 20261016]
+  raw_steps: 35
+  atol: 1.0e-10
+  rtol: 0.0
+  # Unmodified PushT renderer default; not a claim about missing training metadata.
+  with_target: true
+  timeout_seconds: 300

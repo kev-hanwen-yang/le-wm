@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run explicit Phase I stages; currently implements the frozen baseline gate."""
+"""Run explicit Phase I baseline and fresh-start simulator validation gates."""
 
 from __future__ import annotations
 
@@ -33,10 +33,12 @@ from counterfactual.model import (
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default="config/phase1/pusht.yaml")
-    parser.add_argument("--stage", choices=["baseline"], default="baseline")
+    parser.add_argument("--stage", choices=["baseline", "simulator"], default="baseline")
     parser.add_argument("--run-id", required=True, help="New immutable output identifier")
     parser.add_argument("--device", choices=["cpu", "cuda", "mps"], default=None)
     parser.add_argument("--skip-cem", action="store_true", help="Partial verification; cannot pass the Step 1 gate")
+    parser.add_argument("--baseline-manifest", default=None,
+                        help="Passing Step 1 parent manifest for the simulator stage")
     parser.add_argument(
         "--rebuild-mismatched-caches", action="store_true",
         help="Re-encode only embedding mismatches into this run's HDF5 artifacts",
@@ -225,7 +227,11 @@ def run_baseline(args) -> int:
 
 
 def main() -> int:
-    return run_baseline(parse_args())
+    args = parse_args()
+    if args.stage == "simulator":
+        from counterfactual.simulator_validation import run_simulator_stage
+        return run_simulator_stage(args, REPO_ROOT)
+    return run_baseline(args)
 
 
 if __name__ == "__main__":
