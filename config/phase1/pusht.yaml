@@ -36,3 +36,61 @@ simulator:
   # Unmodified PushT renderer default; not a claim about missing training metadata.
   with_target: true
   timeout_seconds: 300
+  provenance:
+    simulator_manifest: diagnostic_results/phase1/step2-fresh-start-replay-reviewed/simulator_manifest.json
+    family_sample_count: 32
+    # A source-grounded comparison candidate, NOT an approved Step 3 contract.
+    candidate:
+      resolution: 224
+      with_target: true
+      render_goal: true
+      goal_pose_world_px_rad: [256.0, 256.0, 0.7853981633974483]
+      render_action: false
+      world_size: 512
+      candidate_only: true
+  compatibility:
+    provenance_manifest: diagnostic_results/phase1/step2-render-provenance-release-verified/render_provenance_manifest.json
+    split_seed: 42
+    reference_episodes_per_family: 9
+    natural_reference_frames_per_family: 4
+    bootstrap_seed: 20261014
+    bootstrap_draws: 10000
+    dose_world_px: [10.0, 20.0, 30.0]
+    dose_match_tolerance_world_px: 1.0
+    # Proposed measurement budgets, not an activated observation contract.
+    # One observation gets 1/4 of the plan's 5-px / 0.10-rad preservation
+    # budget, leaving at least half for other error in a two-observation contrast.
+    drift_caps: {agent_world_px: 1.25, block_world_px: 1.25, angle_rad: 0.025}
+    # Confirmatory block-effect resolution is stricter: two observations at
+    # 0.25 px consume half of the plan's 1-px informative block-effect scale.
+    confirmatory_block_effect_drift_cap_world_px: 0.25
+    codec_crfs: [18, 23, 28]
+    codec_pixel_formats: [yuv420p, yuv444p]
+  domain_diagnostics:
+    compatibility_manifest: diagnostic_results/phase1/step2-observation-compatibility-verified/compatibility_manifest.json
+    # Bounded natural readout diagnostic, NOT the formal Step 3 dataset.
+    families_per_partition: 16
+    development_seed: 2026101401
+    validation_seed: 2026101402
+    bootstrap_seed: 2026101403
+    bootstrap_draws: 10000
+    timeout_seconds: 900
+  readout_repair:
+    development_manifest: diagnostic_results/phase1/step2-domain-calibration-dev-v2/domain_manifest.json
+    validation_manifest: diagnostic_results/phase1/step2-domain-validation-v2/domain_manifest.json
+    fresh_training_seed: 2026101501
+    fresh_pilot_seed: 2026101502
+    ordering_seed: 2026101503
+    bootstrap_seed: 2026101504
+    bootstrap_draws: 10000
+    new_training_families: 16
+    pilot_validation_families: 16
+    training_family_counts: [16, 32, 48]
+    ridge_lambdas: [0.0001, 0.01, 1.0, 100.0]
+    mlp_seeds: [42, 43]
+    mlp_epochs: 600
+    mlp_patience: 100
+    mlp_evaluate_every: 10
+    mlp_lr: 0.001
+    mlp_weight_decay: 0.0001
+    timeout_seconds: 1200

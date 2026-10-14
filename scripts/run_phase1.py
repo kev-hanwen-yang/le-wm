@@ -33,12 +33,24 @@ from counterfactual.model import (
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default="config/phase1/pusht.yaml")
-    parser.add_argument("--stage", choices=["baseline", "simulator"], default="baseline")
+    parser.add_argument("--stage", choices=["baseline", "simulator", "render-provenance", "observation-compatibility", "domain-diagnostics", "readout-audit", "readout-feasibility"], default="baseline")
+    parser.add_argument("--audit-manifest", default=None,
+                        help="Passing R0 readout sanity audit required before R1 feasibility fitting")
+    parser.add_argument("--partition", choices=["development", "validation"], default=None,
+                        help="Explicit natural-domain diagnostic partition; not a Step 3 split")
+    parser.add_argument("--calibration-manifest", default=None,
+                        help="Frozen completed development parent required before independent diagnostic validation")
     parser.add_argument("--run-id", required=True, help="New immutable output identifier")
     parser.add_argument("--device", choices=["cpu", "cuda", "mps"], default=None)
     parser.add_argument("--skip-cem", action="store_true", help="Partial verification; cannot pass the Step 1 gate")
     parser.add_argument("--baseline-manifest", default=None,
                         help="Passing Step 1 parent manifest for the simulator stage")
+    parser.add_argument("--simulator-manifest", default=None,
+                        help="Passing Step 2 parent for the render-provenance audit")
+    parser.add_argument("--source-evidence", default=None,
+                        help="Reuse a hashed provenance sources/index.json instead of fetching public sources")
+    parser.add_argument("--provenance-manifest", default=None,
+                        help="Completed immutable render audit for the compatibility assessment")
     parser.add_argument(
         "--rebuild-mismatched-caches", action="store_true",
         help="Re-encode only embedding mismatches into this run's HDF5 artifacts",
@@ -228,6 +240,21 @@ def run_baseline(args) -> int:
 
 def main() -> int:
     args = parse_args()
+    if args.stage == "readout-audit":
+        from counterfactual.readout_audit import run_readout_audit
+        return run_readout_audit(args, REPO_ROOT)
+    if args.stage == "readout-feasibility":
+        from counterfactual.readout_feasibility import run_readout_feasibility
+        return run_readout_feasibility(args, REPO_ROOT)
+    if args.stage == "domain-diagnostics":
+        from counterfactual.domain_diagnostics import run_domain_stage
+        return run_domain_stage(args, REPO_ROOT)
+    if args.stage == "observation-compatibility":
+        from counterfactual.observation_compatibility import run_compatibility_stage
+        return run_compatibility_stage(args, REPO_ROOT)
+    if args.stage == "render-provenance":
+        from counterfactual.render_provenance import run_render_provenance_stage
+        return run_render_provenance_stage(args, REPO_ROOT)
     if args.stage == "simulator":
         from counterfactual.simulator_validation import run_simulator_stage
         return run_simulator_stage(args, REPO_ROOT)
