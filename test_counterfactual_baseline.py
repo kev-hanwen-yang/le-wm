@@ -9,6 +9,7 @@ import torch
 
 from counterfactual.baseline import choose_smoke_window, deterministic_sample_indices, encoded_cache_path
 from counterfactual.contracts import TimeActionContract
+from counterfactual.model import frames_hwc_to_b1chw, pixels_hwc_to_btc
 
 
 def test_deterministic_sample_indices_cover_cache_endpoints():
@@ -39,8 +40,15 @@ def test_choose_smoke_window_uses_h_0_5_10_and_actions_0_to_15():
     assert torch.equal(torch.as_tensor(window["raw_actions"][-1]), torch.tensor([28.0, 29.0]))
 
 
+def test_sequence_and_independent_frame_layouts_are_not_conflated():
+    frames = np.zeros((3, 2, 2, 3), dtype=np.uint8)
+    assert pixels_hwc_to_btc(frames).shape == (1, 3, 3, 2, 2)
+    assert frames_hwc_to_b1chw(frames).shape == (3, 1, 3, 2, 2)
+
+
 if __name__ == "__main__":
     test_deterministic_sample_indices_cover_cache_endpoints()
     test_encoded_cache_path_matches_existing_naming_contract()
     test_choose_smoke_window_uses_h_0_5_10_and_actions_0_to_15()
+    test_sequence_and_independent_frame_layouts_are_not_conflated()
     print("counterfactual baseline tests passed")

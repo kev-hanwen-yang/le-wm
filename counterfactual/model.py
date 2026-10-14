@@ -64,6 +64,22 @@ def pixels_hwc_to_btc(pixels_hwc: np.ndarray | torch.Tensor) -> torch.Tensor:
     return pixels.permute(0, 3, 1, 2).unsqueeze(0).contiguous()
 
 
+def frames_hwc_to_b1chw(pixels_hwc: np.ndarray | torch.Tensor) -> torch.Tensor:
+    """Convert independent raw frames from (B,H,W,C) to (B,1,C,H,W).
+
+    This is intentionally distinct from :func:`pixels_hwc_to_btc`: cache
+    identity validation re-encodes several independent frames at once, not a
+    temporal sequence.  Treating B as T changes position-dependent encoding.
+    """
+    pixels = torch.as_tensor(pixels_hwc)
+    if pixels.ndim != 4 or pixels.shape[-1] != 3:
+        raise ValueError(
+            "Expected independent raw RGB frames with shape (B, H, W, 3), got "
+            f"{tuple(pixels.shape)}"
+        )
+    return pixels.permute(0, 3, 1, 2).unsqueeze(1).contiguous()
+
+
 def run_frozen_window(
     model,
     pixels_hwc: np.ndarray | torch.Tensor,

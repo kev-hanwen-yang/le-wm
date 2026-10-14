@@ -18,7 +18,7 @@ import numpy as np
 import torch
 
 from counterfactual.contracts import TimeActionContract
-from counterfactual.model import pixels_hwc_to_btc, run_frozen_window
+from counterfactual.model import frames_hwc_to_b1chw, run_frozen_window
 from probe.embedding_cache import get_image_transform, preprocess_pixels
 
 
@@ -173,7 +173,7 @@ def validate_encoded_cache(
         pixels = handle["pixels"][raw_indices]
 
     image_transform = get_image_transform(image_size)
-    model_pixels = preprocess_pixels(pixels_hwc_to_btc(pixels), image_transform, device)
+    model_pixels = preprocess_pixels(frames_hwc_to_b1chw(pixels), image_transform, device)
     model.eval()
     with torch.inference_mode():
         actual = model.encode({"pixels": model_pixels})["emb"][:, 0].cpu().float()
